@@ -1,0 +1,6 @@
+[submodule "third-party/wps-office-11.2.0.9255-dicts"]
+	path = third-party/wps-office-11.2.0.9255-dicts
+	url = https://github.com/wachin/wps-office-11.2.0.9255-dicts
+[submodule "third-party/libreoffice-dictionaries-collection"]
+	path = third-party/libreoffice-dictionaries-collection
+	url = https://github.com/wachin/libreoffice-dictionaries-collection
