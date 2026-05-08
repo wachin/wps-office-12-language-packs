@@ -1,0 +1,35 @@
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Editors and operating system files
+.idea/
+.vscode/
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Build outputs
+build/*
+!build/wps-libreoffice-dicts/
+!build/wps-libreoffice-dicts/**
+

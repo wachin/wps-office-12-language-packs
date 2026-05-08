@@ -1,102 +1,97 @@
-# WPS Office 12.x en español para Linux
+# WPS Office 12.x language packs for Linux
 
+Este repositorio prepara diccionarios Hunspell para que **WPS Office 12.x** pueda usarlos en Linux.
 
-# Tutorial en construcción, todavía no funcional
+Los diccionarios listos para instalar están en:
 
-Este repositorio sirve para poner **WPS Office 12.x** en **español** en Linux.
+```text
+build/wps-libreoffice-dicts
+```
 
-Aqui vas a encontrar dos cosas:
+Cada carpeta de idioma tiene el formato que WPS espera:
 
-- `mui/`: archivos que traducen la interfaz del programa.
-- `spellcheck/`: diccionarios para la correccion ortografica.
+```text
+dict.conf
+main.aff
+main.dic
+```
 
-La idea es simple:
+Los archivos `main.aff` y `main.dic` vienen de la colección de diccionarios de LibreOffice. Los `dict.conf` se reutilizan desde los diccionarios antiguos de WPS Office cuando existen, y se generan para las variantes nuevas.
 
-1. Instalas WPS Office.
-2. Copias los archivos de idioma.
-3. Copias los diccionarios para que funcione el corrector ortografico.
-4. Cambias la configuracion para que WPS arranque en español.
+## Requisitos
 
-
-## Que necesitas antes de empezar
-
-- Tener **WPS Office 12.x** instalado.
+- Tener **WPS Office 12.x** instalado en Linux.
 - Tener permisos de administrador con `sudo`.
-- Tener este repositorio descargado o clonado en tu computadora.
-- Haber abierto **WPS Office al menos una vez**.
+- Haber abierto WPS Office al menos una vez.
+- Tener creada la carpeta `build/wps-libreoffice-dicts` con los diccionarios convertidos.
 
-Importante:
+WPS suele crear su configuración de usuario después de abrirlo por primera vez. Si no existe este archivo:
 
-- El archivo `~/.config/Kingsoft/Office.conf` normalmente **se crea cuando abres WPS por primera vez**.
-- Si ese archivo no existe, abre WPS, cierralo, y luego continua con el tutorial.
-
-## Que significa cada ruta
-
-Si estas empezando en Linux, esto te ayudará. En WPS Office la versión 12 descargada desde la página china:
-
-- `/opt/kingsoft/wps-office/office6/mui/`
-  Aqui WPS guarda los archivos de idioma de la interfaz.
-- `/opt/kingsoft/wps-office/office6/dicts/spellcheck/`
-  Aqui WPS guarda los diccionarios del corrector ortografico.
-- `~/.config/Kingsoft/Office.conf`
-  Aqui WPS guarda la configuracion del usuario.
-
-## Paso 1: instala WPS Office
-
-Descarga el instalador de WPS Office para tu distribucion Linux.
-
-Sitio oficial de la página china:
-
-- [https://www.wps.cn](https://www.wps.cn)
-
-allí al dar clic al botón rojo, redirije a:
-
-[https://www.wps.cn/product/wpslinux](https://www.wps.cn/product/wpslinux)
-
-Luego instala el paquete.
-
-Si usas Debian, Ubuntu, Linux Mint o similares:
-
-```bash
-sudo dpkg -i wps-office*.deb
+```text
+~/.config/Kingsoft/Office.conf
 ```
 
-Si usas Fedora, Red Hat o similares:
+abre WPS Office, ciérralo y continúa con la instalación.
 
-```bash
-sudo dnf install wps-office*.rpm
+## Rutas usadas por WPS Office
+
+En la versión Linux de WPS Office instalada en `/opt`, las rutas principales son:
+
+```text
+/opt/kingsoft/wps-office/office6/dicts/spellcheck/
 ```
 
-## Paso 2: copia los archivos del idioma español
+Ahí WPS guarda los diccionarios de corrección ortográfica.
 
-Desde la carpeta de este repositorio, ejecuta:
-
-```bash
-sudo cp -r mui/* /opt/kingsoft/wps-office/office6/mui/
+```text
+~/.config/Kingsoft/Office.conf
 ```
 
-Que hace este comando:
+Ahí WPS guarda la configuración del usuario.
 
-- Copia `es_ES` y `es_MX` dentro de la carpeta de idiomas de WPS.
-- Eso permite que WPS tenga disponibles los archivos de interfaz en español.
+## Instalar los diccionarios
 
-## Paso 3: cambia la configuracion para que WPS abra en español
+Desde la raíz de este repositorio, ejecuta:
 
-Abre el archivo de configuracion del usuario:
+```bash
+sudo mkdir -p /opt/kingsoft/wps-office/office6/dicts/spellcheck
+sudo cp -r build/wps-libreoffice-dicts/* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
+```
+
+Esto copia todos los diccionarios convertidos a la carpeta que WPS usa para la corrección ortográfica.
+
+Después de copiar, la ruta de WPS debe quedar con carpetas como estas:
+
+```text
+/opt/kingsoft/wps-office/office6/dicts/spellcheck/es_ES/
+/opt/kingsoft/wps-office/office6/dicts/spellcheck/es_MX/
+/opt/kingsoft/wps-office/office6/dicts/spellcheck/es_EC/
+/opt/kingsoft/wps-office/office6/dicts/spellcheck/en_US/
+```
+
+Y dentro de cada una:
+
+```text
+dict.conf
+main.aff
+main.dic
+```
+
+## Activar español en la configuración de WPS
+
+Edita el archivo de configuración:
 
 ```bash
 nano ~/.config/Kingsoft/Office.conf
 ```
 
-o usa Gedit (instalalo) para más comodidad:
+También puedes usar otro editor, por ejemplo:
 
 ```bash
 gedit ~/.config/Kingsoft/Office.conf
 ```
 
-**Nota:** También puedes usar otro editor de texto, solo cambia gedit por su nombre.
-
-Borra todo lo que tenga y deja este solo contenido:
+Para usar español de España como idioma principal, puedes dejar este contenido:
 
 ```ini
 [General]
@@ -109,92 +104,36 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-**Nota:** No te preocupes por borrar todo el contenido, luego al iniciar el programa WPS Office creará lo que faltaba.
+Para español de México, cambia `languages=es_ES` por:
 
-Que hace esta configuracion:
-
-- `languages=es_ES`
-  Le dice a WPS que use español de España como idioma principal.
-- `DefaultLanguage=3082` y `UILanguage=3082`
-  Fuerzan la interfaz grafica en español.
-- `AppComponentMode=prome_independ`
-  Hace que WPS use el modo de ventanas que funciona mejor con esta configuracion.
-
-Guarda el archivo en `nano` con:
-
-1. `Ctrl + O`
-2. `Enter`
-3. `Ctrl + X`
-
-En Gedit dale al botón Guardar
-
-## Paso 4: copia los diccionarios para la correccion ortografica
-
-En este manual, los diccionarios se instalan en la ruta global de WPS dentro de `/opt`.
-
-Estando ubicado en una terminal desde la carpeta de este repositorio, ejecuta:
-
-```bash
-sudo cp -r spellcheck/* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
+```ini
+languages=es_MX
 ```
 
-Que hace este comando:
+Guarda el archivo, cierra WPS Office por completo y vuelve a abrirlo.
 
-- Copia los diccionarios de español a la carpeta que usa WPS para revisar ortografia.
-- Permite activar variantes como `es_ES`, `es_MX`, `es_EC`, etc.
+## Activar la corrección ortográfica
 
-## Paso 5: cierra y vuelve a abrir WPS Office
+Después de instalar los diccionarios:
 
-Si WPS estaba abierto, cierralo por completo y vuelve a iniciarlo.
+1. Abre WPS Writer.
+2. Ve a las opciones de idioma o corrección ortográfica.
+3. Selecciona el idioma deseado, por ejemplo `es_ES`, `es_MX` o `es_EC`.
+4. Aplica los cambios y prueba escribiendo una palabra con error.
 
-Si todo salio bien:
+Si el idioma aparece en la lista, WPS está leyendo correctamente la carpeta instalada.
 
-- la interfaz aparecera en español
-- el menu de correccion ortografica mostrara opciones de español
+## Resumen rápido
 
-## Resultado esperado
-
-Cuando termines, WPS deberia verse en español:
-
-### WPS Writer
-
-
-
-
-### WPS Office SpreadSheets
-
-
-## Como activar la correccion ortografica en español
-
-Despues de copiar los diccionarios, abre WPS Writer y revisa las opciones de idioma o correccion ortografica.
-
-Las siguientes imagenes muestran la parte visual del proceso:
-
-![imagen](https://github.com/user-attachments/assets/a297b315-32e8-42ba-a1cf-3d1383ac9a13)
-
-![imagen](https://github.com/user-attachments/assets/ea83a4c3-27b0-4667-ac46-f00c28c77b0e)
-
-## Si algo no funciona
-
-Revisa estas 5 cosas:
-
-1. Abriste WPS al menos una vez antes de editar `Office.conf`.
-2. Copiaste `mui/*` en `/opt/kingsoft/wps-office/office6/mui/`.
-3. Copiaste `spellcheck/*` en `/opt/kingsoft/wps-office/office6/dicts/spellcheck/`.
-4. El archivo `Office.conf` quedo exactamente como aparece en este tutorial.
-5. Cerraste y abriste WPS otra vez despues de hacer los cambios.
-
-## Resumen rapido
-
-Si ya entendiste el proceso y solo quieres los comandos (estando ubicado en una terminal en la carpeta de este repositorio):
+Desde la raíz del repositorio:
 
 ```bash
-sudo cp -r mui/* /opt/kingsoft/wps-office/office6/mui/
-sudo cp -r spellcheck/* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
+sudo mkdir -p /opt/kingsoft/wps-office/office6/dicts/spellcheck
+sudo cp -r build/wps-libreoffice-dicts/* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
 nano ~/.config/Kingsoft/Office.conf
 ```
 
-Contenido de `Office.conf`:
+Contenido recomendado para español de España:
 
 ```ini
 [General]
@@ -207,48 +146,121 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-# Dónde se descargan los idiomas en Windows
+## Si algo no funciona
 
-Primero descarga e instala el cual a la fecha 2026 está en la versión WPS Office 12 
+Revisa estos puntos:
+
+1. WPS Office fue abierto al menos una vez antes de editar `Office.conf`.
+2. La carpeta `/opt/kingsoft/wps-office/office6/dicts/spellcheck/` existe.
+3. Copiaste el contenido de `build/wps-libreoffice-dicts`, no la carpeta contenedora completa.
+4. Cada idioma instalado tiene `dict.conf`, `main.aff` y `main.dic`.
+5. Cerraste y volviste a abrir WPS Office después de copiar los diccionarios.
+6. El idioma elegido existe en la carpeta de diccionarios instalada.
+
+## Herramienta de conversión LibreOffice a WPS
+
+Este repositorio incluye una herramienta gráfica en PyQt6 para regenerar los diccionarios cuando actualices el submódulo de LibreOffice:
+
+```text
+tools/wps_libreoffice_dict_converter.py
+```
+
+La herramienta toma diccionarios desde:
+
+```text
+third-party/libreoffice-dictionaries-collection/dicts
+```
+
+y genera el formato de WPS en:
+
+```text
+build/wps-libreoffice-dicts
+```
+
+### Instalar PyQt6
+
+En Debian, Ubuntu, Linux Mint o similares:
+
+```bash
+sudo apt install python3-pyqt6
+```
+
+Si prefieres usar `pip`:
+
+```bash
+python3 -m pip install PyQt6
+```
+
+### Ejecutar la herramienta
+
+Desde la raíz del repositorio:
+
+```bash
+python3 tools/wps_libreoffice_dict_converter.py
+```
+
+La ventana muestra:
+
+- A la izquierda: los archivos y carpetas fuente de LibreOffice.
+- A la derecha: los destinos que se crearán o actualizarán en `build/wps-libreoffice-dicts`.
+- Abajo: errores bloqueantes, advertencias y resumen del análisis.
+
+Primero pulsa **Analyze**. Si no hay errores bloqueantes, el botón **Convert** queda habilitado.
+
+La herramienta verifica antes de escribir:
+
+- Que existan los pares `.aff` y `.dic`.
+- Que cada destino tenga o pueda generar `dict.conf`.
+- Que los nombres especiales estén mapeados correctamente, por ejemplo `de_DE_frami`, `fr`, `ca`, `lt`.
+- Que los respaldos antiguos de WPS estén disponibles para idiomas sin equivalente en LibreOffice.
+- Que no haya diccionarios nuevos de LibreOffice sin revisar.
+
+Al convertir, también actualiza:
+
+```text
+build/wps-libreoffice-dicts/BUILD_SOURCE_MAP.txt
+```
+
+Ese archivo indica de dónde salió cada diccionario.
+
+## Referencia: idiomas descargados por WPS en Windows
+
+En Windows, WPS Office descarga paquetes de idioma en rutas de usuario. Esta información sirve como referencia para investigar archivos de idioma de la interfaz.
+
+Primero descarga e instala WPS Office 12 para Windows:
 
 [https://wps.com/office/windows/](https://wps.com/office/windows/)
 
-Ejemplo en Windows 10 los lenguajes del programa WPS Office 12 para Windows se los puede descargar as, clic en la interfazí:
+Ejemplo en Windows 10:
 
 ![](vx_images/02-WPS-Office-global-config-menu.png)
 
-
-y descarga los idiomas:
+Luego descarga los idiomas:
 
 ![](vx_images/03-Click-on-a-language-and-then-click-Apply.png)
 
-una vez descargados los idiomas estos se descargan en:
+Los idiomas descargados pueden aparecer en:
 
-## C_Users_youruser_AppData_Roaming_kingsoft_wps_intl_addons_pool_win-x64
-
+```text
 C:\Users\youruser\AppData\Roaming\kingsoft\wps_intl\addons\pool\win-x64
-
-Como son:
+```
 
 ![](vx_images/04-downloaded-languages.png)
 
+La lista de idiomas puede aparecer en:
 
-La lista de los lenguajes está aquí:  
-
-## C_Users_youruser_AppData_Local_Kingsoft_WPS-Office_12.1.0.25830_office6_mui_lang_list
-  
+```text
 C:\Users\youruser\AppData\Local\Kingsoft\WPS Office\12.1.0.25830\office6\mui\lang_list\lang_list.json
+```
 
 ![20260416-000808](vx_images/507184629680596.png)
 
+Algunos paquetes incluidos por la versión de Windows en español pueden aparecer en:
 
-pero aún hay unos paquetes que están en otro lado, esos vienen con la versión de Windows en español, están en:
-
-## C_Users_youruser_AppData_Local_Kingsoft_WPS-Office_12.1.0.25830_office6_mui
-
-C:\Users\wachi\AppData\Local\Kingsoft\WPS Office\12.1.0.25830\office6\mui
+```text
+C:\Users\youruser\AppData\Local\Kingsoft\WPS Office\12.1.0.25830\office6\mui
+```
 
 ![](vx_images/05-languages-downloaded-by-the-Spanish-version.png)
 
-Si este tutorial te ayudo, puedes dejar una estrella en el repositorio.
-
+Si este proyecto te ayudó, puedes dejar una estrella en el repositorio.
