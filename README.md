@@ -156,11 +156,13 @@ Si todo salio bien:
 
 Cuando termines, WPS deberia verse en español:
 
-![imagen](https://github.com/user-attachments/assets/686b8367-afbb-4487-a999-e61eef9d74c7)
+### WPS Writer
 
-![imagen](https://github.com/user-attachments/assets/6898a1e5-2caf-48a8-9136-a05217f24906)
 
-![imagen](https://github.com/user-attachments/assets/d5ea0f02-e6d9-4b36-a739-fabd37626cd3)
+
+
+### WPS Office SpreadSheets
+
 
 ## Como activar la correccion ortografica en español
 
