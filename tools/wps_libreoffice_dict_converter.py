@@ -53,34 +53,206 @@ SPECIAL_SOURCE_NAMES = {
 OLD_WPS_FALLBACKS = {"km_KH", "ms_MY", "qu_EC", "sw_TZ"}
 
 GENERATED_DICT_CONF = {
-    "de_AT": ("Deutsch (Osterreich)", "German (Austria)", "Aleman (Austria)"),
-    "de_CH": ("Deutsch (Schweiz)", "German (Switzerland)", "Aleman (Suiza)"),
-    "en_CA": ("English (Canada)", "English (Canada)", "Ingles (Canada)"),
-    "en_ZA": ("English (South Africa)", "English (South Africa)", "Ingles (Sudafrica)"),
-    "es_CR": ("Espanol (Costa Rica)", "Spanish (Costa Rica)", "Espanol (Costa Rica)"),
-    "es_CU": ("Espanol (Cuba)", "Spanish (Cuba)", "Espanol (Cuba)"),
-    "es_DO": (
-        "Espanol (Republica Dominicana)",
-        "Spanish (Dominican Republic)",
-        "Espanol (Republica Dominicana)",
-    ),
-    "es_EC": ("Espanol (Ecuador)", "Spanish (Ecuador)", "Espanol (Ecuador)"),
-    "es_GQ": (
-        "Espanol (Guinea Ecuatorial)",
-        "Spanish (Equatorial Guinea)",
-        "Espanol (Guinea Ecuatorial)",
-    ),
-    "es_GT": ("Espanol (Guatemala)", "Spanish (Guatemala)", "Espanol (Guatemala)"),
-    "es_HN": ("Espanol (Honduras)", "Spanish (Honduras)", "Espanol (Honduras)"),
-    "es_NI": ("Espanol (Nicaragua)", "Spanish (Nicaragua)", "Espanol (Nicaragua)"),
-    "es_PA": ("Espanol (Panama)", "Spanish (Panama)", "Espanol (Panama)"),
-    "es_PE": ("Espanol (Peru)", "Spanish (Peru)", "Espanol (Peru)"),
-    "es_PH": ("Espanol (Filipinas)", "Spanish (Philippines)", "Espanol (Filipinas)"),
-    "es_PY": ("Espanol (Paraguay)", "Spanish (Paraguay)", "Espanol (Paraguay)"),
-    "es_SV": ("Espanol (El Salvador)", "Spanish (El Salvador)", "Espanol (El Salvador)"),
-    "es_US": ("Espanol (United States)", "Spanish (United States)", "Espanol (Estados Unidos)"),
-    "es_UY": ("Espanol (Uruguay)", "Spanish (Uruguay)", "Espanol (Uruguay)"),
-    "es_VE": ("Espanol (Venezuela)", "Spanish (Venezuela)", "Espanol (Venezuela)"),
+    "de_AT": {
+        "DisplayName": "Deutsch (Österreich)",
+        "DisplayName[zh_CN]": "德语 (奥地利)",
+        "DisplayName[en_US]": "German (Austria)",
+        "DisplayName[es_ES]": "Alemán (Austria)",
+        "DisplayName[zh_TW]": "德文 (奧地利)",
+        "DisplayName[zh_HK]": "德文 (奧地利)",
+        "DisplayName[zh_MO]": "德文 (奧地利)",
+        "DisplayName[zh_Hant_CN]": "德文 (奧地利)",
+    },
+    "de_CH": {
+        "DisplayName": "Deutsch (Schweiz)",
+        "DisplayName[zh_CN]": "德语 (瑞士)",
+        "DisplayName[en_US]": "German (Switzerland)",
+        "DisplayName[es_ES]": "Alemán (Suiza)",
+        "DisplayName[zh_TW]": "德文 (瑞士)",
+        "DisplayName[zh_HK]": "德文 (瑞士)",
+        "DisplayName[zh_MO]": "德文 (瑞士)",
+        "DisplayName[zh_Hant_CN]": "德文 (瑞士)",
+    },
+    "en_CA": {
+        "DisplayName": "English (Canada)",
+        "DisplayName[zh_CN]": "英语 (加拿大)",
+        "DisplayName[en_US]": "English (Canada)",
+        "DisplayName[es_ES]": "Inglés (Canadá)",
+        "DisplayName[zh_TW]": "英文 (加拿大)",
+        "DisplayName[zh_HK]": "英文 (加拿大)",
+        "DisplayName[zh_MO]": "英文 (加拿大)",
+        "DisplayName[zh_Hant_CN]": "英文 (加拿大)",
+    },
+    "en_ZA": {
+        "DisplayName": "English (South Africa)",
+        "DisplayName[zh_CN]": "英语 (南非)",
+        "DisplayName[en_US]": "English (South Africa)",
+        "DisplayName[es_ES]": "Inglés (Sudáfrica)",
+        "DisplayName[zh_TW]": "英文 (南非)",
+        "DisplayName[zh_HK]": "英文 (南非)",
+        "DisplayName[zh_MO]": "英文 (南非)",
+        "DisplayName[zh_Hant_CN]": "英文 (南非)",
+    },
+    "es_CR": {
+        "DisplayName": "Español (Costa Rica)",
+        "DisplayName[zh_CN]": "西班牙语 (哥斯达黎加)",
+        "DisplayName[en_US]": "Spanish (Costa Rica)",
+        "DisplayName[es_ES]": "Español (Costa Rica)",
+        "DisplayName[zh_TW]": "西班牙文 (哥斯大黎加)",
+        "DisplayName[zh_HK]": "西班牙文 (哥斯大黎加)",
+        "DisplayName[zh_MO]": "西班牙文 (哥斯大黎加)",
+        "DisplayName[zh_Hant_CN]": "西班牙文 (哥斯大黎加)",
+    },
+    "es_CU": {
+        "DisplayName": "Español (Cuba)",
+        "DisplayName[zh_CN]": "西班牙语 (古巴)",
+        "DisplayName[en_US]": "Spanish (Cuba)",
+        "DisplayName[es_ES]": "Español (Cuba)",
+        "DisplayName[zh_TW]": "西班牙文 (古巴)",
+        "DisplayName[zh_HK]": "西班牙文 (古巴)",
+        "DisplayName[zh_MO]": "西班牙文 (古巴)",
+        "DisplayName[zh_Hant_CN]": "西班牙文 (古巴)",
+    },
+    "es_DO": {
+        "DisplayName": "Español (República Dominicana)",
+        "DisplayName[zh_CN]": "西班牙语 (多米尼加共和国)",
+        "DisplayName[en_US]": "Spanish (Dominican Republic)",
+        "DisplayName[es_ES]": "Español (República Dominicana)",
+        "DisplayName[zh_TW]": "西班牙文 (多明尼加共和國)",
+        "DisplayName[zh_HK]": "西班牙文 (多明尼加共和國)",
+        "DisplayName[zh_MO]": "西班牙文 (多明尼加共和國)",
+        "DisplayName[zh_Hant_CN]": "西班牙文 (多明尼加共和國)",
+    },
+    "es_EC": {
+        "DisplayName": "Español (Ecuador)",
+        "DisplayName[zh_CN]": "西班牙语 (厄瓜多尔)",
+        "DisplayName[en_US]": "Spanish (Ecuador)",
+        "DisplayName[es_ES]": "Español (Ecuador)",
+        "DisplayName[zh_TW]": "西班牙文 (厄瓜多)",
+        "DisplayName[zh_HK]": "西班牙文 (厄瓜多)",
+        "DisplayName[zh_MO]": "西班牙文 (厄瓜多)",
+        "DisplayName[zh_Hant_CN]": "西班牙文 (厄瓜多)",
+    },
+    "es_GQ": {
+        "DisplayName": "Español (Guinea Ecuatorial)",
+        "DisplayName[zh_CN]": "西班牙语 (赤道几内亚)",
+        "DisplayName[en_US]": "Spanish (Equatorial Guinea)",
+        "DisplayName[es_ES]": "Español (Guinea Ecuatorial)",
+        "DisplayName[zh_TW]": "西班牙文 (赤道幾內亞)",
+        "DisplayName[zh_HK]": "西班牙文 (赤道幾內亞)",
+        "DisplayName[zh_MO]": "西班牙文 (赤道幾內亞)",
+        "DisplayName[zh_Hant_CN]": "西班牙文 (赤道幾內亞)",
+    },
+    "es_GT": {
+        "DisplayName": "Español (Guatemala)",
+        "DisplayName[zh_CN]": "西班牙语 (危地马拉)",
+        "DisplayName[en_US]": "Spanish (Guatemala)",
+        "DisplayName[es_ES]": "Español (Guatemala)",
+        "DisplayName[zh_TW]": "西班牙文 (瓜地馬拉)",
+        "DisplayName[zh_HK]": "西班牙文 (瓜地馬拉)",
+        "DisplayName[zh_MO]": "西班牙文 (瓜地馬拉)",
+        "DisplayName[zh_Hant_CN]": "西班牙文 (瓜地馬拉)",
+    },
+    "es_HN": {
+        "DisplayName": "Español (Honduras)",
+        "DisplayName[zh_CN]": "西班牙语 (洪都拉斯)",
+        "DisplayName[en_US]": "Spanish (Honduras)",
+        "DisplayName[es_ES]": "Español (Honduras)",
+        "DisplayName[zh_TW]": "西班牙文 (洪都拉斯)",
+        "DisplayName[zh_HK]": "西班牙文 (洪都拉斯)",
+        "DisplayName[zh_MO]": "西班牙文 (洪都拉斯)",
+        "DisplayName[zh_Hant_CN]": "西班牙文 (洪都拉斯)",
+    },
+    "es_NI": {
+        "DisplayName": "Español (Nicaragua)",
+        "DisplayName[zh_CN]": "西班牙语 (尼加拉瓜)",
+        "DisplayName[en_US]": "Spanish (Nicaragua)",
+        "DisplayName[es_ES]": "Español (Nicaragua)",
+        "DisplayName[zh_TW]": "西班牙文 (尼加拉瓜)",
+        "DisplayName[zh_HK]": "西班牙文 (尼加拉瓜)",
+        "DisplayName[zh_MO]": "西班牙文 (尼加拉瓜)",
+        "DisplayName[zh_Hant_CN]": "西班牙文 (尼加拉瓜)",
+    },
+    "es_PA": {
+        "DisplayName": "Español (Panamá)",
+        "DisplayName[zh_CN]": "西班牙语 (巴拿马)",
+        "DisplayName[en_US]": "Spanish (Panama)",
+        "DisplayName[es_ES]": "Español (Panamá)",
+        "DisplayName[zh_TW]": "西班牙文 (巴拿馬)",
+        "DisplayName[zh_HK]": "西班牙文 (巴拿馬)",
+        "DisplayName[zh_MO]": "西班牙文 (巴拿馬)",
+        "DisplayName[zh_Hant_CN]": "西班牙文 (巴拿馬)",
+    },
+    "es_PE": {
+        "DisplayName": "Español (Perú)",
+        "DisplayName[zh_CN]": "西班牙语 (秘鲁)",
+        "DisplayName[en_US]": "Spanish (Peru)",
+        "DisplayName[es_ES]": "Español (Perú)",
+        "DisplayName[zh_TW]": "西班牙文 (秘魯)",
+        "DisplayName[zh_HK]": "西班牙文 (秘魯)",
+        "DisplayName[zh_MO]": "西班牙文 (秘魯)",
+        "DisplayName[zh_Hant_CN]": "西班牙文 (秘魯)",
+    },
+    "es_PH": {
+        "DisplayName": "Español (Filipinas)",
+        "DisplayName[zh_CN]": "西班牙语 (菲律宾)",
+        "DisplayName[en_US]": "Spanish (Philippines)",
+        "DisplayName[es_ES]": "Español (Filipinas)",
+        "DisplayName[zh_TW]": "西班牙文 (菲律賓)",
+        "DisplayName[zh_HK]": "西班牙文 (菲律賓)",
+        "DisplayName[zh_MO]": "西班牙文 (菲律賓)",
+        "DisplayName[zh_Hant_CN]": "西班牙文 (菲律賓)",
+    },
+    "es_PY": {
+        "DisplayName": "Español (Paraguay)",
+        "DisplayName[zh_CN]": "西班牙语 (巴拉圭)",
+        "DisplayName[en_US]": "Spanish (Paraguay)",
+        "DisplayName[es_ES]": "Español (Paraguay)",
+        "DisplayName[zh_TW]": "西班牙文 (巴拉圭)",
+        "DisplayName[zh_HK]": "西班牙文 (巴拉圭)",
+        "DisplayName[zh_MO]": "西班牙文 (巴拉圭)",
+        "DisplayName[zh_Hant_CN]": "西班牙文 (巴拉圭)",
+    },
+    "es_SV": {
+        "DisplayName": "Español (El Salvador)",
+        "DisplayName[zh_CN]": "西班牙语 (萨尔瓦多)",
+        "DisplayName[en_US]": "Spanish (El Salvador)",
+        "DisplayName[es_ES]": "Español (El Salvador)",
+        "DisplayName[zh_TW]": "西班牙文 (薩爾瓦多)",
+        "DisplayName[zh_HK]": "西班牙文 (薩爾瓦多)",
+        "DisplayName[zh_MO]": "西班牙文 (薩爾瓦多)",
+        "DisplayName[zh_Hant_CN]": "西班牙文 (薩爾瓦多)",
+    },
+    "es_US": {
+        "DisplayName": "Español (Estados Unidos)",
+        "DisplayName[zh_CN]": "西班牙语 (美国)",
+        "DisplayName[en_US]": "Spanish (United States)",
+        "DisplayName[es_ES]": "Español (Estados Unidos)",
+        "DisplayName[zh_TW]": "西班牙文 (美國)",
+        "DisplayName[zh_HK]": "西班牙文 (美國)",
+        "DisplayName[zh_MO]": "西班牙文 (美國)",
+        "DisplayName[zh_Hant_CN]": "西班牙文 (美國)",
+    },
+    "es_UY": {
+        "DisplayName": "Español (Uruguay)",
+        "DisplayName[zh_CN]": "西班牙语 (乌拉圭)",
+        "DisplayName[en_US]": "Spanish (Uruguay)",
+        "DisplayName[es_ES]": "Español (Uruguay)",
+        "DisplayName[zh_TW]": "西班牙文 (烏拉圭)",
+        "DisplayName[zh_HK]": "西班牙文 (烏拉圭)",
+        "DisplayName[zh_MO]": "西班牙文 (烏拉圭)",
+        "DisplayName[zh_Hant_CN]": "西班牙文 (烏拉圭)",
+    },
+    "es_VE": {
+        "DisplayName": "Español (Venezuela)",
+        "DisplayName[zh_CN]": "西班牙语 (委内瑞拉)",
+        "DisplayName[en_US]": "Spanish (Venezuela)",
+        "DisplayName[es_ES]": "Español (Venezuela)",
+        "DisplayName[zh_TW]": "西班牙文 (委內瑞拉)",
+        "DisplayName[zh_HK]": "西班牙文 (委內瑞拉)",
+        "DisplayName[zh_MO]": "西班牙文 (委內瑞拉)",
+        "DisplayName[zh_Hant_CN]": "西班牙文 (委內瑞拉)",
+    },
 }
 
 
@@ -90,7 +262,7 @@ class Mapping:
     source_base: Path | None
     fallback_base: Path | None
     dict_conf_source: Path | None
-    generated_conf: tuple[str, str, str] | None
+    generated_conf: dict[str, str] | None
     source_kind: str
 
 
@@ -201,20 +373,10 @@ def analyze() -> Analysis:
     return Analysis(mappings=mappings, errors=errors, warnings=warnings, unmapped_sources=unmapped)
 
 
-def write_generated_conf(path: Path, values: tuple[str, str, str]) -> None:
-    display_name, english_name, spanish_name = values
-    path.write_text(
-        "\n".join(
-            [
-                "[Dictionary]",
-                f"DisplayName={display_name}",
-                f"DisplayName[en_US]={english_name}",
-                f"DisplayName[es_ES]={spanish_name}",
-                "",
-            ]
-        ),
-        encoding="utf-8",
-    )
+def write_generated_conf(path: Path, values: dict[str, str]) -> None:
+    lines = ["[Dictionary]"]
+    lines.extend(f"{key}={value}" for key, value in values.items())
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def convert(analysis: Analysis) -> None:
