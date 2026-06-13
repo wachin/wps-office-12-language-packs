@@ -98,7 +98,7 @@ Actualmente `build/wps-libreoffice-dicts` contiene 71 diccionarios listos para W
 
 ### Diccionarios añadidos desde otras fuentes
 
-Además de los diccionarios convertidos desde LibreOffice y los heredados de WPS Office, este paquete incluye estos diccionarios añadidos manualmente desde otras fuentes:
+Además de los diccionarios convertidos desde LibreOffice y los heredados de WPS Office, este paquete incluye los siguientes diccionarios añadidos manualmente desde otras fuentes:
 
 | Código | Diccionario | Nota |
 | ------ | ----------- | ---- |

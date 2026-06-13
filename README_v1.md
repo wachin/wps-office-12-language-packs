@@ -1,8 +1,5 @@
 # WPS Office 12.x en español para Linux
 
-
-# Tutorial en construcción, todavía no funcional
-
 Este repositorio sirve para poner **WPS Office 12.x** en **español** en Linux.
 
 Aqui vas a encontrar dos cosas:
@@ -55,7 +52,16 @@ allí al dar clic al botón rojo, redirije a:
 
 Luego instala el paquete.
 
-Si usas Debian, Ubuntu, Linux Mint o similares:
+### Instalar con clic derecho
+
+Instalación con algún gestor de paquetes deb, das clic derecho en el administrador de archivos:
+
+![](vx_images/08-Instalando-wps-office-12.1.2.25882-amd-deb.png)
+
+### Instalar desde la terminal (Opcional
+
+)
+Si usas Debian, Ubuntu, Linux Mint o similares si desea lo puede hacer también desde la terminal:
 
 ```bash
 sudo dpkg -i wps-office*.deb
