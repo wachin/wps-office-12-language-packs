@@ -284,26 +284,26 @@ wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 
 Usa esta tabla para elegir el código y el número correcto:
 
-| Idioma | `languages=` | `DefaultLanguage` y `UILanguage` |
-| ------ | ------------ | -------------------------------- |
-| English (United States) | `en_US` | `1033` |
-| German (Germany) | `de_DE` | `1031` |
-| Spanish (Spain) | `es_ES` | `3082` |
-| Spanish (Mexico) | `es_MX` | `2058` |
-| French (Canada) | `fr_CA` | `3084` |
-| French (France) | `fr_FR` | `1036` |
-| Indonesian | `id_ID` | `1057` |
-| Japanese | `ja_JP` | `1041` |
-| Polish | `pl_PL` | `1045` |
-| Portuguese (Brazil) | `pt_BR` | `1046` |
-| Portuguese (Portugal) | `pt_PT` | `2070` |
-| Russian | `ru_RU` | `1049` |
-| Thai | `th_TH` | `1054` |
-| Turkish | `tr_TR` | `1055` |
-| Chinese (Simplified, China) | `zh_CN` | `2052` |
-| Chinese (Traditional, Hong Kong) | `zh_HK` | `3076` |
+|             Idioma               | `languages=` | `DefaultLanguage` y `UILanguage` |
+| -------------------------------- | ------------ | -------------------------------- |
+| English (United States)          | `en_US`      | `1033`                           |
+| German (Germany)                 | `de_DE`      | `1031`                           |
+| Spanish (Spain)                  | `es_ES`      | `3082`                           |
+| Spanish (Mexico)                 | `es_MX`      | `2058`                           |
+| French (Canada)                  | `fr_CA`      | `3084`                           |
+| French (France)                  | `fr_FR`      | `1036`                           |
+| Indonesian                       | `id_ID`      | `1057`                           |
+| Japanese                         | `ja_JP`      | `1041`                           |
+| Polish                           | `pl_PL`      | `1045`                           |
+| Portuguese (Brazil)              | `pt_BR`      | `1046`                           |
+| Portuguese (Portugal)            | `pt_PT`      | `2070`                           |
+| Russian                          | `ru_RU`      | `1049`                           |
+| Thai                             | `th_TH`      | `1054`                           |
+| Turkish                          | `tr_TR`      | `1055`                           |
+| Chinese (Simplified, China)      | `zh_CN`      | `2052`                           |
+| Chinese (Traditional, Hong Kong) | `zh_HK`      | `3076`                           |
 
-Ejemplo para inglés de Estados Unidos:
+### Para inglés de Estados Unidos:
 
 ```
 [General]
@@ -316,7 +316,34 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-Ejemplo para español de México:
+### Para el Español de España:
+
+```
+[General]
+languages=es_ES
+
+[6.0]
+common\DefaultLanguage=3082
+common\Local\UILanguage=3082
+wpsoffice\Application%20Settings\AppComponentMode=prome_independ
+wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
+```
+
+### Para el Alemán de Alemania:
+
+```
+[General]
+languages=de_DE
+
+[6.0]
+common\DefaultLanguage=1031
+common\Local\UILanguage=1031
+wpsoffice\Application%20Settings\AppComponentMode=prome_independ
+wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
+```
+
+
+### Para español de México:
 
 ```
 [General]
@@ -328,6 +355,163 @@ common\Local\UILanguage=2058
 wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
+
+### Para francés de Canadá:
+
+```
+[General]
+languages=fr_CA
+
+[6.0]
+common\DefaultLanguage=3084
+common\Local\UILanguage=3084
+wpsoffice\Application%20Settings\AppComponentMode=prome_independ
+wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
+```
+
+### Para francés de Francia:
+
+```
+[General]
+languages=fr_FR
+
+[6.0]
+common\DefaultLanguage=1036
+common\Local\UILanguage=1036
+wpsoffice\Application%20Settings\AppComponentMode=prome_independ
+wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
+```
+
+### Para indonesio:
+
+```
+[General]
+languages=id_ID
+
+[6.0]
+common\DefaultLanguage=1057
+common\Local\UILanguage=1057
+wpsoffice\Application%20Settings\AppComponentMode=prome_independ
+wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
+```
+
+### Para japonés:
+
+```
+[General]
+languages=ja_JP
+
+[6.0]
+common\DefaultLanguage=1041
+common\Local\UILanguage=1041
+wpsoffice\Application%20Settings\AppComponentMode=prome_independ
+wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
+```
+
+### Para polaco:
+
+```
+[General]
+languages=pl_PL
+
+[6.0]
+common\DefaultLanguage=1045
+common\Local\UILanguage=1045
+wpsoffice\Application%20Settings\AppComponentMode=prome_independ
+wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
+```
+
+### Para portugués de Brasil:
+
+```
+[General]
+languages=pt_BR
+
+[6.0]
+common\DefaultLanguage=1046
+common\Local\UILanguage=1046
+wpsoffice\Application%20Settings\AppComponentMode=prome_independ
+wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
+```
+
+### Para portugués de Portugal:
+
+```
+[General]
+languages=pt_PT
+
+[6.0]
+common\DefaultLanguage=2070
+common\Local\UILanguage=2070
+wpsoffice\Application%20Settings\AppComponentMode=prome_independ
+wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
+```
+
+### Para ruso:
+
+```
+[General]
+languages=ru_RU
+
+[6.0]
+common\DefaultLanguage=1049
+common\Local\UILanguage=1049
+wpsoffice\Application%20Settings\AppComponentMode=prome_independ
+wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
+```
+
+### Para tailandés:
+
+```
+[General]
+languages=th_TH
+
+[6.0]
+common\DefaultLanguage=1054
+common\Local\UILanguage=1054
+wpsoffice\Application%20Settings\AppComponentMode=prome_independ
+wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
+```
+
+### Para turco:
+
+```
+[General]
+languages=tr_TR
+
+[6.0]
+common\DefaultLanguage=1055
+common\Local\UILanguage=1055
+wpsoffice\Application%20Settings\AppComponentMode=prome_independ
+wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
+```
+
+### Para chino simplificado de China:
+
+```
+[General]
+languages=zh_CN
+
+[6.0]
+common\DefaultLanguage=2052
+common\Local\UILanguage=2052
+wpsoffice\Application%20Settings\AppComponentMode=prome_independ
+wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
+```
+
+### Para chino tradicional de Hong Kong:
+
+```
+[General]
+languages=zh_HK
+
+[6.0]
+common\DefaultLanguage=3076
+common\Local\UILanguage=3076
+wpsoffice\Application%20Settings\AppComponentMode=prome_independ
+wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
+```
+
 
 Guarda el archivo, cierra WPS Office por completo y vuelve a abrirlo. Si el idioma quedó bien configurado, la interfaz abrirá en el idioma elegido.
 
