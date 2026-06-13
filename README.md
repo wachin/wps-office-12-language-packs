@@ -113,7 +113,7 @@ Los tres usan el mismo formato final que los demás diccionarios: `dict.conf`, `
 - Tener **WPS Office 12.x** instalado en Linux.
 - Tener permisos de administrador con `sudo`.
 - Haber abierto WPS Office al menos una vez.
-- Tener creada la carpeta `build/wps-libreoffice-dicts` con los diccionarios convertidos para lo cual puedes descargar este repositorio o clonarlo
+- Tener este repositorio descargado o clonado en tu computadora.
 
 WPS Office suele crear su configuración de usuario después de abrirlo por primera vez. Si no existe este archivo:
 
@@ -123,9 +123,66 @@ WPS Office suele crear su configuración de usuario después de abrirlo por prim
 
 abre WPS Office, ciérralo y continúa con la instalación.
 
+## Descargar o clonar este repositorio
+
+Para instalar las MUI o los diccionarios, primero necesitas tener este proyecto en tu equipo.
+
+### Opción 1: descargar el ZIP
+
+1. Abre esta página:
+
+   [https://github.com/wachin/wps-office-12-language-packs](https://github.com/wachin/wps-office-12-language-packs)
+
+2. Haz clic en el botón verde:
+
+   ```text
+   <> Code
+   ```
+
+3. Haz clic en:
+
+   ```text
+   Download ZIP
+   ```
+
+4. Cuando termine la descarga, descomprime el archivo ZIP.
+5. Abre una terminal y entra a la carpeta descomprimida.
+
+Ejemplo:
+
+```bash
+cd ~/Descargas/wps-office-12-language-packs
+```
+
+### Opción 2: clonar con Git
+
+Si no tienes `git` instalado:
+
+```bash
+sudo apt install git
+```
+
+Luego clona el repositorio:
+
+```bash
+git clone https://github.com/wachin/wps-office-12-language-packs
+```
+
+Entra a la carpeta:
+
+```bash
+cd wps-office-12-language-packs
+```
+
 ## Rutas usadas por WPS Office
 
 En la versión Linux de WPS Office instalada en `/opt`, las rutas principales son:
+
+```text
+/opt/kingsoft/wps-office/office6/mui/
+```
+
+Ahí WPS guarda los archivos MUI de la interfaz.
 
 ```text
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/
@@ -140,6 +197,55 @@ Y para la configuración de usuario:
 ```
 
 Ahí WPS guarda la configuración del usuario.
+
+## Instalar las MUI de la interfaz
+
+Las MUI listas para Linux están en:
+
+```text
+build/wps-mui
+```
+
+Esta carpeta ya fue preparada para evitar duplicados obvios con la instalación Linux de WPS. Por eso no incluye `default`, `en_US`, `ru_RU` ni `zh_CN`, ya que esos idiomas normalmente ya existen en:
+
+```text
+/opt/kingsoft/wps-office/office6/mui/
+```
+
+Desde la raíz de este repositorio, ejecuta:
+
+```bash
+sudo mkdir -p /opt/kingsoft/wps-office/office6/mui
+sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/
+```
+
+Ese comando copia las carpetas de idioma disponibles en `build/wps-mui` a la carpeta real de WPS Office en Linux.
+
+Después de copiar, en `/opt/kingsoft/wps-office/office6/mui/` deberías tener, además de los idiomas originales de Linux, carpetas como estas:
+
+```text
+de_DE
+es_ES
+es_MX
+fr_CA
+fr_FR
+id_ID
+ja_JP
+pl_PL
+pt_BR
+pt_PT
+th_TH
+tr_TR
+zh_HK
+```
+
+También se copia:
+
+```text
+lang_list
+```
+
+Eso ayuda a que WPS pueda mostrar correctamente idiomas adicionales en su lista de selección.
 
 ## Instalar los diccionarios
 
@@ -220,6 +326,8 @@ Si el idioma aparece en la lista, WPS está leyendo correctamente la carpeta ins
 Desde la raíz del repositorio:
 
 ```bash
+sudo mkdir -p /opt/kingsoft/wps-office/office6/mui
+sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/
 sudo mkdir -p /opt/kingsoft/wps-office/office6/dicts/spellcheck
 sudo cp -r build/wps-libreoffice-dicts/* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
 nano ~/.config/Kingsoft/Office.conf
