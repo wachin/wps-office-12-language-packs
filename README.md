@@ -247,7 +247,7 @@ main.aff
 main.dic
 ```
 
-## Activar español en la configuración de WPS
+## Activar un idioma de la interfaz en la configuración de WPS
 
 Si eres un desarrollador edita el archivo de configuración con nano:
 
@@ -267,73 +267,81 @@ y pon en la terminal:
 gedit ~/.config/Kingsoft/Office.conf
 ```
 
-una vez abierto ese archivo selecciona todo el texto que haya allí con "Ctrl + A" y bórralo, y coloca en su lugar el siguiente contenido:
+Una vez abierto ese archivo selecciona todo el texto que haya allí con `Ctrl + A`, bórralo, y coloca en su lugar el contenido correspondiente al idioma que quieres usar.
+
+La estructura siempre es la misma:
 
 ```
 [General]
-languages=es_ES
+languages=CODIGO_DEL_IDIOMA
 
 [6.0]
-common\DefaultLanguage=3082
-common\Local\UILanguage=3082
+common\DefaultLanguage=NUMERO_IDIOMA
+common\Local\UILanguage=NUMERO_IDIOMA
 wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-Guarda el archivo, cierra WPS Office por completo y vuelve a abrirlo, y crea un nuevo archivo y verás que aunque las primeras opciones tienen algo en Chino cuando se cree el archivo nuevo , o cuando abras algun archivo estará en español la interfaz.
+Usa esta tabla para elegir el código y el número correcto:
 
-## Activar español de México,en la configuración de WPS
+| Idioma | `languages=` | `DefaultLanguage` y `UILanguage` |
+| ------ | ------------ | -------------------------------- |
+| English (United States) | `en_US` | `1033` |
+| German (Germany) | `de_DE` | `1031` |
+| Spanish (Spain) | `es_ES` | `3082` |
+| Spanish (Mexico) | `es_MX` | `2058` |
+| French (Canada) | `fr_CA` | `3084` |
+| French (France) | `fr_FR` | `1036` |
+| Indonesian | `id_ID` | `1057` |
+| Japanese | `ja_JP` | `1041` |
+| Polish | `pl_PL` | `1045` |
+| Portuguese (Brazil) | `pt_BR` | `1046` |
+| Portuguese (Portugal) | `pt_PT` | `2070` |
+| Russian | `ru_RU` | `1049` |
+| Thai | `th_TH` | `1054` |
+| Turkish | `tr_TR` | `1055` |
+| Chinese (Simplified, China) | `zh_CN` | `2052` |
+| Chinese (Traditional, Hong Kong) | `zh_HK` | `3076` |
 
-Para español de México, cambia `languages=es_ES` por:
+Ejemplo para inglés de Estados Unidos:
+
+```
+[General]
+languages=en_US
+
+[6.0]
+common\DefaultLanguage=1033
+common\Local\UILanguage=1033
+wpsoffice\Application%20Settings\AppComponentMode=prome_independ
+wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
+```
+
+Ejemplo para español de México:
 
 ```
 [General]
 languages=es_MX
 
 [6.0]
-common\DefaultLanguage=3082
-common\Local\UILanguage=3082
+common\DefaultLanguage=2058
+common\Local\UILanguage=2058
 wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-Guarda el archivo, cierra WPS Office por completo y vuelve a abrirlo.
+Guarda el archivo, cierra WPS Office por completo y vuelve a abrirlo. Si el idioma quedó bien configurado, la interfaz abrirá en el idioma elegido.
 
 ## Activar la corrección ortográfica
 
 Después de instalar los diccionarios:
 
 1. Abre WPS Writer.
-2. Ve a las opciones de idioma o corrección ortográfica.
-3. Selecciona el idioma deseado, por ejemplo `es_ES`, `es_MX` o `es_EC`.
-4. Aplica los cambios y prueba escribiendo una palabra con error.
+2. Ve en la cinta a la que tiene el nombre "Revisar" y allí da clic en el selector "▼" que está a la derecha en "Revisión ortográfica" y da clic en "Establecer idioma".
+3. Selecciona el idioma deseado, por ejemplo `Español (España)`, `Español (Ecuado)` u otro.
+4. Da clic en "Establecer como predeterminado" y prueba escribiendo una palabra con error.
 
 Si el idioma aparece en la lista, WPS está leyendo correctamente la carpeta instalada.
 
-## Resumen rápido
-
-Desde la raíz del repositorio:
-
-```bash
-sudo mkdir -p /opt/kingsoft/wps-office/office6/mui
-sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/
-sudo mkdir -p /opt/kingsoft/wps-office/office6/dicts/spellcheck
-sudo cp -r build/wps-libreoffice-dicts/* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
-nano ~/.config/Kingsoft/Office.conf
-```
-
-Contenido recomendado para español de España:
-
-```
-[General]
-languages=es_ES
-
-[6.0]
-common\DefaultLanguage=3082
-common\Local\UILanguage=3082
-wpsoffice\Application%20Settings\AppComponentMode=prome_independ
-wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
-```
 
 ## Si algo no funciona
 
