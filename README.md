@@ -280,7 +280,7 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-Guarda y cierra Gedit. Luego abre WPS Office y crea un nuevo archivo y verás que aunque las primeras opciones tienen algo en Chino cuando se cree el archivo nuevo , o cuando abras algun archivo estará en español la interfaz.
+Guarda el archivo, cierra WPS Office por completo y vuelve a abrirlo, y crea un nuevo archivo y verás que aunque las primeras opciones tienen algo en Chino cuando se cree el archivo nuevo , o cuando abras algun archivo estará en español la interfaz.
 
 ## Activar español de México,en la configuración de WPS
 
