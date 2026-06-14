@@ -38,7 +38,7 @@ Si estas empezando en Linux, esto te ayudará. En WPS Office la versión 12 desc
 - `~/.config/Kingsoft/Office.conf`
   Aqui WPS guarda la configuracion del usuario.
 
-## Paso 1: instala WPS Office
+## Descarga e instala WPS Office 12 Linux versión China
 
 Descarga el instalador de WPS Office para tu distribucion Linux.
 

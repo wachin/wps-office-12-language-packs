@@ -108,6 +108,41 @@ Además de los diccionarios convertidos desde LibreOffice y los heredados de WPS
 
 Los tres usan el mismo formato final que los demás diccionarios: `dict.conf`, `main.aff` y `main.dic`. Sus `dict.conf` también incluyen nombres localizados para que WPS pueda mostrarlos mejor en distintos idiomas de interfaz.
 
+## Descarga e instala WPS Office 12 Linux versión China
+
+Descarga el instalador de WPS Office para tu distribucion Linux.
+
+Sitio oficial de la página china:
+
+- [https://www.wps.cn](https://www.wps.cn)
+
+allí al dar clic al botón rojo, redirije a:
+
+[https://www.wps.cn/product/wpslinux](https://www.wps.cn/product/wpslinux)
+
+Luego instala el paquete.
+
+### Instalar con clic derecho
+
+Instalación con algún gestor de paquetes deb, das clic derecho en el administrador de archivos:
+
+![](vx_images/08-Instalando-wps-office-12.1.2.25882-amd-deb.png)
+
+### Instalar desde la terminal (Opcional
+
+)
+Si usas Debian, Ubuntu, Linux Mint o similares si desea lo puede hacer también desde la terminal:
+
+```bash
+sudo dpkg -i wps-office*.deb
+```
+
+Si usas Fedora, Red Hat o similares:
+
+```bash
+sudo dnf install wps-office*.rpm
+```
+
 ## Requisitos
 
 - Tener **WPS Office 12.x** instalado en Linux.

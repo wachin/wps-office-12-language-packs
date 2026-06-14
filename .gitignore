@@ -29,7 +29,3 @@ Thumbs.db
 *.bak
 
 # Build outputs
-build/*
-!build/wps-libreoffice-dicts/
-!build/wps-libreoffice-dicts/**
-
