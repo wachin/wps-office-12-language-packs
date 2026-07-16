@@ -12,8 +12,14 @@ https://mirrors.163.com/ubuntukylin/pool/partner/wps-office_12.1.2.23578_amd64.d
 
 Los siguientes tienen problemas:
 
+Funciona la corrección ortográfica en el idioma español sólo con es_ES. Con problema, no corrige las palabras al momento en el idioma inglés pero si se guarda el documento con palabras con faltas ortográficas y luego se lo vuelve a abrir allí si se ven resaltadas las palabras mal escritas
 https://mirrors.163.com/ubuntukylin/pool/partner/wps-office_12.1.0.17881_amd64.deb
+
+Funciona la corrección ortográfica en el idioma español sólo con es_ES. Con problema, no corrige las palabras al momento en el idioma inglés pero si se guarda el documento con palabras con faltas ortográficas y luego se lo vuelve a abrir allí si se ven resaltadas las palabras mal escritas
 https://mirrors.163.com/ubuntukylin/pool/partner/wps-office_12.1.0.17885_amd64.deb
+
+
+
 https://mirrors.163.com/ubuntukylin/pool/partner/wps-office_12.1.0.17900_amd64.deb
 https://mirrors.163.com/ubuntukylin/pool/partner/wps-office_12.1.2.22571_amd64.deb
 https://mirrors.163.com/ubuntukylin/pool/partner/wps-office_12.1.2.23578_amd64.deb
