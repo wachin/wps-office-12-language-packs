@@ -14,7 +14,7 @@ allí al dar clic, redirije a:
 
 Luego instala el paquete.
 
-### Instalar con clic derecho
+### Instalar deb con gestor de instalacion de paquetes deb
 
 Instalación con algún gestor de paquetes deb, das clic derecho en el administrador de archivos:
 
