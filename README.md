@@ -44,7 +44,7 @@ Para continuar con este tutorial necesitas
 - Tener este repositorio descargado o clonado en tu computadora.
 - WPS Office crea su configuración de usuario después de abrirlo por primera vez. Si no existe este archivo `~/.config/Kingsoft/Office.conf` abre WPS Office, ciérralo y continúa con la instalación.
 
-## Descargar o clonar este repositorio
+## Instalar las interfaces de usuario multilenguaje MUI (Interfaz de usuario multilingüe)
 
 Para instalar las MUI (Interfaz de usuario multilingüe), primero necesitas tener este proyecto en tu equipo. A continuación dos maneras de hacerlo, elija sólo una de ellas:
 
@@ -539,12 +539,23 @@ Guarda el archivo, cierra WPS Office por completo y vuelve a abrirlo. Si el idio
 
 Después de instalar los diccionarios:
 
-1. Abre WPS Writer.
-2. Ve en la cinta a la que tiene el nombre "Revisar" y allí da clic en el selector "▼" que está a la derecha en "Revisión ortográfica" y da clic en "Establecer idioma".
-3. Selecciona el idioma deseado, por ejemplo `Español (España)`, `Español (Ecuado)` u otro.
-4. Da clic en "Establecer como predeterminado" y prueba escribiendo una palabra con error.
+Abre WPS Writer. Ve en la cinta (o pestaña) a la que tiene el nombre:
 
-Si el idioma aparece en la lista, WPS está leyendo correctamente la carpeta instalada.
+"Revisar"
+
+y allí en
+
+"Revisión ortográfica ⌵"
+
+darle clic a ese icono "⌵" y clic en el sub-menú:
+
+"Establecer idioma"
+
+y en la ventana que se abrirá por defecto estará entre los diccionarios disponibles "Español (España)"
+
+y clic en "Establecer predeterminado" (aunque este ya estaba seleccionado por defecto por causa de que ya estaba instalado el MUI "es_ES")
+
+y escribir algo mal escrito y se subrayará que está mal escrito y al darle clic derecho aparecerán las sugerencias de palabras para corregir
 
 
 ## Si algo no funciona
@@ -558,71 +569,6 @@ Revisa estos puntos:
 5. Cerraste y volviste a abrir WPS Office después de copiar los diccionarios.
 6. El idioma elegido existe en la carpeta de diccionarios instalada.
 
-## Herramienta de conversión LibreOffice a WPS
-
-Este repositorio incluye una herramienta gráfica en PyQt6 para regenerar los diccionarios cuando actualices el submódulo de LibreOffice:
-
-```
-tools/wps_libreoffice_dict_converter.py
-```
-
-La herramienta toma diccionarios desde:
-
-```
-third-party/libreoffice-dictionaries-collection/dicts
-```
-
-y genera el formato de WPS en:
-
-```
-build/wps-libreoffice-dicts
-```
-
-### Instalar PyQt6
-
-En Debian, Ubuntu, Linux Mint o similares:
-
-```bash
-sudo apt install python3-pyqt6
-```
-
-Si prefieres usar `pip`:
-
-```bash
-python3 -m pip install PyQt6
-```
-
-### Ejecutar la herramienta
-
-Desde la raíz del repositorio:
-
-```bash
-python3 tools/wps_libreoffice_dict_converter.py
-```
-
-La ventana muestra:
-
-- A la izquierda: los archivos y carpetas fuente de LibreOffice.
-- A la derecha: los destinos que se crearán o actualizarán en `build/wps-libreoffice-dicts`.
-- Abajo: errores bloqueantes, advertencias y resumen del análisis.
-
-Primero pulsa **Analyze**. Si no hay errores bloqueantes, el botón **Convert** queda habilitado.
-
-La herramienta verifica antes de escribir:
-
-- Que existan los pares `.aff` y `.dic`.
-- Que cada destino tenga o pueda generar `dict.conf`.
-- Que los nombres especiales estén mapeados correctamente, por ejemplo `de_DE_frami`, `fr`, `ca`, `lt`.
-- Que los respaldos antiguos de WPS estén disponibles para idiomas sin equivalente en LibreOffice.
-- Que no haya diccionarios nuevos de LibreOffice sin revisar.
-
-Al convertir, también actualiza:
-
-```
-build/wps-libreoffice-dicts/BUILD_SOURCE_MAP.txt
-```
-
-Ese archivo indica de dónde salió cada diccionario.
 
 ## Referencia: idiomas descargados por WPS en Windows
 
