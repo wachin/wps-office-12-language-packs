@@ -2,13 +2,13 @@
 
 ## Descarga WPS Office 12 Linux versión China
 
-Descarga el instalador de WPS Office para tu distribucion Linux.
+Descarga el instalador de WPS Office para tu distribucion Linux basada en paqueteía deb o RPM.
 
 Sitio oficial de la página china:
 
 - [https://www.wps.cn](https://www.wps.cn)
 
-allí al dar clic al botón rojo, redirije a:
+allí al dar clic, redirije a:
 
 [https://www.wps.cn/product/wpslinux](https://www.wps.cn/product/wpslinux)
 
@@ -20,9 +20,8 @@ Instalación con algún gestor de paquetes deb, das clic derecho en el administr
 
 ![](vx_images/08-Instalando-wps-office-12.1.2.25882-amd-deb.png)
 
-### Instalar desde la terminal (Opcional
+### Instalar desde la terminal (Opcional)
 
-)
 Si usas Debian, Ubuntu, Linux Mint o similares si desea lo puede hacer también desde la terminal:
 
 ```bash
@@ -37,24 +36,19 @@ sudo dnf install wps-office*.rpm
 
 ## Requisitos
 
-- Tener **WPS Office 12.x** instalado en Linux.
+Para continuar con este tutorial necesitas
+
+- Tener **WPS Office 12.x** instalado en Linux según se describe arriba.
 - Tener permisos de administrador con `sudo`.
 - Haber abierto WPS Office al menos una vez.
 - Tener este repositorio descargado o clonado en tu computadora.
-
-WPS Office suele crear su configuración de usuario después de abrirlo por primera vez. Si no existe este archivo:
-
-```
-~/.config/Kingsoft/Office.conf
-```
-
-abre WPS Office, ciérralo y continúa con la instalación.
+- WPS Office crea su configuración de usuario después de abrirlo por primera vez. Si no existe este archivo `~/.config/Kingsoft/Office.conf` abre WPS Office, ciérralo y continúa con la instalación.
 
 ## Descargar o clonar este repositorio
 
 Para instalar las MUI (Interfaz de usuario multilingüe), primero necesitas tener este proyecto en tu equipo. A continuación dos maneras de hacerlo, elija sólo una de ellas:
 
-### Opción 1: descargar el ZIP
+### Opción 1: descargar el ZIP e instalar las MUI
 
 1. Abre esta página:
 
@@ -62,26 +56,18 @@ Para instalar las MUI (Interfaz de usuario multilingüe), primero necesitas tene
 
 2. Haz clic en el botón verde:
 
-   ```
-   <> Code
-   ```
+```
+<> Code
+```
 
 3. Haz clic en:
 
-   ```
-   Download ZIP
-   ```
-
-4. Cuando termine la descarga, descomprime el archivo ZIP.
-5. Abre una terminal y entra a la carpeta descomprimida.
-
-Ejemplo:
-
-```bash
-cd ~/Descargas/wps-office-12-language-packs
+```
+Download ZIP
 ```
 
-ejecuta:
+4. Cuando termine la descarga, descomprime el archivo ZIP con clic dereho "Extraer aquí"
+5. Abre una terminal allí y ejecuta:
 
 ```bash
 sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/
@@ -89,7 +75,7 @@ sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/
 
 con este comando quedarán instaladas las MUI (Interfaz de usuario multilingüe)
 
-### Opción 2: clonar con Git
+### Opción 2: clonar con Git e instalar las MUI
 
 Si no tienes `git` instalado, instálalo:
 
@@ -119,9 +105,7 @@ con este comando quedarán instaladas las MUI (Interfaz de usuario multilingüe)
 
 ## Verificar la instalación
 
-Ese comando copia las carpetas de idioma disponibles en `build/wps-mui` a la carpeta real de WPS Office en Linux.
-
-Después de copiar, en `/opt/kingsoft/wps-office/office6/mui/` deberías tener, además de los idiomas originales de Linux, carpetas como estas:
+Ese comando copia las carpetas de idioma disponibles en `sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/` a la carpeta real de WPS Office en Linux. En `/opt/kingsoft/wps-office/office6/mui/` deberías tener, además de los idiomas originales de Linux, carpetas como estas, revisa desde tu administrador de archivos:
 
 ```
 de_DE
@@ -145,9 +129,12 @@ También se copia:
 lang_list
 ```
 
-Eso ayuda a que WPS pueda mostrar correctamente idiomas adicionales en su lista de selección.
+Es una lista de selección. 
 
-Este repositorio prepara diccionarios Hunspell para que **WPS Office 12.x** pueda usarlos en Linux.
+
+## Diccionarios disponibles
+
+Este repositorio además prepara diccionarios Hunspell para que **WPS Office 12.x** pueda usarlos en Linux.
 
 Los diccionarios listos para instalar están en:
 
@@ -164,8 +151,6 @@ main.dic
 ```
 
 Los archivos `main.aff` y `main.dic` vienen de la colección de diccionarios de LibreOffice. Los `dict.conf` se reutilizan desde los diccionarios antiguos de WPS Office cuando existen, y se generan para las variantes nuevas.
-
-## Diccionarios disponibles
 
 Actualmente `build/wps-libreoffice-dicts` contiene 71 diccionarios listos para WPS Office. Cada entrada corresponde a una carpeta que puede copiarse directamente a `/opt/kingsoft/wps-office/office6/dicts/spellcheck/`.
 
