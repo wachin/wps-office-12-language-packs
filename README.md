@@ -561,6 +561,8 @@ Español - Uruguay
 
 Esta es la lista observada en el Login Manager de MX Linux 23:
 
+También está disponible como tabla con locales en [`locales-mx-linux-23.md`](locales-mx-linux-23.md).
+
 ```
 Árábe - Egipto
 Bieloruso - Bielorrusia
