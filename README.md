@@ -561,9 +561,11 @@ Ahora, en la esquina inferior izquierda de la ventana observe la barra de estado
 
 Haga clic sobre ese indicador y cambiará a `"Activado"`
 
-Además si da clic al icono `"⌵"` estará ésta y otras opciones en el menú desplegable.
+Además si da clic al icono `"⌵"` estará ésta y otras opciones en un menú desplegable.
 
-Una vez activada, WPS Office comenzará a revisar automáticamente la ortografía del documento. A partir de ese momento las palabras mal escritas aparecerán subrayadas, al hacer clic derecho sobre una palabra subrayada se mostrarán las sugerencias de corrección, el corrector permanecerá activo hasta que el usuario vuelva a deshabilitar esta opción
+Una vez activada, WPS Office comenzará a revisar automáticamente la ortografía del documento. A partir de ese momento las palabras mal escritas aparecerán subrayadas, al hacer clic derecho sobre una palabra subrayada se mostrarán las sugerencias de corrección, el corrector permanecerá activo hasta que el usuario vuelva a deshabilitar esta opción:
+
+![](vx_images/20260716.1-FrasesRichardStallman-ezgif.com.gif)
 
 
 ## Si algo no funciona
