@@ -14,15 +14,15 @@ allí al dar clic, redirije a:
 
 Luego instala el paquete.
 
-### Instalar deb con gestor de instalacion de paquetes deb
+### Instalar deb con un gestor de instalacion de paquetes deb
 
-Instalación con algún gestor de paquetes deb, das clic derecho en el administrador de archivos:
+Instalación con algún gestor de paquetes deb, en los Sistemas Operativos Linux debería estar instalado alguno, das clic derecho en el administrador de archivos e instalas con él:
 
 ![](vx_images/08-Instalando-wps-office-12.1.2.25882-amd-deb.png)
 
 ### Instalar desde la terminal (Opcional)
 
-Si usas Debian, Ubuntu, Linux Mint o similares si desea lo puede hacer también desde la terminal:
+Si usas Debian, Ubuntu, Linux Mint, etc, etc, si desea lo puede hacer también desde la terminal:
 
 ```bash
 sudo dpkg -i wps-office*.deb
@@ -39,14 +39,13 @@ sudo dnf install wps-office*.rpm
 Para continuar con este tutorial necesitas
 
 - Tener **WPS Office 12.x** instalado en Linux según se describe arriba.
-- Tener permisos de administrador con `sudo`.
-- Haber abierto WPS Office al menos una vez.
+- Tener permisos de administrador con `sudo` o equivalente
+- Haber abierto WPS Office al menos una vez (WPS Office crea su configuración de usuario después de abrirlo por primera vez. Si no existe este archivo `~/.config/Kingsoft/Office.conf` abre WPS Office, ciérralo y continúa con la instalación.)
 - Tener este repositorio descargado o clonado en tu computadora.
-- WPS Office crea su configuración de usuario después de abrirlo por primera vez. Si no existe este archivo `~/.config/Kingsoft/Office.conf` abre WPS Office, ciérralo y continúa con la instalación.
 
 ## Instalar las interfaces de usuario multilenguaje MUI (Interfaz de usuario multilingüe)
 
-Para instalar las MUI (Interfaz de usuario multilingüe), primero necesitas tener este proyecto en tu equipo. A continuación dos maneras de hacerlo, elija sólo una de ellas:
+Para instalar las MUI (Interfaz de usuario multilingüe), necesitas tener este proyecto en tu equipo. A continuación **dos** maneras de hacerlo, elija sólo **una** de ellas:
 
 ### Opción 1: descargar el ZIP e instalar las MUI
 
@@ -57,7 +56,7 @@ Para instalar las MUI (Interfaz de usuario multilingüe), primero necesitas tene
 2. Haz clic en el botón verde:
 
 ```
-<> Code
+<> Code ▼
 ```
 
 3. Haz clic en:
