@@ -15,7 +15,7 @@ third-party/libreoffice-dictionaries-collection/dicts
 y genera el formato de WPS en:
 
 ```
-build/wps-libreoffice-dicts
+wps-libreoffice-dicts-experimental
 ```
 
 ### Instalar PyQt6
@@ -43,7 +43,7 @@ python3 tools/wps_libreoffice_dict_converter.py
 La ventana muestra:
 
 - A la izquierda: los archivos y carpetas fuente de LibreOffice.
-- A la derecha: los destinos que se crearán o actualizarán en `build/wps-libreoffice-dicts`.
+- A la derecha: los destinos que se crearán o actualizarán en `wps-libreoffice-dicts-experimental`.
 - Abajo: errores bloqueantes, advertencias y resumen del análisis.
 
 Primero pulsa **Analyze**. Si no hay errores bloqueantes, el botón **Convert** queda habilitado.
@@ -59,7 +59,7 @@ La herramienta verifica antes de escribir:
 Al convertir, también actualiza:
 
 ```
-build/wps-libreoffice-dicts/BUILD_SOURCE_MAP.txt
+wps-libreoffice-dicts-experimental/BUILD_SOURCE_MAP.txt
 ```
 
 Ese archivo indica de dónde salió cada diccionario.

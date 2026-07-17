@@ -7,12 +7,12 @@ Este archivo resume el estado actual del proyecto y separa lo que ya se complet�
 - [x] Identificar el formato de diccionario que usa WPS Office: `dict.conf`, `main.aff` y `main.dic`.
 - [x] Confirmar que `dict.conf` puede reutilizarse desde los diccionarios antiguos de WPS Office.
 - [x] Confirmar que los archivos `.aff` y `.dic` de LibreOffice pueden renombrarse a `main.aff` y `main.dic` para WPS.
-- [x] Crear la carpeta de salida `build/wps-libreoffice-dicts`.
-- [x] Generar una colección funcional de diccionarios WPS en `build/wps-libreoffice-dicts`.
+- [x] Crear la carpeta de salida `wps-libreoffice-dicts-experimental`.
+- [x] Generar una colección experimental de diccionarios WPS en `wps-libreoffice-dicts-experimental`.
 - [x] Incluir 71 carpetas de idiomas listas para instalar.
 - [x] Mantener los casos especiales de nombres de LibreOffice, por ejemplo `de_DE_frami`, `fr`, `ca`, `gl_ES`, `lt`.
 - [x] Mantener respaldo desde WPS antiguo para idiomas sin equivalente claro en LibreOffice.
-- [x] Documentar el origen de cada diccionario en `build/wps-libreoffice-dicts/BUILD_SOURCE_MAP.txt`.
+- [x] Documentar el origen de cada diccionario en `wps-libreoffice-dicts-experimental/BUILD_SOURCE_MAP.txt`.
 - [ ] Verificar en WPS Linux, idioma por idioma, que todos los 71 diccionarios aparezcan correctamente en la interfaz.
 - [ ] Probar si algunos diccionarios requieren ajustes adicionales por compatibilidad Hunspell específica de WPS.
 
@@ -23,7 +23,7 @@ Este archivo resume el estado actual del proyecto y separa lo que ya se complet�
 - [x] Añadir manualmente los diccionarios `hr_HR`, `km_KH` y `qu_EC` desde otras fuentes.
 - [x] Enriquecer los `dict.conf` nuevos con nombres localizados adicionales: `zh_CN`, `en_US`, `es_ES`, `zh_TW`, `zh_HK`, `zh_MO`, `zh_Hant_CN`.
 - [x] Enriquecer también los `dict.conf` manuales de `hr_HR`, `km_KH` y `qu_EC`.
-- [ ] Revisar si faltan más idiomas útiles en LibreOffice que todavía no estén empaquetados en `build/wps-libreoffice-dicts`.
+- [ ] Revisar si faltan más idiomas útiles en LibreOffice que todavía no estén empaquetados en `wps-libreoffice-dicts-experimental`.
 - [ ] Revisar si conviene añadir más diccionarios manuales desde otras fuentes externas.
 - [ ] Corregir nombres dudosos heredados en la documentación, por ejemplo descripciones que parezcan mal traducidas o inconsistentes.
 
@@ -31,7 +31,7 @@ Este archivo resume el estado actual del proyecto y separa lo que ya se complet�
 
 - [x] Crear la herramienta gráfica PyQt6 `tools/wps_libreoffice_dict_converter.py`.
 - [x] Hacer que la herramienta lea los diccionarios desde `third-party/libreoffice-dictionaries-collection/dicts`.
-- [x] Hacer que la herramienta genere la salida WPS en `build/wps-libreoffice-dicts`.
+- [x] Hacer que la herramienta genere la salida WPS en `wps-libreoffice-dicts-experimental`.
 - [x] Implementar análisis previo antes de convertir.
 - [x] Mostrar en la interfaz las fuentes de LibreOffice y los destinos WPS en dos paneles.
 - [x] Bloquear la conversión cuando existan errores previos.
@@ -46,7 +46,7 @@ Este archivo resume el estado actual del proyecto y separa lo que ya se complet�
 
 ## Documentación
 
-- [x] Actualizar `README.md` para que la instalación de diccionarios use `build/wps-libreoffice-dicts`.
+- [x] Actualizar `README.md` para que la instalación de diccionarios use `build/dicts-active`.
 - [x] Documentar el contenido disponible de diccionarios en una tabla dentro del README.
 - [x] Documentar por separado los tres diccionarios añadidos desde otras fuentes.
 - [x] Documentar cómo usar la herramienta PyQt6.
@@ -75,9 +75,8 @@ Este archivo resume el estado actual del proyecto y separa lo que ya se complet�
 
 ## Validación del proyecto
 
-- [x] Confirmar que cada carpeta de `build/wps-libreoffice-dicts` contiene `dict.conf`, `main.aff` y `main.dic`.
+- [x] Confirmar que cada carpeta de `wps-libreoffice-dicts-experimental` contiene `dict.conf`, `main.aff` y `main.dic`.
 - [x] Verificar que el script Python compila con `python3 -m py_compile`.
 - [ ] Ejecutar pruebas funcionales completas dentro de WPS Office Linux con varios idiomas reales.
 - [ ] Validar que el README refleje exactamente el flujo final del proyecto cuando la parte MUI esté lista.
 - [ ] Definir una versión inicial publicable del proyecto cuando estén cubiertos diccionarios y MUI.
-

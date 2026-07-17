@@ -35,7 +35,7 @@ from PyQt6.QtWidgets import (
 ROOT = Path(__file__).resolve().parents[1]
 LO_ROOT = ROOT / "third-party/libreoffice-dictionaries-collection/dicts"
 WPS_OLD_ROOT = ROOT / "third-party/wps-office-11.2.0.9255-dicts/dicts"
-BUILD_ROOT = ROOT / "build/wps-libreoffice-dicts"
+BUILD_ROOT = ROOT / "wps-libreoffice-dicts-experimental"
 REPORT_PATH = BUILD_ROOT / "BUILD_SOURCE_MAP.txt"
 
 
