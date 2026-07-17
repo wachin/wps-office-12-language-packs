@@ -541,21 +541,29 @@ Después de instalar los diccionarios:
 
 Abre WPS Writer. Ve en la cinta (o pestaña) a la que tiene el nombre:
 
-"Revisar"
+`"Revisar"`
 
 y allí en
 
-"Revisión ortográfica ⌵"
+`"Revisión ortográfica ⌵"`
 
-darle clic a ese icono "⌵" y clic en el sub-menú:
+darle clic a ese icono `"⌵"` y clic en el sub-menú:
 
-"Establecer idioma"
+`"Establecer idioma"`
 
-y en la ventana que se abrirá por defecto estará entre los diccionarios disponibles "Español (España)"
+y en la ventana que se abrirá por defecto estará entre los diccionarios disponibles `"Español (España)"`
 
-y clic en "Establecer predeterminado" (aunque este ya estaba seleccionado por defecto por causa de que ya estaba instalado el MUI "es_ES")
+y clic en `"Establecer predeterminado"` (aunque este ya estaba seleccionado por defecto por causa de que ya estaba instalado el MUI "es_ES")
 
-y escribir algo mal escrito y se subrayará que está mal escrito y al darle clic derecho aparecerán las sugerencias de palabras para corregir
+Ahora, en la esquina inferior izquierda de la ventana observe la barra de estado, allí aparecerá un indicador similar a:
+
+`Revisión ortográfica: Desactivado`
+
+Haga clic sobre ese indicador y cambiará a `"Activado"`
+
+Además si da clic al icono `"⌵"` estará ésta y otras opciones en el menú desplegable.
+
+Una vez activada, WPS Office comenzará a revisar automáticamente la ortografía del documento. A partir de ese momento las palabras mal escritas aparecerán subrayadas, al hacer clic derecho sobre una palabra subrayada se mostrarán las sugerencias de corrección, el corrector permanecerá activo hasta que el usuario vuelva a deshabilitar esta opción
 
 
 ## Si algo no funciona
