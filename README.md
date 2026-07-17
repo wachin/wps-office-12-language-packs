@@ -503,19 +503,44 @@ Por eso algunos diccionarios aparecen en la ventana de `"Establecer idioma"`, pe
 
 Estas son las pruebas realizadas hasta ahora:
 
-| Corrector | Configuración regional elegida en el Login Manager | MUI usado en WPS | Diccionario instalado | Estado |
-| --------- | --------------------------------------------------- | ---------------- | ---------------------- | ------ |
-| Inglés | `American English - Estados Unidos` | `en_US` | `en_US` | Funciona |
-| Inglés | `Inglés - Irlanda` | `en_US` | `en_US` | Funciona |
-| Inglés | `British English - Reino Unido` | `en_US` | `en_US` | Funciona |
-| Inglés | `Inglés - Nueva Zelanda` | `en_US` | `en_US` | No funciona |
-| Español | `Español - Ecuador` | `es_ES` | `es_ES` | Funciona |
-| Español | `Español - Venezuela` | `es_ES` | `es_ES` | Funciona |
-| Español | `Mexican Spanish - México` | `es_ES` | `es_ES` | Funciona |
-| Español | `Español - Perú` | `es_ES` | `es_ES` | Funciona |
-| Español México | `Mexican Spanish - México` | `es_MX` | `es_MX` | No funciona |
-| Alemán | `Alemán - Alemania` | `de_DE` | `de_DE` | Funciona |
-| Francés | `Francés - Francia` | `fr_FR` | `fr_FR` | Funciona |
+|   Corrector    | Configuración regional elegida en el Login Manager | Locale  | MUI usado en WPS | Diccionario instalado |   Estado    |
+| -------------- | -------------------------------------------------- | ------- | ---------------- | --------------------- | ----------- |
+| Inglés         | `American English - Estados Unidos`                | `en_US` | `en_US`          | `en_US`               | Funciona    |
+| Inglés         | `Inglés - Irlanda`                                 | `en_IE` | `en_US`          | `en_US`               | Funciona    |
+| Inglés         | `British English - Reino Unido`                    | `en_GB` | `en_US`          | `en_US`               | Funciona    |
+| Inglés         | `Inglés - Nueva Zelanda`                           | `en_NZ` | `en_US`          | `en_US`               | No funciona |
+| Español        | `Español - Ecuador`                                | `es_EC` | `es_ES`          | `es_ES`               | Funciona    |
+| Español        | `Español - Venezuela`                              | `es_VE` | `es_ES`          | `es_ES`               | Funciona    |
+| Español        | `Mexican Spanish - México`                         | `es_MX` | `es_ES`          | `es_ES`               | Funciona    |
+| Español        | `Español - Perú`                                   | `es_PE` | `es_ES`          | `es_ES`               | Funciona    |
+| Español México | `Mexican Spanish - México`                         | `es_MX` | `es_MX`          | `es_MX`               | No funciona |
+| Alemán         | `Alemán - Alemania`                                | `de_DE` | `de_DE`          | `de_DE`               | Funciona    |
+| Francés        | `Francés - Francia`                                | `fr_FR` | `fr_FR`          | `fr_FR`               | Funciona    |
+
+En MX Linux 23 el locale puede verse en el Login Manager: al seleccionar un idioma de la lista, el Login Manager muestra el código del locale. Por ejemplo, si eliges con clic:
+
+```
+Mexican Spanish - México
+```
+
+aparecerá:
+
+```
+es_MX
+```
+
+Si ya entraste a la sesión y quieres ver cuál locale está usando tu sistema, abre una terminal y ejecuta:
+
+```bash
+echo $LANG
+```
+
+Ejemplo:
+
+```bash
+$ echo $LANG
+es_MX.UTF-8
+```
 
 ### Configuraciones regionales de español que faltan por probar
 
