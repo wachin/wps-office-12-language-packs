@@ -516,6 +516,7 @@ Estas son las pruebas realizadas hasta ahora:
 | Español México | `Mexican Spanish - México`                         | `es_MX` | `es_MX`          | `es_MX`               | No funciona |
 | Alemán         | `Alemán - Alemania`                                | `de_DE` | `de_DE`          | `de_DE`               | Funciona    |
 | Francés        | `Francés - Francia`                                | `fr_FR` | `fr_FR`          | `fr_FR`               | Funciona    |
+| Francés        | `Canadian French - Canadá`                         | `fr_CA` | `fr_CA`          | `fr_FR`               | Funciona    |
 
 En MX Linux 23 el locale puede verse en el Login Manager: al seleccionar un idioma de la lista, el Login Manager muestra el código del locale. Por ejemplo, si eliges con clic:
 
