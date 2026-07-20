@@ -262,11 +262,11 @@ Estas tienen MUI instalado, pero falta el diccionario de corrección ortográfic
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/
 ```
 
-| MUI instalado | Locale del Login Manager | Diccionario faltante |
-| ------------- | ------------------------ | -------------------- |
-| `ja_JP` | `ja_JP` | `ja_JP` |
-| `zh_CN` | `zh_CN` | `zh_CN` |
-| `zh_HK` | no aparece como locale directo; el Login Manager muestra `zh_TW` | `zh_HK` o `zh_TW` |
-| `th_TH` | no aparece en `locales-mx-linux-23.md` | `th_TH` |
+| MUI instalado |                     Locale del Login Manager                     | Diccionario faltante |
+| ------------- | ---------------------------------------------------------------- | -------------------- |
+| `ja_JP`       | `ja_JP`                                                          | `ja_JP`              |
+| `zh_CN`       | `zh_CN`                                                          | `zh_CN`              |
+| `zh_HK`       | no aparece como locale directo; el Login Manager muestra `zh_TW` | `zh_HK` o `zh_TW`    |
+| `th_TH`       | no aparece en `locales-mx-linux-23.md`                           | `th_TH`              |
 
 También está instalado el MUI y diccionario `id_ID`, pero `id_ID` no aparece en la lista actual del Login Manager de MX Linux 23. Si logras iniciar una sesión con `id_ID.UTF-8`, sí conviene probarlo.

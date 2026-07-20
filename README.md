@@ -171,7 +171,39 @@ main.aff
 main.dic
 ```
 
-Los archivos `main.aff` y `main.dic` vienen de la colección de diccionarios de LibreOffice. Los `dict.conf` se reutilizan desde los diccionarios antiguos de WPS Office cuando existen, y se generan para las variantes nuevas.
+Los archivos `main.aff` y `main.dic` vienen principalmente de la colección de diccionarios de LibreOffice:
+
+```
+third-party/libreoffice-dictionaries-collection/dicts/
+```
+
+Repositorio de origen:
+
+[https://github.com/wachin/libreoffice-dictionaries-collection](https://github.com/wachin/libreoffice-dictionaries-collection)
+
+Los `dict.conf` se reutilizan desde los diccionarios antiguos de WPS Office cuando existen, y se generan para las variantes nuevas.
+
+Excepción importante: el diccionario activo `pl_PL` viene de los diccionarios antiguos de WPS Office 11.2.0.9255:
+
+```
+third-party/wps-office-11.2.0.9255-dicts/dicts/pl_PL/
+```
+
+Repositorio de origen:
+
+[https://github.com/wachin/wps-office-11.2.0.9255-dicts](https://github.com/wachin/wps-office-11.2.0.9255-dicts)
+
+Se usa ese `pl_PL` porque el diccionario polaco convertido desde LibreOffice no funcionó bien en WPS Office 12. En su archivo `main.aff` se detectó:
+
+```
+SET ISO8859-2
+```
+
+En cambio, el diccionario polaco antiguo de WPS está en UTF-8 y su `main.aff` contiene:
+
+```
+SET UTF-8
+```
 
 Los diccionarios activos actualmente son:
 
@@ -517,6 +549,9 @@ Estas son las pruebas realizadas hasta ahora:
 | Alemán         | `Alemán - Alemania`                                | `de_DE` | `de_DE`          | `de_DE`               | Funciona    |
 | Francés        | `Francés - Francia`                                | `fr_FR` | `fr_FR`          | `fr_FR`               | Funciona    |
 | Francés        | `Canadian French - Canadá`                         | `fr_CA` | `fr_CA`          | `fr_FR`               | Funciona    |
+| Polaco         | `Polaco - Polonia`                                 | `pl_PL` | `pl_PL`          | `pl_PL` UTF-8         | Funciona    |
+
+Nota sobre `pl_PL`: después de reemplazar el diccionario por la versión UTF-8 tomada desde los diccionarios antiguos de WPS Office 11.2.0.9255, fue necesario seleccionarlo manualmente en `"Review"` > `"Spell Check ⌵"` > `"Set language"` > `"Polski"`. Tras seleccionarlo, la corrección ortográfica funcionó. El diccionario polaco convertido desde LibreOffice no funcionó bien porque estaba en `ISO8859-2`, tal como se observó en su archivo `main.aff`.
 
 En MX Linux 23 el locale puede verse en el Login Manager: al seleccionar un idioma de la lista, el Login Manager muestra el código del locale. Por ejemplo, si eliges con clic:
 
