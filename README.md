@@ -537,19 +537,21 @@ Estas son las pruebas realizadas hasta ahora:
 
 |   Corrector    | Configuración regional elegida en el Login Manager | Locale  | MUI usado en WPS | Diccionario instalado |   Estado    |
 | -------------- | -------------------------------------------------- | ------- | ---------------- | --------------------- | ----------- |
-| Inglés         | `American English - Estados Unidos`                | `en_US` | `en_US`          | `en_US`               | Funciona    |
-| Inglés         | `Inglés - Irlanda`                                 | `en_IE` | `en_US`          | `en_US`               | Funciona    |
-| Inglés         | `British English - Reino Unido`                    | `en_GB` | `en_US`          | `en_US`               | Funciona    |
-| Inglés         | `Inglés - Nueva Zelanda`                           | `en_NZ` | `en_US`          | `en_US`               | No funciona |
-| Español        | `Español - Ecuador`                                | `es_EC` | `es_ES`          | `es_ES`               | Funciona    |
-| Español        | `Español - Venezuela`                              | `es_VE` | `es_ES`          | `es_ES`               | Funciona    |
-| Español        | `Mexican Spanish - México`                         | `es_MX` | `es_ES`          | `es_ES`               | Funciona    |
-| Español        | `Español - Perú`                                   | `es_PE` | `es_ES`          | `es_ES`               | Funciona    |
-| Español México | `Mexican Spanish - México`                         | `es_MX` | `es_MX`          | `es_MX`               | No funciona |
-| Alemán         | `Alemán - Alemania`                                | `de_DE` | `de_DE`          | `de_DE`               | Funciona    |
-| Francés        | `Francés - Francia`                                | `fr_FR` | `fr_FR`          | `fr_FR`               | Funciona    |
-| Francés        | `Canadian French - Canadá`                         | `fr_CA` | `fr_CA`          | `fr_FR`               | Funciona    |
+| Inglés         | `American English - Estados Unidos`                | `en_US` | `en_US`          | `en_US` UTF-8         | Funciona    |
+| Inglés         | `Inglés - Irlanda`                                 | `en_IE` | `en_US`          | `en_US` UTF-8         | Funciona    |
+| Inglés         | `British English - Reino Unido`                    | `en_GB` | `en_US`          | `en_US` UTF-8         | Funciona    |
+| Inglés         | `Inglés - Nueva Zelanda`                           | `en_NZ` | `en_US`          | `en_US` UTF-8         | No funciona |
+| Español        | `Español - Ecuador`                                | `es_EC` | `es_ES`          | `es_ES` UTF-8         | Funciona    |
+| Español        | `Español - Venezuela`                              | `es_VE` | `es_ES`          | `es_ES` UTF-8         | Funciona    |
+| Español        | `Mexican Spanish - México`                         | `es_MX` | `es_ES`          | `es_ES` UTF-8         | Funciona    |
+| Español        | `Español - Perú`                                   | `es_PE` | `es_ES`          | `es_ES` UTF-8         | Funciona    |
+| Español México | `Mexican Spanish - México`                         | `es_MX` | `es_MX`          | `es_MX` UTF-8         | No funciona |
+| Alemán         | `Alemán - Alemania`                                | `de_DE` | `de_DE`          | `de_DE` ISO8859-1     | Funciona    |
+| Francés        | `Francés - Francia`                                | `fr_FR` | `fr_FR`          | `fr_FR` UTF-8         | Funciona    |
+| Francés        | `Canadian French - Canadá`                         | `fr_CA` | `fr_CA`          | `fr_FR` UTF-8         | Funciona    |
 | Polaco         | `Polaco - Polonia`                                 | `pl_PL` | `pl_PL`          | `pl_PL` UTF-8         | Funciona    |
+
+La codificación indicada en la columna `Diccionario instalado` se toma de la línea `SET` del archivo `main.aff` de cada diccionario.
 
 Nota sobre `pl_PL`: después de reemplazar el diccionario por la versión UTF-8 tomada desde los diccionarios antiguos de WPS Office 11.2.0.9255, fue necesario seleccionarlo manualmente en `"Review"` > `"Spell Check ⌵"` > `"Set language"` > `"Polski"`. Tras seleccionarlo, la corrección ortográfica funcionó. El diccionario polaco convertido desde LibreOffice no funcionó bien porque estaba en `ISO8859-2`, tal como se observó en su archivo `main.aff`.
 
