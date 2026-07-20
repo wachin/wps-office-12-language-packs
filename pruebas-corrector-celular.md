@@ -94,7 +94,13 @@ entonces la corrección ortográfica para palabras mal escritas en Portugués de
 
 ```
 [ ] Funciona
-[ ] No funciona
+[x] No funciona
+```
+
+Nota de prueba: con el mismo MUI `pt_PT` y locale `pt_PT.UTF-8`, WPS Office 12 sí corrige si se usa el diccionario `pt_BR` en:
+
+```
+/opt/kingsoft/wps-office/office6/dicts/spellcheck/pt_BR/
 ```
 
 ### Ruso

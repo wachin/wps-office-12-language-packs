@@ -219,6 +219,8 @@ Los diccionarios activos actualmente son:
 | `ru_RU` | Russian (Russia)    |
 | `tr_TR` | Turkish (Turkey)    |
 
+Nota sobre `pt_PT`: en MX Linux 23 con locale `pt_PT.UTF-8`, MUI `pt_PT` y diccionario instalado como `/opt/kingsoft/wps-office/office6/dicts/spellcheck/pt_PT/`, WPS Office 12 no activa la corrección ortográfica para portugués de Portugal en las pruebas actuales. En la misma instalación, la corrección sí funciona usando el diccionario `pt_BR`.
+
 
 ## Instalar los diccionarios
 
