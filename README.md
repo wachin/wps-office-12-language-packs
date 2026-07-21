@@ -896,6 +896,143 @@ En esta prueba funcionó con:
 
 
 
+## Cómo hacer funcionar el corrector ortográfico en polaco
+
+Para polaco, cierra sesión y en el Login Manager elige:
+
+```
+Polaco - Polonia
+```
+
+Después configura `Office.conf` así:
+
+```
+[General]
+languages=pl_PL
+
+[6.0]
+common\DefaultLanguage=1045
+common\Local\UILanguage=1045
+wpsoffice\Application%20Settings\AppComponentMode=prome_independ
+wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
+```
+
+Y la activacion semejante a como se hace con el diccionario en ingles. En la ventana de idioma de corrección ortográfica debe aparecer `"Polski"`.
+
+En esta prueba funcionó con:
+
+```
+/opt/kingsoft/wps-office/office6/mui/pl_PL
+/opt/kingsoft/wps-office/office6/dicts/spellcheck/pl_PL/
+```
+
+Nota: para esta prueba funcionó el diccionario `pl_PL` en UTF-8 tomado desde los diccionarios antiguos de WPS Office 11.2.0.9255. El diccionario convertido desde LibreOffice estaba en `ISO8859-2` y no funcionó bien en WPS Office 12.
+
+## Cómo hacer funcionar el corrector ortográfico en portugués de Brasil
+
+Para portugués de Brasil, cierra sesión y en el Login Manager elige:
+
+```
+Brazilian Portuguese - Brasil
+```
+
+Después configura `Office.conf` así:
+
+```
+[General]
+languages=pt_BR
+
+[6.0]
+common\DefaultLanguage=1046
+common\Local\UILanguage=1046
+wpsoffice\Application%20Settings\AppComponentMode=prome_independ
+wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
+```
+
+Y la activacion semejante a como se hace con el diccionario en ingles. En la ventana de idioma de corrección ortográfica debe aparecer `"Português do Brasil"`.
+
+En esta prueba funcionó con:
+
+```
+/opt/kingsoft/wps-office/office6/mui/pt_BR
+/opt/kingsoft/wps-office/office6/dicts/spellcheck/pt_BR/
+```
+
+## Prueba del diccionario portugués de Portugal que no funcionó
+
+Realice la siguiente prueba debido a que están disponibles el MUI `pt_PT` y el diccionario de corrección ortográfica `pt_PT`.
+
+Se probó entrar desde el Login Manager con:
+
+```
+European Portuguese - Portugal
+```
+
+y configurar WPS con:
+
+```
+[General]
+languages=pt_PT
+
+[6.0]
+common\DefaultLanguage=2070
+common\Local\UILanguage=2070
+wpsoffice\Application%20Settings\AppComponentMode=prome_independ
+wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
+```
+
+Con el MUI:
+
+```
+/opt/kingsoft/wps-office/office6/mui/pt_PT
+```
+
+y el diccionario en:
+
+```
+/opt/kingsoft/wps-office/office6/dicts/spellcheck/pt_PT/
+```
+
+WPS muestra `"Portuguê"` o `"Português (Portugal)"` en la ventana de idioma, pero la corrección ortográfica no funcionó con el diccionario `pt_PT`.
+
+En esa misma configuración de locale `pt_PT.UTF-8` y MUI `pt_PT`, la corrección sí funcionó usando el diccionario de portugués de Brasil:
+
+```
+/opt/kingsoft/wps-office/office6/dicts/spellcheck/pt_BR/
+```
+
+## Cómo hacer funcionar el corrector ortográfico en ruso
+
+Para ruso, cierra sesión y en el Login Manager elige:
+
+```
+Ruso-Russia
+```
+
+Después configura `Office.conf` así:
+
+```
+[General]
+languages=ru_RU
+
+[6.0]
+common\DefaultLanguage=1049
+common\Local\UILanguage=1049
+wpsoffice\Application%20Settings\AppComponentMode=prome_independ
+wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
+```
+
+Y la activacion semejante a como se hace con el diccionario en ingles. En la ventana de idioma de corrección ortográfica debe aparecer `"Русский (Россия)"`.
+
+En esta prueba funcionó con:
+
+```
+/opt/kingsoft/wps-office/office6/mui/ru_RU
+/opt/kingsoft/wps-office/office6/dicts/spellcheck/ru_RU/
+```
+
+Nota: el corrector ruso funcionó correctamente en un documento nuevo creado desde cero. En un documento creado originalmente en inglés, aunque se pegó texto ruso traducido, WPS no aplicó bien la revisión ortográfica al texto existente.
+
 ## Referencia: idiomas de la Interfaz de Usuario Multilenguage MUI descargadoas por WPS en Windows
 
 Si usted es una persona curiosa y se pregunta, de donde saque las MUI para la interfaz grafica, pues fue en Microsoft Windows 10, pues WPS Office descarga paquetes de idioma en rutas de usuario. Esta información sirve como referencia para investigar archivos de idioma de la interfaz.
