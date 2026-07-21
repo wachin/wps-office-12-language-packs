@@ -556,12 +556,15 @@ Estas son las pruebas realizadas hasta ahora:
 | Portugués BR    | `Brazilian Portuguese - Brasil`                    | `pt_BR` | `pt_BR`          | `pt_BR` UTF-8         | Funciona    |
 | Portugués PT    | `European Portuguese - Portugal`                   | `pt_PT` | `pt_PT`          | `pt_PT` UTF-8         | No funciona |
 | Portugués PT    | `European Portuguese - Portugal`                   | `pt_PT` | `pt_PT`          | `pt_BR` UTF-8         | Funciona    |
+| Ruso            | `Ruso - Rusia`                                     | `ru_RU` | `ru_RU`          | `ru_RU` UTF-8         | Funciona    |
 
 La codificación indicada en la columna `Diccionario instalado` se toma de la línea `SET` del archivo `main.aff` de cada diccionario.
 
 **Nota sobre `pl_PL`**: después de reemplazar el diccionario por la versión UTF-8 tomada desde los diccionarios antiguos de WPS Office 11.2.0.9255, fue necesario seleccionarlo manualmente en `"Review"` > `"Spell Check ⌵"` > `"Set language"` > `"Polski"`. Tras seleccionarlo, la corrección ortográfica funcionó. El diccionario polaco convertido desde LibreOffice no funcionó bien porque estaba en `ISO8859-2`, tal como se observó en su archivo `main.aff`.
 
 **Nota sobre `pt_PT`**: con locale `pt_PT.UTF-8`, MUI `pt_PT` y diccionario `pt_PT`, WPS Office 12 no activó la corrección ortográfica. En esa misma configuración sí funcionó usando el diccionario `pt_BR`.
+
+**Nota sobre `ru_RU`**: el corrector funcionó en un documento nuevo creado desde cero. En un documento creado originalmente en inglés, aunque se pegó texto ruso traducido, WPS no aplicó bien la revisión ortográfica al texto existente.
 
 En MX Linux 23 el locale puede verse en el Login Manager: al seleccionar un idioma de la lista, el Login Manager muestra el código del locale. Por ejemplo, si eliges con clic:
 
@@ -940,4 +943,3 @@ Si este proyecto te ayudó, puedes dejar una estrella en el repositorio.
 # Agradecimientos
 
 Al usuario mmvill quien me escribió y me dijo que encontró una manera de hacer funcionar el diccionario de corrección ortográfica en español para WPS Office 12
-

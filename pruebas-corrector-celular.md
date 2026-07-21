@@ -128,7 +128,7 @@ y corrección ortográfica del idioma ruso
 entonces la corrección ortográfica para palabras mal escritas en Ruso
 
 ```
-[ ] Funciona
+[x] Funciona
 [ ] No funciona
 ```
 
