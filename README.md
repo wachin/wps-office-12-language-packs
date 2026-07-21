@@ -725,8 +725,6 @@ y el diccionario:
 
 ### Activar la corrección ortográfica español
 
-Después de instalar los diccionarios:
-
 Abre WPS Writer. Ve en la cinta (o pestaña) a la que tiene el nombre:
 
 `"Revisar"`
