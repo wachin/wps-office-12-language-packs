@@ -541,6 +541,7 @@ Estas son las pruebas realizadas hasta ahora:
 | --------------- | -------------------------------------------------- | ------- | ---------------- | --------------------- | ----------- |
 | Inglés          | `American English - Estados Unidos`                | `en_US` | `en_US`          | `en_US` UTF-8         | Funciona    |
 | Inglés          | `Inglés - Irlanda`                                 | `en_IE` | `en_US`          | `en_US` UTF-8         | Funciona    |
+| Inglés          | `Australian English - Australia`                   | `en_AU` | `en_US`          | `en_US` UTF-8         | Funciona    |
 | Inglés          | `British English - Reino Unido`                    | `en_GB` | `en_US`          | `en_US` UTF-8         | Funciona    |
 | Inglés          | `Inglés - Nueva Zelanda`                           | `en_NZ` | `en_US`          | `en_US` UTF-8         | No funciona |
 | Español         | `Español - Ecuador`                                | `es_EC` | `es_ES`          | `es_ES` UTF-8         | Funciona    |
@@ -663,6 +664,8 @@ y allí en
 darle clic a ese icono `"⌵"` y clic en el sub-menú revisa:
 
 `"Set Spell Check language"`
+
+![](vx_images/dicts-tests/01-Set-Spell-Check-Language-English-United-States.png)
 
 en la ventana que se abrirá por defecto estará entre los diccionarios disponibles `"Enghish (United States)"`
 
