@@ -531,7 +531,7 @@ También influye la configuración regional con la que entraste a la sesión de 
 ~/.config/Kingsoft/Office.conf
 ```
 
-Por eso algunos diccionarios aparecen en la ventana de `"Establecer idioma"`, pero no corrigen la ortografía. El caso más claro es español de México: el MUI `es_MX` y el diccionario `es_MX` pueden aparecer instalados, pero en las pruebas no funcionó la corrección ortográfica.
+Por eso algunos diccionarios aparecen en la ventana de `"Establecer idioma"`, pero no corrigen la ortografía. El caso más claro es español de México: el MUI `es_MX` y el diccionario `es_MX` pueden aparecer instalados, pero en las pruebas no funcionó la corrección ortográfica, pero si con el diccionario `es_ES`.
 
 ### Pruebas confirmadas
 
@@ -764,7 +764,7 @@ Por ahora en esta version China de WPS Office 12 para el dioma español el corre
 
 /build/dicts-active/es_ES/
 
-Pero no funcionan como si funcionaban en la version WPS Office 11 los siguientes diccionaros
+Pero no funcionan como si funcionaban en la version WPS Office 11 los siguientes diccionarios que están en la carpeta wps-libreoffice-dicts
 
 ```
 /wps-libreoffice-dicts/es_AR
@@ -794,7 +794,7 @@ Pero no funcionan como si funcionaban en la version WPS Office 11 los siguientes
 
 ## Prueba del diccionario español de México que no funcionó 
 
-Realice la siguieten prueba debido a que estan disponibles el MUI es_MX y el diccionario de correccion ortografica es_MX
+Realice la siguiente prueba debido a que están disponibles el MUI `es_MX` y el diccionario de corrección ortográfica `es_MX`
 
 Se probó entrar desde el Login Manager con:
 
@@ -891,9 +891,9 @@ En esta prueba funcionó con:
 
 
 
-## Referencia: idiomas descargados por WPS en Windows
+## Referencia: idiomas de la Interfaz de Usuario Multilenguage MUI descargadoas por WPS en Windows
 
-En Windows, WPS Office descarga paquetes de idioma en rutas de usuario. Esta información sirve como referencia para investigar archivos de idioma de la interfaz.
+Si usted es una persona curiosa y se pregunta, de donde saque las MUI para la interfaz grafica, pues fue en Microsoft Windows 10, pues WPS Office descarga paquetes de idioma en rutas de usuario. Esta información sirve como referencia para investigar archivos de idioma de la interfaz.
 
 Primero descarga e instala WPS Office 12 para Windows:
 
@@ -932,3 +932,10 @@ C:\Users\youruser\AppData\Local\Kingsoft\WPS Office\12.1.0.25830\office6\mui
 ![](vx_images/05-languages-downloaded-by-the-Spanish-version.png)
 
 Si este proyecto te ayudó, puedes dejar una estrella en el repositorio.
+
+---
+
+# Agradecimientos
+
+Al usuario mmvill quien me escribió y me dijo que encontró una manera de hacer funcionar el diccionario de corrección ortográfica en español para WPS Office 12
+
