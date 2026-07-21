@@ -650,6 +650,38 @@ y el diccionario:
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/en_US/
 ```
 
+Después de instalar los diccionarios:
+
+Abre WPS Writer. Ve en la cinta (o pestaña) a la que tiene el nombre:
+
+`"Revisar"`
+
+y allí en
+
+`"Revisión ortográfica ⌵"`
+
+darle clic a ese icono `"⌵"` y clic en el sub-menú:
+
+`"Establecer idioma"`
+
+y en la ventana que se abrirá por defecto estará entre los diccionarios disponibles `"Español (España)"`
+
+y clic en `"Establecer predeterminado"` (aunque este ya estaba seleccionado por defecto por causa de que ya estaba instalado el MUI "es_ES")
+
+Ahora, en la esquina inferior izquierda de la ventana observe la barra de estado, allí aparecerá un indicador similar a:
+
+`Revisión ortográfica: Desactivado`
+
+Haga clic sobre ese indicador y cambiará a `"Activado"`
+
+Además si da clic al icono `"⌵"` estará ésta y otras opciones en un menú desplegable.
+
+Una vez activada, WPS Office comenzará a revisar automáticamente la ortografía del documento. A partir de ese momento las palabras mal escritas aparecerán subrayadas, al hacer clic derecho sobre una palabra subrayada se mostrarán las sugerencias de corrección, el corrector permanecerá activo hasta que el usuario vuelva a deshabilitar esta opción:
+
+
+![](vx_images/20260721.1-Quotes-MUI-en-US-Richard-Stallman-ezgif.com.gif)
+
+
 Luego abre WPS Writer, entra en `"Review"` > `"Spell Check ⌵"` > `"Set language"`, selecciona `"English (United States)"` y pulsa `"Change Default"` si es necesario.
 
 ### Cómo hacer funcionar el corrector ortográfico en español
@@ -841,8 +873,8 @@ Además si da clic al icono `"⌵"` estará ésta y otras opciones en un menú d
 
 Una vez activada, WPS Office comenzará a revisar automáticamente la ortografía del documento. A partir de ese momento las palabras mal escritas aparecerán subrayadas, al hacer clic derecho sobre una palabra subrayada se mostrarán las sugerencias de corrección, el corrector permanecerá activo hasta que el usuario vuelva a deshabilitar esta opción:
 
-![](vx_images/20260716.1-FrasesRichardStallman-ezgif.com.gif)
 
+![](vx_images/20260716.1-Frases-MUI-es-ES-Richard-Stallman-ezgif.com.gif)
 
 ## Si algo no funciona
 
