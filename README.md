@@ -611,7 +611,7 @@ Esta es la lista observada en el Login Manager de MX Linux 23:
 Está disponible como tabla con locales en [`locales-mx-linux-23.md`](locales-mx-linux-23.md).
 
 
-### Cómo hacer funcionar el corrector ortográfico en inglés
+## Cómo hacer funcionar el corrector ortográfico en inglés
 
 Para que funcione el corrector ortográfico del idioma inglés, cierra sesión en MX Linux 23 y en el Login Manager elige:
 
@@ -644,7 +644,7 @@ WPS Office 12 ya trae por defecto el MUI:
 /opt/kingsoft/wps-office/office6/mui/en_US
 ```
 
-y el diccionario:
+y ademas el diccionario:
 
 ```
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/en_US/
@@ -654,25 +654,25 @@ Después de instalar los diccionarios:
 
 Abre WPS Writer. Ve en la cinta (o pestaña) a la que tiene el nombre:
 
-`"Revisar"`
+`"Review"`
 
 y allí en
 
-`"Revisión ortográfica ⌵"`
+`"Spell Check ⌵"`
 
-darle clic a ese icono `"⌵"` y clic en el sub-menú:
+darle clic a ese icono `"⌵"` y clic en el sub-menú revisa:
 
-`"Establecer idioma"`
+`"Set Spell Check language"`
 
-y en la ventana que se abrirá por defecto estará entre los diccionarios disponibles `"Español (España)"`
+en la ventana que se abrirá por defecto estará entre los diccionarios disponibles `"Enghish (United States)"`
 
-y clic en `"Establecer predeterminado"` (aunque este ya estaba seleccionado por defecto por causa de que ya estaba instalado el MUI "es_ES")
+si tu quieres puedes dar clic en `"Change Defautl"` (aunque este ya estaba seleccionado por defecto por causa de que ya estaba instalado el MUI "en_US")
 
 Ahora, en la esquina inferior izquierda de la ventana observe la barra de estado, allí aparecerá un indicador similar a:
 
-`Revisión ortográfica: Desactivado`
+`Spell Check: Disabled ⌵`
 
-Haga clic sobre ese indicador y cambiará a `"Activado"`
+Haga clic sobre ese indicador y cambiará a `"Enabled"`
 
 Además si da clic al icono `"⌵"` estará ésta y otras opciones en un menú desplegable.
 
@@ -684,7 +684,7 @@ Una vez activada, WPS Office comenzará a revisar automáticamente la ortografí
 
 Luego abre WPS Writer, entra en `"Review"` > `"Spell Check ⌵"` > `"Set language"`, selecciona `"English (United States)"` y pulsa `"Change Default"` si es necesario.
 
-### Cómo hacer funcionar el corrector ortográfico en español
+## Cómo hacer funcionar el corrector ortográfico en español
 
 Para que funcione el corrector ortográfico del idioma español, cierra sesión en MX Linux 23 y en el Login Manager elige, por ejemplo:
 
@@ -752,7 +752,7 @@ es_UY
 es_VE
 ```
 
-### Prueba de español de México que no funcionó
+## Prueba de español de México que no funcionó
 
 Se probó entrar desde el Login Manager con:
 
@@ -787,7 +787,7 @@ y el diccionario:
 
 WPS muestra `"Español (México)"` en la ventana de idioma, pero la corrección ortográfica no funciona.
 
-### Cómo hacer funcionar el corrector ortográfico en alemán
+## Cómo hacer funcionar el corrector ortográfico en alemán
 
 Para alemán, cierra sesión y en el Login Manager elige:
 
@@ -815,7 +815,7 @@ En esta prueba funcionó con:
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/de_DE/
 ```
 
-### Cómo hacer funcionar el corrector ortográfico en francés
+## Cómo hacer funcionar el corrector ortográfico en francés
 
 Para francés, cierra sesión y en el Login Manager elige:
 
@@ -865,7 +865,7 @@ y clic en `"Establecer predeterminado"` (aunque este ya estaba seleccionado por 
 
 Ahora, en la esquina inferior izquierda de la ventana observe la barra de estado, allí aparecerá un indicador similar a:
 
-`Revisión ortográfica: Desactivado`
+`Revisión ortográfica: Desactivado ⌵`
 
 Haga clic sobre ese indicador y cambiará a `"Activado"`
 
