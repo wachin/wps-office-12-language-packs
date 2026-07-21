@@ -665,9 +665,12 @@ darle clic a ese icono `"⌵"` y clic en el sub-menú revisa:
 
 `"Set Spell Check language"`
 
-![](vx_images/dicts-tests/01-Set-Spell-Check-Language-English-United-States.png)
+![](vx_images/20260721.2-WPS_en-US_Home-Review-SpellCheck-SetLanguage-ezgif.com.gif)
 
 en la ventana que se abrirá por defecto estará entre los diccionarios disponibles `"Enghish (United States)"`
+
+![](vx_images/dicts-tests/01-Set-Spell-Check-Language-English-United-States.png)
+
 
 si tu quieres puedes dar clic en `"Change Defautl"` (aunque este ya estaba seleccionado por defecto por causa de que ya estaba instalado el MUI "en_US")
 
