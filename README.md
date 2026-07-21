@@ -559,9 +559,9 @@ Estas son las pruebas realizadas hasta ahora:
 
 La codificación indicada en la columna `Diccionario instalado` se toma de la línea `SET` del archivo `main.aff` de cada diccionario.
 
-Nota sobre `pl_PL`: después de reemplazar el diccionario por la versión UTF-8 tomada desde los diccionarios antiguos de WPS Office 11.2.0.9255, fue necesario seleccionarlo manualmente en `"Review"` > `"Spell Check ⌵"` > `"Set language"` > `"Polski"`. Tras seleccionarlo, la corrección ortográfica funcionó. El diccionario polaco convertido desde LibreOffice no funcionó bien porque estaba en `ISO8859-2`, tal como se observó en su archivo `main.aff`.
+**Nota sobre `pl_PL`**: después de reemplazar el diccionario por la versión UTF-8 tomada desde los diccionarios antiguos de WPS Office 11.2.0.9255, fue necesario seleccionarlo manualmente en `"Review"` > `"Spell Check ⌵"` > `"Set language"` > `"Polski"`. Tras seleccionarlo, la corrección ortográfica funcionó. El diccionario polaco convertido desde LibreOffice no funcionó bien porque estaba en `ISO8859-2`, tal como se observó en su archivo `main.aff`.
 
-Nota sobre `pt_PT`: con locale `pt_PT.UTF-8`, MUI `pt_PT` y diccionario `pt_PT`, WPS Office 12 no activó la corrección ortográfica. En esa misma configuración sí funcionó usando el diccionario `pt_BR`.
+**Nota sobre `pt_PT`**: con locale `pt_PT.UTF-8`, MUI `pt_PT` y diccionario `pt_PT`, WPS Office 12 no activó la corrección ortográfica. En esa misma configuración sí funcionó usando el diccionario `pt_BR`.
 
 En MX Linux 23 el locale puede verse en el Login Manager: al seleccionar un idioma de la lista, el Login Manager muestra el código del locale. Por ejemplo, si eliges con clic:
 
@@ -586,21 +586,6 @@ Ejemplo:
 ```bash
 $ echo $LANG
 es_MX.UTF-8
-```
-
-### Configuraciones regionales de español que faltan por probar
-
-Faltan por probar estas configuraciones regionales del Login Manager con el corrector español:
-
-```
-Español - Argentina
-Español - Bolivia
-Español - Colombia
-European Spanish - España
-Español - Nicaragua
-Español - Panamá
-Español - Estados Unidos
-Español - Uruguay
 ```
 
 ### Lista de idiomas disponibles en el Login Manager de MX Linux 23
@@ -791,6 +776,23 @@ Pero no funcionan como si funcionaban en la version WPS Office 11 los siguientes
 /wps-libreoffice-dicts/es_UY
 /wps-libreoffice-dicts/es_VE
 ```
+
+### Configuraciones regionales de español que faltan por probar
+
+Faltan por probar estas configuraciones regionales del Login Manager con el corrector español el cual es mi idioma:
+
+```
+Español - Argentina
+Español - Bolivia
+Español - Colombia
+European Spanish - España
+Español - Nicaragua
+Español - Panamá
+Español - Estados Unidos
+Español - Uruguay
+```
+
+las otras que si funcionaron están arriba en la tabla 
 
 ## Prueba del diccionario español de México que no funcionó 
 
