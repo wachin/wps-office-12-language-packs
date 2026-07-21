@@ -679,8 +679,7 @@ Una vez activada, WPS Office comenzará a revisar automáticamente la ortografí
 
 ![](vx_images/20260721.1-Quotes-MUI-en-US-Richard-Stallman-ezgif.com.gif)
 
-
-Luego abre WPS Writer, entra en `"Review"` > `"Spell Check ⌵"` > `"Set language"`, selecciona `"English (United States)"` y pulsa `"Change Default"` si es necesario.
+---
 
 ## Cómo hacer funcionar el corrector ortográfico en español
 
