@@ -156,12 +156,12 @@ Por ahora hay que distinguir entre dos carpetas:
 
 ```
 build/dicts-active/
-wps-libreoffice-dicts-experimental/
+wps-libreoffice-dicts/
 ```
 
 La carpeta `build/dicts-active/` contiene los diccionarios seleccionados para instalar ahora. Son los que se están usando para las pruebas de WPS Office 12.
 
-La carpeta `wps-libreoffice-dicts-experimental/` contiene todos los diccionarios convertidos desde LibreOffice. Se conserva en la raíz del repositorio como material experimental, porque en WPS Office 12 versión China no todas las variantes funcionan aunque tengan el formato correcto. Tal vez en una versión futura WPS vuelva a soportar todos esos diccionarios como ocurría en versiones antiguas de WPS Office para Linux.
+La carpeta `wps-libreoffice-dicts/` contiene todos los diccionarios convertidos desde LibreOffice. Se conserva en la raíz del repositorio, porque en WPS Office 12 versión China no todas las variantes funcionan aunque tengan el formato correcto. Tal vez en una versión futura WPS vuelva a soportar todos esos diccionarios como ocurría en versiones antiguas de WPS Office para Linux.
 
 Cada carpeta de diccionario tiene el formato que WPS espera:
 
@@ -754,16 +754,11 @@ Una vez activada, WPS Office comenzará a revisar automáticamente la ortografí
 
 ![](vx_images/20260716.1-Frases-MUI-es-ES-Richard-Stallman-ezgif.com.gif)
 
+Por ahora en esta version China de WPS Office 12 para el dioma español el corrector ortografico en Español solo funciona de este repositorio
 
+/build/dicts-active/es_ES/
 
-
-
-
-
-
-Luego abre WPS Writer, entra en `"Revisar"` > `"Revisión ortográfica ⌵"` > `"Establecer idioma"`, selecciona `"Español (España)"` y pulsa `"Establecer predeterminado"` si es necesario.
-
-Por ahora, para español, el corrector confirmado es `es_ES`. No funcionaron como correctores activos estas variantes aunque existan como carpetas de diccionario convertidas:
+Pero no funcionan como si funcionaban en la version WPS Office 11 los siguientes diccionaros que los he tenido que sacar del repositorio a
 
 ```
 es_AR
