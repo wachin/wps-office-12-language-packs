@@ -650,6 +650,8 @@ y ademas el diccionario:
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/en_US/
 ```
 
+### Activar la corrección ortográfica ingles
+
 Ahora abre WPS Writer. Ve en la cinta (o pestaña) a la que tiene el nombre:
 
 `"Review"`
@@ -683,7 +685,7 @@ Una vez activada, WPS Office comenzará a revisar automáticamente la ortografí
 
 ## Cómo hacer funcionar el corrector ortográfico en español
 
-Para que funcione el corrector ortográfico del idioma español, cierra sesión en MX Linux 23 y en el Login Manager elige, por ejemplo:
+Para que funcione el corrector ortográfico del idioma español, cierra sesión en MX Linux 23 (si estas en otro idioma) y en el Login Manager elige, por ejemplo:
 
 ```
 Español - Ecuador
@@ -695,7 +697,7 @@ Después edita:
 gedit ~/.config/Kingsoft/Office.conf
 ```
 
-y deja este contenido para Español de España:
+y deja este contenido Español de España:
 
 ```
 [General]
@@ -708,7 +710,7 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-En esta prueba deben estar instalados el MUI:
+En esta configuracion deben estar instalados el MUI:
 
 ```
 /opt/kingsoft/wps-office/office6/mui/es_ES
@@ -719,6 +721,47 @@ y el diccionario:
 ```
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/es_ES/
 ```
+
+
+### Activar la corrección ortográfica español
+
+Después de instalar los diccionarios:
+
+Abre WPS Writer. Ve en la cinta (o pestaña) a la que tiene el nombre:
+
+`"Revisar"`
+
+y allí en
+
+`"Revisión ortográfica ⌵"`
+
+darle clic a ese icono `"⌵"` y clic en el sub-menú:
+
+`"Establecer idioma"`
+
+y en la ventana que se abrirá por defecto estará entre los diccionarios disponibles `"Español (España)"`
+
+y clic en `"Establecer predeterminado"` (aunque este ya estaba seleccionado por defecto por causa de que ya estaba instalado el MUI "es_ES")
+
+Ahora, en la esquina inferior izquierda de la ventana observe la barra de estado, allí aparecerá un indicador similar a:
+
+`Revisión ortográfica: Desactivado ⌵`
+
+Haga clic sobre ese indicador y cambiará a `"Activado"`
+
+Además si da clic al icono `"⌵"` estará ésta y otras opciones en un menú desplegable.
+
+Una vez activada, WPS Office comenzará a revisar automáticamente la ortografía del documento. A partir de ese momento las palabras mal escritas aparecerán subrayadas, al hacer clic derecho sobre una palabra subrayada se mostrarán las sugerencias de corrección, el corrector permanecerá activo hasta que el usuario vuelva a deshabilitar esta opción:
+
+
+![](vx_images/20260716.1-Frases-MUI-es-ES-Richard-Stallman-ezgif.com.gif)
+
+
+
+
+
+
+
 
 Luego abre WPS Writer, entra en `"Revisar"` > `"Revisión ortográfica ⌵"` > `"Establecer idioma"`, selecciona `"Español (España)"` y pulsa `"Establecer predeterminado"` si es necesario.
 
@@ -840,38 +883,6 @@ En esta prueba funcionó con:
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/fr_FR/
 ```
 
-## Activar la corrección ortográfica
-
-Después de instalar los diccionarios:
-
-Abre WPS Writer. Ve en la cinta (o pestaña) a la que tiene el nombre:
-
-`"Revisar"`
-
-y allí en
-
-`"Revisión ortográfica ⌵"`
-
-darle clic a ese icono `"⌵"` y clic en el sub-menú:
-
-`"Establecer idioma"`
-
-y en la ventana que se abrirá por defecto estará entre los diccionarios disponibles `"Español (España)"`
-
-y clic en `"Establecer predeterminado"` (aunque este ya estaba seleccionado por defecto por causa de que ya estaba instalado el MUI "es_ES")
-
-Ahora, en la esquina inferior izquierda de la ventana observe la barra de estado, allí aparecerá un indicador similar a:
-
-`Revisión ortográfica: Desactivado ⌵`
-
-Haga clic sobre ese indicador y cambiará a `"Activado"`
-
-Además si da clic al icono `"⌵"` estará ésta y otras opciones en un menú desplegable.
-
-Una vez activada, WPS Office comenzará a revisar automáticamente la ortografía del documento. A partir de ese momento las palabras mal escritas aparecerán subrayadas, al hacer clic derecho sobre una palabra subrayada se mostrarán las sugerencias de corrección, el corrector permanecerá activo hasta que el usuario vuelva a deshabilitar esta opción:
-
-
-![](vx_images/20260716.1-Frases-MUI-es-ES-Richard-Stallman-ezgif.com.gif)
 
 ## Si algo no funciona
 
