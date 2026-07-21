@@ -754,38 +754,41 @@ Una vez activada, WPS Office comenzará a revisar automáticamente la ortografí
 
 ![](vx_images/20260716.1-Frases-MUI-es-ES-Richard-Stallman-ezgif.com.gif)
 
-Por ahora en esta version China de WPS Office 12 para el dioma español el corrector ortografico en Español solo funciona de este repositorio
+Por ahora en esta version China de WPS Office 12 para el dioma español el corrector ortografico en Español solo funciona de este repositorio `es_ES`
 
 /build/dicts-active/es_ES/
 
-Pero no funcionan como si funcionaban en la version WPS Office 11 los siguientes diccionaros que los he tenido que sacar del repositorio a
+Pero no funcionan como si funcionaban en la version WPS Office 11 los siguientes diccionaros
 
 ```
-es_AR
-es_BO
-es_CL
-es_CO
-es_CR
-es_CU
-es_DO
-es_EC
-es_GQ
-es_GT
-es_HN
-es_MX
-es_NI
-es_PA
-es_PE
-es_PH
-es_PR
-es_PY
-es_SV
-es_US
-es_UY
-es_VE
+/wps-libreoffice-dicts/es_AR
+/wps-libreoffice-dicts/es_BO
+/wps-libreoffice-dicts/es_CL
+/wps-libreoffice-dicts/es_CO
+/wps-libreoffice-dicts/es_CR
+/wps-libreoffice-dicts/es_CU
+/wps-libreoffice-dicts/es_DO
+/wps-libreoffice-dicts/es_EC
+/wps-libreoffice-dicts/es_ES
+/wps-libreoffice-dicts/es_GQ
+/wps-libreoffice-dicts/es_GT
+/wps-libreoffice-dicts/es_HN
+/wps-libreoffice-dicts/es_MX
+/wps-libreoffice-dicts/es_NI
+/wps-libreoffice-dicts/es_PA
+/wps-libreoffice-dicts/es_PE
+/wps-libreoffice-dicts/es_PH
+/wps-libreoffice-dicts/es_PR
+/wps-libreoffice-dicts/es_PY
+/wps-libreoffice-dicts/es_SV
+/wps-libreoffice-dicts/es_US
+/wps-libreoffice-dicts/es_UY
+/wps-libreoffice-dicts/es_VE
 ```
 
-## Prueba de español de México que no funcionó
+## Prueba del diccionario español de México que no funcionó 
+
+Realice la siguieten prueba debido a que estan disponibles el MUI es_MX y el diccionario de correccion ortografica es_MX
 
 Se probó entrar desde el Login Manager con:
 
@@ -812,13 +815,13 @@ Con el MUI:
 /opt/kingsoft/wps-office/office6/mui/es_MX
 ```
 
-y el diccionario:
+y el diccionario en:
 
 ```
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/es_MX/
 ```
 
-WPS muestra `"Español (México)"` en la ventana de idioma, pero la corrección ortográfica no funciona.
+WPS muestra `"Español (México)"` en la ventana de idioma, pero la corrección ortográfica no funciona, pero si se elige en la ventana del idioma al diccionario de correccion ortografica `"Español (España)"` si funciona.
 
 ## Cómo hacer funcionar el corrector ortográfico en alemán
 
@@ -841,7 +844,9 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-En esta prueba funcionó con:
+Y la activacion semejante a como se hace con el diccionario en ingles
+
+En esta prueba funcionó:
 
 ```
 /opt/kingsoft/wps-office/office6/mui/de_DE
@@ -855,6 +860,8 @@ Para francés, cierra sesión y en el Login Manager elige:
 ```
 Francés - Francia
 ```
+
+Y la activacion semejante a como se hace con el diccionario en ingles
 
 Después configura `Office.conf` así:
 
@@ -876,17 +883,6 @@ En esta prueba funcionó con:
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/fr_FR/
 ```
 
-
-## Si algo no funciona
-
-Revisa estos puntos:
-
-1. WPS Office fue abierto al menos una vez antes de editar `Office.conf`.
-2. La carpeta `/opt/kingsoft/wps-office/office6/dicts/spellcheck/` existe.
-3. Copiaste el contenido de `build/dicts-active`, no la carpeta contenedora completa.
-4. Cada idioma instalado tiene `dict.conf`, `main.aff` y `main.dic`.
-5. Cerraste y volviste a abrir WPS Office después de copiar los diccionarios.
-6. El idioma elegido existe en la carpeta de diccionarios instalada.
 
 
 ## Referencia: idiomas descargados por WPS en Windows
