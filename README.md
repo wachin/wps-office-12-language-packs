@@ -650,9 +650,7 @@ y ademas el diccionario:
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/en_US/
 ```
 
-Después de instalar los diccionarios:
-
-Abre WPS Writer. Ve en la cinta (o pestaña) a la que tiene el nombre:
+Ahora abre WPS Writer. Ve en la cinta (o pestaña) a la que tiene el nombre:
 
 `"Review"`
 
