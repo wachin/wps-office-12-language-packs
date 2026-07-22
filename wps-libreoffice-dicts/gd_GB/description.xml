@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description xmlns="http://openoffice.org/extensions/description/2006" xmlns:d="http://openoffice.org/extensions/description/2006"  xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <!-- SHOULD OR MUST BE PROVIDED ENTRIES FOLLOWING... -->
+
+    <!-- Here you can state the license text to be displayed during installation.
+        You can provide more than one localized version if you like.
+        If no matching locale was found the first one will be displayed.
+        !!! Don't change the values for 'accept-by' or 'suppress-on-update' it  !!!
+        !!! might be troublesome in multi-user installations if no shared-layer !!!
+        !!! installation can be done.                                           !!! -->
+    <registration>
+        <simple-license accept-by="admin" suppress-on-update="false" >
+            <license-text xlink:href="LICENSES-en.txt" lang="en" />
+        </simple-license>
+    </registration>
+    
+    <!-- The version of your extension. NOT the one of OpenOffice.org...
+         It will also be used to automatically check if there are updates for this
+         extension available. Newer versions should have higher values. -->
+    <version value="3.3" />
+    
+    <!-- A unique identifier for your extension.
+        In order to avoid name clashes with other extensions it should probably hold
+        your company name or your full name along with the name of the extension in a form like
+            MyFirstName.MyLastName.DictionayName
+        or  www.MyWebpage.net.DictionayName
+        Or  you may use the project name of your submitted extension to start with...
+        For the very same reason they should NOT start with 'org.openoffice'.
+        When choosing the identifier keep in mind that others may provide a dictionary for that
+        very same language as well and even then your identifier still needs to be unique! -->
+    <identifier value="Kevin.P.Scannell.ScottishGaelic" />
+    
+    <!-- A name for the extension to be used in the UI.
+        For dictionaries it should show the locales supported
+        and the purpose spell checking and/or hyphenation and/or thesaurus.
+        The display name can be localized and there should be at least one
+        entry for each language it implements and one default English entry.
+        The default entry is the one listed first. -->
+    <display-name>
+        <name lang="en-US">Scottish Gaelic spell checker</name>
+        <name lang="ab">Гельтәи (Шотландиа) аорфографиатә жәар</name>
+        <name lang="af">Skots-Gallies speltoetser</name>
+        <name lang="am">Scottish Gaelic spell checker</name>
+        <name lang="ar">المدقق الإملائي للغيلية الاسكتلندية</name>
+        <name lang="as">Scottish Gaelic spell checker</name>
+        <name lang="ast">Correutor ortográficu del gaélicu escocés</name>
+        <name lang="be">Гэльскі (Шатландыя) правапісны слоўнік</name>
+        <name lang="bg">Проверка на правописа на шотландски келтски</name>
+        <name lang="bn">Scottish Gaelic spell checker</name>
+        <name lang="bn-IN">স্কটস গ্লিট বানান পরীক্ষক</name>
+        <name lang="bo">Scottish Gaelic spell checker</name>
+        <name lang="br">Scottish Gaelic spell checker</name>
+        <name lang="brx">Scottish Gaelic spell checker</name>
+        <name lang="bs">Scottish Gaelic spell checker</name>
+        <name lang="ca">Gaèlic escocès: corrector ortogràfic</name>
+        <name lang="ca-valencia">Gaèlic escocés: corrector ortogràfic</name>
+        <name lang="ckb">فەرهەنگی هەڵەڕێنووسی زمانی سکۆتلەندی گالیک</name>
+        <name lang="cs">Kontrola pravopisu pro skotskou gaelštinu</name>
+        <name lang="cy">Gwirydd Sillafu Gaeleg yr Alban</name>
+        <name lang="da">Skotsk-gælisk stavekontrol</name>
+        <name lang="de">Schottisch-gälische Rechtschreibprüfung</name>
+        <name lang="dgo">Scottish Gaelic spell checker</name>
+        <name lang="dsb">Pšawopisna kontrola za šotisku gelišćinu</name>
+        <name lang="dz">Scottish Gaelic spell checker</name>
+        <name lang="el">Ορθογραφικός έλεγχος σκωτσέζικων γαελικών</name>
+        <name lang="en-GB">Scottish Gaelic spell checker</name>
+        <name lang="en-ZA">Scottish Gaelic spell checker</name>
+        <name lang="eo">Literumada vortaro por la skota gaela</name>
+        <name lang="es">Gaélico escocés: corrector ortográfico</name>
+        <name lang="et">Šoti gaeli keele õigekirjakontrolli sõnastik</name>
+        <name lang="eu">Eskoziar gaeleraren ortografia-egiaztatzailea</name>
+        <name lang="fa">واژه‌نامه املایی گیلیک اسکاتلندی</name>
+        <name lang="fi">Gaelin oikolukusanasto</name>
+        <name lang="fr">Vérificateur orthographique gaélique écossais</name>
+        <name lang="fur">Coretôr ortografic gaelic scozês</name>
+        <name lang="fy">Skotsk Gaelyske staveringshifker</name>
+        <name lang="ga">Litreoir Ghaeilge na hAlban</name>
+        <name lang="gd">Dearbhair-litreachaidh na Gàidhlig</name>
+        <name lang="gl">Corrector ortográfico do gaélico escocés</name>
+        <name lang="gu">Scottish Gaelic spell checker</name>
+        <name lang="gug">Scottish Gaelic spell checker</name>
+        <name lang="he">בודק איות בגאלית סקוטית</name>
+        <name lang="hi">Scottish Gaelic spell checker</name>
+        <name lang="hr">Računalna provjera pravopisa za škotski galski</name>
+        <name lang="hsb">Prawopisna kontrola za šotisku gelšćinu</name>
+        <name lang="hu">Skót kelta helyesírás-ellenőrző</name>
+        <name lang="hy">Շոտլանդական գելերեն ուղղագրության ստուգիչ</name>
+        <name lang="id">Pemeriksa ejaan Gael Skotlandia</name>
+        <name lang="is">Skosk-gelísk stafsetningaryfirferð</name>
+        <name lang="it">Correttore ortografico gaelico scozzese</name>
+        <name lang="ja">スコットランド・ゲール語文法チェッカー</name>
+        <name lang="ka">შოტლანდიური გელური მართლწერის შემმოწმებელი</name>
+        <name lang="kab">Aselkan n teɣdirawt n Tgaelit akked tkuṣit</name>
+        <name lang="kk">Гэльдік (Шотландия) емле сөздігі</name>
+        <name lang="km">Scottish Gaelic spell checker</name>
+        <name lang="kmr-Latn">Scottish Gaelic spell checker</name>
+        <name lang="kn">Scottish Gaelic spell checker</name>
+        <name lang="ko">스코틀랜드 게일어 맞춤법 검사</name>
+        <name lang="kok">Scottish Gaelic spell checker</name>
+        <name lang="ks">Scottish Gaelic spell checker</name>
+        <name lang="lb">Scottish Gaelic spell checker</name>
+        <name lang="lo">ກວດສອບຕົວສະກົດພາສາ Scottish Gaelic</name>
+        <name lang="lt">Gėlų (Škotija) kalbos rašybos tikrinimo žodynas</name>
+        <name lang="lv">Skotu gēlu pareizrakstības pārbaudītājs</name>
+        <name lang="mai">Scottish Gaelic spell checker</name>
+        <name lang="mk">Scottish Gaelic spell checker</name>
+        <name lang="ml">Scottish Gaelic spell checker</name>
+        <name lang="mn">Шотланд-Гэли аялганы зөв бичгийн толь</name>
+        <name lang="mni">Scottish Gaelic spell checker</name>
+        <name lang="mr">Scottish Gaelic spell checker</name>
+        <name lang="my">Scottish Gaelic spell checker</name>
+        <name lang="nb">Skotsk Gaelisk stavekontroll</name>
+        <name lang="ne">स्कटी गेलिक हिज्जे जाँच</name>
+        <name lang="nl">Schots Gaelische spellingcontrole</name>
+        <name lang="nn">Skotsk-gællisk stavekontroll</name>
+        <name lang="nr">Scottish Gaelic spell checker</name>
+        <name lang="nso">Scottish Gaelic spell checker</name>
+        <name lang="oc">Verificador ortografic gaelic escossés</name>
+        <name lang="om">Scottish Gaelic spell checker</name>
+        <name lang="or">Scottish Gaelic spell checker</name>
+        <name lang="pa-IN">ਸਟੌਕਿਸ਼ ਗਾਇਲਿਕ ਸ਼ਬਦ-ਜੋੜ ਚੈੱਕਰ</name>
+        <name lang="pl">Gaelicki szkocki moduł sprawdzania pisowni</name>
+        <name lang="pt">Dicionário ortográfico em escocês gaélico</name>
+        <name lang="pt-BR">Dicionário ortográfico em gaélico escocês</name>
+        <name lang="ro">Verificator ortografic pentru gaelică scoțiană</name>
+        <name lang="ru">Гэльский (Шотландия) орфографический словарь</name>
+        <name lang="rw">Scottish Gaelic spell checker</name>
+        <name lang="sa-IN">Scottish Gaelic spell checker</name>
+        <name lang="sat">Scottish Gaelic spell checker</name>
+        <name lang="sat-Olck">Scottish Gaelic spell checker</name>
+        <name lang="sd">Scottish Gaelic spell checker</name>
+        <name lang="si">Scottish Gaelic spell checker</name>
+        <name lang="sid">Scottish Gaelic spell checker</name>
+        <name lang="sk">Kontrola pravopisu pre škótsku galícijčinu</name>
+        <name lang="sl">Škotski gelski jezik – slovar za preverjanje črkovanja</name>
+        <name lang="sq">Kontrolluesi i drejtkshkrimit për Gaelic Skoceze</name>
+        <name lang="sr">Галски, шкотски: провера писања</name>
+        <name lang="sr-Latn">Scottish Gaelic spell checker</name>
+        <name lang="ss">Scottish Gaelic spell checker</name>
+        <name lang="st">Scottish Gaelic spell checker</name>
+        <name lang="sv">Scottish Gaelic stavningskontroll</name>
+        <name lang="sw-TZ">Scottish Gaelic spell checker</name>
+        <name lang="szl">Szkocki gaelicki korektōr ôrtografije</name>
+        <name lang="ta">Scottish Gaelic spell checker</name>
+        <name lang="te">Scottish Gaelic spell checker</name>
+        <name lang="tg">Scottish Gaelic spell checker</name>
+        <name lang="th">เครื่องมือตรวจตัวสะกดภาษาแกลิกแบบสกอตแลนด์</name>
+        <name lang="tl">Tagasuri ng spell ng Scottish Gaelic</name>
+        <name lang="tn">Scottish Gaelic spell checker</name>
+        <name lang="tr">İskoç Galcesi yazım denetleyicisi</name>
+        <name lang="ts">Scottish Gaelic spell checker</name>
+        <name lang="tt">Scottish Gaelic spell checker</name>
+        <name lang="ug">شوتلاندىيە گالىكچە ئىملا تەكشۈرگۈچ</name>
+        <name lang="uk">Гельська (Шотландія) орфографічний словник</name>
+        <name lang="uz">Scottish Gaelic spell checker</name>
+        <name lang="ve">Scottish Gaelic spell checker</name>
+        <name lang="vec">Disionaro ortogràfego Gàełego scoseze</name>
+        <name lang="vi">Trình kiểm tra chính tả Gaelic Scotland</name>
+        <name lang="xh">Scottish Gaelic spell checker</name>
+        <name lang="zh-CN">苏格兰盖尔语拼写检查</name>
+        <name lang="zh-TW">蘇格蘭蓋爾文拼寫檢查</name>
+        <name lang="zu">Scottish Gaelic spell checker</name>
+    </display-name>
+    
+    <!-- Dictionaries should work with all platforms... -->
+    <platform value="all" />
+    
+    <!-- A minimal OpenOffice.org version the extension requires to be used with.
+         For dictionary extensions that will be 'OpenOffice.org 3.0' -->
+    <dependencies>
+        <OpenOffice.org-minimal-version value="3.0" d:name="OpenOffice.org 3.0" />
+    </dependencies>
+    
+    
+    <!-- MORE OPTIONAL LIKE ENTRIES FOLLOWING (may easily be omitted, uncommented by default)... -->
+  
+    <!-- If you uploadet your extension to the repository (which should be the default!) 
+         you do not need to have this one.
+    <update-information>
+        <src xlink:href="http://extensions.openoffice.org/testarea/desktop/license/update/lic3.update.xml" />
+    </update-information> -->
+    
+    <!-- Check if this is already generated by repository.
+        Otherwise you may like to provide it manually.
+    <publisher>
+        <name xlink:href="http://extensions.openoffice.org/testarea/desktop/publisher/publisher_en.html" lang="en">My dictionary extension (en)</name>
+        <name xlink:href="http://extensions.openoffice.org/testarea/desktop/publisher/publisher_fr.html" lang="fr">My dictionary extension (fr)</name>
+    </publisher> -->
+    <publisher>
+        <name xlink:href="http://borel.slu.edu/" lang="en">Kevin P. Scannell</name>
+    </publisher>
+    
+    <!-- This link will be generated by repository. Check if this already works for multiple languages. 
+         If not you may provide it manually if you like.         
+    <release-notes>
+        <src xlink:href="http://extensions.openoffice.org/testarea/desktop/publisher/release-notes_en.txt" lang="en" />
+        <src xlink:href="http://extensions.openoffice.org/testarea/desktop/publisher/release-notes_fr.txt" lang="fr" />
+    </release-notes> -->
+    
+</description>

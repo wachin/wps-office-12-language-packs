@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description xmlns="http://openoffice.org/extensions/description/2006"
+xmlns:d="http://openoffice.org/extensions/description/2006"
+xmlns:xlink="http://www.w3.org/1999/xlink">
+  <version value="2023.09" />
+  <identifier value="org.alex73.libreoffice.dict.be.official" />
+  <display-name>
+    <name lang="be">Беларускі слоўнік праверкі правапісу і пераносы згодна афіцыйнаму правапісу 2008</name>
+        <name lang="ab">Белоруссиатжи аорфографиатә жәари аиагара аԥҟарақәеи: аофициалтә орфографиа 2008 ш.</name>
+        <name lang="af">Bela-Russiese spellingwoordeboek en koppelteken: amptelike ortografie 2008</name>
+        <name lang="am">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="ar">قاموس التدقيق الإملائي والواصلة للُّغة البيلروسية: الهجاء الرسمي 2008</name>
+        <name lang="as">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="ast">Diccionariu ortográficu y de guionización del bielorrusu: ortografía oficial de 2008</name>
+        <name lang="be">Беларускі арфаграфічны слоўнік і перанос: афіцыйны правапіс 2008</name>
+        <name lang="bg">Беларуски правописен речник и сричкопренасяне: официален правопис от 2008 г.</name>
+        <name lang="bn">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="bn-IN">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="bo">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="br">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="brx">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="bs">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="ca">Bielorús (ortografia oficial del 2008): corrector ortogràfic i partició de mots</name>
+        <name lang="ca-valencia">Bielorús (ortografia oficial del 2008): corrector ortogràfic i partició de mots</name>
+        <name lang="ckb">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="cs">Slovník kontroly pravopisu a dělení slov pro běloruštinu: oficiální pravopis 2008</name>
+        <name lang="cy">Belarwsieg - gwirydd sillafu a chysylltnodi: orgraff swyddogol 2008</name>
+        <name lang="da">Belarusisk stavekontrol (officiel retskrivning 2008) og orddelingsregler</name>
+        <name lang="de">Belarussisches Wörterbuch für Rechtschreibprüfung (offizielle Rechtschreibung 2008) und Silbentrennung</name>
+        <name lang="dgo">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="dsb">Pšawopisny słownik a źělenje złožkow běłorušćiny: oficielna ortografija 2008</name>
+        <name lang="dz">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="el">Λευκορωσικό ορθογραφικό λεξικό και συλλαβισμός: επίσημη ορθογραφία 2008</name>
+        <name lang="en-GB">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="en-ZA">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="eo">Belarusa ortografia vortaro kaj vortdividaj reguloj: oficiala ortografio 2008</name>
+        <name lang="es">Bielorruso (ortografía oficial de 2008): corrector ortográfico y reglas de silabación</name>
+        <name lang="et">Valgevene keele õigekirjakontrolli sõnastik ja poolitusreeglid (2008. a ametlikud õigekirjareeglid)</name>
+        <name lang="eu">Bielorrusieraren ortografia-egiaztatzailea eta hitzak zatitzeko arauak: 2008ko ortografia ofiziala</name>
+        <name lang="fa">واژه نامه املایی و خط تیره گذاری بلاروسی: املای صحیح رسمی ۲۰۰۸</name>
+        <name lang="fi">Valkovenäjän oikolukusanasto ja tavutus: vuoden 2008 virallinen oikeinkirjoitus</name>
+        <name lang="fr">Dictionnaire orthographique et de coupure des mots biélorusse : orthographe officielle de 2008</name>
+        <name lang="fur">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="fy">Belarussysk wurdboek foar stavering, wurdôfbrekkingsregel: offisjele stavering 2008</name>
+        <name lang="ga">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="gd">Faclair litreachadh is tàthanachadh na Bealaruisise: litreachadh oifigeil 2008</name>
+        <name lang="gl">Dicionario ortográfico e de guionización do bielorruso: ortografía oficial de 2008</name>
+        <name lang="gu">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="gug">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="he">מילון איות וכללי מיקוף בבלרוסית: אורתוגרפיה רשמית מ־2008</name>
+        <name lang="hi">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="hr">Pravopisni rječnik i pravila rastavljanja riječi bjeloruskog jezika: službena ortografija 2008</name>
+        <name lang="hsb">Prawopisny słownik a dźělenje złóžkow běłorušćiny: oficielna ortografija 2008</name>
+        <name lang="hu">Fehérorosz helyesírási szótár és elválasztási szabályok: hivatalos helyesírás 2008</name>
+        <name lang="hy">Բելառուսական ուղղագրական բառարան և գծիկ. պաշտոնական ուղղագրություն 2008 թ</name>
+        <name lang="id">Kamus ejaan dan pemenggalan kata Belarusia: ortografi resmi 2008</name>
+        <name lang="is">Stafsetningarorðasafn, orðskiptireglur, og samheitaorðasafn fyrir Hvítrússnesku: opinber stafsetning 2008</name>
+        <name lang="it">Dizionario ortografico e di sillabazione bielorusso (ortografia ufficiale del 2008)</name>
+        <name lang="ja">ベラルーシ語のスペル辞書とハイフネーション: 公式正字法 2008</name>
+        <name lang="ka">ბელარუსული მართლწერის ლექსიკონი და გადატანა: ოფიციალური ორთოგრაფია 2008</name>
+        <name lang="kab">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="kk">Беларус емле сөздігі және тасымалдау ережелері: 2008 жылғы ресми орфографиясы</name>
+        <name lang="km">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="kmr-Latn">Ferhenga rastnivîs û kîtekirina Belaerûsî: Rastnivîsa fermî ya 2008</name>
+        <name lang="kn">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="ko">벨라루스어 맞춤법 사전 및 하이픈 넣기: 공식 정서법 2008</name>
+        <name lang="kok">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="ks">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="lb">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="lo">ວັດຈະນານຸກົມ ແລະ ການສະກົດຄຳຂອງເບລາຣຸສ: ອັກຂະລະຢ່າງເປັນທາງການໃນປີ 2008</name>
+        <name lang="lt">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="lv">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="mai">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="mk">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="ml">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="mn">Үг үсгийн алдаа шалгах Беларусийн толь бичиг (2008 оны албан ёсны зөв бичгийн дүрэм) болон зураас</name>
+        <name lang="mni">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="mr">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="my">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="nb">Hviterussisk ordbok og orddeling: offisiell ortografi 2008</name>
+        <name lang="ne">बेलारुसी हिज्जे शब्दकोश र योजक चिन्ह: आधिकारिक लेखन २००८</name>
+        <name lang="nl">Wit-Russisch spellingswoordenboek en woordafbreking: officiële spelling 2008</name>
+        <name lang="nn">Belarusisk ordbok og orddeling: offisiell ortografi 2008</name>
+        <name lang="nr">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="nso">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="oc">Diccionari ortografia (ortografia oficiala de 2008) e de copadura de mots en bielorús</name>
+        <name lang="om">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="or">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="pa-IN">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="pl">Białoruski słownik ortograficzny i reguły dzielenia wyrazów: oficialne zasady ortograficzne z roku 2008</name>
+        <name lang="pt">Dicionário ortográfico e de hifenização em bielorrusso (ortografia oficial de 2008)</name>
+        <name lang="pt-BR">Dicionário ortográfico e de hifenização em bielorrusso: ortografia oficial de 2008</name>
+        <name lang="ro">Dicționar ortografic și reguli de despărțire în silabe pentru belarusă: ortografia oficială 2008</name>
+        <name lang="ru">Белорусский орфографический словарь и правила переноса: официальная орфография от 2008 г.</name>
+        <name lang="rw">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="sa-IN">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="sat">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="sat-Olck">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="sd">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="si">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="sid">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="sk">Slovník kontroly pravopisu a delenie slov pre bieloruštinu: oficiálny pravopis 2008</name>
+        <name lang="sl">Beloruski jezik – slovar za preverjanje črkovanja in vzorci za deljenje besed: uradni pravopis (2008)</name>
+        <name lang="sq">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="sr">Белоруски речник за проверу писања и растављање на слогове: званични правопис из 2008. године</name>
+        <name lang="sr-Latn">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="ss">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="st">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="sv">Vitryska - stavningsordlista och avstavningsregler: officiell ortografi 2008</name>
+        <name lang="sw-TZ">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="szl">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="ta">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="te">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="tg">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="th">พจนานุกรมสะกดคำและการแทรกยัติภังค์ภาษาเบลารุส; อักขรวิธีมาตรฐาน 2008</name>
+        <name lang="tl">Belarusian spelling dictionary at hyphenation: opisyal na ortograpiya 2008</name>
+        <name lang="tn">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="tr">Belarus yazım sözlüğü ve heceleme: resmi yazım 2008</name>
+        <name lang="ts">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="tt">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="ug">بېلورۇسچە ئىملا لۇغىتى ۋە ھەرپ ئۇلاش قائىدىسى:  رەسمىي ئىملا 2008</name>
+        <name lang="uk">Білоруський орфографічний словник і правила переносів: офіційний правопис 2008</name>
+        <name lang="uz">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="ve">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="vec">Coretor ortogràfego e règołe de siłabasion de'l Bełoruso (grafìa ofisiałe de'l 2008)</name>
+        <name lang="vi">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="xh">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+        <name lang="zh-CN">白罗斯语拼写词典与断词规则：2008 年官方正字法</name>
+        <name lang="zh-TW">白羅斯語拼寫詞典與斷字處理：官方正字法 2008</name>
+        <name lang="zu">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+    <name lang="en-US">Belarusian spelling dictionary and hyphenation: official orthography 2008</name>
+  </display-name>
+  <platform value="all" />
+  <dependencies>
+    <OpenOffice.org-minimal-version value="3.0" d:name="OpenOffice.org 3.0"/>
+  </dependencies>
+
+    <publisher>
+        <name xlink:href="http://bnkorpus.info/" lang="be">bnkorpus.info</name>
+        <name xlink:href="http://bnkorpus.info/" lang="en">bnkorpus.info</name>
+    </publisher>
+
+</description>
+

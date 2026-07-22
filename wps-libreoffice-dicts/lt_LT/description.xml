@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description xmlns="http://openoffice.org/extensions/description/2006" xmlns:d="http://openoffice.org/extensions/description/2006"  xmlns:xlink="http://www.w3.org/1999/xlink">
+    <version value="1.3.1" />
+    <identifier value="org.openoffice.lt.hunspell.dictionaries" />
+    <display-name>
+        <name lang="en-US">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="ab">Латыштәи аорфографиатә жәари аиагара аԥҟарақәеи</name>
+        <name lang="af">Lituaniese spelling woordeboek, en koppelteken reëls</name>
+        <name lang="am">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="ar">قاموس التدقيق الإملائي للُّغة الليتوانية وقواعد الواصلة</name>
+        <name lang="as">লিথুৱেনিয়ান বানান শব্দকোষ, আৰু হাইফেনেষণ বিন্যাসসমূহ</name>
+        <name lang="ast">Diccionariu ortográficu y regles de guionáu pal lituanu</name>
+        <name lang="be">Літоўскі правапісны слоўнік і правілы пераносаў</name>
+        <name lang="bg">Литовски речници за правопис и сричкопренасяне</name>
+        <name lang="bn">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="bn-IN">লিথুয়েনিয়ান বানান পরীক্ষণের অভিধান এবং হাইফেন প্রয়োগের নিয়ম</name>
+        <name lang="bo">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="br">Geriadur ar reizhskrivañ ha reolennoù an troc'hañ-gerioù evit al lituaneg</name>
+        <name lang="brx">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="bs">Rječnik pravopisa i pravila rastavljanja riječi na kraju reda za litvanski jezik</name>
+        <name lang="ca">Lituà: corrector ortogràfic i partició de mots</name>
+        <name lang="ca-valencia">Lituà: corrector ortogràfic i partició de mots</name>
+        <name lang="ckb">فەرهەنگی ڕێنووسی زمانی لیتوانی، یاساکانی ڕێزمانی</name>
+        <name lang="cs">Slovník kontroly pravopisu a dělení slov pro litevštinu</name>
+        <name lang="cy">Lithwianeg- geiriadur sillafu a rheolau cyplysnodi</name>
+        <name lang="da">Litauisk stavekontrol og orddelingsregler</name>
+        <name lang="de">Litauisches Wörterbuch für Rechtschreibprüfung und Silbentrennung</name>
+        <name lang="dgo">लिथुआनियन शब्द-जोड़ शब्दकोश ते जोड़-चिʼन्नीकरण नियम</name>
+        <name lang="dsb">Litawski pšawopisny słownik a pšawidła źělenja złožkow</name>
+        <name lang="dz">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="el">Λιθουανικό ορθογραφικό λεξικό και συλλαβισμός</name>
+        <name lang="en-GB">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="en-ZA">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="eo">Litova ortografia vortaro, vortdividaj reguloj</name>
+        <name lang="es">Lituano: corrector ortográfico y reglas de silabación</name>
+        <name lang="et">Leedu keele õigekirjakontrolli sõnastik ja poolitusreeglid</name>
+        <name lang="eu">Lituanieraren ortografia-egiaztatzailea eta hitzak zatitzeko arauak</name>
+        <name lang="fa">واژه‌نامه املایی، و قواعد خط‌فاصله‌گذاری لیتوانیایی</name>
+        <name lang="fi">Liettuan oikolukusanasto ja tavutussäännöt</name>
+        <name lang="fr">Dictionnaire orthographique et règles de coupure des mots lithuaniens</name>
+        <name lang="fur">Dizionari ortografic lituan e regulis di silabazion</name>
+        <name lang="fy">Litouwsk wurdboek foar stavering, en wurdôfbrekkingsregels</name>
+        <name lang="ga">Foclóir litrithe agus fleiscínithe don Liotuáinis</name>
+        <name lang="gd">Faclair litreachadh ⁊ riaghailtean tàthanachadh na Liotuainise</name>
+        <name lang="gl">Dicionario ortográfico e guionizador do lituano</name>
+        <name lang="gu">લિથુનિયન જોડણી ચકાસણી શબ્દકોષ, અને હાઇફનેશન નિયમો</name>
+        <name lang="gug">Lituano: corrector ortográfico ha división ñe'ẽgui</name>
+        <name lang="he">רשימת מילים לבודק איות וכללי מיקוף בליטאית</name>
+        <name lang="hi">लिथुआनियाई वर्तनी शब्दकोश और समासन नियम</name>
+        <name lang="hr">Pravopisni rječnik i pravila rastavljanja riječi litvanskog jezika</name>
+        <name lang="hsb">Litawski prawopisny słownik a prawidła dźělenja złóžkow</name>
+        <name lang="hu">Litván helyesírási szótár és elválasztási szabályok</name>
+        <name lang="hy">Լիտվական ուղղագրական բառարան և տողադարձի կանոններ</name>
+        <name lang="id">Kamus ejaan dan aturan pemenggalan kata Bahasa Lituania</name>
+        <name lang="is">Litháenskt stafsetningarorðasafn og orðskiptireglur</name>
+        <name lang="it">Dizionario ortografico lituano e regole di sillabazione</name>
+        <name lang="ja">リトアニア語スペル辞書とハイフネーション規則</name>
+        <name lang="ka">ლიეტუვური მართლწერის ლექსიკონი და გადატანის წესები</name>
+        <name lang="kab">Amawal n teɣdira d ilugan n unegzum n wawalen n tlitwanit</name>
+        <name lang="kk">Литвалық емле сөздігі және тасымалдау ережелері</name>
+        <name lang="km">វចនានុក្រម​អក្ខរាវិរុទ្ធ​ភាសា​លីទុយអានី និង​គោលការណ៍​ដាក់​សហសញ្ញា</name>
+        <name lang="kmr-Latn">Ferhenga rastnivîs û rêbazên kîtekirana lîtvanî</name>
+        <name lang="kn">ಲಿತುವಾನಿಯನ್ ಕಾಗುಣಿತ ಶಬ್ಧಕೋಶ, ಹೈಫನೇಶನ್ ನಿಯಮಗಳು</name>
+        <name lang="ko">리투아니아어 맞춤법 사전 및 하이픈 규칙</name>
+        <name lang="kok">लिथुअनियन वर्णरचना शब्दकोश आनी संयोगचिन्नाचे नेमLithuaniachem OkxorRochona Xobdkox ani Xobdkox, somyog chinna Niyom</name>
+        <name lang="ks">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="lb">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="lo">ພົດຈະນານຸກົມສະກົດຄຳພາສາ Lithuanian, ແລະ ກົດລະບຽບການເຊື່ອມໂຍງ</name>
+        <name lang="lt">Lietuvių kalbos rašybos tikrinimo ir žodžių kėlybos žodynai</name>
+        <name lang="lv">Lietuviešu pareizrakstības vārdnīca un zilbjdales kārtulas</name>
+        <name lang="mai">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="mk">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="ml">ലിഥുവേനിയന്‍ സ്പെല്ലിങ് നിഘണ്ടുവും ഹൈഫനേഷന്‍ നിയമങ്ങളും</name>
+        <name lang="mn">Литва хэлний зөв бичгийн ба үеэр таслах дүрмийн толь бичиг</name>
+        <name lang="mni">লিথুৱানিযান বানানগী দিক্সনারি, অমসুং হাইফেনেসনগী রুলশিং</name>
+        <name lang="mr">लिथुअनियन शुध्दलेखन शब्दकोश, व हायफेनेशन नियम</name>
+        <name lang="my">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="nb">Litauisk stavekontroll, orddeling og synonymordbok</name>
+        <name lang="ne">लिथुआनियाई हिज्जे शब्दकोश, र योजकचिन्ह राख्ने कार्य नियमहरू</name>
+        <name lang="nl">Litouws spelling woordenboek en woordafbrekingsregels</name>
+        <name lang="nn">Litauisk stavekontroll, orddeling og synonymordbok</name>
+        <name lang="nr">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="nso">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="oc">Diccionari ortografic e règlas de copadura dels mots lituanians</name>
+        <name lang="om">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="or">ଲିଥୁନିଆନ ବନାନ ଅବିଧାନ, ଏବଂ ସମାସ ଚିହ୍ନ ନିୟମାବଳୀ</name>
+        <name lang="pa-IN">ਲਿਥੂਆਨੀ ਸਪੈਲਿੰਗ ਡਿਕਸ਼ਨਰੀ, ਅਤੇ ਹਾਈਫਨੇਸ਼ਨ ਰੂਲ</name>
+        <name lang="pl">Litewski słownik ortograficzny i reguły dzielenia wyrazów</name>
+        <name lang="pt">Dicionário ortográfico e regras de hifenização em lituano</name>
+        <name lang="pt-BR">Dicionário ortográfico e regras de hifenização em lituano</name>
+        <name lang="ro">Dicționar ortografic și reguli de despărțire în silabe pentru lituaniană</name>
+        <name lang="ru">Литовский орфографический словарь и правила переноса</name>
+        <name lang="rw">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="sa-IN">लितुवानियन् वर्णविन्यासकोशः तथा च समासकरणनियमाः</name>
+        <name lang="sat">लिथुवानियान बानान ञेल साबाद गादेल, फारका गार नियोम को</name>
+        <name lang="sat-Olck">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="sd">ليٿئنين هجي ڊڪشنري، ۽ ننڍي ليڪ (-) ڏيڻ جا قاعدا</name>
+        <name lang="si">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="sid">Letunaaete fidalishshsi qaallate fichaancho, haawiiccisha wodho</name>
+        <name lang="sk">Litovský slovník na kontrolu pravopisu a pravidlá na delenie slov</name>
+        <name lang="sl">Litovski jezik – slovar za preverjanje črkovanja in vzorci za deljenje besed</name>
+        <name lang="sq">Fjalor drejtshkrimi lituan, dhe rregullimet e rrokjezimit</name>
+        <name lang="sr">Литвански: провера писања и прелом речи</name>
+        <name lang="sr-Latn">Litvanski: provera pisanja i prelom reči</name>
+        <name lang="ss">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="st">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="sv">Stavningsordlista och böjningsregler för Litauiska</name>
+        <name lang="sw-TZ">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="szl">Litewski słownik ôrtograficzny i prawidła dzielynio słōw</name>
+        <name lang="ta">லிதுவேனிய எழுத்துக்கூட்டு அகராதி மற்றும் நடுக்கோடு தொடர்பான விதிகள்</name>
+        <name lang="te">లిథుయేనియన్  వుచ్ఛారణా నిఘంటువు, హైఫనేషన్ నియమాలు</name>
+        <name lang="tg">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="th">พจนานุกรมสะกดคำ และกฎการแทรกยัติภังค์ภาษาลิทัวเนีย</name>
+        <name lang="tl">Lithuanian spelling dictionary, at mga panuntunan sa hyphenation</name>
+        <name lang="tn">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="tr">Litvanca imla sözlüğü ve heceleme kuralları</name>
+        <name lang="ts">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="tt">Литва теленең орфография сүзлеге һәм күчерү кагыйдәләре</name>
+        <name lang="ug">لىتۋاچە ئىملا لۇغىتى ۋە ھەرپ ئۇلاش قائىدىسى</name>
+        <name lang="uk">Литовський орфографічний словник та правила переносу</name>
+        <name lang="uz">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="ve">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="vec">Disionaro ortogràfego Łituan e règołe de siłabasion</name>
+        <name lang="vi">Từ điển chính tả, luật ngạch ngang Lithuanian</name>
+        <name lang="xh">Lithuanian spelling dictionary, and hyphenation rules</name>
+        <name lang="zh-CN">立陶宛语拼写词典与断词规则</name>
+        <name lang="zh-TW">立陶宛文拼寫詞典、斷字與禁忌規則</name>
+        <name lang="zu">Lithuanian spelling dictionary, and hyphenation rules</name>
+    </display-name>
+    <platform value="all" />
+        <dependencies>
+            <OpenOffice.org-minimal-version value="3.0" d:name="OpenOffice.org 3.0" />
+        </dependencies>
+    <publisher>
+        <name xlink:href="https://launchpad.net/ispell-lt" lang="en">Albertas Agejevas and contributors</name>
+        <name xlink:href="https://launchpad.net/ispell-lt" lang="lt">Albertas Agejevas ir bendradarbiai</name>
+    </publisher>
+</description>
+

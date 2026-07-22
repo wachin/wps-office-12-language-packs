@@ -1,0 +1,7 @@
+
+| code | region |
+|:----:|:---:|
+| de_AT | Austria |
+| de_CH | Switzerland |
+| de_DE | Germany |
+

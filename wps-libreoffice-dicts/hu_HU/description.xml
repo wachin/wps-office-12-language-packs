@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description xmlns="http://openoffice.org/extensions/description/2006" xmlns:d="http://openoffice.org/extensions/description/2006"  xmlns:xlink="http://www.w3.org/1999/xlink">
+    <version value="2023.05.22" />
+    <identifier value="org.libreoffice.hu.hunspell.dictionaries" />
+    <display-name>
+        <name lang="en-US">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="ab">Венгериатәи аорфографиатә жәар, аиагара аԥҟарақәа, атезауруси аграмматика агәаҭареи</name>
+        <name lang="af">Hongaarse woordeboek vir spelling, koppelteken, tesourus en grammatika</name>
+        <name lang="am">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="ar">قاموس التدقيق الإملائي للُّغة الاسكتلندية، قواعد الواصلة والمدقق النحوي</name>
+        <name lang="as">হাংগেৰিয়ান বানান শব্দকোষ, হাইফেনেষণ নিয়মসমূহ, সমাৰ্থশব্দকোষ, আৰু ব্যাকৰণ নীৰিক্ষক</name>
+        <name lang="ast">Diccionariu ortográficu, regles de guionáu, sinónimos y correutor pal húngaru</name>
+        <name lang="be">Венгерскі правапісны слоўнік, правілы пераносаў, тэзаўрус і праверка граматыкі</name>
+        <name lang="bg">Унгарски речници за правопис и синоними, правила за сричкопренасяне и проверка на граматиката</name>
+        <name lang="bn">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="bn-IN">হাঙ্গেরিয়ান বানান অভিধান, হাইফেন প্রয়োগের নিয়ম, শব্দকোষ এবং ব্যাকারণ অভিধান</name>
+        <name lang="bo">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="br">Geriadur ar reizhskrivañ, reolennoù an troc'hañ-gerioù ha geriadur an heñvelsterioù evit an hungareg</name>
+        <name lang="brx">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="bs">Rječnik pravopisa i sinonima, provjera gramatike te pravila rastavljanja riječi na kraju reda za mađarski jezik</name>
+        <name lang="ca">Hongarès: corrector ortogràfic i gramatical, partició de mots i tesaurus (sinònims i termes relacionats)</name>
+        <name lang="ca-valencia">Hongarés: corrector ortogràfic i gramatical, partició de mots i tesaurus (sinònims i termes relacionats)</name>
+        <name lang="ckb">فەرهەنگی ڕێنووسی سکۆتلەندی، یاساکانی ڕێزمانی لەگەڵ بەرامبەرەکان</name>
+        <name lang="cs">Slovník kontroly pravopisu, dělení slov, slovník synonym a kontrola gramatiky pro maďarštinu</name>
+        <name lang="cy">Hwngareg - geiriadur sillafu, rheolau cyplysnodi, thesawrws a gwirydd gramadeg</name>
+        <name lang="da">Ungarsk stavekontrol, orddelingsregler, synonymordbog og grammatikkontrol</name>
+        <name lang="de">Ungarisches Wörterbuch für Rechtschreibprüfung, Silbentrennung, Thesaurus und Grammatikprüfung</name>
+        <name lang="dgo">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="dsb">Hungorski pšawopisny słownik, pšawidła źělenja złožkow, tezawrus a kontrola gramatiki</name>
+        <name lang="dz">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="el">Ουγγρικό ορθογραφικό λεξικό, συλλαβισμός, θησαυρός και γραμματική</name>
+        <name lang="en-GB">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="en-ZA">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="eo">Hungara ortografia vortaro, vortdividaj reguloj, tezaŭro kaj gramatikokontrolilo</name>
+        <name lang="es">Húngaro: corrector ortográfico y gramatical, sinónimos y reglas de silabación</name>
+        <name lang="et">Ungari keele õigekirjakontrolli sõnastik, poolitusreeglid, tesaurus ja grammatikakontroll</name>
+        <name lang="eu">Hungarieraren ortografia-egiaztatzailea, hitzak zatitzeko arauak, thesaurusa eta gramatika-egiaztatzailea</name>
+        <name lang="fa">واژه‌نامه املایی، قواعد خط‌فاصله‌گذاری، اصطلاح‌نامه و بررسی کننده دستور زبان مجارستانی</name>
+        <name lang="fi">Unkarin oikolukusanasto, tavutussäännöt, synonyymisanasto ja kieliopin tarkistin</name>
+        <name lang="fr">Dictionnaires orthographique, des synonymes, vérification de la grammaire et règles de coupure des mots hongrois</name>
+        <name lang="fur">Dizionari ortografic ongjarês, regulis di silabazion, dizionari dai sinonims e control gramaticâl</name>
+        <name lang="fy">Hongaarsk wurdboek foar stavering, wurdôfbrekkingsregels, synonimenlist en grammatika hifker</name>
+        <name lang="ga">Foclóir litrithe, rialacha fleiscínithe, teasáras, agus gramadóir don Ungáiris</name>
+        <name lang="gd">Faclair litreachadh, riaghailtean tàthanachadh, co-fhaclair ⁊ dearbhair gràmar na h-Ungairise</name>
+        <name lang="gl">Dicionario ortográfico, guionizador, sinónimos e corrector gramatical do húngaro</name>
+        <name lang="gu">હંગેરિયન જોડણી ચકાસણી શબ્દકોષ, હાઇફનેશન નિયમો, માહિતી ભંડાર, અને વ્યાકરણ ચકાસનાર</name>
+        <name lang="gug">Húngaro: corrector ortográfico ha división ñe'ẽgui</name>
+        <name lang="he">רשימת מילים לבודק איות, כללי מיקוף ואגרון בהונגרית</name>
+        <name lang="hi">हंगरेयाई वर्तनी शब्दकोश, समासन नियम, थिसारस और व्याकरण जाँचकर्ता</name>
+        <name lang="hr">Pravopisni rječnik, rastavljanje riječi, rječnik sinonima i provjera gramatike mađarskog jezika</name>
+        <name lang="hsb">Madźarski prawopisny słownik, prawidła dźělenja złóžkow, tezawrus a gramatikowa kontrola</name>
+        <name lang="hu">Magyar helyesírási szótár, elválasztási szabályok, szinonimaszótár és nyelvi ellenőrző</name>
+        <name lang="hy">Հունգարերեն ուղղագրական բառարան, տողադարձի կանոններ, թեզաուրուս և քերականության ստուգիչ</name>
+        <name lang="id">Kamus ejaan, aturan pemenggalan kata, tesaurus dan pemeriksa tata bahasa Bahasa Hungaria</name>
+        <name lang="is">Ungverskt stafsetningarorðasafn, orðskiptireglur, og samheitaorðasafn</name>
+        <name lang="it">Dizionario ortografico ungherese, regole di sillabazione, dizionario di sinonimi e analizzatore grammaticale</name>
+        <name lang="ja">ハンガリー語スペル辞書、ハイフネーション規則、類義語辞典と文法チェッカー</name>
+        <name lang="ka">უნგრული მართლწერის ლექსიკონი, გადატანის წესები, თეზაურუსი და გრამატიკის შემმოწმებელი</name>
+        <name lang="kab">Amawal n teɣdira, ilugan n tira, agdawal akked umseɣtay n tira n thungarit</name>
+        <name lang="kk">Венгр емле сөздігі, тасымалдау ережелері, тезаурус және грамматиканы тексеру</name>
+        <name lang="km">វចនានុក្រម​អក្ខរាវិរុទ្ធ​ភាសា​ហុងគ្រី គោលការណ៍​ដាក់​សហសញ្ញា និងកម្មវិធី​ពិនិត្យ​វេយ្យាករណ៍</name>
+        <name lang="kmr-Latn">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="kn">ಹಂಗೇರಿಯನ್ ಕಾಗುಣಿತ ಶಬ್ಧಕೋಶ, ಹೈಫನೇಶನ್ ನಿಯಮಗಳು, ಸಮಾನಾರ್ಥಕ ಪದಕೋಶ ಮತ್ತು ವ್ಯಾಕರಣ ಪರೀಕ್ಷಕ</name>
+        <name lang="ko">헝가리어 맞춤법 사전, 하이픈 규칙, 동의어 사전, 문법 검사기</name>
+        <name lang="kok">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="ks">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="lb">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="lo">ພົດຈະນານຸກົມສະກົດຄຳພາສາ Hungarian, ກົດລະບຽບການເຊື່ອມໂຍງ, ພົດຈະນານຸກົມ, ແລະ ກວດສອບໄວຍະກອນ</name>
+        <name lang="lt">Vengrų kalbos rašybos tikrinimo, žodžių kėlybos, tezauro žodynai ir gramatikos tikrintuvė</name>
+        <name lang="lv">Ungāru pareizrakstības vārdnīca, zilbjdales kārtulas, tēzaurs un gramatikas pārbaudītājs</name>
+        <name lang="mai">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="mk">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="ml">ഹംഗേറിയന്‍ സ്പെല്ലിങ് നിഘണ്ടുവും, ഹൈഫനേഷന്‍ നിയമങ്ങളും, തെസോറസും വ്യാകരണ പരിശോധനയും</name>
+        <name lang="mn">Унгар хэлний зөв бичгийн ба үеэр таслах дүрмийн болон нэвтэрхий толь бичиг ба дүрмийн шалгалт</name>
+        <name lang="mni">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="mr">हंगेरियन शुध्दलेखन शब्दकोश, हायफेनेशन पद्धती, थिसॉरस्, व ग्रामर चेकर</name>
+        <name lang="my">ဟန်ဂေရီးယန်းစာလုံးပေါင်း၊ အဘိဓာန်၊ စကားလုံးခွဲမျဉ်းတိုပုံစံများနှင့်  ဝေါဟာရပဒေသာကျမ်း</name>
+        <name lang="nb">Ungarsk stavekontroll, orddeling og synonymordbok og grammatikkkontroll</name>
+        <name lang="ne">हंगरी हिज्जे शब्दकोश, योजकचिन्ह राख्ने कार्य नियमहरू, पर्यायकोश, र व्याकरण संशोधक</name>
+        <name lang="nl">Hongaars spelling woordenboek, woordafbrekingsregels, thesaurus en grammaticacontrole</name>
+        <name lang="nn">Ungarsk stavekontroll, orddeling og synonymordbok, og grammatikk-kontroll</name>
+        <name lang="nr">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="nso">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="oc">Diccionaris d'ortografia, dels sinonims, de gramatica e règla de copadura dels mots ongreses</name>
+        <name lang="om">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="or">ହଙ୍ଗାରିଆନ ବନାନ ଅବିଧାନ, ସମାସ ଚିହ୍ନ ନିୟମାବଳୀ, ଶବ୍ଦାକୋଷ, ଏବଂ ବ୍ୟାକରଣ ଯାଞ୍ଚ</name>
+        <name lang="pa-IN">ਹੁੰਗਾਰੀਅਨ ਸਪੈਲਿੰਗ ਡਿਕਸ਼ਨਰੀ, ਅਤੇ ਹਾਈਫਨੇਸ਼ਨ ਰੂਲ, ਕੋਸ਼, ਅਤੇ ਗਰਾਮਰ ਚੈੱਕਰ</name>
+        <name lang="pl">Węgierski słownik ortograficzny, reguły dzielenia wyrazów, słownik wyrazów bliskoznacznych i sprawdzanie gramatyki</name>
+        <name lang="pt">Dicionário ortográfico, sinónimos, regras de hifenização e verificador gramatical em húngaro</name>
+        <name lang="pt-BR">Dicionário ortográfico, sinônimos, regras de hifenização e verificador gramatical em húngaro</name>
+        <name lang="ro">Dicționar ortografic, de sinonime, reguli de despărțire în silabe și verificator gramatical pentru maghiară</name>
+        <name lang="ru">Венгерский орфографический словарь, правила переноса, тезаурус и проверка грамматики</name>
+        <name lang="rw">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="sa-IN">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="sat">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="sat-Olck">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="sd">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="si">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="sid">Hangaarete fidalishshsi qaallate fichaancho, haawiiccisha wodho, xaadigurchu qaallate fichaanchonna afuu jirtete buuxaancho</name>
+        <name lang="sk">Maďarský slovník na kontrolu pravopisu, pravidlá na delenie slov, tezaurus a kontrola gramatiky</name>
+        <name lang="sl">Madžarski jezik – slovar za preverjanje črkovanja, vzorci za deljenje besed, slovar sopomenk in preverjevalnik slovnice</name>
+        <name lang="sq">Fjalori i drejtshkrimit hungarez, rregullat e rrokjezimit, sinonimet, dhe kontrolluesi i gramatikës</name>
+        <name lang="sr">Мађарски: провера писања, прелом речи, речник синонима и провера граматике</name>
+        <name lang="sr-Latn">Mađarski: provera pisanja, prelom reči, rečnik sinonima i provera gramatike</name>
+        <name lang="ss">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="st">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="sv">Stavningsordlista, böjningsregler, synonymordlista och grammatikkontroll för Ungerska</name>
+        <name lang="sw-TZ">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="szl">Wyngerski słownik ôrtograficzny, prawidła dzielynio słōw, słownik synōnimōw i korekta gramatyki</name>
+        <name lang="ta">ஹங்கேரிய எழுத்துக்கூட்டு அகராதிகள், நடுக்கோடு விதிகள், நிகண்டு மற்றும் இலக்கண சரிபார்ப்பு</name>
+        <name lang="te">హంగేరియన్ వుచ్ఛారణా నిఘంటువు, హైఫనేషన్ నియమాలు, పదకోశాలు, మరియు వ్యాకరణ పరిశీలకి</name>
+        <name lang="tg">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="th">พจนานุกรมสะกดคำ, กฎการแทรกยัติภังค์, อรรถาภิธาน, และเครื่องมือตรวจไวยากรณ์ภาษาฮังการี</name>
+        <name lang="tl">Hungarian spelling dictionary, hyphenation rules, thesaurus, at grammar checker</name>
+        <name lang="tn">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="tr">Macarca imla sözlüğü, heceleme kuralları ve eş anlamlılar ve dil bilgisi denetim aracı</name>
+        <name lang="ts">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="tt">Венгер теленең орфография сүзлеге, күчерү кагыдәләре, тезаурус һәм грамматиканы тикшерү</name>
+        <name lang="ug">ھونگىرچە ئىملا لۇغىتى، ھەرپ ئۇلىنىش قائىدىسى، مەنىداش سۆزلەر لۇغىتى ۋە تىلقۇرما تەكشۈرگۈچ</name>
+        <name lang="uk">Угорський орфографічний словник, правила переносу , тезаурус та перевірка граматики</name>
+        <name lang="uz">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="ve">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="vec">Disionaro ortogràfego Ongareze, règołe de siłabasion, disionaro de i sinònemi e controłor gramategałe</name>
+        <name lang="vi">Từ điển chính tả, luật ngạch ngang, đồng nghĩa, bộ kiểm tra chính tả tiếng Hungari</name>
+        <name lang="xh">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="zh-CN">匈牙利语拼写词典、断词规则、同义词库与语法检查器</name>
+        <name lang="zh-TW">匈牙利文拼寫詞典、斷字與禁忌規則、同義詞庫、文法檢查器</name>
+        <name lang="zu">Hungarian spelling dictionary, hyphenation rules, thesaurus, and grammar checker</name>
+    </display-name>
+    <publisher>
+        <name lang="en-US" xlink:href="http://www.fsf.hu/">FSF.hu Foundation</name>
+        <name lang="hu" xlink:href="http://www.fsf.hu/">FSF.hu Alapítvány</name>
+    </publisher>
+    <platform value="all" />
+    <dependencies>
+        <OpenOffice.org-minimal-version value="3.2" d:name="OpenOffice.org 3.2" />
+    </dependencies>
+</description>
+

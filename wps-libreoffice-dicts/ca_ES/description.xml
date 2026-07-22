@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description xmlns="http://openoffice.org/extensions/description/2006" xmlns:d="http://openoffice.org/extensions/description/2006"  xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Fitxer basat en la versió francesa. S'ha de depurar. JMo, 06.jul.08 -->
+    <!-- SHOULD OR MUST BE PROVIDED ENTRIES FOLLOWING... -->
+
+    <!-- Here you can state the license text to be displayed during installation.
+        You can provide more than one localized version if you like.
+        If no matching locale was found the first one will be displayed.
+        !!! Don't change the values for 'accept-by' or 'suppress-on-update' it  !!!
+        !!! might be troublesome in multi-user installations if no shared-layer !!!
+        !!! installation can be done.                                           !!! -->
+    <registration>
+        <simple-license accept-by="admin" suppress-on-update="true" >
+            <license-text xlink:href="LICENSES-en.txt" lang="en-US" />
+            <license-text xlink:href="LLICENCIES-ca.txt" lang="ca" />
+        </simple-license>
+    </registration>
+
+    <!-- The version of your extension. NOT the one of OpenOffice.org...
+         It will also be used to automatically check if there are updates for this
+         extension available. Newer versions should have higher values. -->
+    <version value="3.0.8" />
+
+    <!-- A unique identifier for your extension.
+        In order to avoid name clashes with other extensions it should probably hold
+        your company name or your full name along with the name of the extension in a form like
+            MyFirstName.MyLastName.DictionayName
+        or  www.MyWebpage.net.DictionayName
+        Or  you may use the project name of your submitted extension to start with...
+        For the very same reason they should NOT start with 'org.openoffice'.
+        When choosing the identifier keep in mind that others may provide a dictionary for that
+        very same language as well and even then your identifier still needs to be unique! -->
+    <identifier value="softcatala.catalan.dictionary" />
+
+    <!-- A name for the extension to be used in the UI.
+        For dictionaries it should show the locales supported
+        and the purpose spell checking and/or hyphenation and/or thesaurus.
+        The display name can be localized and there should be at least one
+        entry for each language it implements and one default English entry.
+        The default entry is the one listed first. -->
+    <display-name>
+        <name lang="en-US">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="ab">Каталантәи аорфографиатә жәар, аиагара аԥҟарқәеи атезауруси</name>
+        <name lang="af">Katalaanse spel-woordeboek, koppelteken-reëls en tesourus</name>
+        <name lang="am">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="ar">قاموس التدقيق الإملائي للُّغة الكاتالونية، قواعد الواصلة والمترادفات</name>
+        <name lang="as">কাটালান বানান শব্দকোষ, হাইফেনেষণ নিয়মসমূহ, আৰু সমাৰ্থশব্দকোষ</name>
+        <name lang="ast">Diccionariu ortográficu, patrones de guionáu y diccionariu de sinónimos pal catalán</name>
+        <name lang="be">Каталонскі правапісны слоўнік, правілы пераносаў і тэзаўрус</name>
+        <name lang="bg">Каталонски речници за правопис, сричкопренасяне и синоними</name>
+        <name lang="bn">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="bn-IN">ক্যাটালান বানান অভিধান, হাইফেন প্রয়োগের নিয়ম, এবং শব্দকোষ</name>
+        <name lang="bo">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="br">Geriadur reizhskrivañ, reolennoù an troc'hañ gerioù ha geriadur an heñvelsterioù evit ar c'hatalaneg</name>
+        <name lang="brx">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="bs">Rječnik pravopisa i sinonima, te pravila rastavljanja riječi na kraju reda za katalonski jezik</name>
+        <name lang="ca">Català: corrector ortogràfic, partició de mots i tesaurus (sinònims i termes relacionats)</name>
+        <name lang="ca-valencia">Català: corrector ortogràfic, partició de mots i tesaurus (sinònims i termes relacionats)</name>
+        <name lang="ckb">فەرهەنگی ڕێنووسی زمانی کەتەلان، یاساکانی ڕێزمانی لەگەڵ بەرامبەرەکان</name>
+        <name lang="cs">Slovník kontroly pravopisu, dělení slov a slovník synonym pro katalánštinu</name>
+        <name lang="cy">Geiriaduron gwirio sillafu, rheolau cyplysnodi a thesawrws Catalaneg</name>
+        <name lang="da">Catalansk stavekontrol, orddelingsregler og synonymordbog</name>
+        <name lang="de">Katalanisches Wörterbuch für Rechtschreibprüfung, Silbentrennung und Thesaurus</name>
+        <name lang="dgo">कैटलान शब्द-जोड़ शब्दकोश, जोड़-चिʼन्नीकरण नियम ते पर्यायकोश</name>
+        <name lang="dsb">Pšawopisny słownik, pšawidła źělenja złožkow a tezawrus za katalańšćinu</name>
+        <name lang="dz">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="el">Καταλανικό λεξικό ορθογραφίας, συλλαβισμός και θησαυρός</name>
+        <name lang="en-GB">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="en-ZA">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="eo">Literumada kaj vortdivida vortaroj kaj tezaŭro por la kataluna</name>
+        <name lang="es">Catalán: corrector ortográfico, sinónimos y reglas de silabación</name>
+        <name lang="et">Katalaani keele õigekirjakontrolli sõnastik, poolitusreeglid ja tesaurus</name>
+        <name lang="eu">Katalanaren ortografia-egiaztatzailea, hitzak zatitzeko arauak, eta thesaurusa</name>
+        <name lang="fa">واژه‌نامه املایی، قواعد خط‌فاصله‌گذاری و اصطلاح‌نامه کاتالان</name>
+        <name lang="fi">Katalaanin oikolukusanasto, tavutussäännöt ja synonyymisanasto</name>
+        <name lang="fr">Dictionnaires orthographique, des synonymes et règles de coupure des mots catalans</name>
+        <name lang="fur">Dizionari ortografic catalan, regulis di silabazion e dizionari dai sinonims</name>
+        <name lang="fy">Katalaansk wurdboek foar stavering, wurdboekôfbrekkingsregels en synonimenlist</name>
+        <name lang="ga">Foclóir litrithe, rialacha fleiscínithe, agus teasáras don Chatalóinis</name>
+        <name lang="gd">Faclair litreachadh, riaghailtean tàthanachadh ⁊ co-fhaclair na Catalanaise</name>
+        <name lang="gl">Corrector ortográfico, guionizador e sinónimos do catalán</name>
+        <name lang="gu">કૅટેલન જોડણી ચકાસણી શબ્દકોષ, હાઇફનેશન નિયમો અને માહિતી ભંડાર</name>
+        <name lang="gug">Catalán: corrector ortográfico ha división ñe'ẽgui</name>
+        <name lang="he">מילון בדיקת איות, כללי פיסוק ואגרון בקטלאנית</name>
+        <name lang="hi">कैटालन वर्तनी शब्दकोश, समासन नियम और थिसारस</name>
+        <name lang="hr">Pravopisni rječnik, pravila rastavljanja riječi i rječnik sinonima za katalonski jezik</name>
+        <name lang="hsb">Prawopisny słownik, prawidła dźělenja złóžkow a tezawrus za katalanšćinu</name>
+        <name lang="hu">Katalán helyesírási szótár, elválasztási szabályok és szinonimaszótár</name>
+        <name lang="hy">Կատալոներեն ուղղագրական բառարան, տողադարձի կանոններ և թեզաուրուս</name>
+        <name lang="id">Kamus ejaan, aturan pemenggalan kata, dan tesaurus Bahasa Katala</name>
+        <name lang="is">Katalónskt stafsetningarorðasafn, orðskiptireglur, og samheitaorðasafn</name>
+        <name lang="it">Dizionario ortografico catalano, regole di sillabazione e dizionario di sinonimi</name>
+        <name lang="ja">カタロニア語スペル辞書、ハイフネーション規則と類義語辞典</name>
+        <name lang="ka">კატალანური მართლწერის ლექსიკონი, გადატანის წესები და თეზაურუსი</name>
+        <name lang="kab">Amawal n teɣdira, igdawalen d ilugan n unegzum n wawalen Ikataluniyen</name>
+        <name lang="kk">Каталандық емле сөздігі, тасымалдау ережелері және тезаурус</name>
+        <name lang="km">វចនានុក្រម​អក្ខរាវិរុទ្ធ​ភាសា​កាតាឡាន ក្បួន​ដាក់​សហសញ្ញា និង​កម្រង​វេវចនសព្ទ</name>
+        <name lang="kmr-Latn">Ferhenga rastnivîs, rêbazên kîtekirin û hevwateyên Katalanî</name>
+        <name lang="kn">ಕೆಟಲಾನ್ ಕಾಗುಣಿತ ಶಬ್ಧಕೋಶ, ಹೈಫನೇಶನ್ ನಿಯಮಗಳು, ಹಾಗು ಸಮಾನಾರ್ಥಕ ಪದಕೋಶ</name>
+        <name lang="ko">카탈로니아어 맞춤법 검사 사전, 하이픈 넣기 규칙, 동의어 사전</name>
+        <name lang="kok">केटलन वर्णरचना शब्दकोश, संयोगचिन्नाचे नेम आनी थेसोरसCatalachem OkxorRochona Xobdkox, Xobdkox, somyog chinna Niyom ani MahetiKox</name>
+        <name lang="ks">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="lb">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="lo">ພົດຈະນານຸກົມສະກົດຄຳພາສາ Catalan, ກົດລະບຽບການເຊື່ອມໂຍງ, ແລະ ພົດຈະນານຸກົມ</name>
+        <name lang="lt">Katalonų kalbos rašybos tikrinimo, skiemenavimo ir tezauro žodynai</name>
+        <name lang="lv">Katalāņu pareizrakstības vārdnīca, zilbjdales kārtulas un tēzaurs</name>
+        <name lang="mai">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="mk">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="ml">കാറ്റലന്‍ സ്പെല്ലിങ് നിഘണ്ടു, ഹൈഫനേഷന്‍ ശൈലികള്‍, തെസോറസ്</name>
+        <name lang="mn">Каталан хэлний зөв бичгийн ба үеэр таслах дүрмийн болон нэвтэрхий толь бичиг</name>
+        <name lang="mni">কেতালান বানানগী দিক্সনারি, হাইফেনেসনগী রুলশিং, অমসুং থেসোরস</name>
+        <name lang="mr">कॅटलॅन शुध्दलेखन शब्दकोश, हायफेनेशन नियम, व थिसॉरस्</name>
+        <name lang="my">ဟန်ဂေရီးယန်းစာလုံးပေါင်း၊ အဘိဓာန်၊ စကားလုံးခွဲမျဉ်းတိုပုံစံများနှင့်  ဝေါဟာရပဒေသာကျမ်း</name>
+        <name lang="nb">Katalansk stavekontroll, orddeling og synonymordbok</name>
+        <name lang="ne">योजक चिन्ह</name>
+        <name lang="nl">Catalaanse woordenlijst voor spellingcontrole, regels voor afbrekingen, en synoniemenlijst</name>
+        <name lang="nn">Katalansk stavekontroll, orddeling og synonymordbok</name>
+        <name lang="nr">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="nso">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="oc">Diccionaris ortografic, dels sinonims e règlas de copadura de mots catalans</name>
+        <name lang="om">Dikshinaari qubeessa afaan Katalan</name>
+        <name lang="or">କାତାଲାନ ବନାନ ଅଭିଧାନ, ସମାସ ଚିହ୍ନ ବିଶିଷ୍ଟ ପ୍ରକାର, ଏବଂ ଶବ୍ଦକୋଷଗୁଡ଼ିକ</name>
+        <name lang="pa-IN">ਪੋਲੈਂਡੀ ਸਪੈਲਿੰਗ ਡਿਕਸ਼ਨਰੀ, ਹਾਈਫਿਨੇਸ਼ਨ ਨਿਯਮ ਅਤੇ ਸਮਾਰਥਕੋਸ਼</name>
+        <name lang="pl">Kataloński słownik ortograficzny, reguły dzielenia wyrazów i słownik wyrazów bliskoznacznych</name>
+        <name lang="pt">Dicionário ortográfico, sinónimos e regras de hifenização em catalão</name>
+        <name lang="pt-BR">Dicionário ortográfico, sinônimos e regras de hifenização em catalão</name>
+        <name lang="ro">Dicționar ortografic, de sinonime și reguli de despărțire în silabe pentru catalană</name>
+        <name lang="ru">Каталанский орфографический словарь, правила переноса и тезаурус</name>
+        <name lang="rw">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="sa-IN">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="sat">काटालान बानान ञेल साबाद गादेल, फारका गार नियोम, आर आर मित् लेकान मानेयानाक् साबाद गादेल बाबोत काटालान बानान ञेल साबाद गादेल, फारका गार नियोम, आर आर मित् लेकान मानेयानाक् साबाद गादेल बाबोत</name>
+        <name lang="sat-Olck">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="sd">ڪيٽالان هجي ڊڪشنري، ننڍي ليڪ (-) ڏيڻ جا قاعدا، ۽ پريايواچي ڪوش</name>
+        <name lang="si">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="sid">Katalan fidale qaallate fichaancho, Haawiiccisha wodho, nna xaadigurchu qaallate fichaancho</name>
+        <name lang="sk">Katalánsky slovník na kontrolu pravopisu, delenie slov a tezaurus</name>
+        <name lang="sl">Katalonski jezik – slovar za preverjanje črkovanja, vzorci za deljenje besed in slovar sopomenk</name>
+        <name lang="sq">Fjalori i drejtshkrimit katalanas, rregullat e rrokjezimit, dhe sinonimet</name>
+        <name lang="sr">Каталонски: провера писања, прелом речи и речник синонима</name>
+        <name lang="sr-Latn">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="ss">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="st">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="sv">Katalanska - stavningsordlista, avstavningsregler och synonymordlista</name>
+        <name lang="sw-TZ">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="szl">Katalōński słownik ôrtograficzny, prawidła dzielynio słōw i słownik synōnimōw</name>
+        <name lang="ta">கட்டலான் எழுத்துக்கூட்டல் அகராதி, சொல்பிரிகை கோலம், மற்றும் நிகண்டு</name>
+        <name lang="te">కెటలాన్ వుచ్ఛారణా నిఘంటువు, హైఫనేషన్ నియమాలు, మరియు పదకోశాలు</name>
+        <name lang="tg">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="th">พจนานุกรมสะกดคำ, กฎการแทรกยัติภังค์, และอรรถาภิธานภาษาคาตาลัน</name>
+        <name lang="tl">Catalan spelling dictionary, hyphenation rules, at thesaurus</name>
+        <name lang="tn">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="tr">Katalanca imla sözlüğü, heceleme kuralları ve eş anlamlılar</name>
+        <name lang="ts">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="tt">Каталан теленең орфография сүзлеге, күчерү кагыйдәләре һәм тезаурусы</name>
+        <name lang="ug">كاتالانچە ئىملا لۇغىتى، ھەرپ ئۇلىنىش قائىدىسى ۋە مەنىداش سۆزلەر لۇغىتى</name>
+        <name lang="uk">Каталонський орфографічний словник, правила переносу та тезаурус</name>
+        <name lang="uz">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="ve">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="vec">Disionaro ortogràfego Catałan, règołe de siłabasion e disionaro de i sinònemi</name>
+        <name lang="vi">Từ điển kiểm tra chính tả tiếng Catalan, gạch nối và đồng nghĩa</name>
+        <name lang="xh">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="zh-CN">加泰罗尼亚语拼写词典、断词规则与同义词库</name>
+        <name lang="zh-TW">加泰隆尼亞文拼寫詞典、斷字與禁忌規則、同義詞庫</name>
+        <name lang="zu">Catalan spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="ca">Català (general i valencià): corrector ortogràfic, partició de mots i tesaurus (sinònims i termes relacionats)</name>
+    </display-name>
+
+    <!-- Dictionaries should work with all platforms... -->
+    <platform value="all" />
+
+    <!-- A minimal OpenOffice.org version the extension requires to be used with.
+         For dictionary extensions that will be 'OpenOffice.org 3.0' -->
+    <dependencies>
+        <OpenOffice.org-minimal-version value="3.0" d:name="OpenOffice.org 3.0" />
+    </dependencies>
+
+
+    <!-- MORE OPTIONAL LIKE ENTRIES FOLLOWING (may easily be omitted, uncommented by default)... -->
+
+    <update-information>
+        <src xlink:href="https://softcatala.org/diccionaris/actualitzacions/OOo/catalan.update.xml" />
+    </update-information>
+
+    <!-- Check if this is already generated by repository.
+        Otherwise you may like to provide it manually.
+    <publisher>
+        <name xlink:href="https://extensions.openoffice.org/testarea/desktop/publisher/publisher_en.html" lang="en">My dictionary extension (en)</name>
+        <name xlink:href="https://extensions.openoffice.org/testarea/desktop/publisher/publisher_fr.html" lang="fr">My dictionary extension (fr)</name>
+    </publisher> -->
+    <publisher>
+        <name xlink:href="https://www.softcatala.org" lang="en-US">Softcatalà</name>
+        <name xlink:href="https://www.softcatala.org" lang="ca">Softcatalà</name>
+    </publisher>
+
+    <release-notes>
+        <src xlink:href="https://softcatala.org/diccionaris/actualitzacions/OOo/release-notes_en.html" lang="en-US" />
+        <src xlink:href="https://softcatala.org/diccionaris/actualitzacions/OOo/release-notes_ca.html" lang="ca" />
+    </release-notes>
+
+    <icon><default xlink:href="images/SC-logo.png"/></icon>
+</description>

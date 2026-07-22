@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description xmlns="http://openoffice.org/extensions/description/2006" xmlns:d="http://openoffice.org/extensions/description/2006"  xmlns:xlink="http://www.w3.org/1999/xlink">
+    <version value="2024.11.08" />
+    <identifier value="org.openoffice.da.hunspell.dictionaries" />
+    <display-name>
+        <name lang="en-US">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="ab">Даниатәи аорфографиатә жәар, аиагара аԥҟарқәеи атезауруси</name>
+        <name lang="af">Deense woordeboek vir speltoetsing, koppelteken reëls en tesourus</name>
+        <name lang="am">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="ar">قاموس التدقيق الإملائي للُّغة الدانمركية، قواعد الواصلة والمترادفات</name>
+        <name lang="as">ডানিচ বানান শব্দকোষ, হাইফেনেষণ নিয়মসমূহ, আৰু সমাৰ্থশব্দকোষ</name>
+        <name lang="ast">Diccionariu ortográficu y regles de guionáu y sinónimos pal danés</name>
+        <name lang="be">Дацкі правапісны слоўнік, правілы пераносаў і тэзаўрус</name>
+        <name lang="bg">Датски речници за правопис, сричкопренасяне и синоними</name>
+        <name lang="bn">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="bn-IN">ড্যানিশ বানান পরীক্ষণের অভিধান, হাইফেন প্রয়োগের নিয়ম এবং শব্দকোষ</name>
+        <name lang="bo">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="br">Geriadur ar reizhskrivañ, reolennoù an troc'hañ-gerioù ha geriadur an heñvelsterioù evit  an daneg</name>
+        <name lang="brx">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="bs">Rječnik pravopisa i sinonima, te pravila rastavljanja riječi na kraju reda za danski jezik</name>
+        <name lang="ca">Danès: corrector ortogràfic, partició de mots i tesaurus (sinònims i termes relacionats)</name>
+        <name lang="ca-valencia">Danés: corrector ortogràfic, partició de mots i tesaurus (sinònims i termes relacionats)</name>
+        <name lang="ckb">فەرهەنگی ڕێنووسی دانیمارکی، یاساکانی ڕێزمانی لەگەڵ بەرامبەرەکان</name>
+        <name lang="cs">Slovník kontroly pravopisu, dělení slov a slovník synonym pro dánštinu</name>
+        <name lang="cy">Daneg - geiriadur sillafu, rheolau gysylltnodi a thesawrws</name>
+        <name lang="da">Dansk stavekontrol, orddelingsregler og synonymordbog</name>
+        <name lang="de">Dänisches Wörterbuch für Rechtschreibprüfung, Silbentrennung und Thesaurus</name>
+        <name lang="dgo">डैनिश शब्द-जोड़ शब्दकोश, जोड़-चिʼन्नीकरण नियम ते पर्यायकोश</name>
+        <name lang="dsb">Dański pšawopisny słownik, pšawidła źělenja złožkow a tezawrus</name>
+        <name lang="dz">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="el">Δανέζικο λεξικό ορθογραφίας, συλλαβισμός και θησαυρός</name>
+        <name lang="en-GB">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="en-ZA">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="eo">Dana ortografia vortaro, vortdividaj reguloj, kaj tezaŭro</name>
+        <name lang="es">Danés: corrector ortográfico, sinónimos y reglas de silabación</name>
+        <name lang="et">Taani keele õigekirjakontrolli sõnastik, poolitusreeglid ja tesaurus</name>
+        <name lang="eu">Danieraren ortografia-egiaztatzailea, hitzak zatitzeko arauak eta thesaurusa</name>
+        <name lang="fa">واژه‌نامه، قواعد خط‌فاصله‌گذاری، و اصطلاح‌نامه دانمارکی</name>
+        <name lang="fi">Tanskan oikolukusanasto, tavutussäännöt ja synonyymisanasto</name>
+        <name lang="fr">Dictionnaires orthographique, des synonymes et règles de coupure des mots danois</name>
+        <name lang="fur">Dizionari ortografic danês, regulis di silabazion e dizionari dai sinonims</name>
+        <name lang="fy">Deensk wurdboek foar stavering, wurdôfbrekkingsregels en synonimenlist</name>
+        <name lang="ga">Foclóir litrithe, rialacha fleiscínithe agus teasáras don Danmhairgis</name>
+        <name lang="gd">Faclair litreachadh, riaghailtean tàthanachadh ⁊ co-fhaclair na Danmhairgise</name>
+        <name lang="gl">Dicionario ortográfico, de sinónimos e regras de guionización para danés</name>
+        <name lang="gu">ડેનિશ જોડણી ચકાસણી શબ્દકોષ, હાઇફનેશન નિયમો અને માહિતી ભંડાર</name>
+        <name lang="gug">Danés: tai moĩporãha, he'ijojáva ha mbojojaha ñe'ẽ ñemboja'o rehegua</name>
+        <name lang="he">רשימת מילים לבודק איות, כללי מיקוף ואגרון בדנית</name>
+        <name lang="hi">डैनिश वर्तनी शब्दकोश, समासन नियम और थिसारस</name>
+        <name lang="hr">Provjera pravopisa, rastavljanje riječi i rječnik sinonima danskog jezika</name>
+        <name lang="hsb">Danski prawopisny słownik, prawidła dźělenja złóžkow a tezawrus</name>
+        <name lang="hu">Dán helyesírási szótár, elválasztási szabályok és szinonimaszótár</name>
+        <name lang="hy">Դանիերեն ուղղագրական բառարան, տողադարձի կանոններ և թեզաուրուս</name>
+        <name lang="id">Kamus ejaan, aturan pemenggalan kata, dan tesaurus Bahasa Denmark</name>
+        <name lang="is">Danskt stafsetningarorðasafn, orðskiptireglur og samheitaorðasafn</name>
+        <name lang="it">Dizionario ortografico danese, regole di sillabazione e dizionario di sinonimi</name>
+        <name lang="ja">デンマーク語スペル辞書、ハイフネーション規則と類義語辞典</name>
+        <name lang="ka">დანიური მართლწერის ლექსიკონი, გადატანის წესები და თეზაურუსი</name>
+        <name lang="kab">Amawal n teɣdira, igdawalend d ilugan n inegzumen n wawalen tadanit</name>
+        <name lang="kk">Дат емле сөздігі, тасымалдау ережелері және тезаурус</name>
+        <name lang="km">វចនានុក្រម​អក្ខរាវិរុទ្ធ​ភាសា​ដាណឺម៉ាក គោលការណ៍​ដាក់​សហសញ្ញា និង​កម្រង​វេវចនសព្ទ</name>
+        <name lang="kmr-Latn">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="kn">ಡ್ಯಾನಿಶ್ ಕಾಗುಣಿತ ಪರೀಕ್ಷಕ ಶಬ್ಧಕೋಶ, ಹೈಫನೇಶನ್ ನಿಯಮಗಳು, ಹಾಗು ಸಮಾನಾರ್ಥಕ ಪದಕೋಶ</name>
+        <name lang="ko">덴마크어 맞춤법용 사전, 하이픈 규칙, 유의어</name>
+        <name lang="kok">दानीश वर्णरचना शब्दकोश, संयोगचिन्नाचे नेम आनी थेसोरसDanish OkxorRochona Xobdkox, Xobdkox, somyog chinna Niyom ani MahetiKox</name>
+        <name lang="ks">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="lb">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="lo">ພົດຈະນານຸກົມສະກົດຄຳພາສາ Danish, ກົດລະບຽບການເຊື່ອມໂຍງ, ແລະ ພົດຈະນານຸກົມ</name>
+        <name lang="lt">Danų kalbos rašybos tikrinimo, žodžių kėlybos ir tezauro žodynai</name>
+        <name lang="lv">Dāņu pareizrakstības vārdnīca, zilbjdales kārtulas un tēzaurs</name>
+        <name lang="mai">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="mk">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="ml">ഡാനിഷിനുള്ള സ്പെല്ലിങ് നിഘണ്ടുവും ഹൈഫനേഷന്‍ നിയമങ്ങളും തെസോറസും</name>
+        <name lang="mn">Дани хэлний зөв бичгийн ба үеэр таслах дүрмийн болон нэвтэрхий толь бичиг</name>
+        <name lang="mni">দেনিশ বানানগী দিক্সনারি, হাইফেনেসনগী রুলশিং, অমসুং থেসোরস</name>
+        <name lang="mr">डॅनिश शुध्दलेखन शब्दकोष, हायफेनेशन नियम, व थिसॉरस्</name>
+        <name lang="my">ပိုလန် စာလုံးပေါင်းစစ်အဘိဓာန်၊ စကားလုံးခွဲမျဉ်းတို စည်းမျဉ်းများနှင့်  ဝေါဟာရပဒေသာကျမ်း</name>
+        <name lang="nb">Dansk stavekontroll, orddeling og synonymordbok</name>
+        <name lang="ne">डेनिश हिज्जे शब्दकोश, योजकचिन्ह राख्ने कार्य नियमहरू, र पर्यायकोश</name>
+        <name lang="nl">Deens spelling woordenboek, woordafbrekingsregels en thesaurus</name>
+        <name lang="nn">Dansk stavekontroll, orddeling og synonymordbok</name>
+        <name lang="nr">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="nso">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="oc">Diccionaris ortografic, dels sinonims e règlas de copadura de mots daneses</name>
+        <name lang="om">Dikshinaari qubeessa afaan Danish</name>
+        <name lang="or">ଡାନିସ ବନାନ ଅବିଧାନ, ସମାସ ଚିହ୍ନ ନିୟମାବଳୀ, ଏବଂ ଶବ୍ଦାକୋଷ</name>
+        <name lang="pa-IN">ਡੈਨਿਸ਼ ਸਪੈਲਿੰਗ ਡਿਕਸ਼ਨਰੀ, ਹਾਈਫਨੇਸ਼ਨ ਰੂਲ, ਅਤੇ ਕੋਸ਼</name>
+        <name lang="pl">Duński słownik ortograficzny, reguły dzielenia wyrazów i słownik wyrazów bliskoznacznych</name>
+        <name lang="pt">Dicionário ortográfico, sinónimos e regras de hifenização em dinamarquês</name>
+        <name lang="pt-BR">Dicionário ortográfico, sinônimos e regras de hifenização em dinamarquês</name>
+        <name lang="ro">Dicționar ortografic, de sinonime și reguli de despărțire în silabe pentru daneză</name>
+        <name lang="ru">Датский орфографический словарь, правила переноса и тезаурус</name>
+        <name lang="rw">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="sa-IN">डैनिश् वर्णविन्यासकोशः, समासकरणनियमाः तथा च कोशः</name>
+        <name lang="sat">डेनिस बानान ञेल साबाद गादेल, फारका गार नियोम, आर मित् लेकान मानेयानाक् साबाद गादेल बाबोत </name>
+        <name lang="sat-Olck">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="sd">ڊينش هجي ڊڪشنري، ننڍي ليڪ (-) ڏيڻ جا قاعدا، ۽ پريايواچي ڪوش</name>
+        <name lang="si">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="sid">Daanete fidalishshsi qaallate fichaancho, haawiiccisha wodhonna xaadigurchu qaallate fichaancho</name>
+        <name lang="sk">Dánsky slovník na kontrolu pravopisu, delenie slov a tezaurus</name>
+        <name lang="sl">Danski jezik – slovar za preverjanje črkovanja, vzorci za deljenje besed in slovar sopomenk</name>
+        <name lang="sq">Fjalor drejtshkrimi danez, rregullat e rrokjezimit, dhe sinonimet</name>
+        <name lang="sr">Дански: провера писања, прелом речи и речник синонима</name>
+        <name lang="sr-Latn">Danski: provera pisanja, prelom reči i rečnik sinonima</name>
+        <name lang="ss">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="st">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="sv">Stavningsordlista, böjningsregler och synonymordbok på Danska</name>
+        <name lang="sw-TZ">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="szl">Duński słownik ôrtograficzny, prawidła dzielynio słōw i słownik synōnimōw</name>
+        <name lang="ta">டானிஷ் எழுத்துக்கூட்டு அகராதி, நடுக்கோடு விதிகளும் நிகண்டும்</name>
+        <name lang="te">డానిష్ వుచ్ఛారణా నిఘంటువు, హైఫనేషన్ నియమాలు, మరియు పదకోశాలు</name>
+        <name lang="tg">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="th">พจนานุกรมสะกดคำ, กฎการแทรกยัติภังค์, และอรรถาภิธานภาษาเดนมาร์ก</name>
+        <name lang="tl">Danish spelling dictionary, hyphenation rules, at thesaurus</name>
+        <name lang="tn">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="tr">Danimarka dili imla sözlüğü, heceleme kuralları ve eş anlamlılar</name>
+        <name lang="ts">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="tt">Дания теленең орфография сүзлеге, күчерү кагыйдәләре һәм тезаурусы</name>
+        <name lang="ug">دانىشچە ئىملا لۇغىتى، ھەرپ ئۇلىنىش قائىدىسى ۋە مەنىداش سۆزلەر لۇغىتى</name>
+        <name lang="uk">Данські орфографічний словник, правила переносу та тезаурус</name>
+        <name lang="uz">Daniya imlo lug‘ati, bo‘g‘in ko‘chirish qoidalari va tezarusi</name>
+        <name lang="ve">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="vec">Disionaro ortogràfego Daneze, règołe de siłabasion e disionaro de i sinònemi</name>
+        <name lang="vi">Từ điển chính tả, luật dấu nối và từ đồng nghĩa tiếng Đan Mạch</name>
+        <name lang="xh">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+        <name lang="zh-CN">丹麦语拼写词典、断词规则与同义词库</name>
+        <name lang="zh-TW">丹麥文拼寫詞典、斷字與禁忌規則、同義詞庫</name>
+        <name lang="zu">Danish spelling dictionary, hyphenation rules, and thesaurus</name>
+    </display-name>
+    <platform value="all" />
+    <dependencies>
+        <OpenOffice.org-minimal-version value="3.0" d:name="OpenOffice.org 3.0" />
+    </dependencies>
+    <publisher>
+        <name xlink:href="http://www.stavekontrolden.dk" lang="en-US">Stavekontrolden</name>
+        <name xlink:href="http://www.stavekontrolden.dk" lang="da">Stavekontrolden</name>
+    </publisher>
+    <icon>
+        <default xlink:href="Trold_42x42.png" />
+    </icon>
+    <extension-description>
+        <src xlink:href="desc_da_DK.txt" lang="da" />
+        <src xlink:href="desc_da_DK.txt" lang="ab" />
+        <src xlink:href="desc_da_DK.txt" lang="af" />
+        <src xlink:href="desc_da_DK.txt" lang="am" />
+        <src xlink:href="desc_da_DK.txt" lang="ar" />
+        <src xlink:href="desc_da_DK.txt" lang="as" />
+        <src xlink:href="desc_da_DK.txt" lang="ast" />
+        <src xlink:href="desc_da_DK.txt" lang="be" />
+        <src xlink:href="desc_da_DK.txt" lang="bg" />
+        <src xlink:href="desc_da_DK.txt" lang="bn" />
+        <src xlink:href="desc_da_DK.txt" lang="bn-IN" />
+        <src xlink:href="desc_da_DK.txt" lang="bo" />
+        <src xlink:href="desc_da_DK.txt" lang="br" />
+        <src xlink:href="desc_da_DK.txt" lang="brx" />
+        <src xlink:href="desc_da_DK.txt" lang="bs" />
+        <src xlink:href="desc_da_DK.txt" lang="ca" />
+        <src xlink:href="desc_da_DK.txt" lang="ca-valencia" />
+        <src xlink:href="desc_da_DK.txt" lang="ckb" />
+        <src xlink:href="desc_da_DK.txt" lang="cs" />
+        <src xlink:href="desc_da_DK.txt" lang="cy" />
+        <src xlink:href="desc_da_DK.txt" lang="da" />
+        <src xlink:href="desc_da_DK.txt" lang="de" />
+        <src xlink:href="desc_da_DK.txt" lang="dgo" />
+        <src xlink:href="desc_da_DK.txt" lang="dsb" />
+        <src xlink:href="desc_da_DK.txt" lang="dz" />
+        <src xlink:href="desc_da_DK.txt" lang="el" />
+        <src xlink:href="desc_da_DK.txt" lang="en-GB" />
+        <src xlink:href="desc_da_DK.txt" lang="en-ZA" />
+        <src xlink:href="desc_da_DK.txt" lang="eo" />
+        <src xlink:href="desc_da_DK.txt" lang="es" />
+        <src xlink:href="desc_da_DK.txt" lang="et" />
+        <src xlink:href="desc_da_DK.txt" lang="eu" />
+        <src xlink:href="desc_da_DK.txt" lang="fa" />
+        <src xlink:href="desc_da_DK.txt" lang="fi" />
+        <src xlink:href="desc_da_DK.txt" lang="fr" />
+        <src xlink:href="desc_da_DK.txt" lang="fur" />
+        <src xlink:href="desc_da_DK.txt" lang="fy" />
+        <src xlink:href="desc_da_DK.txt" lang="ga" />
+        <src xlink:href="desc_da_DK.txt" lang="gd" />
+        <src xlink:href="desc_da_DK.txt" lang="gl" />
+        <src xlink:href="desc_da_DK.txt" lang="gu" />
+        <src xlink:href="desc_da_DK.txt" lang="gug" />
+        <src xlink:href="desc_da_DK.txt" lang="he" />
+        <src xlink:href="desc_da_DK.txt" lang="hi" />
+        <src xlink:href="desc_da_DK.txt" lang="hr" />
+        <src xlink:href="desc_da_DK.txt" lang="hsb" />
+        <src xlink:href="desc_da_DK.txt" lang="hu" />
+        <src xlink:href="desc_da_DK.txt" lang="hy" />
+        <src xlink:href="desc_da_DK.txt" lang="id" />
+        <src xlink:href="desc_da_DK.txt" lang="is" />
+        <src xlink:href="desc_da_DK.txt" lang="it" />
+        <src xlink:href="desc_da_DK.txt" lang="ja" />
+        <src xlink:href="desc_da_DK.txt" lang="ka" />
+        <src xlink:href="desc_da_DK.txt" lang="kab" />
+        <src xlink:href="desc_da_DK.txt" lang="kk" />
+        <src xlink:href="desc_da_DK.txt" lang="km" />
+        <src xlink:href="desc_da_DK.txt" lang="kmr-Latn" />
+        <src xlink:href="desc_da_DK.txt" lang="kn" />
+        <src xlink:href="desc_da_DK.txt" lang="ko" />
+        <src xlink:href="desc_da_DK.txt" lang="kok" />
+        <src xlink:href="desc_da_DK.txt" lang="ks" />
+        <src xlink:href="desc_da_DK.txt" lang="lb" />
+        <src xlink:href="desc_da_DK.txt" lang="lo" />
+        <src xlink:href="desc_da_DK.txt" lang="lt" />
+        <src xlink:href="desc_da_DK.txt" lang="lv" />
+        <src xlink:href="desc_da_DK.txt" lang="mai" />
+        <src xlink:href="desc_da_DK.txt" lang="mk" />
+        <src xlink:href="desc_da_DK.txt" lang="ml" />
+        <src xlink:href="desc_da_DK.txt" lang="mn" />
+        <src xlink:href="desc_da_DK.txt" lang="mni" />
+        <src xlink:href="desc_da_DK.txt" lang="mr" />
+        <src xlink:href="desc_da_DK.txt" lang="my" />
+        <src xlink:href="desc_da_DK.txt" lang="nb" />
+        <src xlink:href="desc_da_DK.txt" lang="ne" />
+        <src xlink:href="desc_da_DK.txt" lang="nl" />
+        <src xlink:href="desc_da_DK.txt" lang="nn" />
+        <src xlink:href="desc_da_DK.txt" lang="nr" />
+        <src xlink:href="desc_da_DK.txt" lang="nso" />
+        <src xlink:href="desc_da_DK.txt" lang="oc" />
+        <src xlink:href="desc_da_DK.txt" lang="om" />
+        <src xlink:href="desc_da_DK.txt" lang="or" />
+        <src xlink:href="desc_da_DK.txt" lang="pa-IN" />
+        <src xlink:href="desc_da_DK.txt" lang="pl" />
+        <src xlink:href="desc_da_DK.txt" lang="pt" />
+        <src xlink:href="desc_da_DK.txt" lang="pt-BR" />
+        <src xlink:href="desc_da_DK.txt" lang="ro" />
+        <src xlink:href="desc_da_DK.txt" lang="ru" />
+        <src xlink:href="desc_da_DK.txt" lang="rw" />
+        <src xlink:href="desc_da_DK.txt" lang="sa-IN" />
+        <src xlink:href="desc_da_DK.txt" lang="sat" />
+        <src xlink:href="desc_da_DK.txt" lang="sat-Olck" />
+        <src xlink:href="desc_da_DK.txt" lang="sd" />
+        <src xlink:href="desc_da_DK.txt" lang="si" />
+        <src xlink:href="desc_da_DK.txt" lang="sid" />
+        <src xlink:href="desc_da_DK.txt" lang="sk" />
+        <src xlink:href="desc_da_DK.txt" lang="sl" />
+        <src xlink:href="desc_da_DK.txt" lang="sq" />
+        <src xlink:href="desc_da_DK.txt" lang="sr" />
+        <src xlink:href="desc_da_DK.txt" lang="sr-Latn" />
+        <src xlink:href="desc_da_DK.txt" lang="ss" />
+        <src xlink:href="desc_da_DK.txt" lang="st" />
+        <src xlink:href="desc_da_DK.txt" lang="sv" />
+        <src xlink:href="desc_da_DK.txt" lang="sw-TZ" />
+        <src xlink:href="desc_da_DK.txt" lang="szl" />
+        <src xlink:href="desc_da_DK.txt" lang="ta" />
+        <src xlink:href="desc_da_DK.txt" lang="te" />
+        <src xlink:href="desc_da_DK.txt" lang="tg" />
+        <src xlink:href="desc_da_DK.txt" lang="th" />
+        <src xlink:href="desc_da_DK.txt" lang="tl" />
+        <src xlink:href="desc_da_DK.txt" lang="tn" />
+        <src xlink:href="desc_da_DK.txt" lang="tr" />
+        <src xlink:href="desc_da_DK.txt" lang="ts" />
+        <src xlink:href="desc_da_DK.txt" lang="tt" />
+        <src xlink:href="desc_da_DK.txt" lang="ug" />
+        <src xlink:href="desc_da_DK.txt" lang="uk" />
+        <src xlink:href="desc_da_DK.txt" lang="uz" />
+        <src xlink:href="desc_da_DK.txt" lang="ve" />
+        <src xlink:href="desc_da_DK.txt" lang="vec" />
+        <src xlink:href="desc_da_DK.txt" lang="vi" />
+        <src xlink:href="desc_da_DK.txt" lang="xh" />
+        <src xlink:href="desc_da_DK.txt" lang="zh-CN" />
+        <src xlink:href="desc_da_DK.txt" lang="zh-TW" />
+        <src xlink:href="desc_da_DK.txt" lang="zu" />
+        <src xlink:href="desc_en_US.txt" lang="en-US" />
+    </extension-description>
+</description>
+

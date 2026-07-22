@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description xmlns="http://openoffice.org/extensions/description/2006" xmlns:d="http://openoffice.org/extensions/description/2006"  xmlns:xlink="http://www.w3.org/1999/xlink">
+    <identifier value="org.openoffice.nl.hunspell.dictionaries" />
+    <platform value="all" />
+    <version value="2.0.0" />
+    <dependencies>
+        <OpenOffice.org-minimal-version value="3.2" d:name="OpenOffice.org 3.2" />
+    </dependencies>
+    <display-name>
+        <name lang="en-US">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="ab">Голландиатәи аорфографиатә жәари аиагара аԥҟарақәеи</name>
+        <name lang="af">Nederlandse speltoetser en woordafbreekreëls</name>
+        <name lang="am">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="ar">قاموس التدقيق الإملائي للُّغة الهولندية وقواعد الواصلة</name>
+        <name lang="as">ডাচ বানান শব্দকোষ, আৰু হাইফেনেষণ বিন্যাসসমূহ</name>
+        <name lang="ast">Diccionariu ortográficu y regles de guionáu pal neerlandés</name>
+        <name lang="be">Галандскі правапісны слоўнік і правілы пераносаў</name>
+        <name lang="bg">Нидерландски речници за правопис и сричкопренасяне</name>
+        <name lang="bn">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="bn-IN">ডাচ বানান পরীক্ষণের অভিধান এবং হাইফেন প্রয়োগের নিয়ম</name>
+        <name lang="bo">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="br">Geriadur ar reizhskrivañ ha reolennoù an troc'hañ-gerioù evit an nederlandeg</name>
+        <name lang="brx">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="bs">Rječnik pravopisa i pravila rastavljanja riječi na kraju reda za holandski jezik</name>
+        <name lang="ca">Neerlandès: corrector ortogràfic i partició de mots</name>
+        <name lang="ca-valencia">Neerlandés: corrector ortogràfic i partició de mots</name>
+        <name lang="ckb">فەرهەنگی ڕێنووسی هۆڵەندی، یاساکانی ڕێزمانی</name>
+        <name lang="cs">Slovník kontroly pravopisu a dělení slov pro nizozemštinu</name>
+        <name lang="cy">Is-Almaeneg - geiriadur sillafu a rheolau cyplysnodi</name>
+        <name lang="da">Hollandsk stavekontrol og orddelingsregler</name>
+        <name lang="de">Niederländisches Wörterbuch für Rechtschreibprüfung und Silbentrennung</name>
+        <name lang="dgo">डच शब्द-जोड़ शब्दकोश ते जोड़-चिʼन्नीकरण नियम</name>
+        <name lang="dsb">Nižozemski pšawopisny słownik a pšawidła źělenja złožkow</name>
+        <name lang="dz">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="el">Ολλανδικό ορθογραφικό λεξικό και συλλαβισμός</name>
+        <name lang="en-GB">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="en-ZA">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="eo">Nederlanda ortografia vortaro, vortdividaj reguloj</name>
+        <name lang="es">Neerlandés: corrector ortográfico y reglas de silabación</name>
+        <name lang="et">Hollandi keele õigekirjakontrolli sõnastik ja poolitusreeglid</name>
+        <name lang="eu">Nederlanderaren ortografia-egiaztatzailea eta hitzak zatitzeko arauak</name>
+        <name lang="fa">فرهنگ لغت، و قواعد خط‌فاصله‌گذاری زبان هلندی</name>
+        <name lang="fi">Hollannin oikolukusanasto ja tavutussäännöt</name>
+        <name lang="fr">Dictionnaire orthographique et règles de coupure des mots néerlandais</name>
+        <name lang="fur">Dizionari ortografic olandês e regulis di silabazion</name>
+        <name lang="fy">Nederlânsk wurdboek foar stavering, en wurdôfbrekkingsregels</name>
+        <name lang="ga">Foclóir litrithe agus fleiscínithe don Ollainnis</name>
+        <name lang="gd">Faclair litreachadh ⁊ riaghailtean tàthanachadh na Duitsise</name>
+        <name lang="gl">Dicionario ortográfico e guionizador do holandés</name>
+        <name lang="gu">ડચ જોડણી ચકાસણી શબ્દકોષ, અને હાઇફનેશન નિયમો</name>
+        <name lang="gug">Neerlandés: corrector ortográfico ha división ñe'ẽgui</name>
+        <name lang="he">רשימת מילים לבודק איות וכללי מיקוף בהולנדית</name>
+        <name lang="hi">डच वर्तनी शब्दकोश और समासन नियम</name>
+        <name lang="hr">Pravopisni rječnik i rastavljanje riječi nizozemskog jezika</name>
+        <name lang="hsb">Nižozemski prawopisny słownik a prawidła dźělenja złóžkow</name>
+        <name lang="hu">Holland helyesírási szótár és elválasztási szabályok</name>
+        <name lang="hy">Հոլանդական ուղղագրության բառարան և տողադարձի կանոններ</name>
+        <name lang="id">Kamus ejaan dan aturan pemenggalan kata Bahasa Belanda</name>
+        <name lang="is">Hollenskt stafsetningarorðasafn og orðskiptireglur</name>
+        <name lang="it">Dizionario ortografico olandese e regole di sillabazione</name>
+        <name lang="ja">オランダ語スペル辞書とハイフネーション規則</name>
+        <name lang="ka">ჰოლანდიური მართლწერის ლექსიკონი და გადატანის წესები</name>
+        <name lang="kab">Amawal n teɣdira d ilugan n unegzum n wawalen n thulundit</name>
+        <name lang="kk">Голланд емле сөздігі және тасымалдау ережелері</name>
+        <name lang="km">វចនានុក្រម​អក្ខរាវិរុទ្ធ​ភាសា​ហុល្លង់ និង​គោលការណ៍​ដាក់​សហសញ្ញា</name>
+        <name lang="kmr-Latn">Ferhenga rastnivîs ê rêbazên kîtekirina Holandî</name>
+        <name lang="kn">ಡಚ್ ಕಾಗುಣಿತ ಶಬ್ಧಕೋಶ, ಹೈಫನೇಶನ್ ನಿಯಮಗಳು</name>
+        <name lang="ko">네덜란드어 맞춤법 사전 및 하이픈 규칙</name>
+        <name lang="kok">डच वर्णरचना शब्दकोश आनी संयोगचिन्नाचे नेमDutch OkxorRochona Xobdkox ani Xobdkox, somyog chinna Niyom</name>
+        <name lang="ks">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="lb">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="lo">ພົດຈະນານຸກົມສະກົດຄຳພາສາ Dutch, ແລະ ກົດລບຽບການເຊື່ອມໂຍງ</name>
+        <name lang="lt">Olandų kalbos rašybos tikrinimo ir žodžių kėlybos žodynai</name>
+        <name lang="lv">Holandiešu pareizrakstības vārdnīca un zilbjdales kārtulas</name>
+        <name lang="mai">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="mk">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="ml">ഡച്ച് സ്പെല്ലിങ് നിഘണ്ടുവും ഹൈഫനേഷന്‍ നിയമങ്ങളും</name>
+        <name lang="mn">Голланд хэлний зөв бичгийн ба үеэр таслах дүрмийн толь бичиг</name>
+        <name lang="mni">দচ বানানগী দিক্সনারি, অমসুং হাইফেনেসনগী রুলশিং</name>
+        <name lang="mr">क्रोएशियन शुध्दलेखन शब्दकोष, व हायफेनेशन पद्धती</name>
+        <name lang="my">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="nb">Nederlandsk stavekontroll og orddeling</name>
+        <name lang="ne">डच हिज्जे शब्दकोश, र योजकचिन्ह राख्ने कार्य नियमहरू</name>
+        <name lang="nl">Nederlands spellingswoordenboek en woordafbrekingsregels</name>
+        <name lang="nn">Nederlandsk stavekontroll og orddeling</name>
+        <name lang="nr">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="nso">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="oc">Diccionari ortografic e règlas de copadura dels mots neerlandeses</name>
+        <name lang="om">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="or">ଡଚ ବନାନ ଅବିଧାନ, ଏବଂ ସମାସ ଚିହ୍ନ ନିୟମାବଳୀ</name>
+        <name lang="pa-IN">ਡੱਚ ਸਪੈਲਿੰਗ ਡਿਕਸ਼ਨਰੀ, ਅਤੇ ਹਾਈਫਨੇਸ਼ਨ ਰੂਲ</name>
+        <name lang="pl">Holenderski słownik ortograficzny i reguły dzielenia wyrazów</name>
+        <name lang="pt">Dicionário ortográfico e regras de hifenização em holandês</name>
+        <name lang="pt-BR">Dicionário ortográfico e regras de hifenização em holandês</name>
+        <name lang="ro">Dicționar ortografic și reguli de despărțire în silabe pentru olandeză</name>
+        <name lang="ru">Голландский орфографический словарь и правила переноса</name>
+        <name lang="rw">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="sa-IN">डच् वर्णविन्यासकोशः तथा च समासकरमनियमाः</name>
+        <name lang="sat">डुच् बानान ञेल साबाद गादेल, फारका गार नियोम को</name>
+        <name lang="sat-Olck">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="sd">ڊچ هجي ڊڪشنري، ۽ ننڍي ليڪ (-) ڏيڻ جا قاعدا</name>
+        <name lang="si">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="sid">Dachete Fidale qaallate fichaancho,nna haawiiccisha wodho</name>
+        <name lang="sk">Holandský slovník na kontrolu pravopisu a pravidlá na delenie slov</name>
+        <name lang="sl">Nizozemski jezik – slovar za preverjanje črkovanja in vzorci za deljenje besed</name>
+        <name lang="sq">Fjalor drejtshkrimi gjerman, dhe rregulla fonetike</name>
+        <name lang="sr">Холандски: провера писања и прелом речи</name>
+        <name lang="sr-Latn">Holandski: provera pisanja i prelom reči</name>
+        <name lang="ss">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="st">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="sv">Stavningsordlista och avstavningsregler för nederländska</name>
+        <name lang="sw-TZ">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="szl">Holynderski słownik ôrtograficzny, prawidła dzielynio słōw</name>
+        <name lang="ta">டட்ச்சு எழுத்துக்கூட்டு அகராதி மற்றும் நடுக்கோடு தொடர்பான விதிகள்</name>
+        <name lang="te">డచ్  వుచ్ఛారణా నిఘంటువు, మరియు హైఫనేషన్ నియమాలు</name>
+        <name lang="tg">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="th">พจนานุกรมสะกดคำ และกฎการแทรกยัติภังค์ภาษาดัตช์</name>
+        <name lang="tl">Dutch spelling dictionary, at mga panuntunan sa hyphenation</name>
+        <name lang="tn">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="tr">Hollandaca imla sözlüğü ve heceleme kuralları</name>
+        <name lang="ts">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="tt">Голланд теленең орфография сүзлеге һәм күчерә кагыйдәләре</name>
+        <name lang="ug">گوللاندىيەچە ئىملا لۇغىتى ۋە ھەرپ ئۇلاش قائىدىسى</name>
+        <name lang="uk">Голландський орфографічний словник та правила переносу</name>
+        <name lang="uz">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="ve">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="vec">Disionaro ortogràfego Ołandeze e règołe de siłabasion</name>
+        <name lang="vi">Từ điển chính tả, luật dấu cách tiếng Đức</name>
+        <name lang="xh">Dutch spelling dictionary, and hyphenation rules</name>
+        <name lang="zh-CN">荷兰语拼写词典与断词规则</name>
+        <name lang="zh-TW">荷蘭文拼寫詞典、斷字與禁忌規則</name>
+        <name lang="zu">Dutch spelling dictionary, and hyphenation rules</name>
+    </display-name>
+    <icon>
+        <default xlink:href="OpenTaal.png" />
+    </icon>
+    <publisher>
+        <name xlink:href="http://www.opentaal.org" lang="nl">OpenTaal</name>
+        <name xlink:href="http://www.opentaal.org/english" lang="en-US">OpenTaal</name>
+    </publisher>
+</description>
