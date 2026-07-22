@@ -157,7 +157,7 @@ y corrección ortográfica del idioma turco
 entonces la corrección ortográfica para palabras mal escritas en Turco
 
 ```
-[ ] Funciona
+[x] Funciona
 [ ] No funciona
 ```
 

@@ -557,6 +557,7 @@ Estas son las pruebas realizadas hasta ahora:
 | Portugués PT    | `European Portuguese - Portugal`                   | `pt_PT` | `pt_PT`          | `pt_PT` UTF-8         | No funciona |
 | Portugués PT    | `European Portuguese - Portugal`                   | `pt_PT` | `pt_PT`          | `pt_BR` UTF-8         | Funciona    |
 | Ruso            | `Ruso - Rusia`                                     | `ru_RU` | `ru_RU`          | `ru_RU` UTF-8         | Funciona    |
+| Turco           | `Turco - Turkey`                                   | `tr_TR` | `tr_TR`          | `tr_TR` UTF-8         | Funciona    |
 
 La codificación indicada en la columna `Diccionario instalado` se toma de la línea `SET` del archivo `main.aff` de cada diccionario.
 
@@ -1032,6 +1033,36 @@ En esta prueba funcionó con:
 ```
 
 Nota: el corrector ruso funcionó correctamente en un documento nuevo creado desde cero. En un documento creado originalmente en inglés, aunque se pegó texto ruso traducido, WPS no aplicó bien la revisión ortográfica al texto existente.
+
+## Cómo hacer funcionar el corrector ortográfico en turco
+
+Para turco, cierra sesión y en el Login Manager elige:
+
+```
+Turco - Turkey
+```
+
+Después configura `Office.conf` así:
+
+```
+[General]
+languages=tr_TR
+
+[6.0]
+common\DefaultLanguage=1055
+common\Local\UILanguage=1055
+wpsoffice\Application%20Settings\AppComponentMode=prome_independ
+wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
+```
+
+Y la activacion semejante a como se hace con el diccionario en ingles. En la ventana de idioma de corrección ortográfica debe aparecer `"Türkçe (Türkiye)"`.
+
+En esta prueba funcionó con:
+
+```
+/opt/kingsoft/wps-office/office6/mui/tr_TR
+/opt/kingsoft/wps-office/office6/dicts/spellcheck/tr_TR/
+```
 
 ## Referencia: idiomas de la Interfaz de Usuario Multilenguage MUI descargadoas por WPS en Windows
 
