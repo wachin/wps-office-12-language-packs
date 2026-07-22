@@ -14,6 +14,11 @@ allí al dar clic, redirige a:
 
 Luego instala el paquete.
 
+**Descarga espejo (Mirror)**  
+Pero es posible que no tenga las ultimas versiones o que se demoren en ponerlas:
+
+[https://mirrors.163.com/ubuntukylin/pool/partner/](https://mirrors.163.com/ubuntukylin/pool/partner/)
+
 ### Instalar deb con un gestor de instalación de paquetes deb
 
 Instalación con algún gestor de paquetes deb, en los Sistemas Operativos Linux debería estar instalado alguno, das clic derecho en el administrador de archivos e instalas con él:
