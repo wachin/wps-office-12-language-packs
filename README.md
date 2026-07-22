@@ -906,6 +906,9 @@ Francés - Francia
 
 Y la activacion semejante a como se hace con el diccionario en ingles
 
+
+![](vx_images/Quotes-tests/citation_fr-FR_Richard_S-ezgif.com.gif)
+
 Después configura `Office.conf` así:
 
 ```
@@ -961,7 +964,9 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-Y la activacion semejante a como se hace con el diccionario en ingles. En la ventana de idioma de corrección ortográfica debe aparecer `"Indonesian"`.
+Y la activacion semejante a como se hace con el diccionario en ingles. En la ventana de idioma de corrección ortográfica debe aparecer `"Indonesian"`
+
+![](vx_images/Quotes-tests/Kutipan-id_ID-Richard-S-ezgif.com.gif)
 
 En esta prueba funcionó con:
 
@@ -993,7 +998,10 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-Y la activacion semejante a como se hace con el diccionario en ingles. En la ventana de idioma de corrección ortográfica debe aparecer `"Polski"`.
+Y la activacion semejante a como se hace con el diccionario en ingles. En la ventana de idioma de corrección ortográfica debe aparecer `"Polski"`
+
+![](vx_images/Quotes-tests/Cytaty_pl-PL_RichardS-ezgif.com.gif)
+
 
 En esta prueba funcionó con:
 
@@ -1025,7 +1033,9 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-Y la activacion semejante a como se hace con el diccionario en ingles. En la ventana de idioma de corrección ortográfica debe aparecer `"Português do Brasil"`.
+Y la activacion semejante a como se hace con el diccionario en ingles. En la ventana de idioma de corrección ortográfica debe aparecer `"Português do Brasil"`
+
+![](vx_images/Quotes-tests/Citacoes_pt-BR_Richard_S-ezgif.com.gif)
 
 En esta prueba funcionó con:
 
@@ -1100,7 +1110,10 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-Y la activacion semejante a como se hace con el diccionario en ingles. En la ventana de idioma de corrección ortográfica debe aparecer `"Русский (Россия)"`.
+Y la activacion semejante a como se hace con el diccionario en ingles. En la ventana de idioma de corrección ortográfica debe aparecer `"Русский (Россия)"`
+
+![](vx_images/Quotes-tests/Frase_ru_RU_RichardS-ezgif.com.gif)
+
 
 En esta prueba funcionó con:
 
@@ -1132,7 +1145,9 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-Y la activacion semejante a como se hace con el diccionario en ingles. En la ventana de idioma de corrección ortográfica debe aparecer `"Türkçe (Türkiye)"`.
+Y la activacion semejante a como se hace con el diccionario en ingles. En la ventana de idioma de corrección ortográfica debe aparecer `"Türkçe (Türkiye)"`
+
+![](vx_images/Quotes-tests/Alntlar-tr_TR-Richard-S-ezgif.com.gif)
 
 En esta prueba funcionó con:
 
