@@ -250,7 +250,7 @@ y solo hay corrección ortográfica del idioma alemán de Alemania
 entonces la corrección ortográfica para palabras mal escritas en Alemán
 
 ```
-[ ] Funciona
+[x] Funciona
 [ ] No funciona
 ```
 
