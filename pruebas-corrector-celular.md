@@ -286,10 +286,12 @@ y hay corrección ortográfica para pt_BR y pt_PT
 entonces revisar si WPS usa correctamente el diccionario pt_BR
 
 ```
-[ ] Funciona con pt_BR
+[x] Funciona con pt_BR
 [ ] Solo funciona si se elige pt_PT
 [ ] No funciona
 ```
+
+Nota de prueba: con locale `pt_BR.UTF-8`, `Office.conf` configurado como `pt_BR`, MUI `pt_BR` y diccionarios `pt_BR` + `pt_PT` instalados, WPS corrige correctamente al elegir `"Português do Brasil"`. Si se elige `"Portuguê"`, no funciona.
 
 ## Pruebas no recomendadas por ahora
 

@@ -1004,6 +1004,8 @@ En esta prueba funcionó con:
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/pt_BR/
 ```
 
+Nota: aunque el MUI `pt_BR` contiene `FallBack=pt_PT` en `lang.conf`, WPS corrigió correctamente al elegir `"Português do Brasil"` en la ventana de idioma de corrección ortográfica. Si en esa misma sesión se elige `"Portuguê"`, el corrector no funciona.
+
 ## Prueba del diccionario portugués de Portugal que no funcionó
 
 Realice la siguiente prueba debido a que están disponibles el MUI `pt_PT` y el diccionario de corrección ortográfica `pt_PT`.
