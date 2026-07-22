@@ -10,6 +10,37 @@ Estas pruebas tienen los tres elementos necesarios:
 - MUI instalado en WPS Office 12
 - diccionario instalado en WPS Office 12
 
+### Indonesio
+
+MX Linux 23 con locale id_ID
+
+```bash
+wachin@mx23:~
+$ echo $LANG
+id_ID.UTF-8
+```
+
+y WPS Office 12 con MUI id_ID
+
+```
+/opt/kingsoft/wps-office/office6/mui/id_ID/
+```
+
+y corrección ortográfica del idioma indonesio
+
+```
+/opt/kingsoft/wps-office/office6/dicts/spellcheck/id_ID/
+```
+
+entonces la corrección ortográfica para palabras mal escritas en Indonesio
+
+```
+[x] Funciona
+[ ] No funciona
+```
+
+Nota de prueba: primero fue necesario generar el locale con `sudo dpkg-reconfigure locales` y marcar `id_ID.UTF-8`.
+
 ### Polaco
 
 MX Linux 23 con locale pl_PL
@@ -274,5 +305,3 @@ Estas tienen MUI instalado, pero falta el diccionario de corrección ortográfic
 | `zh_CN`       | `zh_CN`                                                          | `zh_CN`              |
 | `zh_HK`       | no aparece como locale directo; el Login Manager muestra `zh_TW` | `zh_HK` o `zh_TW`    |
 | `th_TH`       | no aparece en `locales-mx-linux-23.md`                           | `th_TH`              |
-
-También está instalado el MUI y diccionario `id_ID`, pero `id_ID` no aparece en la lista actual del Login Manager de MX Linux 23. Si logras iniciar una sesión con `id_ID.UTF-8`, sí conviene probarlo.

@@ -552,6 +552,7 @@ Estas son las pruebas realizadas hasta ahora:
 | Alemán          | `Alemán - Alemania`                                | `de_DE` | `de_DE`          | `de_DE` ISO8859-1     | Funciona    |
 | Francés         | `Francés - Francia`                                | `fr_FR` | `fr_FR`          | `fr_FR` UTF-8         | Funciona    |
 | Francés         | `Canadian French - Canadá`                         | `fr_CA` | `fr_CA`          | `fr_FR` UTF-8         | Funciona    |
+| Indonesio       | `Indonesio - Indonesia`                            | `id_ID` | `id_ID`          | `id_ID` ISO8859-1     | Funciona    |
 | Polaco          | `Polaco - Polonia`                                 | `pl_PL` | `pl_PL`          | `pl_PL` UTF-8         | Funciona    |
 | Portugués BR    | `Brazilian Portuguese - Brasil`                    | `pt_BR` | `pt_BR`          | `pt_BR` UTF-8         | Funciona    |
 | Portugués PT    | `European Portuguese - Portugal`                   | `pt_PT` | `pt_PT`          | `pt_PT` UTF-8         | No funciona |
@@ -896,6 +897,50 @@ En esta prueba funcionó con:
 ```
 
 
+
+## Cómo hacer funcionar el corrector ortográfico en indonesio
+
+Para indonesio, primero genera el locale si todavía no aparece en el Login Manager:
+
+```bash
+sudo dpkg-reconfigure locales
+```
+
+En la lista marca:
+
+```
+id_ID.UTF-8 UTF-8
+```
+
+Después cierra sesión y en el Login Manager elige:
+
+```
+Indonesio - Indonesia
+```
+
+Después configura `Office.conf` así:
+
+```
+[General]
+languages=id_ID
+
+[6.0]
+common\DefaultLanguage=1057
+common\Local\UILanguage=1057
+wpsoffice\Application%20Settings\AppComponentMode=prome_independ
+wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
+```
+
+Y la activacion semejante a como se hace con el diccionario en ingles. En la ventana de idioma de corrección ortográfica debe aparecer `"Indonesian"`.
+
+En esta prueba funcionó con:
+
+```
+/opt/kingsoft/wps-office/office6/mui/id_ID
+/opt/kingsoft/wps-office/office6/dicts/spellcheck/id_ID/
+```
+
+Nota: aunque la sesión de Linux usa `id_ID.UTF-8`, el diccionario `id_ID` instalado usa `SET ISO8859-1` en `main.aff` y funcionó correctamente en WPS Office 12.
 
 ## Cómo hacer funcionar el corrector ortográfico en polaco
 
