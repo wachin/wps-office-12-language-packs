@@ -548,6 +548,7 @@ Estas son las pruebas realizadas hasta ahora:
 | Español         | `Español - Venezuela`                              | `es_VE` | `es_ES`          | `es_ES` UTF-8         | Funciona    |
 | Español         | `Mexican Spanish - México`                         | `es_MX` | `es_ES`          | `es_ES` UTF-8         | Funciona    |
 | Español         | `Español - Perú`                                   | `es_PE` | `es_ES`          | `es_ES` UTF-8         | Funciona    |
+| Español         | `Español - Uruguay`                                | `es_UY` | `es_ES`          | `es_ES` UTF-8         | Funciona    |
 | Español México  | `Mexican Spanish - México`                         | `es_MX` | `es_MX`          | `es_MX` UTF-8         | No funciona |
 | Alemán          | `Alemán - Alemania`                                | `de_DE` | `de_DE`          | `de_DE` ISO8859-1     | Funciona    |
 | Francés         | `Francés - Francia`                                | `fr_FR` | `fr_FR`          | `fr_FR` UTF-8         | Funciona    |
@@ -794,7 +795,6 @@ European Spanish - España
 Español - Nicaragua
 Español - Panamá
 Español - Estados Unidos
-Español - Uruguay
 ```
 
 las otras que si funcionaron están arriba en la tabla 
@@ -1155,4 +1155,4 @@ Si este proyecto te ayudó, puedes dejar una estrella en el repositorio.
 
 # Agradecimientos
 
-Al usuario mmvill quien me escribió y me dijo que encontró una manera de hacer funcionar el diccionario de corrección ortográfica en español para WPS Office 12
+Al usuario [mmvill](https://github.com/mmvill) quien me escribió y me dijo que encontró una manera de hacer funcionar el diccionario de corrección ortográfica en español para WPS Office 12
