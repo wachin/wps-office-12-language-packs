@@ -307,26 +307,26 @@ Usa esta tabla para elegir el código y el número correcto:
 
 ### Tabla rápida: locale, MUI y diccionario con el mismo código
 
-Esta tabla muestra los idiomas donde se puede comparar directamente si el `Locale`, el MUI y el diccionario usan el mismo código. La `x` significa que no existe un diccionario con ese mismo código en `/opt/kingsoft/wps-office/office6/dicts/spellcheck/`.
+Esta tabla muestra los idiomas donde se puede comparar directamente si el `Locale`, el MUI y el diccionario usan el mismo código. La `x` significa que no existe un diccionario con ese mismo código en `/opt/kingsoft/wps-office/office6/dicts/spellcheck/`. El símbolo `✅` marca los casos probados donde esa combinación exacta funciona.
 
-| Idioma visto en el Login Manager | `Locale` | `MUI`   | `Dict`  |
-| -------------------------------- | -------- | ------- | ------- |
-| English (United States)          | `en_US`  | `en_US` | `en_US` |
-| German (Germany)                 | `de_DE`  | `de_DE` | `de_DE` |
-| Spanish (Spain)                  | `es_ES`  | `es_ES` | `es_ES` |
-| Spanish (Mexico)                 | `es_MX`  | `es_MX` | x       |
-| French (Canada)                  | `fr_CA`  | `fr_CA` | x       |
-| French (France)                  | `fr_FR`  | `fr_FR` | `fr_FR` |
-| Indonesian                       | `id_ID`  | `id_ID` | `id_ID` |
-| Japanese                         | `ja_JP`  | `ja_JP` | x       |
-| Polish                           | `pl_PL`  | `pl_PL` | `pl_PL` |
-| Portuguese (Brazil)              | `pt_BR`  | `pt_BR` | `pt_BR` |
-| Portuguese (Portugal)            | `pt_PT`  | `pt_PT` | `pt_PT` |
-| Russian                          | `ru_RU`  | `ru_RU` | `ru_RU` |
-| Thai                             | `th_TH`  | `th_TH` | x       |
-| Turkish                          | `tr_TR`  | `tr_TR` | `tr_TR` |
-| Chinese (Simplified, China)      | `zh_CN`  | `zh_CN` | x       |
-| Chinese (Traditional, Hong Kong) | `zh_HK`  | `zh_HK` | x       |
+| Idioma visto en el Login Manager | `Locale` |  `MUI`  | `Dict`  | Probado |
+| -------------------------------- | -------- | ------- | ------- | ------- |
+| English (United States)          | `en_US`  | `en_US` | `en_US` | ✅      |
+| German (Germany)                 | `de_DE`  | `de_DE` | `de_DE` | ✅      |
+| Spanish (Spain)                  | `es_ES`  | `es_ES` | `es_ES` | ✅      |
+| Spanish (Mexico)                 | `es_MX`  | `es_MX` | x       |         |
+| French (Canada)                  | `fr_CA`  | `fr_CA` | x       |         |
+| French (France)                  | `fr_FR`  | `fr_FR` | `fr_FR` | ✅      |
+| Indonesian                       | `id_ID`  | `id_ID` | `id_ID` | ✅      |
+| Japanese                         | `ja_JP`  | `ja_JP` | x       |         |
+| Polish                           | `pl_PL`  | `pl_PL` | `pl_PL` | ✅      |
+| Portuguese (Brazil)              | `pt_BR`  | `pt_BR` | `pt_BR` | ✅      |
+| Portuguese (Portugal)            | `pt_PT`  | `pt_PT` | `pt_PT` |         |
+| Russian                          | `ru_RU`  | `ru_RU` | `ru_RU` | ✅      |
+| Thai                             | `th_TH`  | `th_TH` | x       |         |
+| Turkish                          | `tr_TR`  | `tr_TR` | `tr_TR` | ✅      |
+| Chinese (Simplified, China)      | `zh_CN`  | `zh_CN` | x       |         |
+| Chinese (Traditional, Hong Kong) | `zh_HK`  | `zh_HK` | x       |         |
 
 ### Para inglés de Estados Unidos:
 
