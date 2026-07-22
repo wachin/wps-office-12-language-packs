@@ -1109,7 +1109,7 @@ En esta prueba funcionó con:
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/tr_TR/
 ```
 
-## Referencia: idiomas de la Interfaz de Usuario Multilenguage MUI descargadoas por WPS en Windows
+## Referencia: idiomas de la Interfaz de Usuario Multilenguage MUI descargadas por WPS en Windows
 
 Si usted es una persona curiosa y se pregunta, de donde saque las MUI para la interfaz grafica, pues fue en Microsoft Windows 10, pues WPS Office descarga paquetes de idioma en rutas de usuario. Esta información sirve como referencia para investigar archivos de idioma de la interfaz.
 
