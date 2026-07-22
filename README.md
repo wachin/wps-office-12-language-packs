@@ -550,6 +550,7 @@ Estas son las pruebas realizadas hasta ahora:
 | Español         | `Español - Perú`                                   | `es_PE` | `es_ES`          | `es_ES` UTF-8         | Funciona    |
 | Español         | `Español - Uruguay`                                | `es_UY` | `es_ES`          | `es_ES` UTF-8         | Funciona    |
 | Español México  | `Mexican Spanish - México`                         | `es_MX` | `es_MX`          | `es_MX` UTF-8         | No funciona |
+| Alemán          | `Austrian German - Austria`                        | `de_AT` | `de_DE`          | `de_DE` ISO8859-1     | Funciona    |
 | Alemán          | `Alemán - Alemania`                                | `de_DE` | `de_DE`          | `de_DE` ISO8859-1     | Funciona    |
 | Francés         | `Francés - Francia`                                | `fr_FR` | `fr_FR`          | `fr_FR` UTF-8         | Funciona    |
 | Francés         | `Canadian French - Canadá`                         | `fr_CA` | `fr_CA`          | `fr_FR` UTF-8         | Funciona    |
