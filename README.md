@@ -887,7 +887,9 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-Y la activacion semejante a como se hace con el diccionario en ingles
+Y la activacion semejante a como se hace con el diccionario en ingles:
+
+![](vx_images/Quotes-tests/Dutch-de_DE-Richard-S-ezgif.com.gif)
 
 En esta prueba funcionó:
 
