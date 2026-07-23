@@ -25,6 +25,27 @@ atau dari terminal:
 sudo dpkg -i wps-office*.deb
 ```
 
+## Mengunduh atau mengkloning repositori ini
+
+Sebelum memasang berkas MUI dan kamus, unduh repositori ini:
+
+[https://github.com/wachin/wps-office-12-language-packs](https://github.com/wachin/wps-office-12-language-packs)
+
+Opsi 1: buka halaman, klik `<> Code ▼`, lalu klik `Download ZIP`. Ekstrak ZIP dan buka terminal di dalam folder hasil ekstraksi.
+
+Opsi 2: kloning dengan Git. Jika Git belum terpasang, pasang terlebih dahulu:
+
+```bash
+sudo apt install git
+```
+
+Lalu jalankan:
+
+```bash
+git clone https://github.com/wachin/wps-office-12-language-packs
+cd wps-office-12-language-packs
+```
+
 ## Memasang MUI dan kamus
 
 Dari root repositori ini, jalankan:

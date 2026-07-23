@@ -25,6 +25,27 @@ veya terminalden:
 sudo dpkg -i wps-office*.deb
 ```
 
+## Bu depoyu indirme veya klonlama
+
+MUI dosyalarını ve sözlükleri kurmadan önce bu depoyu indirin:
+
+[https://github.com/wachin/wps-office-12-language-packs](https://github.com/wachin/wps-office-12-language-packs)
+
+Seçenek 1: sayfayı açın, `<> Code ▼` düğmesine ve ardından `Download ZIP` seçeneğine tıklayın. ZIP dosyasını çıkarın ve çıkarılan klasörün içinde bir terminal açın.
+
+Seçenek 2: Git ile klonlayın. Git kurulu değilse önce kurun:
+
+```bash
+sudo apt install git
+```
+
+Ardından çalıştırın:
+
+```bash
+git clone https://github.com/wachin/wps-office-12-language-packs
+cd wps-office-12-language-packs
+```
+
 ## MUI ve sözlükleri kurma
 
 Bu deponun kök dizininden şunu çalıştırın:

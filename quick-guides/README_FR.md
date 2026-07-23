@@ -25,6 +25,27 @@ ou depuis le terminal :
 sudo dpkg -i wps-office*.deb
 ```
 
+## Télécharger ou cloner ce dépôt
+
+Avant d’installer les fichiers MUI et les dictionnaires, téléchargez ce dépôt :
+
+[https://github.com/wachin/wps-office-12-language-packs](https://github.com/wachin/wps-office-12-language-packs)
+
+Option 1 : ouvrez la page, cliquez sur `<> Code ▼`, puis sur `Download ZIP`. Extrayez le ZIP et ouvrez un terminal dans le dossier extrait.
+
+Option 2 : clonez-le avec Git. Si Git n’est pas installé, installez-le d’abord :
+
+```bash
+sudo apt install git
+```
+
+Exécutez ensuite :
+
+```bash
+git clone https://github.com/wachin/wps-office-12-language-packs
+cd wps-office-12-language-packs
+```
+
 ## Installer les fichiers MUI et les dictionnaires
 
 Depuis la racine de ce dépôt, exécutez :
