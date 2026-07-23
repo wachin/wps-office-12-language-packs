@@ -306,4 +306,4 @@ Estas tienen MUI instalado, pero falta el diccionario de corrección ortográfic
 | `ja_JP`       | `ja_JP`                                                          | `ja_JP`              |
 | `zh_CN`       | `zh_CN`                                                          | `zh_CN`              |
 | `zh_HK`       | no aparece como locale directo; el Login Manager muestra `zh_TW` | `zh_HK` o `zh_TW`    |
-| `th_TH`       | no aparece en `locales-mx-linux-23.md`                           | `th_TH`              |
+| `th_TH`       | no aparece en la lista de locales del README                      | `th_TH`              |
