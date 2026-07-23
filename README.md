@@ -1,5 +1,10 @@
 # WPS Office 12.x language packs for Linux
 
+Available translations:
+
+- [Español](README_ES.md), available for Spanish-language users.
+- [Deutsch](README_DE.md), available for German-language users.
+
 ## Download WPS Office 12 Linux Chinese version
 
 Download the WPS Office installer for your Linux distribution, either DEB-based or RPM-based.
