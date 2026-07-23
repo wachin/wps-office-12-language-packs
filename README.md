@@ -4,6 +4,7 @@ Available translations:
 
 - [Español](README_ES.md), available for Spanish-language users.
 - [Deutsch](README_DE.md), available for German-language users.
+- [Français](README_FR.md), available for French-language users.
 
 ## Download WPS Office 12 Linux Chinese version
 
