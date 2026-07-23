@@ -1,132 +1,132 @@
 # WPS Office 12.x language packs for Linux
 
-## Descarga WPS Office 12 Linux versión china
+## Download WPS Office 12 Linux Chinese version
 
-Descarga el instalador de WPS Office para tu distribución Linux basada en paquetería deb o RPM.
+Download the WPS Office installer for your Linux distribution, either DEB-based or RPM-based.
 
-Sitio oficial de la página china:
+Official Chinese website:
 
 - [https://www.wps.cn](https://www.wps.cn)
 
-allí al dar clic, redirige a:
+clicking there redirects to:
 
 [https://www.wps.cn/product/wpslinux](https://www.wps.cn/product/wpslinux)
 
-Luego instala el paquete.
+Then install the package.
 
-**Descarga espejo (Mirror)**
-Pero es posible que no tenga las últimas versiones o que se demoren en ponerlas:
+**Mirror download**
+However, it may not have the latest versions, or it may take some time before they are uploaded there:
 
 [https://mirrors.163.com/ubuntukylin/pool/partner/](https://mirrors.163.com/ubuntukylin/pool/partner/)
 
-### Instalar deb con un gestor de instalación de paquetes deb
+### Install the DEB package with a DEB package installer
 
-Instalación con algún gestor de paquetes deb. En los sistemas operativos Linux debería estar instalado alguno; das clic derecho en el administrador de archivos e instalas con él:
+Install it with a DEB package manager. On Linux systems, one should already be installed; right-click the file in your file manager and install it with that tool:
 
 ![](vx_images/08-Instalando-wps-office-12.1.2.25882-amd-deb.png)
 
-### Instalar desde la terminal (Opcional)
+### Install from the terminal (Optional)
 
-Si usas Debian, Ubuntu, Linux Mint, etc, etc, si desea lo puede hacer también desde la terminal:
+If you use Debian, Ubuntu, Linux Mint, and similar distributions, you can also do it from the terminal:
 
 ```bash
 sudo dpkg -i wps-office*.deb
 ```
 
-Si usas Fedora, Red Hat o similares:
+If you use Fedora, Red Hat, or similar distributions:
 
 ```bash
 sudo dnf install wps-office*.rpm
 ```
 
-## Requisitos
+## Requirements
 
-Para continuar con este tutorial necesitas
+To continue with this tutorial you need:
 
-- Tener **WPS Office 12.x** instalado en Linux según se describe arriba.
-- Tener permisos de administrador con `sudo` o equivalente
-- Haber abierto WPS Office al menos una vez (WPS Office crea su configuración de usuario después de abrirlo por primera vez. Si no existe este archivo `~/.config/Kingsoft/Office.conf` abre WPS Office, ciérralo y continúa con la instalación.)
-- Tener este repositorio descargado o clonado en tu computadora.
+- Have **WPS Office 12.x** installed on Linux as described above.
+- Have administrator permissions with `sudo` or an equivalent tool.
+- Have opened WPS Office at least once. WPS Office creates its user configuration after it is opened for the first time. If `~/.config/Kingsoft/Office.conf` does not exist, open WPS Office, close it, and then continue with the installation.
+- Have this repository downloaded or cloned on your computer.
 
-## Instalar las interfaces de usuario multilingües MUI
+## Install the MUI multilingual user interfaces
 
-Para instalar las MUI (interfaces de usuario multilingües), necesitas tener este proyecto en tu equipo. A continuación hay **dos** maneras de hacerlo; elige solo **una** de ellas:
+To install the MUI files (multilingual user interfaces), you need to have this project on your computer. There are **two** ways to do it; choose only **one** of them:
 
-### Opción 1: descargar el ZIP e instalar las MUI
+### Option 1: download the ZIP and install the MUI files
 
-1. Abre esta página:
+1. Open this page:
 
    [https://github.com/wachin/wps-office-12-language-packs](https://github.com/wachin/wps-office-12-language-packs)
 
-2. Haz clic en el botón verde:
+2. Click the green button:
 
 ```
 <> Code ▼
 ```
 
-3. Haz clic en:
+3. Click:
 
 ```
 Download ZIP
 ```
 
-4. Cuando termine la descarga, descomprime el archivo ZIP con clic derecho "Extraer aquí"
-5. Abre una terminal allí y ejecuta:
+4. When the download finishes, extract the ZIP file by right-clicking it and choosing "Extract here".
+5. Open a terminal there and run:
 
 ```bash
 sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/
 ```
 
-con este comando quedarán instaladas las MUI (interfaces de usuario multilingües).
+this command installs the MUI files (multilingual user interfaces).
 
-### Opción 2: clonar con Git e instalar las MUI
+### Option 2: clone with Git and install the MUI files
 
-Si no tienes `git` instalado, instálalo:
+If you do not have `git` installed, install it:
 
 ```bash
 sudo apt install git
 ```
 
-Luego clona el repositorio:
+Then clone the repository:
 
 ```bash
 git clone https://github.com/wachin/wps-office-12-language-packs
 ```
 
-Entra a la carpeta:
+Enter the folder:
 
 ```bash
 cd wps-office-12-language-packs
 ```
 
-ejecuta:
+run:
 
 ```bash
 sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/
 ```
 
-con este comando quedarán instaladas las MUI (interfaces de usuario multilingües).
+this command installs the MUI files (multilingual user interfaces).
 
-## Verificar la instalación
+## Verify the installation
 
-Ese comando `sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/` copia las carpetas de idioma disponibles a la carpeta real de WPS Office en Linux en `/opt/kingsoft/wps-office/office6/mui/`.
+That `sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/` command copies the available language folders to the real WPS Office folder on Linux: `/opt/kingsoft/wps-office/office6/mui/`.
 
-En la versión china de WPS Office 12 que acabamos de instalar vienen instaladas por defecto estas MUI (interfaces de usuario multilingües):
+The Chinese version of WPS Office 12 that we just installed includes these MUI folders by default:
 
 /opt/kingsoft/wps-office/office6/mui/en_US
 /opt/kingsoft/wps-office/office6/mui/ru_RU
 /opt/kingsoft/wps-office/office6/mui/zh_CN
 
-y además vienen por defecto estos dos diccionarios de corrección ortográfica:
+and it also includes these two spellcheck dictionaries by default:
 
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/en_CH
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/en_US
 
-Desde tu administrador de archivos revisa esta ruta:
+From your file manager, check this path:
 
 /opt/kingsoft/wps-office/office6/mui/
 
-Deberías tener, además de los idiomas que trae la versión china, lo siguiente:
+In addition to the languages included in the Chinese version, you should have the following:
 
 ```
 de_DE
@@ -144,31 +144,31 @@ tr_TR
 zh_HK
 ```
 
-También se copia:
+This is also copied:
 
 ```
 lang_list
 ```
 
-Es una lista de selección.
+It is a selection list.
 
 
-## Diccionarios disponibles y diccionarios probados
+## Available dictionaries and tested dictionaries
 
-Este repositorio además prepara diccionarios Hunspell para que **WPS Office 12.x** pueda usarlos en Linux.
+This repository also prepares Hunspell dictionaries so **WPS Office 12.x** can use them on Linux.
 
-Por ahora hay que distinguir entre dos carpetas:
+For now, two folders must be distinguished:
 
 ```
 build/dicts-active/
 wps-libreoffice-dicts/
 ```
 
-La carpeta `build/dicts-active/` contiene los diccionarios seleccionados para instalar ahora. Son los que se están usando para las pruebas de WPS Office 12.
+The `build/dicts-active/` folder contains the dictionaries selected for installation now. These are the ones being used for WPS Office 12 testing.
 
-La carpeta `wps-libreoffice-dicts/` contiene todos los diccionarios convertidos desde LibreOffice. Se conserva en la raíz del repositorio, porque en WPS Office 12 versión china no todas las variantes funcionan aunque tengan el formato correcto. Tal vez en una versión futura WPS vuelva a soportar todos esos diccionarios como ocurría en versiones antiguas de WPS Office para Linux.
+The `wps-libreoffice-dicts/` folder contains all dictionaries converted from LibreOffice. It is kept in the repository root because, in WPS Office 12 Chinese version, not all variants work even when they have the correct format. Maybe in a future version WPS will support all those dictionaries again, as older WPS Office for Linux versions did.
 
-Cada carpeta de diccionario tiene el formato que WPS espera:
+Each dictionary folder has the format WPS expects:
 
 ```
 dict.conf
@@ -176,43 +176,43 @@ main.aff
 main.dic
 ```
 
-Los archivos `main.aff` y `main.dic` vienen principalmente de la colección de diccionarios de LibreOffice:
+The `main.aff` and `main.dic` files mainly come from the LibreOffice dictionary collection:
 
 ```
 third-party/libreoffice-dictionaries-collection/dicts/
 ```
 
-Repositorio de origen:
+Source repository:
 
 [https://github.com/wachin/libreoffice-dictionaries-collection](https://github.com/wachin/libreoffice-dictionaries-collection)
 
-Los `dict.conf` se reutilizan desde los diccionarios antiguos de WPS Office cuando existen, y se generan para las variantes nuevas.
+The `dict.conf` files are reused from old WPS Office dictionaries when they exist, and generated for the new variants.
 
-Excepción importante: el diccionario activo `pl_PL` viene de los diccionarios antiguos de WPS Office 11.2.0.9255:
+Important exception: the active `pl_PL` dictionary comes from the old WPS Office 11.2.0.9255 dictionaries:
 
 ```
 third-party/wps-office-11.2.0.9255-dicts/dicts/pl_PL/
 ```
 
-Repositorio de origen:
+Source repository:
 
 [https://github.com/wachin/wps-office-11.2.0.9255-dicts](https://github.com/wachin/wps-office-11.2.0.9255-dicts)
 
-Se usa ese `pl_PL` porque el diccionario polaco convertido desde LibreOffice no funcionó bien en WPS Office 12. En su archivo `main.aff` se detectó:
+That `pl_PL` is used because the Polish dictionary converted from LibreOffice did not work well in WPS Office 12. Its `main.aff` file contains:
 
 ```
 SET ISO8859-2
 ```
 
-En cambio, el diccionario polaco antiguo de WPS está en UTF-8 y su `main.aff` contiene:
+By contrast, the old WPS Polish dictionary is in UTF-8 and its `main.aff` contains:
 
 ```
 SET UTF-8
 ```
 
-Los diccionarios activos actualmente son:
+The currently active dictionaries are:
 
-| Código  |     Diccionario     |
+| Code    | Dictionary          |
 | ------- | ------------------- |
 | `de_DE` | German (Germany)    |
 | `es_ES` | Spanish (Spain)     |
@@ -224,20 +224,20 @@ Los diccionarios activos actualmente son:
 | `ru_RU` | Russian (Russia)    |
 | `tr_TR` | Turkish (Turkey)    |
 
-Nota sobre `pt_PT`: en MX Linux 23 con locale `pt_PT.UTF-8`, MUI `pt_PT` y diccionario instalado como `/opt/kingsoft/wps-office/office6/dicts/spellcheck/pt_PT/`, WPS Office 12 no activa la corrección ortográfica para portugués de Portugal en las pruebas actuales. En la misma instalación, la corrección sí funciona usando el diccionario `pt_BR`.
+Note about `pt_PT`: on MX Linux 23 with locale `pt_PT.UTF-8`, MUI `pt_PT`, and the dictionary installed as `/opt/kingsoft/wps-office/office6/dicts/spellcheck/pt_PT/`, WPS Office 12 does not enable spellchecking for Portuguese from Portugal in the current tests. In the same installation, spellchecking does work using the `pt_BR` dictionary.
 
 
-## Instalar los diccionarios
+## Install the dictionaries
 
-Desde la raíz de este repositorio, ejecuta:
+From the root of this repository, run:
 
 ```bash
 sudo cp -r build/dicts-active/* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
 ```
 
-Esto copia los diccionarios activos a la carpeta que WPS usa para la corrección ortográfica.
+This copies the active dictionaries to the folder WPS uses for spellchecking.
 
-Después de copiar, la ruta de WPS debe quedar con carpetas como estas:
+After copying, the WPS path should contain folders like these:
 
 ```
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/es_ES/
@@ -246,7 +246,7 @@ Después de copiar, la ruta de WPS debe quedar con carpetas como estas:
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/pt_BR/
 ```
 
-Y dentro de cada una:
+And inside each one:
 
 ```
 dict.conf
@@ -254,86 +254,86 @@ main.aff
 main.dic
 ```
 
-## Activar un idioma de la interfaz en la configuración de WPS
+## Enable an interface language in the WPS configuration
 
-Si eres un desarrollador edita el archivo de configuración con nano:
+If you are a developer, edit the configuration file with nano:
 
 ```bash
 nano ~/.config/Kingsoft/Office.conf
 ```
 
-Si eres un usuario normal usa Gedit u otro editor de texto. Para Gedit si no lo tienes instalado instálalo así:
+If you are a regular user, use Gedit or another text editor. If you do not have Gedit installed, install it like this:
 
 ```bash
 sudo apt install gedit
 ```
 
-y pon en la terminal:
+and enter this in the terminal:
 
 ```bash
 gedit ~/.config/Kingsoft/Office.conf
 ```
 
-Una vez abierto ese archivo selecciona todo el texto que haya allí con `Ctrl + A`, bórralo, y coloca en su lugar el contenido correspondiente al idioma que quieres usar.
+Once that file is open, select all the text in it with `Ctrl + A`, delete it, and replace it with the content for the language you want to use.
 
-La estructura siempre es la misma:
+The structure is always the same:
 
 ```
 [General]
-languages=CODIGO_DEL_IDIOMA
+languages=LANGUAGE_CODE
 
 [6.0]
-common\DefaultLanguage=NUMERO_IDIOMA
-common\Local\UILanguage=NUMERO_IDIOMA
+common\DefaultLanguage=LANGUAGE_NUMBER
+common\Local\UILanguage=LANGUAGE_NUMBER
 wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-Usa esta tabla para elegir el código y el número correcto:
+Use this table to choose the correct code and number:
 
-|             Idioma               | `languages=` | `DefaultLanguage` y `UILanguage` |
-| -------------------------------- | ------------ | -------------------------------- |
-| English (United States)          | `en_US`      | `1033`                           |
-| German (Germany)                 | `de_DE`      | `1031`                           |
-| Spanish (Spain)                  | `es_ES`      | `3082`                           |
-| Spanish (Mexico)                 | `es_MX`      | `2058`                           |
-| French (Canada)                  | `fr_CA`      | `3084`                           |
-| French (France)                  | `fr_FR`      | `1036`                           |
-| Indonesian                       | `id_ID`      | `1057`                           |
-| Japanese                         | `ja_JP`      | `1041`                           |
-| Polish                           | `pl_PL`      | `1045`                           |
-| Portuguese (Brazil)              | `pt_BR`      | `1046`                           |
-| Portuguese (Portugal)            | `pt_PT`      | `2070`                           |
-| Russian                          | `ru_RU`      | `1049`                           |
-| Thai                             | `th_TH`      | `1054`                           |
-| Turkish                          | `tr_TR`      | `1055`                           |
-| Chinese (Simplified, China)      | `zh_CN`      | `2052`                           |
-| Chinese (Traditional, Hong Kong) | `zh_HK`      | `3076`                           |
+| Language                         | `languages=` | `DefaultLanguage` and `UILanguage` |
+| -------------------------------- | ------------ | ---------------------------------- |
+| English (United States)          | `en_US`      | `1033`                             |
+| German (Germany)                 | `de_DE`      | `1031`                             |
+| Spanish (Spain)                  | `es_ES`      | `3082`                             |
+| Spanish (Mexico)                 | `es_MX`      | `2058`                             |
+| French (Canada)                  | `fr_CA`      | `3084`                             |
+| French (France)                  | `fr_FR`      | `1036`                             |
+| Indonesian                       | `id_ID`      | `1057`                             |
+| Japanese                         | `ja_JP`      | `1041`                             |
+| Polish                           | `pl_PL`      | `1045`                             |
+| Portuguese (Brazil)              | `pt_BR`      | `1046`                             |
+| Portuguese (Portugal)            | `pt_PT`      | `2070`                             |
+| Russian                          | `ru_RU`      | `1049`                             |
+| Thai                             | `th_TH`      | `1054`                             |
+| Turkish                          | `tr_TR`      | `1055`                             |
+| Chinese (Simplified, China)      | `zh_CN`      | `2052`                             |
+| Chinese (Traditional, Hong Kong) | `zh_HK`      | `3076`                             |
 
-### Tabla rápida: locale, MUI y diccionario con el mismo código
+### Quick table: locale, MUI, and dictionary with the same code
 
-Esta tabla muestra los idiomas donde se puede comparar directamente si el `Locale`, el MUI y el diccionario usan el mismo código. La `x` significa que no se incluye un diccionario activo con ese mismo código. El símbolo `✅` marca los casos probados donde esa combinación exacta funciona.
+This table shows the languages where you can directly compare whether the `Locale`, the MUI, and the dictionary use the same code. The `x` means that no active dictionary with that same code is included. The `✅` symbol marks tested cases where that exact combination works.
 
-| Idioma visto en el Login Manager | `Locale` |  `MUI`  | `Dict`  | Probado |
-| -------------------------------- | -------- | ------- | ------- | ------- |
-| English (United States)          | `en_US`  | `en_US` | `en_US` | ✅      |
-| German (Germany)                 | `de_DE`  | `de_DE` | `de_DE` | ✅      |
-| Spanish (Spain)                  | `es_ES`  | `es_ES` | `es_ES` | ✅      |
-| Spanish (Mexico)                 | `es_MX`  | `es_MX` | x       |         |
-| French (Canada)                  | `fr_CA`  | `fr_CA` | x       |         |
-| French (France)                  | `fr_FR`  | `fr_FR` | `fr_FR` | ✅      |
-| Indonesian                       | `id_ID`  | `id_ID` | `id_ID` | ✅      |
-| Japanese                         | `ja_JP`  | `ja_JP` | x       |         |
-| Polish                           | `pl_PL`  | `pl_PL` | `pl_PL` | ✅      |
-| Portuguese (Brazil)              | `pt_BR`  | `pt_BR` | `pt_BR` | ✅      |
-| Portuguese (Portugal)            | `pt_PT`  | `pt_PT` | `pt_PT` |         |
-| Russian                          | `ru_RU`  | `ru_RU` | `ru_RU` | ✅      |
-| Thai                             | `th_TH`  | `th_TH` | x       |         |
-| Turkish                          | `tr_TR`  | `tr_TR` | `tr_TR` | ✅      |
-| Chinese (Simplified, China)      | `zh_CN`  | `zh_CN` | x       |         |
-| Chinese (Traditional, Hong Kong) | `zh_HK`  | `zh_HK` | x       |         |
+| Language shown in the Login Manager | `Locale` | `MUI`   | `Dict`  | Tested  |
+| ----------------------------------- | -------- | ------- | ------- | ------- |
+| English (United States)             | `en_US`  | `en_US` | `en_US` | ✅       |
+| German (Germany)                    | `de_DE`  | `de_DE` | `de_DE` | ✅       |
+| Spanish (Spain)                     | `es_ES`  | `es_ES` | `es_ES` | ✅       |
+| Spanish (Mexico)                    | `es_MX`  | `es_MX` | x       |         |
+| French (Canada)                     | `fr_CA`  | `fr_CA` | x       |         |
+| French (France)                     | `fr_FR`  | `fr_FR` | `fr_FR` | ✅       |
+| Indonesian                          | `id_ID`  | `id_ID` | `id_ID` | ✅       |
+| Japanese                            | `ja_JP`  | `ja_JP` | x       |         |
+| Polish                              | `pl_PL`  | `pl_PL` | `pl_PL` | ✅       |
+| Portuguese (Brazil)                 | `pt_BR`  | `pt_BR` | `pt_BR` | ✅       |
+| Portuguese (Portugal)               | `pt_PT`  | `pt_PT` | `pt_PT` |         |
+| Russian                             | `ru_RU`  | `ru_RU` | `ru_RU` | ✅       |
+| Thai                                | `th_TH`  | `th_TH` | x       |         |
+| Turkish                             | `tr_TR`  | `tr_TR` | `tr_TR` | ✅       |
+| Chinese (Simplified, China)         | `zh_CN`  | `zh_CN` | x       |         |
+| Chinese (Traditional, Hong Kong)    | `zh_HK`  | `zh_HK` | x       |         |
 
-### Para inglés de Estados Unidos:
+### For English United States:
 
 ```
 [General]
@@ -346,7 +346,7 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-### Para el Español de España:
+### For Spanish from Spain:
 
 ```
 [General]
@@ -359,7 +359,7 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-### Para el Alemán de Alemania:
+### For German from Germany:
 
 ```
 [General]
@@ -373,7 +373,7 @@ wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
 
-### Para español de México:
+### For Spanish from Mexico:
 
 ```
 [General]
@@ -386,7 +386,7 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-### Para francés de Canadá:
+### For French from Canada:
 
 ```
 [General]
@@ -399,7 +399,7 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-### Para francés de Francia:
+### For French from France:
 
 ```
 [General]
@@ -412,7 +412,7 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-### Para indonesio:
+### For Indonesian:
 
 ```
 [General]
@@ -425,7 +425,7 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-### Para japonés:
+### For Japanese:
 
 ```
 [General]
@@ -438,7 +438,7 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-### Para polaco:
+### For Polish:
 
 ```
 [General]
@@ -451,7 +451,7 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-### Para portugués de Brasil:
+### For Brazilian Portuguese:
 
 ```
 [General]
@@ -464,7 +464,7 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-### Para portugués de Portugal:
+### For Portuguese from Portugal:
 
 ```
 [General]
@@ -477,7 +477,7 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-### Para ruso:
+### For Russian:
 
 ```
 [General]
@@ -490,7 +490,7 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-### Para tailandés:
+### For Thai:
 
 ```
 [General]
@@ -503,7 +503,7 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-### Para turco:
+### For Turkish:
 
 ```
 [General]
@@ -516,7 +516,7 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-### Para chino simplificado de China:
+### For Simplified Chinese from China:
 
 ```
 [General]
@@ -529,7 +529,7 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-### Para chino tradicional de Hong Kong:
+### For Traditional Chinese from Hong Kong:
 
 ```
 [General]
@@ -543,183 +543,183 @@ wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
 
-Guarda el archivo, cierra WPS Office por completo y vuelve a abrirlo. Si el idioma quedó bien configurado, la interfaz abrirá en el idioma elegido.
+Save the file, close WPS Office completely, and open it again. If the language was configured correctly, the interface will open in the selected language.
 
-## Solución para hacer funcionar los correctores ortográficos en WPS Office 12
+## Solution to make spellcheckers work in WPS Office 12
 
-En WPS Office 12 versión china no basta con copiar un diccionario a:
+In WPS Office 12 Chinese version, copying a dictionary to this folder is not enough:
 
 ```
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/
 ```
 
-También influye la configuración regional con la que entraste a la sesión de Linux desde el Login Manager, el idioma MUI instalado en WPS Office y el idioma configurado en:
+The regional setting you used when logging into the Linux session from the Login Manager, the MUI language installed in WPS Office, and the language configured in this file also matter:
 
 ```
 ~/.config/Kingsoft/Office.conf
 ```
 
-Por eso algunos diccionarios aparecen en la ventana de `"Establecer idioma"`, pero no corrigen la ortografía. El caso más claro es español de México: el MUI `es_MX` y el diccionario `es_MX` pueden aparecer instalados, pero en las pruebas la corrección ortográfica solo funcionó con el diccionario `es_ES`.
+That is why some dictionaries appear in the `"Set language"` window but do not perform spellchecking. The clearest case is Spanish from Mexico: the `es_MX` MUI and `es_MX` dictionary may appear installed, but in testing spellchecking only worked with the `es_ES` dictionary.
 
-### Pruebas confirmadas
+### Confirmed tests
 
-Estas son las pruebas realizadas hasta ahora:
+These are the tests performed so far:
 
-|    Corrector    | Configuración regional elegida en el Login Manager | Locale  | MUI usado en WPS | Diccionario instalado |   Estado    |
-| --------------- | -------------------------------------------------- | ------- | ---------------- | --------------------- | ----------- |
-| Inglés          | `American English - Estados Unidos`                | `en_US` | `en_US`          | `en_US` UTF-8         | Funciona    |
-| Inglés          | `Inglés - Irlanda`                                 | `en_IE` | `en_US`          | `en_US` UTF-8         | Funciona    |
-| Inglés          | `Australian English - Australia`                   | `en_AU` | `en_US`          | `en_US` UTF-8         | Funciona    |
-| Inglés          | `British English - Reino Unido`                    | `en_GB` | `en_US`          | `en_US` UTF-8         | Funciona    |
-| Inglés          | `Inglés - Nueva Zelanda`                           | `en_NZ` | `en_US`          | `en_US` UTF-8         | No funciona |
-| Español         | `Español - Ecuador`                                | `es_EC` | `es_ES`          | `es_ES` UTF-8         | Funciona    |
-| Español         | `European Spanish - España`                        | `es_ES` | `es_ES`          | `es_ES` UTF-8         | Funciona    |
-| Español         | `Español - Estados Unidos`                         | `es_US` | `es_ES`          | `es_ES` UTF-8         | Funciona    |
-| Español         | `Español - Venezuela`                              | `es_VE` | `es_ES`          | `es_ES` UTF-8         | Funciona    |
-| Español         | `Mexican Spanish - México`                         | `es_MX` | `es_ES`          | `es_ES` UTF-8         | Funciona    |
-| Español         | `Español - Perú`                                   | `es_PE` | `es_ES`          | `es_ES` UTF-8         | Funciona    |
-| Español         | `Español - Uruguay`                                | `es_UY` | `es_ES`          | `es_ES` UTF-8         | Funciona    |
-| Español México  | `Mexican Spanish - México`                         | `es_MX` | `es_MX`          | `es_MX` UTF-8         | No funciona |
-| Alemán          | `Austrian German - Austria`                        | `de_AT` | `de_DE`          | `de_DE` ISO8859-1     | Funciona    |
-| Alemán          | `Alemán - Alemania`                                | `de_DE` | `de_DE`          | `de_DE` ISO8859-1     | Funciona    |
-| Alemán          | `Swiss High German - Suiza`                        | `de_CH` | `de_DE`          | `de_DE` ISO8859-1     | Funciona    |
-| Francés         | `Francés - Francia`                                | `fr_FR` | `fr_FR`          | `fr_FR` UTF-8         | Funciona    |
-| Francés         | `Canadian French - Canadá`                         | `fr_CA` | `fr_CA`          | `fr_FR` UTF-8         | Funciona    |
-| Indonesio       | `Indonesio - Indonesia`                            | `id_ID` | `id_ID`          | `id_ID` ISO8859-1     | Funciona    |
-| Polaco          | `Polaco - Polonia`                                 | `pl_PL` | `pl_PL`          | `pl_PL` UTF-8         | Funciona    |
-| Portugués BR    | `Brazilian Portuguese - Brasil`                    | `pt_BR` | `pt_BR`          | `pt_BR` UTF-8         | Funciona    |
-| Portugués PT    | `European Portuguese - Portugal`                   | `pt_PT` | `pt_PT`          | `pt_PT` UTF-8         | No funciona |
-| Portugués PT    | `European Portuguese - Portugal`                   | `pt_PT` | `pt_PT`          | `pt_BR` UTF-8         | Funciona    |
-| Ruso            | `Ruso - Rusia`                                     | `ru_RU` | `ru_RU`          | `ru_RU` UTF-8         | Funciona    |
-| Turco           | `Turco - Turkey`                                   | `tr_TR` | `tr_TR`          | `tr_TR` UTF-8         | Funciona    |
+| Spellchecker    | Regional setting chosen in the Login Manager       | Locale  | MUI used in WPS  | Installed dictionary  | Status        |
+| --------------- | -------------------------------------------------- | ------- | ---------------- | --------------------- | ------------- |
+| English         | `American English - United States`                 | `en_US` | `en_US`          | `en_US` UTF-8         | Works         |
+| English         | `English - Ireland`                                | `en_IE` | `en_US`          | `en_US` UTF-8         | Works         |
+| English         | `Australian English - Australia`                   | `en_AU` | `en_US`          | `en_US` UTF-8         | Works         |
+| English         | `British English - United Kingdom`                 | `en_GB` | `en_US`          | `en_US` UTF-8         | Works         |
+| English         | `English - New Zealand`                            | `en_NZ` | `en_US`          | `en_US` UTF-8         | Does not work |
+| Spanish         | `Spanish - Ecuador`                                | `es_EC` | `es_ES`          | `es_ES` UTF-8         | Works         |
+| Spanish         | `European Spanish - Spain`                         | `es_ES` | `es_ES`          | `es_ES` UTF-8         | Works         |
+| Spanish         | `Spanish - United States`                          | `es_US` | `es_ES`          | `es_ES` UTF-8         | Works         |
+| Spanish         | `Spanish - Venezuela`                              | `es_VE` | `es_ES`          | `es_ES` UTF-8         | Works         |
+| Spanish         | `Mexican Spanish - Mexico`                         | `es_MX` | `es_ES`          | `es_ES` UTF-8         | Works         |
+| Spanish         | `Spanish - Peru`                                   | `es_PE` | `es_ES`          | `es_ES` UTF-8         | Works         |
+| Spanish         | `Spanish - Uruguay`                                | `es_UY` | `es_ES`          | `es_ES` UTF-8         | Works         |
+| Spanish Mexico  | `Mexican Spanish - Mexico`                         | `es_MX` | `es_MX`          | `es_MX` UTF-8         | Does not work |
+| German          | `Austrian German - Austria`                        | `de_AT` | `de_DE`          | `de_DE` ISO8859-1     | Works         |
+| German          | `German - Germany`                                 | `de_DE` | `de_DE`          | `de_DE` ISO8859-1     | Works         |
+| German          | `Swiss High German - Switzerland`                  | `de_CH` | `de_DE`          | `de_DE` ISO8859-1     | Works         |
+| French          | `French - France`                                  | `fr_FR` | `fr_FR`          | `fr_FR` UTF-8         | Works         |
+| French          | `Canadian French - Canada`                         | `fr_CA` | `fr_CA`          | `fr_FR` UTF-8         | Works         |
+| Indonesian      | `Indonesian - Indonesia`                           | `id_ID` | `id_ID`          | `id_ID` ISO8859-1     | Works         |
+| Polish          | `Polish - Poland`                                  | `pl_PL` | `pl_PL`          | `pl_PL` UTF-8         | Works         |
+| Portuguese BR   | `Brazilian Portuguese - Brazil`                    | `pt_BR` | `pt_BR`          | `pt_BR` UTF-8         | Works         |
+| Portuguese PT   | `European Portuguese - Portugal`                   | `pt_PT` | `pt_PT`          | `pt_PT` UTF-8         | Does not work |
+| Portuguese PT   | `European Portuguese - Portugal`                   | `pt_PT` | `pt_PT`          | `pt_BR` UTF-8         | Works         |
+| Russian         | `Russian - Russia`                                 | `ru_RU` | `ru_RU`          | `ru_RU` UTF-8         | Works         |
+| Turkish         | `Turkish - Turkey`                                 | `tr_TR` | `tr_TR`          | `tr_TR` UTF-8         | Works         |
 
-La codificación indicada en la columna `Diccionario instalado` se toma de la línea `SET` del archivo `main.aff` de cada diccionario.
+The encoding shown in the `Installed dictionary` column is taken from the `SET` line in each dictionary's `main.aff` file.
 
-**Nota sobre `pl_PL`**: después de reemplazar el diccionario por la versión UTF-8 tomada desde los diccionarios antiguos de WPS Office 11.2.0.9255, fue necesario seleccionarlo manualmente en `"Review"` > `"Spell Check ⌵"` > `"Set language"` > `"Polski"`. Tras seleccionarlo, la corrección ortográfica funcionó. El diccionario polaco convertido desde LibreOffice no funcionó bien porque estaba en `ISO8859-2`, tal como se observó en su archivo `main.aff`.
+**Note about `pl_PL`**: after replacing the dictionary with the UTF-8 version taken from the old WPS Office 11.2.0.9255 dictionaries, it had to be selected manually in `"Review"` > `"Spell Check ⌵"` > `"Set language"` > `"Polski"`. After selecting it, spellchecking worked. The Polish dictionary converted from LibreOffice did not work well because it was in `ISO8859-2`, as seen in its `main.aff` file.
 
-**Nota sobre `pt_PT`**: con locale `pt_PT.UTF-8`, MUI `pt_PT` y diccionario `pt_PT`, WPS Office 12 no activó la corrección ortográfica. En esa misma configuración sí funcionó usando el diccionario `pt_BR`.
+**Note about `pt_PT`**: with locale `pt_PT.UTF-8`, MUI `pt_PT`, and dictionary `pt_PT`, WPS Office 12 did not enable spellchecking. In that same configuration, it did work using the `pt_BR` dictionary.
 
-**Nota sobre `ru_RU`**: el corrector funcionó en un documento nuevo creado desde cero. En un documento creado originalmente en inglés, aunque se pegó texto ruso traducido, WPS no aplicó bien la revisión ortográfica al texto existente.
+**Note about `ru_RU`**: the spellchecker worked in a new document created from scratch. In a document originally created in English, even after pasting translated Russian text, WPS did not apply spellchecking correctly to the existing text.
 
-En MX Linux 23 el locale puede verse en el Login Manager: al seleccionar un idioma de la lista, el Login Manager muestra el código del locale. Por ejemplo, si eliges con clic:
+On MX Linux 23, the locale can be seen in the Login Manager: when you select a language from the list, the Login Manager shows the locale code. For example, if you click:
 
 ```
-Mexican Spanish - México
+Mexican Spanish - Mexico
 ```
 
-aparecerá:
+this will appear:
 
 ```
 es_MX
 ```
 
-Si ya entraste a la sesión y quieres ver cuál locale está usando tu sistema, abre una terminal y ejecuta:
+If you are already logged in and want to see which locale your system is using, open a terminal and run:
 
 ```bash
 echo $LANG
 ```
 
-Ejemplo:
+Example:
 
 ```bash
 $ echo $LANG
 es_MX.UTF-8
 ```
 
-### Lista de idiomas disponibles en el Login Manager de MX Linux 23
+### List of languages available in the MX Linux 23 Login Manager
 
-Esta es la lista observada en el Login Manager de MX Linux 23:
+This is the list observed in the MX Linux 23 Login Manager:
 
 ![](vx_images/20260717.1-MX-Linux-23_Login-Manager-lnguages-ezgif.com.gif)
 
-Disponible como tabla con locales:
+Available as a table with locales:
 
-|      Idioma en el Login Manager      | Locale  |
+| Language in the Login Manager        | Locale  |
 | ------------------------------------ | ------- |
-| Árábe - Egipto                       | `ar_EG` |
-| Bieloruso - Bielorrusia              | `be_BY` |
-| Búlgaro - Bulgaria                   | `bg_BG` |
-| Catalán - España                     | `ca_ES` |
-| Checo - República Checa              | `cs_CZ` |
-| Danés - Dinamarca                    | `da_DK` |
+| Arabic - Egypt                       | `ar_EG` |
+| Belarusian - Belarus                 | `be_BY` |
+| Bulgarian - Bulgaria                 | `bg_BG` |
+| Catalan - Spain                      | `ca_ES` |
+| Czech - Czech Republic               | `cs_CZ` |
+| Danish - Denmark                     | `da_DK` |
 | Austrian German - Austria            | `de_AT` |
-| Swiss High German - Suiza            | `de_CH` |
-| Alemán - Alemania                    | `de_DE` |
-| Greek - Grecia                       | `el_GR` |
+| Swiss High German - Switzerland      | `de_CH` |
+| German - Germany                     | `de_DE` |
+| Greek - Greece                       | `el_GR` |
 | Australian English - Australia       | `en_AU` |
-| Canadian English - Canadá            | `en_CA` |
-| British English - Reino Unido        | `en_GB` |
-| Inglés - Irlanda                     | `en_IE` |
-| Inglés - Nueva Zelanda               | `en_NZ` |
-| American English - Estados Unidos    | `en_US` |
-| Español - Argentina                  | `es_AR` |
-| Español - Bolivia                    | `es_BO` |
-| Español - Colombia                   | `es_CO` |
-| Español - Ecuador                    | `es_EC` |
-| European Spanish - España            | `es_ES` |
-| Mexican Spanish - México             | `es_MX` |
-| Español - Nicaragua                  | `es_NI` |
-| Español - Panamá                     | `es_PA` |
-| Español - Perú                       | `es_PE` |
-| Español - Estados Unidos             | `es_US` |
-| Español - Uruguay                    | `es_UY` |
-| Español - Venezuela                  | `es_VE` |
-| Estonio - Estonia                    | `et_EE` |
-| Vasco - España                       | `eu_ES` |
-| Persa - Iran                         | `fa_IR` |
-| Finés - Finlandia                    | `fi_FI` |
-| Francés - Bélgica                    | `fr_BE` |
-| Canadian French - Canadá             | `fr_CA` |
-| Swiss French - Suiza                 | `fr_CH` |
-| Francés - Francia                    | `fr_FR` |
-| Irlandés - Irlanda                   | `ga_IE` |
-| Hebreo - Israel                      | `he_IL` |
-| Croata - Croacia                     | `hr_HR` |
-| Húngaro - Hungría                    | `hu_HU` |
-| Islandés - Islandia                  | `is_IS` |
-| Italiano - Italia                    | `it_IT` |
-| Japonés - Japón                      | `ja_JP` |
-| Georgiano-Georgia                    | `ka_GE` |
-| Kazako - Kazajistán                  | `kk_KZ` |
-| Coreano - South Korea                | `ko_KR` |
-| Lituano - Lituania                   | `lt_LT` |
-| Letón - Letonia                      | `lv_LV` |
-| Macedonio - Macedonia                | `mk_MK` |
-| Norwegian Bokmål - Noruega           | `nb_NO` |
-| Flemish - Bélgica                    | `nl_BE` |
-| Neerlandés (Holandés) - Países Bajos | `nl_NL` |
-| Noruego Nynorsk - Noruega            | `nn_NO` |
-| Polaco - Polonia                     | `pl_PL` |
-| Brazilian Portuguese - Brasil        | `pt_BR` |
+| Canadian English - Canada            | `en_CA` |
+| British English - United Kingdom     | `en_GB` |
+| English - Ireland                    | `en_IE` |
+| English - New Zealand                | `en_NZ` |
+| American English - United States     | `en_US` |
+| Spanish - Argentina                  | `es_AR` |
+| Spanish - Bolivia                    | `es_BO` |
+| Spanish - Colombia                   | `es_CO` |
+| Spanish - Ecuador                    | `es_EC` |
+| European Spanish - Spain             | `es_ES` |
+| Mexican Spanish - Mexico             | `es_MX` |
+| Spanish - Nicaragua                  | `es_NI` |
+| Spanish - Panama                     | `es_PA` |
+| Spanish - Peru                       | `es_PE` |
+| Spanish - United States              | `es_US` |
+| Spanish - Uruguay                    | `es_UY` |
+| Spanish - Venezuela                  | `es_VE` |
+| Estonian - Estonia                   | `et_EE` |
+| Basque - Spain                       | `eu_ES` |
+| Persian - Iran                       | `fa_IR` |
+| Finnish - Finland                    | `fi_FI` |
+| French - Belgium                     | `fr_BE` |
+| Canadian French - Canada             | `fr_CA` |
+| Swiss French - Switzerland           | `fr_CH` |
+| French - France                      | `fr_FR` |
+| Irish - Ireland                      | `ga_IE` |
+| Hebrew - Israel                      | `he_IL` |
+| Croatian - Croatia                   | `hr_HR` |
+| Hungarian - Hungary                  | `hu_HU` |
+| Icelandic - Iceland                  | `is_IS` |
+| Italian - Italy                      | `it_IT` |
+| Japanese - Japan                     | `ja_JP` |
+| Georgian - Georgia                   | `ka_GE` |
+| Kazakh - Kazakhstan                  | `kk_KZ` |
+| Korean - South Korea                 | `ko_KR` |
+| Lithuanian - Lithuania               | `lt_LT` |
+| Latvian - Latvia                     | `lv_LV` |
+| Macedonian - Macedonia               | `mk_MK` |
+| Norwegian Bokmål - Norway            | `nb_NO` |
+| Flemish - Belgium                    | `nl_BE` |
+| Dutch - Netherlands                  | `nl_NL` |
+| Norwegian Nynorsk - Norway           | `nn_NO` |
+| Polish - Poland                      | `pl_PL` |
+| Brazilian Portuguese - Brazil        | `pt_BR` |
 | European Portuguese - Portugal       | `pt_PT` |
-| Rumano - Rumanía                     | `ro_RO` |
-| Ruso-Russia                          | `ru_RU` |
-| Eslovaco - Eslovaquia                | `sk_SK` |
-| Esloveno - Eslovenia                 | `sl_SI` |
-| Albanés - Albania                    | `sq_AL` |
-| Serbio - Serbia                      | `sr_RS` |
-| Sueco - Suecia                       | `sv_SE` |
-| Turco - Turkey                       | `tr_TR` |
-| Ukranio - Ucrania                    | `uk_UA` |
-| Chino - China                        | `zh_CN` |
-| Chino - Taiwán                       | `zh_TW` |
+| Romanian - Romania                   | `ro_RO` |
+| Russian - Russia                     | `ru_RU` |
+| Slovak - Slovakia                    | `sk_SK` |
+| Slovenian - Slovenia                 | `sl_SI` |
+| Albanian - Albania                   | `sq_AL` |
+| Serbian - Serbia                     | `sr_RS` |
+| Swedish - Sweden                     | `sv_SE` |
+| Turkish - Turkey                     | `tr_TR` |
+| Ukrainian - Ukraine                  | `uk_UA` |
+| Chinese - China                      | `zh_CN` |
+| Chinese - Taiwan                     | `zh_TW` |
 
 
-## Cómo hacer funcionar el corrector ortográfico en inglés
+## How to make the English spellchecker work
 
-Para que funcione el corrector ortográfico del idioma inglés, cierra sesión en MX Linux 23 y en el Login Manager elige:
+To make the English spellchecker work, log out of MX Linux 23 and choose this in the Login Manager:
 
 ```
-American English - Estados Unidos
+American English - United States
 ```
 
-Después edita:
+Then edit:
 
 ```bash
 gedit ~/.config/Kingsoft/Office.conf
 ```
 
-y deja este contenido:
+and leave this content:
 
 ```
 [General]
@@ -732,71 +732,71 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-WPS Office 12 ya trae por defecto el MUI:
+WPS Office 12 already includes this MUI by default:
 
 ```
 /opt/kingsoft/wps-office/office6/mui/en_US
 ```
 
-y además el diccionario:
+and also the dictionary:
 
 ```
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/en_US/
 ```
 
-### Activar la corrección ortográfica en inglés
+### Enable English spellchecking
 
-Ahora abre WPS Writer. Ve en la cinta (o pestaña) a la que tiene el nombre:
+Now open WPS Writer. Go to the ribbon tab named:
 
 `"Review"`
 
-y allí en
+and there, in
 
 `"Spell Check ⌵"`
 
-darle clic a ese icono `"⌵"` y clic en el sub-menú revisa:
+click that `"⌵"` icon and click the submenu:
 
 `"Set Spell Check language"`
 
 ![](vx_images/20260721.2-WPS_en-US_Home-Review-SpellCheck-SetLanguage-ezgif.com.gif)
 
-en la ventana que se abrirá por defecto estará entre los diccionarios disponibles `"English (United States)"`
+in the window that opens, `"English (United States)"` will be among the available dictionaries by default.
 
 ![](vx_images/dicts-tests/01-Set-Spell-Check-Language-English-United-States.png)
 
 
-si tú quieres puedes dar clic en `"Change Default"` (aunque este ya estaba seleccionado por defecto por causa de que ya estaba instalado el MUI "en_US")
+if you want, you can click `"Change Default"` (although it was already selected by default because the `en_US` MUI was already installed).
 
-Ahora, en la esquina inferior izquierda de la ventana observa la barra de estado; allí aparecerá un indicador similar a:
+Now, in the lower-left corner of the window, look at the status bar; an indicator similar to this will appear:
 
 `Spell Check: Disabled ⌵`
 
-Haz clic sobre ese indicador y cambiará a `"Enabled"`
+Click that indicator and it will change to `"Enabled"`.
 
-Además, si das clic en el icono `"⌵"`, estará esta y otras opciones en un menú desplegable.
+Also, if you click the `"⌵"` icon, this and other options will be available in a drop-down menu.
 
-Una vez activada, WPS Office comenzará a revisar automáticamente la ortografía del documento. A partir de ese momento las palabras mal escritas aparecerán subrayadas, al hacer clic derecho sobre una palabra subrayada se mostrarán las sugerencias de corrección, el corrector permanecerá activo hasta que el usuario vuelva a deshabilitar esta opción:
+Once enabled, WPS Office will automatically start checking the document spelling. From that point on, misspelled words will be underlined; right-clicking an underlined word will show correction suggestions. The spellchecker will remain enabled until the user disables this option again:
 
 
 ![](vx_images/20260721.1-Quotes-MUI-en-US-Richard-Stallman-ezgif.com.gif)
 
 ---
 
-## Cómo hacer funcionar el corrector ortográfico en español
+## How to make the Spanish spellchecker work
 
-Para que funcione el corrector ortográfico del idioma español, cierra sesión en MX Linux 23 (si estás en otro idioma) y en el Login Manager elige, por ejemplo:
+To make the Spanish spellchecker work, log out of MX Linux 23 (if you are in another language) and choose, for example, this in the Login Manager:
 
 ```
-Español - Ecuador
+Spanish - Ecuador
 ```
 
-Después edita:
+Then edit:
 
 ```bash
 gedit ~/.config/Kingsoft/Office.conf
 ```
 
-y deja este contenido Español de España:
+and leave this Spanish from Spain content:
 
 ```
 [General]
@@ -809,54 +809,54 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-En esta configuración deben estar instalados el MUI:
+In this configuration, this MUI must be installed:
 
 ```
 /opt/kingsoft/wps-office/office6/mui/es_ES
 ```
 
-y el diccionario:
+and the dictionary:
 
 ```
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/es_ES/
 ```
 
 
-### Activar la corrección ortográfica español
+### Enable Spanish spellchecking
 
-Abre WPS Writer. Ve en la cinta (o pestaña) a la que tiene el nombre:
+Open WPS Writer. Go to the ribbon tab named:
 
 `"Revisar"`
 
-y allí en
+and there, in
 
 `"Revisión ortográfica ⌵"`
 
-darle clic a ese icono `"⌵"` y clic en el sub-menú:
+click that `"⌵"` icon and click the submenu:
 
 `"Establecer idioma"`
 
-y en la ventana que se abrirá por defecto estará entre los diccionarios disponibles `"Español (España)"`
+and in the window that opens, `"Español (España)"` will be among the available dictionaries by default.
 
-y clic en `"Establecer predeterminado"` (aunque este ya estaba seleccionado por defecto por causa de que ya estaba instalado el MUI "es_ES")
+and click `"Establecer predeterminado"` (although it was already selected by default because the `es_ES` MUI was already installed).
 
-Ahora, en la esquina inferior izquierda de la ventana observe la barra de estado, allí aparecerá un indicador similar a:
+Now, in the lower-left corner of the window, look at the status bar; an indicator similar to this will appear:
 
 `Revisión ortográfica: Desactivado ⌵`
 
-Haz clic sobre ese indicador y cambiará a `"Activado"`
+Click that indicator and it will change to `"Activado"`.
 
 ![](vx_images/20260716.1-Frases-MUI-es-ES-Richard-Stallman-ezgif.com.gif)
 
-Además, si das clic en el icono `"⌵"`, estará esta y otras opciones en un menú desplegable.
+Also, if you click the `"⌵"` icon, this and other options will be available in a drop-down menu.
 
-Una vez activada la corrección ortográfica, WPS Office comenzará a revisar automáticamente la ortografía del documento. A partir de ese momento las palabras mal escritas aparecerán subrayadas, al hacer clic derecho sobre una palabra subrayada se mostrarán las sugerencias de corrección, el corrector permanecerá activo hasta que el usuario vuelva a deshabilitar esta opción:
+Once spellchecking is enabled, WPS Office will automatically start checking the document spelling. From that point on, misspelled words will be underlined; right-clicking an underlined word will show correction suggestions. The spellchecker will remain enabled until the user disables this option again:
 
-Por ahora, en esta versión china de WPS Office 12, para el idioma español el corrector ortográfico solo funciona con el diccionario `es_ES` de este repositorio:
+For now, in this Chinese version of WPS Office 12, Spanish spellchecking only works with the `es_ES` dictionary from this repository:
 
 /build/dicts-active/es_ES/
 
-Pero no funcionan como sí funcionaban en la versión WPS Office 11 los siguientes diccionarios que están en la carpeta `wps-libreoffice-dicts`:
+However, the following dictionaries in the `wps-libreoffice-dicts` folder do not work as they did in WPS Office 11:
 
 ```
 /wps-libreoffice-dicts/es_AR
@@ -884,31 +884,31 @@ Pero no funcionan como sí funcionaban en la versión WPS Office 11 los siguient
 /wps-libreoffice-dicts/es_VE
 ```
 
-### Configuraciones regionales de español que faltan por probar
+### Spanish regional settings still to test
 
-Faltan por probar estas configuraciones regionales del Login Manager con el corrector español:
-
-```
-Español - Argentina
-Español - Bolivia
-Español - Colombia
-Español - Nicaragua
-Español - Panamá
-```
-
-Las otras que sí funcionaron están arriba en la tabla.
-
-## Prueba del diccionario español de México que no funcionó
-
-Realicé la siguiente prueba debido a que están disponibles el MUI `es_MX` y el diccionario de corrección ortográfica `es_MX`
-
-Se probó entrar desde el Login Manager con:
+These Login Manager regional settings still need to be tested with the Spanish spellchecker:
 
 ```
-Mexican Spanish - México
+Spanish - Argentina
+Spanish - Bolivia
+Spanish - Colombia
+Spanish - Nicaragua
+Spanish - Panama
 ```
 
-y configurar WPS con:
+The others that did work are listed above in the table.
+
+## Test of the Spanish Mexico dictionary that did not work
+
+I performed the following test because both the `es_MX` MUI and the `es_MX` spellcheck dictionary are available.
+
+The test logged in from the Login Manager with:
+
+```
+Mexican Spanish - Mexico
+```
+
+and configured WPS with:
 
 ```
 [General]
@@ -921,29 +921,29 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-Con el MUI:
+With the MUI:
 
 ```
 /opt/kingsoft/wps-office/office6/mui/es_MX
 ```
 
-y el diccionario en:
+and the dictionary in:
 
 ```
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/es_MX/
 ```
 
-WPS muestra `"Español (México)"` en la ventana de idioma, pero la corrección ortográfica no funciona. En cambio, si en esa misma ventana se elige el diccionario `"Español (España)"`, sí funciona.
+WPS shows `"Español (México)"` in the language window, but spellchecking does not work. However, if the `"Español (España)"` dictionary is selected in that same window, it does work.
 
-## Cómo hacer funcionar el corrector ortográfico en alemán
+## How to make the German spellchecker work
 
-Para alemán, cierra sesión y en el Login Manager elige:
+For German, log out and choose this in the Login Manager:
 
 ```
-Alemán - Alemania
+German - Germany
 ```
 
-Después configura `Office.conf` así:
+Then configure `Office.conf` like this:
 
 ```
 [General]
@@ -956,31 +956,31 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-Y la activación es semejante a como se hace con el diccionario en inglés:
+Activation is similar to the English dictionary:
 
 ![](vx_images/Quotes-tests/Deutsch-de_DE-Richard-S-ezgif.com.gif)
 
-En esta prueba funcionó:
+In this test, this worked:
 
 ```
 /opt/kingsoft/wps-office/office6/mui/de_DE
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/de_DE/
 ```
 
-## Cómo hacer funcionar el corrector ortográfico en francés
+## How to make the French spellchecker work
 
-Para francés, cierra sesión y en el Login Manager elige:
+For French, log out and choose this in the Login Manager:
 
 ```
-Francés - Francia
+French - France
 ```
 
-Y la activación es semejante a como se hace con el diccionario en inglés
+Activation is similar to the English dictionary.
 
 
 ![](vx_images/Quotes-tests/citation_fr-FR_Richard_S-ezgif.com.gif)
 
-Después configura `Office.conf` así:
+Then configure `Office.conf` like this:
 
 ```
 [General]
@@ -993,7 +993,7 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-En esta prueba funcionó con:
+In this test, it worked with:
 
 ```
 /opt/kingsoft/wps-office/office6/mui/fr_FR
@@ -1002,27 +1002,27 @@ En esta prueba funcionó con:
 
 
 
-## Cómo hacer funcionar el corrector ortográfico en indonesio
+## How to make the Indonesian spellchecker work
 
-Para indonesio, primero genera el locale si todavía no aparece en el Login Manager:
+For Indonesian, first generate the locale if it does not appear in the Login Manager yet:
 
 ```bash
 sudo dpkg-reconfigure locales
 ```
 
-En la lista marca:
+In the list, mark:
 
 ```
 id_ID.UTF-8 UTF-8
 ```
 
-Después cierra sesión y en el Login Manager elige:
+Then log out and choose this in the Login Manager:
 
 ```
-Indonesio - Indonesia
+Indonesian - Indonesia
 ```
 
-Después configura `Office.conf` así:
+Then configure `Office.conf` like this:
 
 ```
 [General]
@@ -1035,28 +1035,28 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-Y la activación es semejante a como se hace con el diccionario en inglés. En la ventana de idioma de corrección ortográfica debe aparecer `"Indonesian"`
+Activation is similar to the English dictionary. `"Indonesian"` should appear in the spellcheck language window.
 
 ![](vx_images/Quotes-tests/Kutipan-id_ID-Richard-S-ezgif.com.gif)
 
-En esta prueba funcionó con:
+In this test, it worked with:
 
 ```
 /opt/kingsoft/wps-office/office6/mui/id_ID
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/id_ID/
 ```
 
-Nota: aunque la sesión de Linux usa `id_ID.UTF-8`, el diccionario `id_ID` instalado usa `SET ISO8859-1` en `main.aff` y funcionó correctamente en WPS Office 12.
+Note: although the Linux session uses `id_ID.UTF-8`, the installed `id_ID` dictionary uses `SET ISO8859-1` in `main.aff` and worked correctly in WPS Office 12.
 
-## Cómo hacer funcionar el corrector ortográfico en polaco
+## How to make the Polish spellchecker work
 
-Para polaco, cierra sesión y en el Login Manager elige:
+For Polish, log out and choose this in the Login Manager:
 
 ```
-Polaco - Polonia
+Polish - Poland
 ```
 
-Después configura `Office.conf` así:
+Then configure `Office.conf` like this:
 
 ```
 [General]
@@ -1069,29 +1069,29 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-Y la activación es semejante a como se hace con el diccionario en inglés. En la ventana de idioma de corrección ortográfica debe aparecer `"Polski"`
+Activation is similar to the English dictionary. `"Polski"` should appear in the spellcheck language window.
 
 ![](vx_images/Quotes-tests/Cytaty_pl-PL_RichardS-ezgif.com.gif)
 
 
-En esta prueba funcionó con:
+In this test, it worked with:
 
 ```
 /opt/kingsoft/wps-office/office6/mui/pl_PL
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/pl_PL/
 ```
 
-Nota: para esta prueba funcionó el diccionario `pl_PL` en UTF-8 tomado desde los diccionarios antiguos de WPS Office 11.2.0.9255. El diccionario convertido desde LibreOffice estaba en `ISO8859-2` y no funcionó bien en WPS Office 12.
+Note: for this test, the UTF-8 `pl_PL` dictionary taken from the old WPS Office 11.2.0.9255 dictionaries worked. The dictionary converted from LibreOffice was in `ISO8859-2` and did not work well in WPS Office 12.
 
-## Cómo hacer funcionar el corrector ortográfico en portugués de Brasil
+## How to make the Brazilian Portuguese spellchecker work
 
-Para portugués de Brasil, cierra sesión y en el Login Manager elige:
+For Brazilian Portuguese, log out and choose this in the Login Manager:
 
 ```
-Brazilian Portuguese - Brasil
+Brazilian Portuguese - Brazil
 ```
 
-Después configura `Office.conf` así:
+Then configure `Office.conf` like this:
 
 ```
 [General]
@@ -1104,30 +1104,30 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-Y la activación es semejante a como se hace con el diccionario en inglés. En la ventana de idioma de corrección ortográfica debe aparecer `"Português do Brasil"`
+Activation is similar to the English dictionary. `"Português do Brasil"` should appear in the spellcheck language window.
 
 ![](vx_images/Quotes-tests/Citacoes_pt-BR_Richard_S-ezgif.com.gif)
 
-En esta prueba funcionó con:
+In this test, it worked with:
 
 ```
 /opt/kingsoft/wps-office/office6/mui/pt_BR
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/pt_BR/
 ```
 
-Nota: aunque el MUI `pt_BR` contiene `FallBack=pt_PT` en `lang.conf`, WPS corrigió correctamente al elegir `"Português do Brasil"` en la ventana de idioma de corrección ortográfica. Si en esa misma sesión se elige `"Português (Portugal)"`, el corrector no funciona.
+Note: although the `pt_BR` MUI contains `FallBack=pt_PT` in `lang.conf`, WPS spellchecked correctly when `"Português do Brasil"` was selected in the spellcheck language window. If `"Português (Portugal)"` is selected in that same session, the spellchecker does not work.
 
-## Prueba del diccionario portugués de Portugal que no funcionó
+## Test of the Portuguese Portugal dictionary that did not work
 
-Realicé la siguiente prueba debido a que están disponibles el MUI `pt_PT` y el diccionario de corrección ortográfica `pt_PT`.
+I performed the following test because both the `pt_PT` MUI and the `pt_PT` spellcheck dictionary are available.
 
-Se probó entrar desde el Login Manager con:
+The test logged in from the Login Manager with:
 
 ```
 European Portuguese - Portugal
 ```
 
-y configurar WPS con:
+and configured WPS with:
 
 ```
 [General]
@@ -1140,35 +1140,35 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-Con el MUI:
+With the MUI:
 
 ```
 /opt/kingsoft/wps-office/office6/mui/pt_PT
 ```
 
-y el diccionario en:
+and the dictionary in:
 
 ```
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/pt_PT/
 ```
 
-WPS mostraba `"Portuguê"` antes de corregir el nombre del diccionario, y ahora debe mostrar `"Português (Portugal)"`; en ambos casos, la corrección ortográfica no funcionó con el diccionario `pt_PT`.
+WPS showed `"Portuguê"` before the dictionary name was corrected, and now it should show `"Português (Portugal)"`; in both cases, spellchecking did not work with the `pt_PT` dictionary.
 
-En esa misma configuración de locale `pt_PT.UTF-8` y MUI `pt_PT`, la corrección sí funcionó usando el diccionario de portugués de Brasil:
+In that same `pt_PT.UTF-8` locale and `pt_PT` MUI configuration, spellchecking did work using the Brazilian Portuguese dictionary:
 
 ```
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/pt_BR/
 ```
 
-## Cómo hacer funcionar el corrector ortográfico en ruso
+## How to make the Russian spellchecker work
 
-Para ruso, cierra sesión y en el Login Manager elige:
+For Russian, log out and choose this in the Login Manager:
 
 ```
-Ruso-Russia
+Russian - Russia
 ```
 
-Después configura `Office.conf` así:
+Then configure `Office.conf` like this:
 
 ```
 [General]
@@ -1181,29 +1181,29 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-Y la activación es semejante a como se hace con el diccionario en inglés. En la ventana de idioma de corrección ortográfica debe aparecer `"Русский (Россия)"`
+Activation is similar to the English dictionary. `"Русский (Россия)"` should appear in the spellcheck language window.
 
 ![](vx_images/Quotes-tests/Frase_ru_RU_RichardS-ezgif.com.gif)
 
 
-En esta prueba funcionó con:
+In this test, it worked with:
 
 ```
 /opt/kingsoft/wps-office/office6/mui/ru_RU
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/ru_RU/
 ```
 
-Nota: el corrector ruso funcionó correctamente en un documento nuevo creado desde cero. En un documento creado originalmente en inglés, aunque se pegó texto ruso traducido, WPS no aplicó bien la revisión ortográfica al texto existente.
+Note: the Russian spellchecker worked correctly in a new document created from scratch. In a document originally created in English, even after pasting translated Russian text, WPS did not apply spellchecking correctly to the existing text.
 
-## Cómo hacer funcionar el corrector ortográfico en turco
+## How to make the Turkish spellchecker work
 
-Para turco, cierra sesión y en el Login Manager elige:
+For Turkish, log out and choose this in the Login Manager:
 
 ```
-Turco - Turkey
+Turkish - Turkey
 ```
 
-Después configura `Office.conf` así:
+Then configure `Office.conf` like this:
 
 ```
 [General]
@@ -1216,34 +1216,34 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-Y la activación es semejante a como se hace con el diccionario en inglés. En la ventana de idioma de corrección ortográfica debe aparecer `"Türkçe (Türkiye)"`
+Activation is similar to the English dictionary. `"Türkçe (Türkiye)"` should appear in the spellcheck language window.
 
 ![](vx_images/Quotes-tests/Alntlar-tr_TR-Richard-S-ezgif.com.gif)
 
-En esta prueba funcionó con:
+In this test, it worked with:
 
 ```
 /opt/kingsoft/wps-office/office6/mui/tr_TR
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/tr_TR/
 ```
 
-## Referencia: paquetes MUI descargados por WPS en Windows
+## Reference: MUI packages downloaded by WPS on Windows
 
-Si tienes curiosidad y te preguntas de dónde salieron las MUI para la interfaz gráfica, las obtuve en Microsoft Windows 10. WPS Office descarga paquetes de idioma en rutas de usuario; esta información sirve como referencia para investigar archivos de idioma de la interfaz.
+If you are curious and wonder where the MUI files for the graphical interface came from, I obtained them on Microsoft Windows 10. WPS Office downloads language packages into user paths; this information is useful as a reference for researching interface language files.
 
-Primero descarga e instala WPS Office 12 para Windows:
+First download and install WPS Office 12 for Windows:
 
 [https://wps.com/office/windows/](https://wps.com/office/windows/)
 
-Ejemplo en Windows 10:
+Example on Windows 10:
 
 ![](vx_images/02-WPS-Office-global-config-menu.png)
 
-Luego descarga los idiomas:
+Then download the languages:
 
 ![](vx_images/03-Click-on-a-language-and-then-click-Apply.png)
 
-Los idiomas descargados pueden aparecer en:
+The downloaded languages may appear in:
 
 ```
 C:\Users\youruser\AppData\Roaming\kingsoft\wps_intl\addons\pool\win-x64
@@ -1251,7 +1251,7 @@ C:\Users\youruser\AppData\Roaming\kingsoft\wps_intl\addons\pool\win-x64
 
 ![](vx_images/04-downloaded-languages.png)
 
-La lista de idiomas puede aparecer en:
+The language list may appear in:
 
 ```
 C:\Users\youruser\AppData\Local\Kingsoft\WPS Office\12.1.0.25830\office6\mui\lang_list\lang_list.json
@@ -1259,7 +1259,7 @@ C:\Users\youruser\AppData\Local\Kingsoft\WPS Office\12.1.0.25830\office6\mui\lan
 
 ![20260416-000808](vx_images/507184629680596.png)
 
-Algunos paquetes incluidos por la versión de Windows en español pueden aparecer en:
+Some packages included by the Spanish Windows version may appear in:
 
 ```
 C:\Users\youruser\AppData\Local\Kingsoft\WPS Office\12.1.0.25830\office6\mui
@@ -1267,10 +1267,10 @@ C:\Users\youruser\AppData\Local\Kingsoft\WPS Office\12.1.0.25830\office6\mui
 
 ![](vx_images/05-languages-downloaded-by-the-Spanish-version.png)
 
-Si este proyecto te ayudó, puedes dejar una estrella en el repositorio.
+If this project helped you, you can leave a star on the repository.
 
 ---
 
-# Agradecimientos
+# Acknowledgments
 
-Al usuario [mmvill](https://github.com/mmvill), quien me escribió y me dijo que encontró una manera de hacer funcionar el diccionario de corrección ortográfica en español para WPS Office 12.
+To user [mmvill](https://github.com/mmvill), who wrote to me and told me that he found a way to make the Spanish spellcheck dictionary work in WPS Office 12.
