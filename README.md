@@ -574,6 +574,7 @@ Estas son las pruebas realizadas hasta ahora:
 | Inglés          | `Inglés - Nueva Zelanda`                           | `en_NZ` | `en_US`          | `en_US` UTF-8         | No funciona |
 | Español         | `Español - Ecuador`                                | `es_EC` | `es_ES`          | `es_ES` UTF-8         | Funciona    |
 | Español         | `European Spanish - España`                        | `es_ES` | `es_ES`          | `es_ES` UTF-8         | Funciona    |
+| Español         | `Español - Estados Unidos`                         | `es_US` | `es_ES`          | `es_ES` UTF-8         | Funciona    |
 | Español         | `Español - Venezuela`                              | `es_VE` | `es_ES`          | `es_ES` UTF-8         | Funciona    |
 | Español         | `Mexican Spanish - México`                         | `es_MX` | `es_ES`          | `es_ES` UTF-8         | Funciona    |
 | Español         | `Español - Perú`                                   | `es_PE` | `es_ES`          | `es_ES` UTF-8         | Funciona    |
@@ -823,7 +824,6 @@ Español - Bolivia
 Español - Colombia
 Español - Nicaragua
 Español - Panamá
-Español - Estados Unidos
 ```
 
 las otras que si funcionaron están arriba en la tabla 
