@@ -34,7 +34,7 @@ sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/
 sudo cp -r build/dicts-active/* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
 ```
 
-Türkçe için şunları kullanın:
+Türkçe için WPS Office 12 şunları kullanacaktır:
 
 ```text
 /opt/kingsoft/wps-office/office6/mui/tr_TR

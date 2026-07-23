@@ -46,7 +46,7 @@ Tandai:
 id_ID.UTF-8 UTF-8
 ```
 
-Untuk bahasa Indonesia, gunakan:
+Untuk bahasa Indonesia, WPS Office 12 akan menggunakan:
 
 ```text
 /opt/kingsoft/wps-office/office6/mui/id_ID

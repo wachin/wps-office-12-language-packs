@@ -34,7 +34,7 @@ sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/
 sudo cp -r build/dicts-active/* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
 ```
 
-Pour le français, utilisez :
+Pour le français, WPS Office 12 utilisera :
 
 ```text
 /opt/kingsoft/wps-office/office6/mui/fr_FR
