@@ -1,5 +1,7 @@
 # WPS Office 12.x language packs for Linux
 
+![](vx_images/WPS-Office-12-Chinese-Version-on-en_US-ezgif.com.gif)
+
 Available translations:
 
 - [Español](README_ES.md), available for Spanish-language users.
