@@ -775,12 +775,11 @@ Ahora, en la esquina inferior izquierda de la ventana observe la barra de estado
 
 Haga clic sobre ese indicador y cambiará a `"Activado"`
 
+![](vx_images/20260716.1-Frases-MUI-es-ES-Richard-Stallman-ezgif.com.gif)
+
 Además si da clic al icono `"⌵"` estará ésta y otras opciones en un menú desplegable.
 
-Una vez activada, WPS Office comenzará a revisar automáticamente la ortografía del documento. A partir de ese momento las palabras mal escritas aparecerán subrayadas, al hacer clic derecho sobre una palabra subrayada se mostrarán las sugerencias de corrección, el corrector permanecerá activo hasta que el usuario vuelva a deshabilitar esta opción:
-
-
-![](vx_images/20260716.1-Frases-MUI-es-ES-Richard-Stallman-ezgif.com.gif)
+Una vez activada la corrección ortográfica, WPS Office comenzará a revisar automáticamente la ortografía del documento. A partir de ese momento las palabras mal escritas aparecerán subrayadas, al hacer clic derecho sobre una palabra subrayada se mostrarán las sugerencias de corrección, el corrector permanecerá activo hasta que el usuario vuelva a deshabilitar esta opción:
 
 Por ahora en esta version China de WPS Office 12 para el dioma español el corrector ortografico en Español solo funciona de este repositorio `es_ES`
 
