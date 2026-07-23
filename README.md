@@ -1,6 +1,6 @@
 # WPS Office 12.x language packs for Linux
 
-## Descarga WPS Office 12 Linux versión China
+## Descarga WPS Office 12 Linux versión china
 
 Descarga el instalador de WPS Office para tu distribución Linux basada en paquetería deb o RPM.
 
@@ -14,14 +14,14 @@ allí al dar clic, redirige a:
 
 Luego instala el paquete.
 
-**Descarga espejo (Mirror)**  
-Pero es posible que no tenga las ultimas versiones o que se demoren en ponerlas:
+**Descarga espejo (Mirror)**
+Pero es posible que no tenga las últimas versiones o que se demoren en ponerlas:
 
 [https://mirrors.163.com/ubuntukylin/pool/partner/](https://mirrors.163.com/ubuntukylin/pool/partner/)
 
 ### Instalar deb con un gestor de instalación de paquetes deb
 
-Instalación con algún gestor de paquetes deb, en los Sistemas Operativos Linux debería estar instalado alguno, das clic derecho en el administrador de archivos e instalas con él:
+Instalación con algún gestor de paquetes deb. En los sistemas operativos Linux debería estar instalado alguno; das clic derecho en el administrador de archivos e instalas con él:
 
 ![](vx_images/08-Instalando-wps-office-12.1.2.25882-amd-deb.png)
 
@@ -48,9 +48,9 @@ Para continuar con este tutorial necesitas
 - Haber abierto WPS Office al menos una vez (WPS Office crea su configuración de usuario después de abrirlo por primera vez. Si no existe este archivo `~/.config/Kingsoft/Office.conf` abre WPS Office, ciérralo y continúa con la instalación.)
 - Tener este repositorio descargado o clonado en tu computadora.
 
-## Instalar las interfaces de usuario multilenguaje MUI (Interfaz de usuario multilingüe)
+## Instalar las interfaces de usuario multilingües MUI
 
-Para instalar las MUI (Interfaz de usuario multilingüe), necesitas tener este proyecto en tu equipo. A continuación **dos** maneras de hacerlo, elija sólo **una** de ellas:
+Para instalar las MUI (interfaces de usuario multilingües), necesitas tener este proyecto en tu equipo. A continuación hay **dos** maneras de hacerlo; elige solo **una** de ellas:
 
 ### Opción 1: descargar el ZIP e instalar las MUI
 
@@ -77,7 +77,7 @@ Download ZIP
 sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/
 ```
 
-con este comando quedarán instaladas las MUI (Interfaz de usuario multilingüe)
+con este comando quedarán instaladas las MUI (interfaces de usuario multilingües).
 
 ### Opción 2: clonar con Git e instalar las MUI
 
@@ -105,13 +105,13 @@ ejecuta:
 sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/
 ```
 
-con este comando quedarán instaladas las MUI (Interfaz de usuario multilingüe)
+con este comando quedarán instaladas las MUI (interfaces de usuario multilingües).
 
 ## Verificar la instalación
 
 Ese comando `sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/` copia las carpetas de idioma disponibles a la carpeta real de WPS Office en Linux en `/opt/kingsoft/wps-office/office6/mui/`.
 
-En la versión China de WPS Office 12 que acabamos de instalar vienen instalados por defecto estos MUI (Interfaz de usuario multilenguaje):
+En la versión china de WPS Office 12 que acabamos de instalar vienen instaladas por defecto estas MUI (interfaces de usuario multilingües):
 
 /opt/kingsoft/wps-office/office6/mui/en_US
 /opt/kingsoft/wps-office/office6/mui/ru_RU
@@ -126,7 +126,7 @@ Desde tu administrador de archivos revisa esta ruta:
 
 /opt/kingsoft/wps-office/office6/mui/
 
-Deberías tener, además de los idiomas que trae de la versión China, lo siguiente:
+Deberías tener, además de los idiomas que trae la versión china, lo siguiente:
 
 ```
 de_DE
@@ -150,7 +150,7 @@ También se copia:
 lang_list
 ```
 
-Es una lista de selección. 
+Es una lista de selección.
 
 
 ## Diccionarios disponibles y diccionarios probados
@@ -166,7 +166,7 @@ wps-libreoffice-dicts/
 
 La carpeta `build/dicts-active/` contiene los diccionarios seleccionados para instalar ahora. Son los que se están usando para las pruebas de WPS Office 12.
 
-La carpeta `wps-libreoffice-dicts/` contiene todos los diccionarios convertidos desde LibreOffice. Se conserva en la raíz del repositorio, porque en WPS Office 12 versión China no todas las variantes funcionan aunque tengan el formato correcto. Tal vez en una versión futura WPS vuelva a soportar todos esos diccionarios como ocurría en versiones antiguas de WPS Office para Linux.
+La carpeta `wps-libreoffice-dicts/` contiene todos los diccionarios convertidos desde LibreOffice. Se conserva en la raíz del repositorio, porque en WPS Office 12 versión china no todas las variantes funcionan aunque tengan el formato correcto. Tal vez en una versión futura WPS vuelva a soportar todos esos diccionarios como ocurría en versiones antiguas de WPS Office para Linux.
 
 Cada carpeta de diccionario tiene el formato que WPS espera:
 
@@ -312,7 +312,7 @@ Usa esta tabla para elegir el código y el número correcto:
 
 ### Tabla rápida: locale, MUI y diccionario con el mismo código
 
-Esta tabla muestra los idiomas donde se puede comparar directamente si el `Locale`, el MUI y el diccionario usan el mismo código. La `x` significa que no existe un diccionario con ese mismo código en `/opt/kingsoft/wps-office/office6/dicts/spellcheck/`. El símbolo `✅` marca los casos probados donde esa combinación exacta funciona.
+Esta tabla muestra los idiomas donde se puede comparar directamente si el `Locale`, el MUI y el diccionario usan el mismo código. La `x` significa que no se incluye un diccionario activo con ese mismo código. El símbolo `✅` marca los casos probados donde esa combinación exacta funciona.
 
 | Idioma visto en el Login Manager | `Locale` |  `MUI`  | `Dict`  | Probado |
 | -------------------------------- | -------- | ------- | ------- | ------- |
@@ -547,7 +547,7 @@ Guarda el archivo, cierra WPS Office por completo y vuelve a abrirlo. Si el idio
 
 ## Solución para hacer funcionar los correctores ortográficos en WPS Office 12
 
-En WPS Office 12 versión China no basta con copiar un diccionario a:
+En WPS Office 12 versión china no basta con copiar un diccionario a:
 
 ```
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/
@@ -559,7 +559,7 @@ También influye la configuración regional con la que entraste a la sesión de 
 ~/.config/Kingsoft/Office.conf
 ```
 
-Por eso algunos diccionarios aparecen en la ventana de `"Establecer idioma"`, pero no corrigen la ortografía. El caso más claro es español de México: el MUI `es_MX` y el diccionario `es_MX` pueden aparecer instalados, pero en las pruebas no funcionó la corrección ortográfica, pero si con el diccionario `es_ES`.
+Por eso algunos diccionarios aparecen en la ventana de `"Establecer idioma"`, pero no corrigen la ortografía. El caso más claro es español de México: el MUI `es_MX` y el diccionario `es_MX` pueden aparecer instalados, pero en las pruebas la corrección ortográfica solo funcionó con el diccionario `es_ES`.
 
 ### Pruebas confirmadas
 
@@ -668,13 +668,13 @@ WPS Office 12 ya trae por defecto el MUI:
 /opt/kingsoft/wps-office/office6/mui/en_US
 ```
 
-y ademas el diccionario:
+y además el diccionario:
 
 ```
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/en_US/
 ```
 
-### Activar la corrección ortográfica ingles
+### Activar la corrección ortográfica en inglés
 
 Ahora abre WPS Writer. Ve en la cinta (o pestaña) a la que tiene el nombre:
 
@@ -690,20 +690,20 @@ darle clic a ese icono `"⌵"` y clic en el sub-menú revisa:
 
 ![](vx_images/20260721.2-WPS_en-US_Home-Review-SpellCheck-SetLanguage-ezgif.com.gif)
 
-en la ventana que se abrirá por defecto estará entre los diccionarios disponibles `"Enghish (United States)"`
+en la ventana que se abrirá por defecto estará entre los diccionarios disponibles `"English (United States)"`
 
 ![](vx_images/dicts-tests/01-Set-Spell-Check-Language-English-United-States.png)
 
 
-si tu quieres puedes dar clic en `"Change Defautl"` (aunque este ya estaba seleccionado por defecto por causa de que ya estaba instalado el MUI "en_US")
+si tú quieres puedes dar clic en `"Change Default"` (aunque este ya estaba seleccionado por defecto por causa de que ya estaba instalado el MUI "en_US")
 
-Ahora, en la esquina inferior izquierda de la ventana observe la barra de estado, allí aparecerá un indicador similar a:
+Ahora, en la esquina inferior izquierda de la ventana observa la barra de estado; allí aparecerá un indicador similar a:
 
 `Spell Check: Disabled ⌵`
 
-Haga clic sobre ese indicador y cambiará a `"Enabled"`
+Haz clic sobre ese indicador y cambiará a `"Enabled"`
 
-Además si da clic al icono `"⌵"` estará ésta y otras opciones en un menú desplegable.
+Además, si das clic en el icono `"⌵"`, estará esta y otras opciones en un menú desplegable.
 
 Una vez activada, WPS Office comenzará a revisar automáticamente la ortografía del documento. A partir de ese momento las palabras mal escritas aparecerán subrayadas, al hacer clic derecho sobre una palabra subrayada se mostrarán las sugerencias de corrección, el corrector permanecerá activo hasta que el usuario vuelva a deshabilitar esta opción:
 
@@ -714,7 +714,7 @@ Una vez activada, WPS Office comenzará a revisar automáticamente la ortografí
 
 ## Cómo hacer funcionar el corrector ortográfico en español
 
-Para que funcione el corrector ortográfico del idioma español, cierra sesión en MX Linux 23 (si estas en otro idioma) y en el Login Manager elige, por ejemplo:
+Para que funcione el corrector ortográfico del idioma español, cierra sesión en MX Linux 23 (si estás en otro idioma) y en el Login Manager elige, por ejemplo:
 
 ```
 Español - Ecuador
@@ -739,7 +739,7 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-En esta configuracion deben estar instalados el MUI:
+En esta configuración deben estar instalados el MUI:
 
 ```
 /opt/kingsoft/wps-office/office6/mui/es_ES
@@ -774,19 +774,19 @@ Ahora, en la esquina inferior izquierda de la ventana observe la barra de estado
 
 `Revisión ortográfica: Desactivado ⌵`
 
-Haga clic sobre ese indicador y cambiará a `"Activado"`
+Haz clic sobre ese indicador y cambiará a `"Activado"`
 
 ![](vx_images/20260716.1-Frases-MUI-es-ES-Richard-Stallman-ezgif.com.gif)
 
-Además si da clic al icono `"⌵"` estará ésta y otras opciones en un menú desplegable.
+Además, si das clic en el icono `"⌵"`, estará esta y otras opciones en un menú desplegable.
 
 Una vez activada la corrección ortográfica, WPS Office comenzará a revisar automáticamente la ortografía del documento. A partir de ese momento las palabras mal escritas aparecerán subrayadas, al hacer clic derecho sobre una palabra subrayada se mostrarán las sugerencias de corrección, el corrector permanecerá activo hasta que el usuario vuelva a deshabilitar esta opción:
 
-Por ahora en esta version China de WPS Office 12 para el dioma español el corrector ortografico en Español solo funciona de este repositorio `es_ES`
+Por ahora, en esta versión china de WPS Office 12, para el idioma español el corrector ortográfico solo funciona con el diccionario `es_ES` de este repositorio:
 
 /build/dicts-active/es_ES/
 
-Pero no funcionan como si funcionaban en la version WPS Office 11 los siguientes diccionarios que están en la carpeta wps-libreoffice-dicts
+Pero no funcionan como sí funcionaban en la versión WPS Office 11 los siguientes diccionarios que están en la carpeta `wps-libreoffice-dicts`:
 
 ```
 /wps-libreoffice-dicts/es_AR
@@ -816,7 +816,7 @@ Pero no funcionan como si funcionaban en la version WPS Office 11 los siguientes
 
 ### Configuraciones regionales de español que faltan por probar
 
-Faltan por probar estas configuraciones regionales del Login Manager con el corrector español el cual es mi idioma:
+Faltan por probar estas configuraciones regionales del Login Manager con el corrector español:
 
 ```
 Español - Argentina
@@ -826,11 +826,11 @@ Español - Nicaragua
 Español - Panamá
 ```
 
-las otras que si funcionaron están arriba en la tabla 
+Las otras que sí funcionaron están arriba en la tabla.
 
-## Prueba del diccionario español de México que no funcionó 
+## Prueba del diccionario español de México que no funcionó
 
-Realice la siguiente prueba debido a que están disponibles el MUI `es_MX` y el diccionario de corrección ortográfica `es_MX`
+Realicé la siguiente prueba debido a que están disponibles el MUI `es_MX` y el diccionario de corrección ortográfica `es_MX`
 
 Se probó entrar desde el Login Manager con:
 
@@ -863,7 +863,7 @@ y el diccionario en:
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/es_MX/
 ```
 
-WPS muestra `"Español (México)"` en la ventana de idioma, pero la corrección ortográfica no funciona, pero si se elige en la ventana del idioma al diccionario de correccion ortografica `"Español (España)"` si funciona.
+WPS muestra `"Español (México)"` en la ventana de idioma, pero la corrección ortográfica no funciona. En cambio, si en esa misma ventana se elige el diccionario `"Español (España)"`, sí funciona.
 
 ## Cómo hacer funcionar el corrector ortográfico en alemán
 
@@ -886,9 +886,9 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-Y la activacion semejante a como se hace con el diccionario en ingles:
+Y la activación es semejante a como se hace con el diccionario en inglés:
 
-![](vx_images/Quotes-tests/Dutch-de_DE-Richard-S-ezgif.com.gif)
+![](vx_images/Quotes-tests/Deutsch-de_DE-Richard-S-ezgif.com.gif)
 
 En esta prueba funcionó:
 
@@ -905,7 +905,7 @@ Para francés, cierra sesión y en el Login Manager elige:
 Francés - Francia
 ```
 
-Y la activacion semejante a como se hace con el diccionario en ingles
+Y la activación es semejante a como se hace con el diccionario en inglés
 
 
 ![](vx_images/Quotes-tests/citation_fr-FR_Richard_S-ezgif.com.gif)
@@ -965,7 +965,7 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-Y la activacion semejante a como se hace con el diccionario en ingles. En la ventana de idioma de corrección ortográfica debe aparecer `"Indonesian"`
+Y la activación es semejante a como se hace con el diccionario en inglés. En la ventana de idioma de corrección ortográfica debe aparecer `"Indonesian"`
 
 ![](vx_images/Quotes-tests/Kutipan-id_ID-Richard-S-ezgif.com.gif)
 
@@ -999,7 +999,7 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-Y la activacion semejante a como se hace con el diccionario en ingles. En la ventana de idioma de corrección ortográfica debe aparecer `"Polski"`
+Y la activación es semejante a como se hace con el diccionario en inglés. En la ventana de idioma de corrección ortográfica debe aparecer `"Polski"`
 
 ![](vx_images/Quotes-tests/Cytaty_pl-PL_RichardS-ezgif.com.gif)
 
@@ -1034,7 +1034,7 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-Y la activacion semejante a como se hace con el diccionario en ingles. En la ventana de idioma de corrección ortográfica debe aparecer `"Português do Brasil"`
+Y la activación es semejante a como se hace con el diccionario en inglés. En la ventana de idioma de corrección ortográfica debe aparecer `"Português do Brasil"`
 
 ![](vx_images/Quotes-tests/Citacoes_pt-BR_Richard_S-ezgif.com.gif)
 
@@ -1045,11 +1045,11 @@ En esta prueba funcionó con:
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/pt_BR/
 ```
 
-Nota: aunque el MUI `pt_BR` contiene `FallBack=pt_PT` en `lang.conf`, WPS corrigió correctamente al elegir `"Português do Brasil"` en la ventana de idioma de corrección ortográfica. Si en esa misma sesión se elige `"Portuguê"`, el corrector no funciona.
+Nota: aunque el MUI `pt_BR` contiene `FallBack=pt_PT` en `lang.conf`, WPS corrigió correctamente al elegir `"Português do Brasil"` en la ventana de idioma de corrección ortográfica. Si en esa misma sesión se elige `"Português (Portugal)"`, el corrector no funciona.
 
 ## Prueba del diccionario portugués de Portugal que no funcionó
 
-Realice la siguiente prueba debido a que están disponibles el MUI `pt_PT` y el diccionario de corrección ortográfica `pt_PT`.
+Realicé la siguiente prueba debido a que están disponibles el MUI `pt_PT` y el diccionario de corrección ortográfica `pt_PT`.
 
 Se probó entrar desde el Login Manager con:
 
@@ -1082,7 +1082,7 @@ y el diccionario en:
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/pt_PT/
 ```
 
-WPS muestra `"Portuguê"` o `"Português (Portugal)"` en la ventana de idioma, pero la corrección ortográfica no funcionó con el diccionario `pt_PT`.
+WPS mostraba `"Portuguê"` antes de corregir el nombre del diccionario, y ahora debe mostrar `"Português (Portugal)"`; en ambos casos, la corrección ortográfica no funcionó con el diccionario `pt_PT`.
 
 En esa misma configuración de locale `pt_PT.UTF-8` y MUI `pt_PT`, la corrección sí funcionó usando el diccionario de portugués de Brasil:
 
@@ -1111,7 +1111,7 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-Y la activacion semejante a como se hace con el diccionario en ingles. En la ventana de idioma de corrección ortográfica debe aparecer `"Русский (Россия)"`
+Y la activación es semejante a como se hace con el diccionario en inglés. En la ventana de idioma de corrección ortográfica debe aparecer `"Русский (Россия)"`
 
 ![](vx_images/Quotes-tests/Frase_ru_RU_RichardS-ezgif.com.gif)
 
@@ -1146,7 +1146,7 @@ wpsoffice\Application%20Settings\AppComponentMode=prome_independ
 wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 ```
 
-Y la activacion semejante a como se hace con el diccionario en ingles. En la ventana de idioma de corrección ortográfica debe aparecer `"Türkçe (Türkiye)"`
+Y la activación es semejante a como se hace con el diccionario en inglés. En la ventana de idioma de corrección ortográfica debe aparecer `"Türkçe (Türkiye)"`
 
 ![](vx_images/Quotes-tests/Alntlar-tr_TR-Richard-S-ezgif.com.gif)
 
@@ -1157,9 +1157,9 @@ En esta prueba funcionó con:
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/tr_TR/
 ```
 
-## Referencia: idiomas de la Interfaz de Usuario Multilenguage MUI descargadas por WPS en Windows
+## Referencia: paquetes MUI descargados por WPS en Windows
 
-Si usted es una persona curiosa y se pregunta, de donde saque las MUI para la interfaz grafica, pues fue en Microsoft Windows 10, pues WPS Office descarga paquetes de idioma en rutas de usuario. Esta información sirve como referencia para investigar archivos de idioma de la interfaz.
+Si tienes curiosidad y te preguntas de dónde salieron las MUI para la interfaz gráfica, las obtuve en Microsoft Windows 10. WPS Office descarga paquetes de idioma en rutas de usuario; esta información sirve como referencia para investigar archivos de idioma de la interfaz.
 
 Primero descarga e instala WPS Office 12 para Windows:
 
@@ -1203,4 +1203,4 @@ Si este proyecto te ayudó, puedes dejar una estrella en el repositorio.
 
 # Agradecimientos
 
-Al usuario [mmvill](https://github.com/mmvill) quien me escribió y me dijo que encontró una manera de hacer funcionar el diccionario de corrección ortográfica en español para WPS Office 12
+Al usuario [mmvill](https://github.com/mmvill), quien me escribió y me dijo que encontró una manera de hacer funcionar el diccionario de corrección ortográfica en español para WPS Office 12.
