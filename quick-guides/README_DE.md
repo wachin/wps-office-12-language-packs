@@ -43,6 +43,12 @@ Für Deutsch verwendet WPS Office 12:
 
 ## WPS Office konfigurieren
 
+Wenn Gedit nicht installiert ist, installiere es zuerst:
+
+```bash
+sudo apt install gedit
+```
+
 Bearbeite:
 
 ```bash

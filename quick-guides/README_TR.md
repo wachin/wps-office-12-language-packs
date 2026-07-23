@@ -43,6 +43,12 @@ Türkçe için WPS Office 12 şunları kullanacaktır:
 
 ## WPS Office’i yapılandırma
 
+Gedit kurulu değilse önce kurun:
+
+```bash
+sudo apt install gedit
+```
+
 Düzenleyin:
 
 ```bash

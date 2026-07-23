@@ -55,6 +55,12 @@ Untuk bahasa Indonesia, WPS Office 12 akan menggunakan:
 
 ## Mengonfigurasi WPS Office
 
+Jika Gedit belum terpasang, pasang terlebih dahulu:
+
+```bash
+sudo apt install gedit
+```
+
 Edit:
 
 ```bash

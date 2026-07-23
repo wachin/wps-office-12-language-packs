@@ -43,6 +43,12 @@ sudo cp -r build/dicts-active/* /opt/kingsoft/wps-office/office6/dicts/spellchec
 
 ## Настроить WPS Office
 
+Если Gedit не установлен, сначала установите его:
+
+```bash
+sudo apt install gedit
+```
+
 Отредактируйте:
 
 ```bash
