@@ -30,7 +30,7 @@ Thumbs.db
 
 # Build outputs
 *.tar.xz
-.sha256
+*.sha256
 
 # personal sitie
 wachin.github.io/
