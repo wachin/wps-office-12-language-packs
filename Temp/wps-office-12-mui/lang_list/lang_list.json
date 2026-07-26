@@ -1,0 +1,82 @@
+[
+    {
+        "locale" : "en_US",
+		"display_name": "English",
+		"plugin_name" : ""
+    },
+	{
+        "locale" : "es_ES",
+		"display_name": "Español (España)",
+		"plugin_name" : "klangeses"
+    },
+    {
+        "locale" : "es_MX",
+		"display_name": "Español (México)",
+		"plugin_name" : ""
+    },
+    {
+        "locale" : "ru_RU",
+		"display_name": "русский",
+		"plugin_name" : "klangruru"
+    },
+	{
+        "locale" : "pt_BR",
+		"display_name": "Português (Brasil)",
+		"plugin_name" : "klangptbr"
+    },
+	{
+        "locale" : "pt_PT",
+		"display_name": "Português (Portugal)",
+		"plugin_name" : "klangptpt"
+    },
+	{
+        "locale" : "fr_FR",
+		"display_name": "Français (France)",
+		"plugin_name" : "klangfrfr"
+    },
+	{
+        "locale" : "fr_CA",
+		"display_name": "Français (Canada)",
+		"plugin_name" : "klangfrca"
+    },
+	{
+        "locale" : "zh_HK",
+		"display_name": "繁體中文",
+        "plugin_name" : "klangzhhk"
+	},
+	{
+        "locale" : "zh_CN",
+		"display_name": "简体中文",
+		"plugin_name" : ""
+    },
+	{
+        "locale" : "ja_JP",
+		"display_name": "日本語",
+		"plugin_name" : ""
+    },
+	{
+        "locale" : "id_ID",
+		"display_name": "Bahasa Indonesia",
+		"plugin_name" : "klangidid"
+    },
+	{
+        "locale" : "pl_PL",
+		"display_name": "Polski (Polska)",
+		"plugin_name" : "klangplpl"
+    },
+	{
+        "locale" : "th_TH",
+		"display_name": "ภาษาไทย",
+		"plugin_name" : "klangthth"
+    },
+    {
+        "locale" : "de_DE",
+		"display_name": "Deutsch",
+		"plugin_name" : "klangdede"
+    },
+    {
+        "locale" : "tr_TR",
+		"display_name": "Türkçe (Beta)",
+        "plugin_name" : "klangtrtr"
+    }
+]

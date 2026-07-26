@@ -29,6 +29,8 @@ Thumbs.db
 *.bak
 
 # Build outputs
+*.tar.xz
+.sha256
 
 # personal sitie
 wachin.github.io/

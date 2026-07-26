@@ -60,70 +60,35 @@ To continue with this tutorial you need:
 - Have **WPS Office 12.x** installed on Linux as described above.
 - Have administrator permissions with `sudo` or an equivalent tool.
 - Have opened WPS Office at least once. WPS Office creates its user configuration after it is opened for the first time. If `~/.config/Kingsoft/Office.conf` does not exist, open WPS Office, close it, and then continue with the installation.
-- Have this repository downloaded or cloned on your computer.
+- Have an internet connection to download the release files.
 
 ## Install the MUI multilingual user interfaces
 
-To install the MUI files (multilingual user interfaces), you need to have this project on your computer. There are **two** ways to do it; choose only **one** of them:
+Download the MUI pack. Go to the Release section:
 
-### Option 1: download the ZIP and install the MUI files
+[https://github.com/wachin/wps-office-12-language-packs/releases](https://github.com/wachin/wps-office-12-language-packs/releases)
 
-1. Open this page:
+download the file:
 
-   [https://github.com/wachin/wps-office-12-language-packs](https://github.com/wachin/wps-office-12-language-packs)
+[https://github.com/wachin/wps-office-12-language-packs/releases/download/wps-12.1.2-language-packs-v1/wps-office-12-mui.tar.xz](https://github.com/wachin/wps-office-12-language-packs/releases/download/wps-12.1.2-language-packs-v1/wps-office-12-mui.tar.xz)
 
-2. Click the green button:
+Extract it with right clic in yout prefered File Manager, then you will get the folder:
 
-```
-<> Code ▼
-```
+ wps-office-12-mui
+ 
+Open a terminal there. In modern Linux systems, right-clicking provides an option that says "Open terminal here" or something similar
 
-3. Click:
-
-```
-Download ZIP
-```
-
-4. When the download finishes, extract the ZIP file by right-clicking it and choosing "Extract here".
-5. Open a terminal there and run:
+Install the MUI files:
 
 ```bash
-sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/
+sudo cp -r wps-office-12-mui/* /opt/kingsoft/wps-office/office6/mui/
 ```
 
-this command installs the MUI files (multilingual user interfaces).
-
-### Option 2: clone with Git and install the MUI files
-
-If you do not have `git` installed, install it:
-
-```bash
-sudo apt install git
-```
-
-Then clone the repository:
-
-```bash
-git clone https://github.com/wachin/wps-office-12-language-packs
-```
-
-Enter the folder:
-
-```bash
-cd wps-office-12-language-packs
-```
-
-run:
-
-```bash
-sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/
-```
-
-this command installs the MUI files (multilingual user interfaces).
+This command installs the MUI files (multilingual user interfaces).
 
 ## Verify the installation
 
-That `sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/` command copies the available language folders to the real WPS Office folder on Linux: `/opt/kingsoft/wps-office/office6/mui/`.
+That `sudo cp -r wps-office-12-mui/* /opt/kingsoft/wps-office/office6/mui/` command copies the available language folders to the real WPS Office folder on Linux: `/opt/kingsoft/wps-office/office6/mui/`.
 
 The Chinese version of WPS Office 12 that we just installed includes these MUI folders by default:
 
@@ -243,10 +208,31 @@ Note about `pt_PT`: on MX Linux 23 with locale `pt_PT.UTF-8`, MUI `pt_PT`, and t
 
 ## Install the dictionaries
 
-From the root of this repository, run:
+Download the active dictionaries release file and its checksum:
 
 ```bash
-sudo cp -r build/dicts-active/* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
+mkdir -p ~/Downloads/wps-office-12-language-packs
+cd ~/Downloads/wps-office-12-language-packs
+wget -c https://github.com/wachin/wps-office-12-language-packs/releases/download/wps-12.1.2-language-packs-v1/wps-office-12-dicts-active.tar.xz
+wget -c https://github.com/wachin/wps-office-12-language-packs/releases/download/wps-12.1.2-language-packs-v1/wps-office-12-dicts-active.tar.xz.sha256
+```
+
+Verify the downloaded file:
+
+```bash
+sha256sum -c wps-office-12-dicts-active.tar.xz.sha256
+```
+
+Extract it:
+
+```bash
+tar -xf wps-office-12-dicts-active.tar.xz
+```
+
+Install the dictionaries:
+
+```bash
+sudo cp -r wps-office-12-dicts-active/* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
 ```
 
 This copies the active dictionaries to the folder WPS uses for spellchecking.
