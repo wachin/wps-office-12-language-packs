@@ -1288,3 +1288,13 @@ If this project helped you, you can leave a star on the repository.
 # Acknowledgments
 
 To user [mmvill](https://github.com/mmvill), who wrote to me and told me that he found a way to make the Spanish spellcheck dictionary work in WPS Office 12.
+
+# Important Resources
+
+I recommend reading the following resources:
+
+**Alternative-to-privative-Microsoft-Windows-Fonts**  
+[https://github.com/wachin/Alternative-to-privative-Microsoft-Windows-Fonts](https://github.com/wachin/Alternative-to-privative-Microsoft-Windows-Fonts)
+
+**Microsoft-Fonts**  
+[https://github.com/wachin/Microsoft-Fonts](https://github.com/wachin/Microsoft-Fonts)
