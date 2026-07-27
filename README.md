@@ -98,7 +98,10 @@ The Chinese version of WPS Office 12 that we just installed includes these MUI f
 
 and it also includes these two spellcheck dictionaries by default:
 
+Chinese & English(United States) Dictionary
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/en_CH
+
+English (United States) Dictionary
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/en_US
 
 From your file manager, check this path:
@@ -139,11 +142,11 @@ This repository also prepares Hunspell dictionaries so **WPS Office 12.x** can u
 For now, two folders must be distinguished:
 
 ```
-build/dicts-active/
+build/wps-office-12-dicts-active/
 wps-libreoffice-dicts/
 ```
 
-The `build/dicts-active/` folder contains the dictionaries selected for installation now. These are the ones being used for WPS Office 12 testing.
+The `build/wps-office-12-dicts-active/` folder contains the dictionaries selected for installation now. These are the ones being used for WPS Office 12 testing.
 
 The `wps-libreoffice-dicts/` folder contains all dictionaries converted from LibreOffice. It is kept in the repository root because, in WPS Office 12 Chinese version, not all variants work even when they have the correct format. Maybe in a future version WPS will support all those dictionaries again, as older WPS Office for Linux versions did.
 
