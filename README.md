@@ -1,5 +1,13 @@
 # WPS Office 12.x language packs for Linux
 
+[![Linux](https://img.shields.io/badge/Linux-supported-1793D1?logo=linux&logoColor=white)](#download-wps-office-12-linux-chinese-version)
+[![WPS Office](https://img.shields.io/badge/WPS%20Office-12.x-D71920?logo=wps-office&logoColor=white)](https://www.wps.cn/product/wpslinux)
+[![MUI language packs](https://img.shields.io/badge/MUI-language%20packs-blue)](https://github.com/wachin/wps-office-12-language-packs/releases)
+[![Hunspell dictionaries](https://img.shields.io/badge/Hunspell-dictionaries-2E7D32)](#available-dictionaries-and-tested-dictionaries)
+[![Languages](https://img.shields.io/badge/languages-16-orange)](#quick-table-locale-mui-and-dictionary-with-the-same-code)
+[![Release](https://img.shields.io/github/v/release/wachin/wps-office-12-language-packs?label=release)](https://github.com/wachin/wps-office-12-language-packs/releases)
+[![Quick guides](https://img.shields.io/badge/quick%20guides-available-6f42c1)](quick-guides/)
+
 ![](vx_images/WPS-Office-12-Chinese-Version-on-en_US-ezgif.com.gif)
 
 Available translations:
