@@ -72,6 +72,8 @@ download the file:
 
 wps-office-12-mui.tar.xz
 
+![](vx_images/09-release-wps-12.1.2-language-packs-v1.png)
+
 Extract it with right-click in your preferred file manager, then you will get the folder:
 
 `wps-office-12-mui`
@@ -231,7 +233,7 @@ download the file:
 
 wps-office-12-dicts-active.tar.xz
 
-
+![](vx_images/09-release-wps-12.1.2-language-packs-v1.png)
 
 Extract it with right-click in your preferred file manager, then you will get the folder:
 
