@@ -863,7 +863,7 @@ wpsoffice\Application%20Settings\AppComponentModeInstall=prome_independ
 
 На данный момент в этой китайской версии WPS Office 12 испанская проверка орфографии работает только со словарем `es_ES` из этого репозитория:
 
-/build/dicts-active/es_ES/
+/build/wps-office-12-dicts-active/es_ES/
 
 Однако следующие словари в папке `wps-libreoffice-dicts` не работают так, как работали в WPS Office 11:
 

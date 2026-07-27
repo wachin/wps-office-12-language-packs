@@ -859,7 +859,7 @@ Sobald die Rechtschreibprüfung aktiviert ist, beginnt WPS Office automatisch mi
 
 Derzeit funktioniert in dieser chinesischen Version von WPS Office 12 die spanische Rechtschreibprüfung nur mit dem Wörterbuch `es_ES` aus diesem Repository:
 
-/build/dicts-active/es_ES/
+/build/wps-office-12-dicts-active/es_ES/
 
 Die folgenden Wörterbücher im Ordner `wps-libreoffice-dicts` funktionieren jedoch nicht so, wie sie in WPS Office 11 funktionierten:
 

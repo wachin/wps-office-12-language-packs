@@ -46,7 +46,7 @@ Este archivo resume el estado actual del proyecto y separa lo que ya se complet�
 
 ## Documentación
 
-- [x] Actualizar `README.md` para que la instalación de diccionarios use `build/dicts-active`.
+- [x] Actualizar `README.md` para que la instalación de diccionarios use `build/wps-office-12-dicts-active`.
 - [x] Documentar el contenido disponible de diccionarios en una tabla dentro del README.
 - [x] Documentar por separado los tres diccionarios añadidos desde otras fuentes.
 - [x] Documentar cómo usar la herramienta PyQt6.

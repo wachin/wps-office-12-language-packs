@@ -1,4 +1,4 @@
-Actualmente `wps-libreoffice-dicts-experimental` contiene 71 diccionarios convertidos para WPS Office. Esta carpeta queda como material experimental en la raíz del repositorio, porque en WPS Office 12 versión China no todos estos diccionarios funcionan aunque tengan el formato correcto. Para la instalación recomendada usa `build/dicts-active/`.
+Actualmente `wps-libreoffice-dicts-experimental` contiene 71 diccionarios convertidos para WPS Office. Esta carpeta queda como material experimental en la raíz del repositorio, porque en WPS Office 12 versión China no todos estos diccionarios funcionan aunque tengan el formato correcto. Para la instalación recomendada usa `build/wps-office-12-dicts-active/`.
 
 | Código  |           Diccionario            |
 | ------- | -------------------------------- |

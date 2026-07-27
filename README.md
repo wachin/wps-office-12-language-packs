@@ -100,7 +100,7 @@ The Chinese version of WPS Office 12 that we just installed includes these MUI f
 /opt/kingsoft/wps-office/office6/mui/zh_CN
 ```
 
-This are:
+These are:
 
 - `en_US` English (United States) Language
 - `ru_RU` Russian (Russian Federation) Language
@@ -113,7 +113,7 @@ and it also includes these two spellcheck dictionaries by default:
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/en_US
 ```
 
-This are:
+These are:
 
 - `en_CH` Chinese & English(United States) Dictionary
 - `en_US` English (United States) Dictionary
@@ -868,7 +868,7 @@ Once spellchecking is enabled, WPS Office will automatically start checking the 
 
 For now, in this Chinese version of WPS Office 12, Spanish spellchecking only works with the `es_ES` dictionary from this repository:
 
-/build/dicts-active/es_ES/
+/build/wps-office-12-dicts-active/es_ES/
 
 However, the following dictionaries in the `wps-libreoffice-dicts` folder do not work as they did in WPS Office 11:
 

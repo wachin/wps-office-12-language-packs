@@ -52,81 +52,63 @@ Pour suivre ce tutoriel, vous avez besoin de :
 - Avoir **WPS Office 12.x** installé sous Linux comme décrit ci-dessus.
 - Avoir des droits d’administration avec `sudo` ou un outil équivalent.
 - Avoir ouvert WPS Office au moins une fois. WPS Office crée sa configuration utilisateur après le premier lancement. Si `~/.config/Kingsoft/Office.conf` n’existe pas, ouvrez WPS Office, fermez-le, puis continuez l’installation.
-- Avoir téléchargé ou cloné ce dépôt sur votre ordinateur.
+- Avoir une connexion Internet pour télécharger les fichiers du Release.
 
 ## Installer les interfaces utilisateur multilingues MUI
 
-Pour installer les fichiers MUI (interfaces utilisateur multilingues), ce projet doit se trouver sur votre ordinateur. Il existe **deux** façons de procéder ; choisissez-en **une seule** :
+Téléchargez le paquet MUI. Allez dans la section Releases :
 
-### Option 1 : télécharger le ZIP et installer les fichiers MUI
+[https://github.com/wachin/wps-office-12-language-packs/releases](https://github.com/wachin/wps-office-12-language-packs/releases)
 
-1. Ouvrez cette page :
+téléchargez le fichier :
 
-   [https://github.com/wachin/wps-office-12-language-packs](https://github.com/wachin/wps-office-12-language-packs)
+wps-office-12-mui.tar.xz
 
-2. Cliquez sur le bouton vert :
+![](vx_images/09-release-wps-12.1.2-language-packs-v1.png)
 
-```
-<> Code ▼
-```
+Extrayez-le avec un clic droit **dans votre gestionnaire de fichiers préféré**. Vous obtiendrez alors le dossier :
 
-3. Cliquez sur :
+`wps-office-12-mui`
 
-```
-Download ZIP
-```
+Ensuite, faites un clic droit sur ce dossier et choisissez `Open terminal here` ou une option similaire. Dans les systèmes Linux modernes, le clic droit propose généralement cette option. À partir de ce terminal,
 
-4. Une fois le téléchargement terminé, extrayez le fichier ZIP avec un clic droit puis « Extraire ici ».
-5. Ouvrez un terminal à cet emplacement et exécutez :
+installez les fichiers MUI avec cette commande :
 
 ```bash
-sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/
+sudo cp -r ./* /opt/kingsoft/wps-office/office6/mui/
 ```
 
-cette commande installe les fichiers MUI (interfaces utilisateur multilingues).
-
-### Option 2 : cloner avec Git et installer les fichiers MUI
-
-Si `git` n’est pas installé, installez-le :
-
-```bash
-sudo apt install git
-```
-
-Clonez ensuite le dépôt :
-
-```bash
-git clone https://github.com/wachin/wps-office-12-language-packs
-```
-
-Entrez dans le dossier :
-
-```bash
-cd wps-office-12-language-packs
-```
-
-exécutez :
-
-```bash
-sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/
-```
-
-cette commande installe les fichiers MUI (interfaces utilisateur multilingues).
+Cette commande installe les fichiers MUI (interfaces utilisateur multilingues).
 
 ## Vérifier l’installation
 
-La commande `sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/` copie les dossiers de langue disponibles dans le véritable dossier de WPS Office sous Linux : `/opt/kingsoft/wps-office/office6/mui/`.
+La commande `sudo cp -r ./* /opt/kingsoft/wps-office/office6/mui/` copie les dossiers de langue disponibles dans le véritable dossier de WPS Office sous Linux : `/opt/kingsoft/wps-office/office6/mui/`.
 
 La version chinoise de WPS Office 12 que nous venons d’installer inclut par défaut ces dossiers MUI :
 
+```
 /opt/kingsoft/wps-office/office6/mui/en_US
 /opt/kingsoft/wps-office/office6/mui/ru_RU
 /opt/kingsoft/wps-office/office6/mui/zh_CN
+```
+
+Ce sont :
+
+- `en_US` langue anglaise (États-Unis)
+- `ru_RU` langue russe (Fédération de Russie)
+- `zh_CN` langue chinoise (Chine)
 
 et elle inclut aussi par défaut ces deux dictionnaires de correction orthographique :
 
+```
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/en_CH
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/en_US
+```
+
+Ce sont :
+
+- `en_CH` dictionnaire chinois et anglais (États-Unis)
+- `en_US` dictionnaire anglais (États-Unis)
 
 Depuis votre gestionnaire de fichiers, vérifiez ce chemin :
 
@@ -166,11 +148,11 @@ Ce dépôt prépare aussi des dictionnaires Hunspell afin que **WPS Office 12.x*
 Pour l’instant, il faut distinguer deux dossiers :
 
 ```
-build/dicts-active/
+build/wps-office-12-dicts-active/
 wps-libreoffice-dicts/
 ```
 
-Le dossier `build/dicts-active/` contient les dictionnaires sélectionnés pour l’installation actuelle. Ce sont ceux qui sont utilisés pour les tests avec WPS Office 12.
+Le dossier `build/wps-office-12-dicts-active/` contient les dictionnaires sélectionnés pour l’installation actuelle. Ce sont ceux qui sont utilisés pour les tests avec WPS Office 12.
 
 Le dossier `wps-libreoffice-dicts/` contient tous les dictionnaires convertis depuis LibreOffice. Il est conservé à la racine du dépôt parce que, dans la version chinoise de WPS Office 12, toutes les variantes ne fonctionnent pas même lorsqu’elles ont le bon format. Peut-être qu’une future version de WPS prendra de nouveau en charge tous ces dictionnaires, comme le faisaient les anciennes versions de WPS Office pour Linux.
 
@@ -228,17 +210,33 @@ Les dictionnaires actuellement actifs sont :
 | `pt_BR` | Portugais (Brésil)   |
 | `pt_PT` | Portugais            |
 | `ru_RU` | Russe (Russie)       |
-| `tr_TR` | Turc (Turkey)        |
+| `tr_TR` | Turc (Turquie)       |
 
 Remarque sur `pt_PT` : sous MX Linux 23 avec la locale `pt_PT.UTF-8`, la MUI `pt_PT` et le dictionnaire installé dans `/opt/kingsoft/wps-office/office6/dicts/spellcheck/pt_PT/`, WPS Office 12 n’active pas la correction orthographique pour le portugais du Portugal dans les tests actuels. Dans la même installation, la correction fonctionne avec le dictionnaire `pt_BR`.
 
 
 ## Installer les dictionnaires
 
-From the root of this repository, exécutez :
+Allez dans la section Releases :
+
+[https://github.com/wachin/wps-office-12-language-packs/releases](https://github.com/wachin/wps-office-12-language-packs/releases)
+
+téléchargez le fichier :
+
+wps-office-12-dicts-active.tar.xz
+
+![](vx_images/09-release-wps-12.1.2-language-packs-v1.png)
+
+Extrayez-le avec un clic droit dans votre gestionnaire de fichiers préféré. Vous obtiendrez alors le dossier :
+
+`wps-office-12-dicts-active`
+
+Ensuite, faites un clic droit sur ce dossier et choisissez `Open terminal here` ou une option similaire. Dans les systèmes Linux modernes, le clic droit propose généralement cette option. À partir de ce terminal,
+
+installez les fichiers de dictionnaire avec cette commande :
 
 ```bash
-sudo cp -r build/dicts-active/* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
+sudo cp -r ./* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
 ```
 
 Cela copie les dictionnaires actifs dans le dossier que WPS utilise pour la correction orthographique.
@@ -320,24 +318,26 @@ Utilisez ce tableau pour choisir le code et le numéro corrects :
 
 Ce tableau montre les langues pour lesquelles on peut comparer directement si la `Locale`, la MUI et le dictionnaire utilisent le même code. Le `x` signifie qu’aucun dictionnaire actif avec ce même code n’est inclus. Le symbole `✅` marque les cas testés où cette combinaison exacte fonctionne.
 
-| Language shown in the Login Manager | `Locale` | `MUI`   | `Dict`  | Tested  |
-| ----------------------------------- | -------- | ------- | ------- | ------- |
-| Anglais (États-Unis)                | `en_US`  | `en_US` | `en_US` | ✅       |
-| Allemand (Allemagne)                | `de_DE`  | `de_DE` | `de_DE` | ✅       |
-| Espagnol (Espagne)                  | `es_ES`  | `es_ES` | `es_ES` | ✅       |
-| Espagnol (Mexique)                  | `es_MX`  | `es_MX` | x       |         |
-| Français (Canada)                   | `fr_CA`  | `fr_CA` | x       |         |
-| Français (France)                   | `fr_FR`  | `fr_FR` | `fr_FR` | ✅       |
-| Indonésien                          | `id_ID`  | `id_ID` | `id_ID` | ✅       |
-| Japonais                            | `ja_JP`  | `ja_JP` | x       |         |
-| Polonais                            | `pl_PL`  | `pl_PL` | `pl_PL` | ✅       |
-| Portugais (Brésil)                  | `pt_BR`  | `pt_BR` | `pt_BR` | ✅       |
-| Portugais (Portugal)                | `pt_PT`  | `pt_PT` | `pt_PT` |         |
-| Russe                               | `ru_RU`  | `ru_RU` | `ru_RU` | ✅       |
-| Thaï                                | `th_TH`  | `th_TH` | x       |         |
-| Turc                                | `tr_TR`  | `tr_TR` | `tr_TR` | ✅       |
-| Chinois (simplifié, Chine)          | `zh_CN`  | `zh_CN` | x       |         |
-| Chinois (traditionnel, Hong Kong)   | `zh_HK`  | `zh_HK` | x       |         |
+| Langue affichée dans le Login Manager | `Locale` | `MUI`    | `Dict`  | Testé |
+| ------------------------------------- | -------- | -------- | ------- | ----- |
+| Anglais (États-Unis)                  | `en_US`  | `en_US`  | `en_US` | ✅     |
+| Allemand (Allemagne)                  | `de_DE`  | `de_DE`  | `de_DE` | ✅     |
+| Espagnol (Espagne)                    | `es_ES`  | `es_ES`  | `es_ES` | ✅     |
+| Espagnol (Mexique)                    | `es_MX`  | `es_MX`  | x       |       |
+| Français (Canada)                     | `fr_CA`  | `fr_CA`  | x       |       |
+| Français (France)                     | `fr_FR`  | `fr_FR`  | `fr_FR` | ✅     |
+| Indonésien                            | `id_ID`  | `id_ID`  | `id_ID` | ✅     |
+| Japonais                              | `ja_JP`  | `ja_JP`  | x       |       |
+| Polonais                              | `pl_PL`  | `pl_PL`  | `pl_PL` | ✅     |
+| Portugais (Brésil)                    | `pt_BR`  | `pt_BR`  | `pt_BR` | ✅     |
+| Portugais (Portugal)                  | `pt_PT`  | `pt_PT`  | `pt_PT` |       |
+| Russe                                 | `ru_RU`  | `ru_RU`* | `ru_RU` | ✅     |
+| Thaï                                  | `th_TH`  | `th_TH`  | x       |       |
+| Turc                                  | `tr_TR`  | `tr_TR`  | `tr_TR` | ✅     |
+| Chinois (simplifié, Chine)            | `zh_CN`  | `zh_CN`  | x       |       |
+| Chinois (traditionnel, Hong Kong)     | `zh_HK`  | `zh_HK`  | x       |       |
+
+* La version chinoise de WPS Office 12 inclut déjà la MUI `ru_RU` par défaut. L’archive MUI du Release n’a donc pas besoin d’inclure ce dossier. Le dictionnaire de correction orthographique `ru_RU` est toujours installé depuis l’archive des dictionnaires.
 
 ### Pour l’anglais des États-Unis :
 
@@ -860,7 +860,7 @@ Une fois la correction orthographique activée, WPS Office commencera automatiqu
 
 Pour l’instant, dans cette version chinoise de WPS Office 12, la correction orthographique espagnole ne fonctionne qu’avec le dictionnaire `es_ES` de ce dépôt :
 
-/build/dicts-active/es_ES/
+/build/wps-office-12-dicts-active/es_ES/
 
 Cependant, les dictionnaires suivants du dossier `wps-libreoffice-dicts` ne fonctionnent pas comme ils fonctionnaient dans WPS Office 11 :
 
