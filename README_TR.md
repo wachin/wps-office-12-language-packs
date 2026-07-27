@@ -56,81 +56,63 @@ Bu öğreticiye devam etmek için şunlara ihtiyacınız var:
 - Yukarıda açıklandığı gibi Linux üzerinde **WPS Office 12.x** kurulu olmalı.
 - `sudo` veya eşdeğer bir araçla yönetici izinlerine sahip olmalısınız.
 - WPS Office en az bir kez açılmış olmalı. WPS Office, ilk kez açıldıktan sonra kullanıcı yapılandırmasını oluşturur. `~/.config/Kingsoft/Office.conf` yoksa WPS Office’i açın, kapatın ve kuruluma devam edin.
-- Bu depo bilgisayarınıza indirilmiş veya klonlanmış olmalı.
+- Release dosyalarını indirmek için internet bağlantınız olmalı.
 
 ## MUI çok dilli kullanıcı arayüzlerini kurma
 
-MUI dosyalarını (çok dilli kullanıcı arayüzleri) kurmak için bu projenin bilgisayarınızda bulunması gerekir. Bunu yapmanın **iki** yolu vardır; yalnızca **birini** seçin:
+MUI paketini indirin. Releases bölümüne gidin:
 
-### Seçenek 1: ZIP dosyasını indirip MUI dosyalarını kurma
+[https://github.com/wachin/wps-office-12-language-packs/releases](https://github.com/wachin/wps-office-12-language-packs/releases)
 
-1. Bu sayfayı açın:
+şu dosyayı indirin:
 
-   [https://github.com/wachin/wps-office-12-language-packs](https://github.com/wachin/wps-office-12-language-packs)
+wps-office-12-mui.tar.xz
 
-2. Yeşil düğmeye tıklayın:
+![](vx_images/09-release-wps-12.1.2-language-packs-v1.png)
 
-```
-<> Code ▼
-```
+Tercih ettiğiniz dosya yöneticisinde **sağ tıklayarak** çıkarın. Ardından şu klasörü elde edeceksiniz:
 
-3. Şuna tıklayın:
+`wps-office-12-mui`
 
-```
-Download ZIP
-```
+Sonra bu klasöre sağ tıklayın ve `Open terminal here` ya da benzer bir seçeneği seçin. Modern Linux sistemlerinde sağ tıklama genellikle bu seçeneği sunar. Oradan,
 
-4. İndirme tamamlandığında ZIP dosyasına sağ tıklayıp "Extract here" seçeneğini seçerek çıkarın.
-5. Orada bir terminal açın ve çalıştırın:
+MUI dosyalarını bu komutla kurun:
 
 ```bash
-sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/
+sudo cp -r ./* /opt/kingsoft/wps-office/office6/mui/
 ```
 
-bu komut MUI dosyalarını (çok dilli kullanıcı arayüzleri) kurar.
-
-### Seçenek 2: Git ile klonlayıp MUI dosyalarını kurma
-
-`git` kurulu değilse kuçalıştırın:
-
-```bash
-sudo apt install git
-```
-
-Ardından depoyu klonlayın:
-
-```bash
-git clone https://github.com/wachin/wps-office-12-language-packs
-```
-
-Klasöre girin:
-
-```bash
-cd wps-office-12-language-packs
-```
-
-çalıştırın:
-
-```bash
-sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/
-```
-
-bu komut MUI dosyalarını (çok dilli kullanıcı arayüzleri) kurar.
+Bu komut MUI dosyalarını (çok dilli kullanıcı arayüzleri) kurar.
 
 ## Kurulumu doğrulama
 
-`sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/` komutu, mevcut dil klasörlerini Linux’taki gerçek WPS Office klasörüne kopyalar: `/opt/kingsoft/wps-office/office6/mui/`.
+`sudo cp -r ./* /opt/kingsoft/wps-office/office6/mui/` komutu, mevcut dil klasörlerini Linux’taki gerçek WPS Office klasörüne kopyalar: `/opt/kingsoft/wps-office/office6/mui/`.
 
 Az önce kurduğumuz WPS Office 12 Çin sürümü varsayılan olarak şu MUI klasörlerini içerir:
 
+```
 /opt/kingsoft/wps-office/office6/mui/en_US
 /opt/kingsoft/wps-office/office6/mui/ru_RU
 /opt/kingsoft/wps-office/office6/mui/zh_CN
+```
+
+Bunlar:
+
+- `en_US` İngilizce (Amerika Birleşik Devletleri) dili
+- `ru_RU` Rusça (Rusya Federasyonu) dili
+- `zh_CN` Çince (Çin) dili
 
 ve ayrıca varsayılan olarak şu iki yazım denetimi sözlüğünü içerir:
 
+```
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/en_CH
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/en_US
+```
+
+Bunlar:
+
+- `en_CH` Çince ve İngilizce (Amerika Birleşik Devletleri) sözlüğü
+- `en_US` İngilizce (Amerika Birleşik Devletleri) sözlüğü
 
 Dosya yöneticinizden şu yolu kontrol edin:
 
@@ -170,11 +152,11 @@ Bu depo ayrıca **WPS Office 12.x** Linux üzerinde kullanabilsin diye Hunspell 
 Şimdilik iki klasörü ayırt etmek gerekir:
 
 ```
-build/dicts-active/
+build/wps-office-12-dicts-active/
 wps-libreoffice-dicts/
 ```
 
-`build/dicts-active/` klasörü, şu anda kurulum için seçilen sözlükleri içerir. WPS Office 12 testlerinde kullanılanlar bunlardır.
+`build/wps-office-12-dicts-active/` klasörü, şu anda kurulum için seçilen sözlükleri içerir. WPS Office 12 testlerinde kullanılanlar bunlardır.
 
 `wps-libreoffice-dicts/` klasörü LibreOffice’ten dönüştürülen tüm sözlükleri içerir. WPS Office 12 Çin sürümünde, doğru biçime sahip olsalar bile tüm varyantlar çalışmadığı için depo kökünde tutulur. Belki gelecekteki bir WPS sürümünde, eski Linux WPS Office sürümlerinde olduğu gibi bu sözlüklerin tümü yeniden desteklenir.
 
@@ -232,17 +214,33 @@ SET UTF-8
 | `pt_BR` | Portekizce (Brezilya) |
 | `pt_PT` | Portekizce            |
 | `ru_RU` | Rusça (Rusya)         |
-| `tr_TR` | Türkçe (Turkey)       |
+| `tr_TR` | Türkçe (Türkiye)      |
 
 `pt_PT` hakkında not: MX Linux 23 üzerinde `pt_PT.UTF-8` locale, `pt_PT` MUI ve `/opt/kingsoft/wps-office/office6/dicts/spellcheck/pt_PT/` olarak kurulu sözlükle, mevcut testlerde WPS Office 12 Portekiz Portekizcesi için yazım denetimini etkinleştirmiyor. Aynı kurulumda yazım denetimi `pt_BR` sözlüğüyle çalışıyor.
 
 
 ## Sözlükleri kurma
 
-From the root of this repository, çalıştırın:
+Releases bölümüne gidin:
+
+[https://github.com/wachin/wps-office-12-language-packs/releases](https://github.com/wachin/wps-office-12-language-packs/releases)
+
+şu dosyayı indirin:
+
+wps-office-12-dicts-active.tar.xz
+
+![](vx_images/09-release-wps-12.1.2-language-packs-v1.png)
+
+Tercih ettiğiniz dosya yöneticisinde sağ tıklayarak çıkarın. Ardından şu klasörü elde edeceksiniz:
+
+`wps-office-12-dicts-active`
+
+Sonra bu klasöre sağ tıklayın ve `Open terminal here` ya da benzer bir seçeneği seçin. Modern Linux sistemlerinde sağ tıklama genellikle bu seçeneği sunar. Oradan,
+
+sözlük dosyalarını bu komutla kurun:
 
 ```bash
-sudo cp -r build/dicts-active/* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
+sudo cp -r ./* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
 ```
 
 Bu, aktif sözlükleri WPS’nin yazım denetimi için kullandığı klasöre kopyalar.
@@ -324,24 +322,26 @@ Doğru kodu ve numarayı seçmek için bu tabloyu kullanın:
 
 Bu tablo, `Locale`, MUI ve sözlüğün aynı kodu kullanıp kullanmadığını doğrudan karşılaştırabileceğiniz dilleri gösterir. `x`, aynı koda sahip aktif bir sözlüğün dahil edilmediği anlamına gelir. `✅` simgesi, bu tam kombinasyonun çalıştığı test edilmiş durumları gösterir.
 
-| Language shown in the Login Manager     | `Locale` | `MUI`   | `Dict`  | Tested  |
-| --------------------------------------- | -------- | ------- | ------- | ------- |
-| İngilizce (Amerika Birleşik Devletleri) | `en_US`  | `en_US` | `en_US` | ✅       |
-| Almanca (Almanya)                       | `de_DE`  | `de_DE` | `de_DE` | ✅       |
-| İspanyolca (İspanya)                    | `es_ES`  | `es_ES` | `es_ES` | ✅       |
-| İspanyolca (Meksika)                    | `es_MX`  | `es_MX` | x       |         |
-| Fransızca (Kanada)                      | `fr_CA`  | `fr_CA` | x       |         |
-| Fransızca (Fransa)                      | `fr_FR`  | `fr_FR` | `fr_FR` | ✅       |
-| Endonezce                               | `id_ID`  | `id_ID` | `id_ID` | ✅       |
-| Japonca                                 | `ja_JP`  | `ja_JP` | x       |         |
-| Lehçe                                   | `pl_PL`  | `pl_PL` | `pl_PL` | ✅       |
-| Portekizce (Brezilya)                   | `pt_BR`  | `pt_BR` | `pt_BR` | ✅       |
-| Portekizce (Portekiz)                   | `pt_PT`  | `pt_PT` | `pt_PT` |         |
-| Rusça                                   | `ru_RU`  | `ru_RU` | `ru_RU` | ✅       |
-| Tayca                                   | `th_TH`  | `th_TH` | x       |         |
-| Türkçe                                  | `tr_TR`  | `tr_TR` | `tr_TR` | ✅       |
-| Çince (Basitleştirilmiş, Çin)           | `zh_CN`  | `zh_CN` | x       |         |
-| Çince (Geleneksel, Hong Kong)           | `zh_HK`  | `zh_HK` | x       |         |
+| Login Manager’da gösterilen dil         | `Locale` | `MUI`    | `Dict`  | Test edildi |
+| --------------------------------------- | -------- | -------- | ------- | ----------- |
+| İngilizce (Amerika Birleşik Devletleri) | `en_US`  | `en_US`  | `en_US` | ✅           |
+| Almanca (Almanya)                       | `de_DE`  | `de_DE`  | `de_DE` | ✅           |
+| İspanyolca (İspanya)                    | `es_ES`  | `es_ES`  | `es_ES` | ✅           |
+| İspanyolca (Meksika)                    | `es_MX`  | `es_MX`  | x       |             |
+| Fransızca (Kanada)                      | `fr_CA`  | `fr_CA`  | x       |             |
+| Fransızca (Fransa)                      | `fr_FR`  | `fr_FR`  | `fr_FR` | ✅           |
+| Endonezce                               | `id_ID`  | `id_ID`  | `id_ID` | ✅           |
+| Japonca                                 | `ja_JP`  | `ja_JP`  | x       |             |
+| Lehçe                                   | `pl_PL`  | `pl_PL`  | `pl_PL` | ✅           |
+| Portekizce (Brezilya)                   | `pt_BR`  | `pt_BR`  | `pt_BR` | ✅           |
+| Portekizce (Portekiz)                   | `pt_PT`  | `pt_PT`  | `pt_PT` |             |
+| Rusça                                   | `ru_RU`  | `ru_RU`* | `ru_RU` | ✅           |
+| Tayca                                   | `th_TH`  | `th_TH`  | x       |             |
+| Türkçe                                  | `tr_TR`  | `tr_TR`  | `tr_TR` | ✅           |
+| Çince (Basitleştirilmiş, Çin)           | `zh_CN`  | `zh_CN`  | x       |             |
+| Çince (Geleneksel, Hong Kong)           | `zh_HK`  | `zh_HK`  | x       |             |
+
+* WPS Office 12 Çin sürümü `ru_RU` MUI’yi zaten varsayılan olarak içerir, bu yüzden Release içindeki MUI arşivinin bu klasörü içermesi gerekmez. `ru_RU` yazım denetimi sözlüğü yine sözlük arşivinden kurulur.
 
 ### Amerika Birleşik Devletleri İngilizcesi için:
 
@@ -864,7 +864,7 @@ Yazım denetimi etkinleştirildiğinde WPS Office belgenin yazımını otomatik 
 
 Şimdilik WPS Office 12’nin bu Çin sürümünde İspanyolca yazım denetimi yalnızca bu depodaki `es_ES` sözlüğüyle çalışır:
 
-/build/dicts-active/es_ES/
+/build/wps-office-12-dicts-active/es_ES/
 
 Ancak `wps-libreoffice-dicts` klasöründeki aşağıdaki sözlükler WPS Office 11’de çalıştıkları gibi çalışmaz:
 

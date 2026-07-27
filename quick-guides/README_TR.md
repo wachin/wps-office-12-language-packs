@@ -5,7 +5,7 @@ Bu kısa kılavuz, Linux üzerinde WPS Office 12 için Türkçe arayüzü ve Tü
 ## Gereksinimler
 
 - WPS Office 12.x kurulu.
-- Bu depo indirilmiş veya klonlanmış.
+- Release dosyalarını indirmek için internet bağlantısı.
 - `sudo` ile yönetici izni.
 - `~/.config/Kingsoft/Office.conf` dosyasının oluşması için WPS Office en az bir kez açılmış.
 
@@ -25,34 +25,45 @@ veya terminalden:
 sudo dpkg -i wps-office*.deb
 ```
 
-## Bu depoyu indirme veya klonlama
+## Release dosyalarını indirme
 
-MUI dosyalarını ve sözlükleri kurmadan önce bu depoyu indirin:
+Releases bölümüne gidin:
 
-[https://github.com/wachin/wps-office-12-language-packs](https://github.com/wachin/wps-office-12-language-packs)
+[https://github.com/wachin/wps-office-12-language-packs/releases](https://github.com/wachin/wps-office-12-language-packs/releases)
 
-Seçenek 1: sayfayı açın, `<> Code ▼` düğmesine ve ardından `Download ZIP` seçeneğine tıklayın. ZIP dosyasını çıkarın ve çıkarılan klasörün içinde bir terminal açın.
+Bu iki dosyayı indirin:
 
-Seçenek 2: Git ile klonlayın. Git kurulu değilse önce kurun:
+- `wps-office-12-mui.tar.xz`
+- `wps-office-12-dicts-active.tar.xz`
 
-```bash
-sudo apt install git
+![](../vx_images/09-release-wps-12.1.2-language-packs-v1.png)
+
+## MUI kurma
+
+`wps-office-12-mui.tar.xz` dosyasını tercih ettiğiniz dosya yöneticisinde sağ tıklayarak çıkarın. Şu klasörü elde edeceksiniz:
+
+```text
+wps-office-12-mui
 ```
 
-Ardından çalıştırın:
+Bu klasörün içinde bir terminal açın. Modern Linux sistemlerinde, bir klasörün içinde sağ tıklayınca genellikle `Open terminal here` gibi bir seçenek görünür.
 
 ```bash
-git clone https://github.com/wachin/wps-office-12-language-packs
-cd wps-office-12-language-packs
+sudo cp -r ./* /opt/kingsoft/wps-office/office6/mui/
 ```
 
-## MUI ve sözlükleri kurma
+## Sözlükleri kurma
 
-Bu deponun kök dizininden şunu çalıştırın:
+`wps-office-12-dicts-active.tar.xz` dosyasını tercih ettiğiniz dosya yöneticisinde sağ tıklayarak çıkarın. Şu klasörü elde edeceksiniz:
+
+```text
+wps-office-12-dicts-active
+```
+
+Bu klasörün içinde bir terminal açın ve çalıştırın:
 
 ```bash
-sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/
-sudo cp -r build/dicts-active/* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
+sudo cp -r ./* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
 ```
 
 Türkçe için WPS Office 12 şunları kullanacaktır:

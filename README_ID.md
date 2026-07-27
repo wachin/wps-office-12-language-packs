@@ -53,81 +53,63 @@ Untuk mengikuti tutorial ini, Anda memerlukan:
 - **WPS Office 12.x** sudah terpasang di Linux seperti dijelaskan di atas.
 - Izin administrator dengan `sudo` atau alat yang setara.
 - WPS Office sudah pernah dibuka setidaknya satu kali. WPS Office membuat konfigurasi pengguna setelah pertama kali dibuka. Jika `~/.config/Kingsoft/Office.conf` belum ada, buka WPS Office, tutup kembali, lalu lanjutkan instalasi.
-- Repositori ini sudah diunduh atau dikloning ke komputer Anda.
+- Koneksi internet untuk mengunduh berkas Release.
 
 ## Memasang antarmuka pengguna multibahasa MUI
 
-Untuk memasang berkas MUI (antarmuka pengguna multibahasa), proyek ini harus ada di komputer Anda. Ada **dua** cara untuk melakukannya; pilih hanya **satu**:
+Unduh paket MUI. Buka bagian Releases:
 
-### Opsi 1: unduh ZIP dan pasang berkas MUI
+[https://github.com/wachin/wps-office-12-language-packs/releases](https://github.com/wachin/wps-office-12-language-packs/releases)
 
-1. Buka halaman ini:
+unduh berkas:
 
-   [https://github.com/wachin/wps-office-12-language-packs](https://github.com/wachin/wps-office-12-language-packs)
+wps-office-12-mui.tar.xz
 
-2. Klik tombol hijau:
+![](vx_images/09-release-wps-12.1.2-language-packs-v1.png)
 
-```
-<> Code ▼
-```
+Ekstrak dengan klik kanan **di pengelola berkas pilihan Anda**. Setelah itu Anda akan mendapatkan folder:
 
-3. Klik:
+`wps-office-12-mui`
 
-```
-Download ZIP
-```
+Lalu klik kanan pada folder ini dan pilih `Open terminal here` atau opsi serupa. Pada sistem Linux modern, klik kanan biasanya menyediakan opsi tersebut. Dari sana,
 
-4. Setelah unduhan selesai, ekstrak berkas ZIP dengan klik kanan dan pilih "Extract here".
-5. Buka terminal di lokasi tersebut dan jalankan:
+pasang berkas MUI dengan perintah ini:
 
 ```bash
-sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/
+sudo cp -r ./* /opt/kingsoft/wps-office/office6/mui/
 ```
 
-perintah ini memasang berkas MUI (antarmuka pengguna multibahasa).
-
-### Opsi 2: kloning dengan Git dan pasang berkas MUI
-
-Jika `git` belum terpasang, pasang terlebih dahulu:
-
-```bash
-sudo apt install git
-```
-
-Kemudian kloning repositori:
-
-```bash
-git clone https://github.com/wachin/wps-office-12-language-packs
-```
-
-Masuk ke folder:
-
-```bash
-cd wps-office-12-language-packs
-```
-
-jalankan:
-
-```bash
-sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/
-```
-
-perintah ini memasang berkas MUI (antarmuka pengguna multibahasa).
+Perintah ini memasang berkas MUI (antarmuka pengguna multibahasa).
 
 ## Memverifikasi instalasi
 
-Perintah `sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/` menyalin folder bahasa yang tersedia ke folder WPS Office yang sebenarnya di Linux: `/opt/kingsoft/wps-office/office6/mui/`.
+Perintah `sudo cp -r ./* /opt/kingsoft/wps-office/office6/mui/` menyalin folder bahasa yang tersedia ke folder WPS Office yang sebenarnya di Linux: `/opt/kingsoft/wps-office/office6/mui/`.
 
 WPS Office 12 versi Tiongkok yang baru dipasang menyertakan folder MUI berikut secara bawaan:
 
+```
 /opt/kingsoft/wps-office/office6/mui/en_US
 /opt/kingsoft/wps-office/office6/mui/ru_RU
 /opt/kingsoft/wps-office/office6/mui/zh_CN
+```
+
+Ini adalah:
+
+- `en_US` bahasa Inggris (Amerika Serikat)
+- `ru_RU` bahasa Rusia (Federasi Rusia)
+- `zh_CN` bahasa Tionghoa (Tiongkok)
 
 dan juga menyertakan dua kamus pemeriksa ejaan berikut secara bawaan:
 
+```
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/en_CH
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/en_US
+```
+
+Ini adalah:
+
+- `en_CH` kamus Tionghoa dan Inggris (Amerika Serikat)
+- `en_US` kamus Inggris (Amerika Serikat)
 
 Dari pengelola berkas, periksa path ini:
 
@@ -167,11 +149,11 @@ Repositori ini juga menyiapkan kamus Hunspell agar **WPS Office 12.x** dapat men
 Untuk saat ini, dua folder perlu dibedakan:
 
 ```
-build/dicts-active/
+build/wps-office-12-dicts-active/
 wps-libreoffice-dicts/
 ```
 
-Folder `build/dicts-active/` berisi kamus yang saat ini dipilih untuk dipasang. Kamus inilah yang digunakan untuk pengujian WPS Office 12.
+Folder `build/wps-office-12-dicts-active/` berisi kamus yang saat ini dipilih untuk dipasang. Kamus inilah yang digunakan untuk pengujian WPS Office 12.
 
 Folder `wps-libreoffice-dicts/` berisi semua kamus yang dikonversi dari LibreOffice. Folder ini disimpan di root repositori karena pada WPS Office 12 versi Tiongkok tidak semua varian berfungsi walaupun formatnya benar. Mungkin pada versi WPS mendatang semua kamus tersebut akan didukung kembali seperti pada versi lama WPS Office untuk Linux.
 
@@ -219,27 +201,43 @@ SET UTF-8
 
 Kamus yang saat ini aktif adalah:
 
-| Kode    | Kamus               |
-| ------- | ------------------- |
-| `de_DE` | Jerman (Jerman)     |
-| `es_ES` | Spanyol (Spanyol)   |
-| `fr_FR` | Prancis (Prancis)   |
-| `id_ID` | Indonesia           |
-| `pl_PL` | Polandia            |
-| `pt_BR` | Portugis (Brasil)   |
-| `pt_PT` | Portugis            |
-| `ru_RU` | Rusia (Rusia)       |
-| `tr_TR` | Turki (Turkey)      |
+| Kode    | Kamus                 |
+| ------- | --------------------- |
+| `de_DE` | Jerman (Jerman)       |
+| `es_ES` | Spanyol (Spanyol)     |
+| `fr_FR` | Prancis (Prancis)     |
+| `id_ID` | Indonesia             |
+| `pl_PL` | Polandia              |
+| `pt_BR` | Portugis (Brasil)     |
+| `pt_PT` | Portugis              |
+| `ru_RU` | Rusia (Rusia)         |
+| `tr_TR` | Turki (Turki)         |
 
 Catatan tentang `pt_PT`: pada MX Linux 23 dengan locale `pt_PT.UTF-8`, MUI `pt_PT`, dan kamus terpasang sebagai `/opt/kingsoft/wps-office/office6/dicts/spellcheck/pt_PT/`, WPS Office 12 tidak mengaktifkan pemeriksaan ejaan untuk Portugis Portugal pada pengujian saat ini. Pada instalasi yang sama, pemeriksaan ejaan berfungsi dengan kamus `pt_BR`.
 
 
 ## Memasang kamus
 
-From the root of this repository, jalankan:
+Buka bagian Releases:
+
+[https://github.com/wachin/wps-office-12-language-packs/releases](https://github.com/wachin/wps-office-12-language-packs/releases)
+
+unduh berkas:
+
+wps-office-12-dicts-active.tar.xz
+
+![](vx_images/09-release-wps-12.1.2-language-packs-v1.png)
+
+Ekstrak dengan klik kanan di pengelola berkas pilihan Anda. Setelah itu Anda akan mendapatkan folder:
+
+`wps-office-12-dicts-active`
+
+Lalu klik kanan pada folder ini dan pilih `Open terminal here` atau opsi serupa. Pada sistem Linux modern, klik kanan biasanya menyediakan opsi tersebut. Dari sana,
+
+pasang berkas kamus dengan perintah ini:
 
 ```bash
-sudo cp -r build/dicts-active/* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
+sudo cp -r ./* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
 ```
 
 Ini menyalin kamus aktif ke folder yang digunakan WPS untuk pemeriksaan ejaan.
@@ -321,24 +319,26 @@ Gunakan tabel ini untuk memilih kode dan nomor yang benar:
 
 Tabel ini menunjukkan bahasa yang dapat dibandingkan langsung apakah `Locale`, MUI, dan kamus menggunakan kode yang sama. Tanda `x` berarti tidak ada kamus aktif dengan kode yang sama. Simbol `✅` menandai kasus yang sudah diuji dan kombinasi tepat tersebut berfungsi.
 
-| Language shown in the Login Manager | `Locale` | `MUI`   | `Dict`  | Tested  |
-| ----------------------------------- | -------- | ------- | ------- | ------- |
-| Inggris (Amerika Serikat)           | `en_US`  | `en_US` | `en_US` | ✅       |
-| Jerman (Jerman)                     | `de_DE`  | `de_DE` | `de_DE` | ✅       |
-| Spanyol (Spanyol)                   | `es_ES`  | `es_ES` | `es_ES` | ✅       |
-| Spanyol (Meksiko)                   | `es_MX`  | `es_MX` | x       |         |
-| Prancis (Kanada)                    | `fr_CA`  | `fr_CA` | x       |         |
-| Prancis (Prancis)                   | `fr_FR`  | `fr_FR` | `fr_FR` | ✅       |
-| Indonesia                           | `id_ID`  | `id_ID` | `id_ID` | ✅       |
-| Jepang                              | `ja_JP`  | `ja_JP` | x       |         |
-| Polandia                            | `pl_PL`  | `pl_PL` | `pl_PL` | ✅       |
-| Portugis (Brasil)                   | `pt_BR`  | `pt_BR` | `pt_BR` | ✅       |
-| Portugis (Portugal)                 | `pt_PT`  | `pt_PT` | `pt_PT` |         |
-| Rusia                               | `ru_RU`  | `ru_RU` | `ru_RU` | ✅       |
-| Thailand                            | `th_TH`  | `th_TH` | x       |         |
-| Turki                               | `tr_TR`  | `tr_TR` | `tr_TR` | ✅       |
-| Tionghoa (Sederhana, Tiongkok)      | `zh_CN`  | `zh_CN` | x       |         |
-| Tionghoa (Tradisional, Hong Kong)   | `zh_HK`  | `zh_HK` | x       |         |
+| Bahasa yang ditampilkan di Login Manager | `Locale` | `MUI`    | `Dict`  | Diuji |
+| ---------------------------------------- | -------- | -------- | ------- | ----- |
+| Inggris (Amerika Serikat)                | `en_US`  | `en_US`  | `en_US` | ✅     |
+| Jerman (Jerman)                          | `de_DE`  | `de_DE`  | `de_DE` | ✅     |
+| Spanyol (Spanyol)                        | `es_ES`  | `es_ES`  | `es_ES` | ✅     |
+| Spanyol (Meksiko)                        | `es_MX`  | `es_MX`  | x       |       |
+| Prancis (Kanada)                         | `fr_CA`  | `fr_CA`  | x       |       |
+| Prancis (Prancis)                        | `fr_FR`  | `fr_FR`  | `fr_FR` | ✅     |
+| Indonesia                                | `id_ID`  | `id_ID`  | `id_ID` | ✅     |
+| Jepang                                   | `ja_JP`  | `ja_JP`  | x       |       |
+| Polandia                                 | `pl_PL`  | `pl_PL`  | `pl_PL` | ✅     |
+| Portugis (Brasil)                        | `pt_BR`  | `pt_BR`  | `pt_BR` | ✅     |
+| Portugis (Portugal)                      | `pt_PT`  | `pt_PT`  | `pt_PT` |       |
+| Rusia                                    | `ru_RU`  | `ru_RU`* | `ru_RU` | ✅     |
+| Thailand                                 | `th_TH`  | `th_TH`  | x       |       |
+| Turki                                    | `tr_TR`  | `tr_TR`  | `tr_TR` | ✅     |
+| Tionghoa (Sederhana, Tiongkok)           | `zh_CN`  | `zh_CN`  | x       |       |
+| Tionghoa (Tradisional, Hong Kong)        | `zh_HK`  | `zh_HK`  | x       |       |
+
+* WPS Office 12 versi Tiongkok sudah menyertakan MUI `ru_RU` secara bawaan, sehingga arsip MUI dari Release tidak perlu menyertakan folder tersebut. Kamus pemeriksa ejaan `ru_RU` tetap dipasang dari arsip kamus.
 
 ### Untuk Inggris Amerika Serikat:
 
@@ -861,7 +861,7 @@ Setelah pemeriksaan ejaan diaktifkan, WPS Office akan mulai memeriksa ejaan doku
 
 Untuk saat ini, pada WPS Office 12 versi Tiongkok ini, pemeriksaan ejaan bahasa Spanyol hanya berfungsi dengan kamus `es_ES` dari repositori ini:
 
-/build/dicts-active/es_ES/
+/build/wps-office-12-dicts-active/es_ES/
 
 Namun, kamus berikut di folder `wps-libreoffice-dicts` tidak berfungsi seperti pada WPS Office 11:
 

@@ -5,7 +5,7 @@ Panduan singkat ini memasang antarmuka dan pemeriksa ejaan bahasa Indonesia untu
 ## Persyaratan
 
 - WPS Office 12.x sudah terpasang.
-- Repositori ini sudah diunduh atau dikloning.
+- Koneksi internet untuk mengunduh berkas Release.
 - Izin administrator dengan `sudo`.
 - WPS Office sudah pernah dibuka sekali agar `~/.config/Kingsoft/Office.conf` ada.
 
@@ -25,34 +25,45 @@ atau dari terminal:
 sudo dpkg -i wps-office*.deb
 ```
 
-## Mengunduh atau mengkloning repositori ini
+## Mengunduh berkas Release
 
-Sebelum memasang berkas MUI dan kamus, unduh repositori ini:
+Buka bagian Releases:
 
-[https://github.com/wachin/wps-office-12-language-packs](https://github.com/wachin/wps-office-12-language-packs)
+[https://github.com/wachin/wps-office-12-language-packs/releases](https://github.com/wachin/wps-office-12-language-packs/releases)
 
-Opsi 1: buka halaman, klik `<> Code ▼`, lalu klik `Download ZIP`. Ekstrak ZIP dan buka terminal di dalam folder hasil ekstraksi.
+Unduh dua berkas ini:
 
-Opsi 2: kloning dengan Git. Jika Git belum terpasang, pasang terlebih dahulu:
+- `wps-office-12-mui.tar.xz`
+- `wps-office-12-dicts-active.tar.xz`
 
-```bash
-sudo apt install git
+![](../vx_images/09-release-wps-12.1.2-language-packs-v1.png)
+
+## Memasang MUI
+
+Ekstrak `wps-office-12-mui.tar.xz` dengan klik kanan di pengelola berkas pilihan Anda. Anda akan mendapatkan folder:
+
+```text
+wps-office-12-mui
 ```
 
-Lalu jalankan:
+Buka terminal di dalam folder tersebut. Pada sistem Linux modern, klik kanan di dalam folder biasanya menyediakan opsi seperti `Open terminal here`.
 
 ```bash
-git clone https://github.com/wachin/wps-office-12-language-packs
-cd wps-office-12-language-packs
+sudo cp -r ./* /opt/kingsoft/wps-office/office6/mui/
 ```
 
-## Memasang MUI dan kamus
+## Memasang kamus
 
-Dari root repositori ini, jalankan:
+Ekstrak `wps-office-12-dicts-active.tar.xz` dengan klik kanan di pengelola berkas pilihan Anda. Anda akan mendapatkan folder:
+
+```text
+wps-office-12-dicts-active
+```
+
+Buka terminal di dalam folder tersebut dan jalankan:
 
 ```bash
-sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/
-sudo cp -r build/dicts-active/* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
+sudo cp -r ./* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
 ```
 
 Jika `id_ID` belum muncul di Login Manager, buat locale terlebih dahulu:
