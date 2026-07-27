@@ -5,7 +5,7 @@
 ## Требования
 
 - WPS Office 12.x установлен.
-- Этот репозиторий скачан или клонирован.
+- Есть подключение к интернету для скачивания файлов Release.
 - Есть права администратора через `sudo`.
 - WPS Office был открыт хотя бы один раз, чтобы существовал файл `~/.config/Kingsoft/Office.conf`.
 
@@ -25,26 +25,19 @@
 sudo dpkg -i wps-office*.deb
 ```
 
-## Скачать или клонировать этот репозиторий
+## Скачать файл Release
 
-Перед установкой MUI и словарей скачайте этот репозиторий:
+Перейдите в раздел Releases:
 
-[https://github.com/wachin/wps-office-12-language-packs](https://github.com/wachin/wps-office-12-language-packs)
+[https://github.com/wachin/wps-office-12-language-packs/releases](https://github.com/wachin/wps-office-12-language-packs/releases)
 
-Вариант 1: откройте страницу, нажмите `<> Code ▼`, затем нажмите `Download ZIP`. Распакуйте ZIP и откройте терминал в распакованной папке.
+Скачайте файл:
 
-Вариант 2: клонируйте репозиторий с Git. Если Git не установлен, сначала установите его:
-
-```bash
-sudo apt install git
+```text
+wps-office-12-dicts-active.tar.xz
 ```
 
-Затем выполните:
-
-```bash
-git clone https://github.com/wachin/wps-office-12-language-packs
-cd wps-office-12-language-packs
-```
+![](../vx_images/09-release-wps-12.1.2-language-packs-v1.png)
 
 ## Установить словарь
 
@@ -54,10 +47,20 @@ WPS Office 12 уже включает русский MUI по умолчанию
 /opt/kingsoft/wps-office/office6/mui/ru_RU
 ```
 
-Поэтому для русского языка нужно установить только словарь проверки орфографии. Из корня этого репозитория выполните:
+Поэтому для русского языка нужно установить только словарь проверки орфографии.
+
+Распакуйте `wps-office-12-dicts-active.tar.xz` правым щелчком мыши в вашем предпочитаемом файловом менеджере. Вы получите папку:
+
+```text
+wps-office-12-dicts-active
+```
+
+Откройте терминал внутри этой папки. В современных системах Linux при правом щелчке внутри папки обычно есть пункт вроде `Open terminal here`.
+
+Выполните:
 
 ```bash
-sudo cp -r build/dicts-active/* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
+sudo cp -r ./* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
 ```
 
 Для русского языка WPS Office 12 будет использовать:
