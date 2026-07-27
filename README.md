@@ -72,15 +72,13 @@ download the file:
 
 wps-office-12-mui.tar.xz
 
-[https://github.com/wachin/wps-office-12-language-packs/releases/download/wps-12.1.2-language-packs-v1/wps-office-12-mui.tar.xz](https://github.com/wachin/wps-office-12-language-packs/releases/download/wps-12.1.2-language-packs-v1/wps-office-12-mui.tar.xz)
-
 Extract it with right-click in your preferred file manager, then you will get the folder:
 
 `wps-office-12-mui`
  
 Open a terminal inside the `wps-office-12-mui` folder. In modern Linux systems, right-clicking provides an option that says "Open terminal here" or something similar, then, from there
 
-Install the MUI files:
+Install the MUI files with this command::
 
 ```bash
 sudo cp -r ./* /opt/kingsoft/wps-office/office6/mui/
@@ -233,7 +231,6 @@ download the file:
 
 wps-office-12-dicts-active.tar.xz
 
-[https://github.com/wachin/wps-office-12-language-packs/releases/download/wps-12.1.2-language-packs-v1/wps-office-12-dicts-active.tar.xz](https://github.com/wachin/wps-office-12-language-packs/releases/download/wps-12.1.2-language-packs-v1/wps-office-12-dicts-active.tar.xz)
 
 
 Extract it with right-click in your preferred file manager, then you will get the folder:
@@ -242,7 +239,7 @@ Extract it with right-click in your preferred file manager, then you will get th
 
 Open a terminal inside the `wps-office-12-dicts-active` folder. In modern Linux systems, right-clicking provides an option that says "Open terminal here" or something similar,  then, from there
 
-Install the dictionary files:
+Install the dictionary files with this command:
 
 ```bash
 sudo cp -r ./* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
