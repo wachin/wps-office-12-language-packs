@@ -74,9 +74,9 @@ download the file:
 
 Extract it with right-click in your preferred file manager, then you will get the folder:
 
-wps-office-12-mui
+`wps-office-12-mui`
  
-Open a terminal inside the `wps-office-12-mui` folder. In modern Linux systems, right-clicking provides an option that says "Open terminal here" or something similar.
+Open a terminal inside the `wps-office-12-mui` folder. In modern Linux systems, right-clicking provides an option that says "Open terminal here" or something similar, then
 
 Install the MUI files:
 
@@ -98,13 +98,23 @@ The Chinese version of WPS Office 12 that we just installed includes these MUI f
 /opt/kingsoft/wps-office/office6/mui/zh_CN
 ```
 
+This are:
+
+- `en_US` English (United States) Language
+- `ru_RU` Russian (Russian Federation) Language
+- `zh_CN` Chinese (China) Language
+
 and it also includes these two spellcheck dictionaries by default:
 
-Chinese & English(United States) Dictionary
+```
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/en_CH
-
-English (United States) Dictionary
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/en_US
+```
+
+This are:
+
+- `en_CH` Chinese & English(United States) Dictionary
+- `en_US` English (United States) Dictionary
 
 From your file manager, check this path:
 
@@ -213,31 +223,25 @@ Note about `pt_PT`: on MX Linux 23 with locale `pt_PT.UTF-8`, MUI `pt_PT`, and t
 
 ## Install the dictionaries
 
-Download the active dictionaries release file and its checksum:
+Go to the Release section:
+
+[https://github.com/wachin/wps-office-12-language-packs/releases](https://github.com/wachin/wps-office-12-language-packs/releases)
+
+download the file:
+
+[https://github.com/wachin/wps-office-12-language-packs/releases/download/wps-12.1.2-language-packs-v1/wps-office-12-dicts-active.tar.xz](https://github.com/wachin/wps-office-12-language-packs/releases/download/wps-12.1.2-language-packs-v1/wps-office-12-dicts-active.tar.xz)
+
+
+Extract it with right-click in your preferred file manager, then you will get the folder:
+
+`wps-office-12-dicts-active`
+
+Open a terminal inside the `wps-office-12-dicts-active` folder. In modern Linux systems, right-clicking provides an option that says "Open terminal here" or something similar, then
+
+Install the dictionary files:
 
 ```bash
-mkdir -p ~/Downloads/wps-office-12-language-packs
-cd ~/Downloads/wps-office-12-language-packs
-wget -c https://github.com/wachin/wps-office-12-language-packs/releases/download/wps-12.1.2-language-packs-v1/wps-office-12-dicts-active.tar.xz
-wget -c https://github.com/wachin/wps-office-12-language-packs/releases/download/wps-12.1.2-language-packs-v1/wps-office-12-dicts-active.tar.xz.sha256
-```
-
-Verify the downloaded file:
-
-```bash
-sha256sum -c wps-office-12-dicts-active.tar.xz.sha256
-```
-
-Extract it:
-
-```bash
-tar -xf wps-office-12-dicts-active.tar.xz
-```
-
-Install the dictionaries:
-
-```bash
-sudo cp -r wps-office-12-dicts-active/* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
+sudo cp -r ./* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
 ```
 
 This copies the active dictionaries to the folder WPS uses for spellchecking.
