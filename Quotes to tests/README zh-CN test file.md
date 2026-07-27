@@ -26,3 +26,28 @@ Dict: /opt/kingsoft/wps-office/office6/dicts/spellcheck/en_CH
 ```
 
 WPS Office 12 Chinese version includes both of those folders by default.
+
+## Spellcheck Test Result
+
+In the WPS Office 12 spellcheck language window, the installed dictionary appears as:
+
+```text
+中文 + English (United States)
+```
+
+This corresponds to:
+
+```text
+/opt/kingsoft/wps-office/office6/dicts/spellcheck/en_CH
+```
+
+However, in the current test it does **not** work as a pure Simplified Chinese spellchecker. After enabling spellcheck and selecting `中文 + English (United States)`, intentionally incorrect Chinese text was not marked as misspelled.
+
+Result:
+
+```text
+[ ] Works
+[x] Does not work
+```
+
+The current conclusion is that `en_CH` seems to be a mixed Chinese + English dictionary entry included by WPS Office 12, but it does not behave like a full Simplified Chinese spellchecker for Chinese text.
