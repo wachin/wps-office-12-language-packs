@@ -7,6 +7,8 @@ Terjemahan yang tersedia:
 - [Deutsch](README_DE.md), tersedia untuk pengguna berbahasa Jerman.
 - [Français](README_FR.md), tersedia untuk pengguna berbahasa Prancis.
 
+Panduan singkat dalam bahasa Indonesia: [quick-guides/README_ID.md](quick-guides/README_ID.md).
+
 ## Mengunduh WPS Office 12 Linux versi Tiongkok
 
 Unduh pemasang WPS Office untuk distribusi Linux Anda, baik yang berbasis DEB maupun RPM.

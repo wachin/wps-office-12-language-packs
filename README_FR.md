@@ -6,6 +6,8 @@ Traductions disponibles :
 - [Español](README_ES.md), disponible pour les utilisateurs hispanophones.
 - [Deutsch](README_DE.md), disponible pour les utilisateurs germanophones.
 
+Guide rapide en français : [quick-guides/README_FR.md](quick-guides/README_FR.md).
+
 ## Télécharger la version chinoise de WPS Office 12 pour Linux
 
 Téléchargez le programme d’installation de WPS Office pour votre distribution Linux, qu’elle soit basée sur DEB ou sur RPM.

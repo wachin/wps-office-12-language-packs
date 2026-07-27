@@ -10,6 +10,8 @@ Mevcut çeviriler:
 - [Português do Brasil](README_PT_BR.md), Brezilya Portekizcesi kullanıcıları için kullanılabilir.
 - [Русский](README_RU.md), Rusça kullanıcıları için kullanılabilir.
 
+Türkçe hızlı kılavuz: [quick-guides/README_TR.md](quick-guides/README_TR.md).
+
 ## WPS Office 12 Linux Çin sürümünü indirme
 
 Linux dağıtımınız için WPS Office yükleyicisini indirin; DEB tabanlı veya RPM tabanlı olabilir.

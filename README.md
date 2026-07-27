@@ -20,7 +20,8 @@ Available translations:
 - [Русский](README_RU.md), available for Russian-language users.
 - [Türkçe](README_TR.md), available for Turkish-language users.
 
-Short single-language guides are available in [quick-guides](quick-guides/).
+
+
 
 ## Download WPS Office 12 Linux Chinese version
 

@@ -8,6 +8,8 @@ Traduções disponíveis:
 - [Français](README_FR.md), disponível para usuários de francês.
 - [Bahasa Indonesia](README_ID.md), disponível para usuários de indonésio.
 
+Guia rápido em português do Brasil: [quick-guides/README_PT_BR.md](quick-guides/README_PT_BR.md).
+
 ## Baixar o WPS Office 12 Linux versão chinesa
 
 Baixe o instalador do WPS Office para sua distribuição Linux, seja ela baseada em DEB ou RPM.

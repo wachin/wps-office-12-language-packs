@@ -9,6 +9,8 @@
 - [Bahasa Indonesia](README_ID.md), доступно для пользователей индонезийского языка.
 - [Português do Brasil](README_PT_BR.md), доступно для пользователей бразильского португальского языка.
 
+Краткое руководство на русском: [quick-guides/README_RU.md](quick-guides/README_RU.md).
+
 ## Скачать китайскую версию WPS Office 12 для Linux
 
 Скачайте установщик WPS Office для вашего дистрибутива Linux, основанного на DEB или RPM.

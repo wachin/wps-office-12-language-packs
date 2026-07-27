@@ -1,5 +1,7 @@
 # WPS Office 12.x language packs for Linux
 
+Guía rápida en español: [quick-guides/README_ES.md](quick-guides/README_ES.md).
+
 ## Descarga WPS Office 12 Linux versión china
 
 Descarga el instalador de WPS Office para tu distribución Linux basada en paquetería deb o RPM.
