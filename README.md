@@ -70,13 +70,15 @@ Download the MUI pack. Go to the Release section:
 
 download the file:
 
+wps-office-12-mui.tar.xz
+
 [https://github.com/wachin/wps-office-12-language-packs/releases/download/wps-12.1.2-language-packs-v1/wps-office-12-mui.tar.xz](https://github.com/wachin/wps-office-12-language-packs/releases/download/wps-12.1.2-language-packs-v1/wps-office-12-mui.tar.xz)
 
 Extract it with right-click in your preferred file manager, then you will get the folder:
 
 `wps-office-12-mui`
  
-Open a terminal inside the `wps-office-12-mui` folder. In modern Linux systems, right-clicking provides an option that says "Open terminal here" or something similar, then
+Open a terminal inside the `wps-office-12-mui` folder. In modern Linux systems, right-clicking provides an option that says "Open terminal here" or something similar, then, from there
 
 Install the MUI files:
 
@@ -229,6 +231,8 @@ Go to the Release section:
 
 download the file:
 
+wps-office-12-dicts-active.tar.xz
+
 [https://github.com/wachin/wps-office-12-language-packs/releases/download/wps-12.1.2-language-packs-v1/wps-office-12-dicts-active.tar.xz](https://github.com/wachin/wps-office-12-language-packs/releases/download/wps-12.1.2-language-packs-v1/wps-office-12-dicts-active.tar.xz)
 
 
@@ -236,7 +240,7 @@ Extract it with right-click in your preferred file manager, then you will get th
 
 `wps-office-12-dicts-active`
 
-Open a terminal inside the `wps-office-12-dicts-active` folder. In modern Linux systems, right-clicking provides an option that says "Open terminal here" or something similar, then
+Open a terminal inside the `wps-office-12-dicts-active` folder. In modern Linux systems, right-clicking provides an option that says "Open terminal here" or something similar,  then, from there
 
 Install the dictionary files:
 
@@ -576,33 +580,33 @@ That is why some dictionaries appear in the `"Set language"` window but do not p
 
 These are the tests performed so far:
 
-| Spellchecker    | Regional setting chosen in the Login Manager       | Locale  | MUI used in WPS  | Installed dictionary  | Status        |
-| --------------- | -------------------------------------------------- | ------- | ---------------- | --------------------- | ------------- |
-| English         | `American English - United States`                 | `en_US` | `en_US`          | `en_US` UTF-8         | Works         |
-| English         | `English - Ireland`                                | `en_IE` | `en_US`          | `en_US` UTF-8         | Works         |
-| English         | `Australian English - Australia`                   | `en_AU` | `en_US`          | `en_US` UTF-8         | Works         |
-| English         | `British English - United Kingdom`                 | `en_GB` | `en_US`          | `en_US` UTF-8         | Works         |
-| English         | `English - New Zealand`                            | `en_NZ` | `en_US`          | `en_US` UTF-8         | Does not work |
-| Spanish         | `Spanish - Ecuador`                                | `es_EC` | `es_ES`          | `es_ES` UTF-8         | Works         |
-| Spanish         | `European Spanish - Spain`                         | `es_ES` | `es_ES`          | `es_ES` UTF-8         | Works         |
-| Spanish         | `Spanish - United States`                          | `es_US` | `es_ES`          | `es_ES` UTF-8         | Works         |
-| Spanish         | `Spanish - Venezuela`                              | `es_VE` | `es_ES`          | `es_ES` UTF-8         | Works         |
-| Spanish         | `Mexican Spanish - Mexico`                         | `es_MX` | `es_ES`          | `es_ES` UTF-8         | Works         |
-| Spanish         | `Spanish - Peru`                                   | `es_PE` | `es_ES`          | `es_ES` UTF-8         | Works         |
-| Spanish         | `Spanish - Uruguay`                                | `es_UY` | `es_ES`          | `es_ES` UTF-8         | Works         |
-| Spanish Mexico  | `Mexican Spanish - Mexico`                         | `es_MX` | `es_MX`          | `es_MX` UTF-8         | Does not work |
-| German          | `Austrian German - Austria`                        | `de_AT` | `de_DE`          | `de_DE` ISO8859-1     | Works         |
-| German          | `German - Germany`                                 | `de_DE` | `de_DE`          | `de_DE` ISO8859-1     | Works         |
-| German          | `Swiss High German - Switzerland`                  | `de_CH` | `de_DE`          | `de_DE` ISO8859-1     | Works         |
-| French          | `French - France`                                  | `fr_FR` | `fr_FR`          | `fr_FR` UTF-8         | Works         |
-| French          | `Canadian French - Canada`                         | `fr_CA` | `fr_CA`          | `fr_FR` UTF-8         | Works         |
-| Indonesian      | `Indonesian - Indonesia`                           | `id_ID` | `id_ID`          | `id_ID` ISO8859-1     | Works         |
-| Polish          | `Polish - Poland`                                  | `pl_PL` | `pl_PL`          | `pl_PL` UTF-8         | Works         |
-| Portuguese BR   | `Brazilian Portuguese - Brazil`                    | `pt_BR` | `pt_BR`          | `pt_BR` UTF-8         | Works         |
-| Portuguese PT   | `European Portuguese - Portugal`                   | `pt_PT` | `pt_PT`          | `pt_PT` UTF-8         | Does not work |
-| Portuguese PT   | `European Portuguese - Portugal`                   | `pt_PT` | `pt_PT`          | `pt_BR` UTF-8         | Works         |
-| Russian         | `Russian - Russia`                                 | `ru_RU` | `ru_RU`          | `ru_RU` UTF-8         | Works         |
-| Turkish         | `Turkish - Turkey`                                 | `tr_TR` | `tr_TR`          | `tr_TR` UTF-8         | Works         |
+|  Spellchecker  | Regional setting chosen in the Login Manager | Locale  | MUI used in WPS | Installed dictionary |    Status     |
+| -------------- | -------------------------------------------- | ------- | --------------- | -------------------- | ------------- |
+| English        | `American English - United States`           | `en_US` | `en_US`         | `en_US` UTF-8        | Works         |
+| English        | `English - Ireland`                          | `en_IE` | `en_US`         | `en_US` UTF-8        | Works         |
+| English        | `Australian English - Australia`             | `en_AU` | `en_US`         | `en_US` UTF-8        | Works         |
+| English        | `British English - United Kingdom`           | `en_GB` | `en_US`         | `en_US` UTF-8        | Works         |
+| English        | `English - New Zealand`                      | `en_NZ` | `en_US`         | `en_US` UTF-8        | Does not work |
+| Spanish        | `Spanish - Ecuador`                          | `es_EC` | `es_ES`         | `es_ES` UTF-8        | Works         |
+| Spanish        | `European Spanish - Spain`                   | `es_ES` | `es_ES`         | `es_ES` UTF-8        | Works         |
+| Spanish        | `Spanish - United States`                    | `es_US` | `es_ES`         | `es_ES` UTF-8        | Works         |
+| Spanish        | `Spanish - Venezuela`                        | `es_VE` | `es_ES`         | `es_ES` UTF-8        | Works         |
+| Spanish        | `Mexican Spanish - Mexico`                   | `es_MX` | `es_ES`         | `es_ES` UTF-8        | Works         |
+| Spanish        | `Spanish - Peru`                             | `es_PE` | `es_ES`         | `es_ES` UTF-8        | Works         |
+| Spanish        | `Spanish - Uruguay`                          | `es_UY` | `es_ES`         | `es_ES` UTF-8        | Works         |
+| Spanish Mexico | `Mexican Spanish - Mexico`                   | `es_MX` | `es_MX`         | `es_MX` UTF-8        | Does not work |
+| German         | `Austrian German - Austria`                  | `de_AT` | `de_DE`         | `de_DE` ISO8859-1    | Works         |
+| German         | `German - Germany`                           | `de_DE` | `de_DE`         | `de_DE` ISO8859-1    | Works         |
+| German         | `Swiss High German - Switzerland`            | `de_CH` | `de_DE`         | `de_DE` ISO8859-1    | Works         |
+| French         | `French - France`                            | `fr_FR` | `fr_FR`         | `fr_FR` UTF-8        | Works         |
+| French         | `Canadian French - Canada`                   | `fr_CA` | `fr_CA`         | `fr_FR` UTF-8        | Works         |
+| Indonesian     | `Indonesian - Indonesia`                     | `id_ID` | `id_ID`         | `id_ID` ISO8859-1    | Works         |
+| Polish         | `Polish - Poland`                            | `pl_PL` | `pl_PL`         | `pl_PL` UTF-8        | Works         |
+| Portuguese BR  | `Brazilian Portuguese - Brazil`              | `pt_BR` | `pt_BR`         | `pt_BR` UTF-8        | Works         |
+| Portuguese PT  | `European Portuguese - Portugal`             | `pt_PT` | `pt_PT`         | `pt_PT` UTF-8        | Does not work |
+| Portuguese PT  | `European Portuguese - Portugal`             | `pt_PT` | `pt_PT`         | `pt_BR` UTF-8        | Works         |
+| Russian        | `Russian - Russia`                           | `ru_RU` | `ru_RU`         | `ru_RU` UTF-8        | Works         |
+| Turkish        | `Turkish - Turkey`                           | `tr_TR` | `tr_TR`         | `tr_TR` UTF-8        | Works         |
 
 The encoding shown in the `Installed dictionary` column is taken from the `SET` line in each dictionary's `main.aff` file.
 
