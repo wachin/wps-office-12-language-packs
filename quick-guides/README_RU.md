@@ -1,6 +1,6 @@
 # Краткое руководство: русская проверка орфографии в WPS Office 12 для Linux
 
-Это краткое руководство устанавливает русский интерфейс и русскую проверку орфографии для WPS Office 12 в Linux.
+Это краткое руководство настраивает русский интерфейс и устанавливает русскую проверку орфографии для WPS Office 12 в Linux.
 
 ## Требования
 
@@ -46,12 +46,17 @@ git clone https://github.com/wachin/wps-office-12-language-packs
 cd wps-office-12-language-packs
 ```
 
-## Установить MUI и словари
+## Установить словарь
 
-Из корня этого репозитория выполните:
+WPS Office 12 уже включает русский MUI по умолчанию:
+
+```text
+/opt/kingsoft/wps-office/office6/mui/ru_RU
+```
+
+Поэтому для русского языка нужно установить только словарь проверки орфографии. Из корня этого репозитория выполните:
 
 ```bash
-sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/
 sudo cp -r build/dicts-active/* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
 ```
 

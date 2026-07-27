@@ -72,11 +72,11 @@ download the file:
 
 [https://github.com/wachin/wps-office-12-language-packs/releases/download/wps-12.1.2-language-packs-v1/wps-office-12-mui.tar.xz](https://github.com/wachin/wps-office-12-language-packs/releases/download/wps-12.1.2-language-packs-v1/wps-office-12-mui.tar.xz)
 
-Extract it with right clic in yout prefered File Manager, then you will get the folder:
+Extract it with right-click in your preferred file manager, then you will get the folder:
 
 wps-office-12-mui
  
-Open a terminal there. In modern Linux systems, right-clicking provides an option that says "Open terminal here" or something similar
+Open a terminal inside the `wps-office-12-mui` folder. In modern Linux systems, right-clicking provides an option that says "Open terminal here" or something similar.
 
 Install the MUI files:
 
@@ -88,13 +88,15 @@ This command installs the MUI files (multilingual user interfaces).
 
 ## Verify the installation
 
-That `sudo cp -r wps-office-12-mui/* /opt/kingsoft/wps-office/office6/mui/` command copies the available language folders to the real WPS Office folder on Linux: `/opt/kingsoft/wps-office/office6/mui/`.
+That `sudo cp -r ./* /opt/kingsoft/wps-office/office6/mui/` command copies the available language folders to the real WPS Office folder on Linux: `/opt/kingsoft/wps-office/office6/mui/`.
 
 The Chinese version of WPS Office 12 that we just installed includes these MUI folders by default:
 
+```
 /opt/kingsoft/wps-office/office6/mui/en_US
 /opt/kingsoft/wps-office/office6/mui/ru_RU
 /opt/kingsoft/wps-office/office6/mui/zh_CN
+```
 
 and it also includes these two spellcheck dictionaries by default:
 
@@ -330,11 +332,13 @@ This table shows the languages where you can directly compare whether the `Local
 | Polish                              | `pl_PL`  | `pl_PL` | `pl_PL` | ✅       |
 | Portuguese (Brazil)                 | `pt_BR`  | `pt_BR` | `pt_BR` | ✅       |
 | Portuguese (Portugal)               | `pt_PT`  | `pt_PT` | `pt_PT` |         |
-| Russian                             | `ru_RU`  | `ru_RU` | `ru_RU` | ✅       |
+| Russian                             | `ru_RU`  | `ru_RU`* | `ru_RU` | ✅       |
 | Thai                                | `th_TH`  | `th_TH` | x       |         |
 | Turkish                             | `tr_TR`  | `tr_TR` | `tr_TR` | ✅       |
 | Chinese (Simplified, China)         | `zh_CN`  | `zh_CN` | x       |         |
 | Chinese (Traditional, Hong Kong)    | `zh_HK`  | `zh_HK` | x       |         |
+
+* WPS Office 12 Chinese version already includes the `ru_RU` MUI by default, so the release MUI archive does not need to include that folder. The `ru_RU` spellcheck dictionary is still installed from the dictionaries archive.
 
 ### For English United States:
 
