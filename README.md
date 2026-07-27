@@ -74,14 +74,14 @@ download the file:
 
 Extract it with right clic in yout prefered File Manager, then you will get the folder:
 
- wps-office-12-mui
+wps-office-12-mui
  
 Open a terminal there. In modern Linux systems, right-clicking provides an option that says "Open terminal here" or something similar
 
 Install the MUI files:
 
 ```bash
-sudo cp -r wps-office-12-mui/* /opt/kingsoft/wps-office/office6/mui/
+sudo cp -r ./* /opt/kingsoft/wps-office/office6/mui/
 ```
 
 This command installs the MUI files (multilingual user interfaces).
