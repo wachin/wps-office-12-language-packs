@@ -51,81 +51,63 @@ Um mit dieser Anleitung fortzufahren, brauchst du:
 - **WPS Office 12.x** unter Linux installiert, wie oben beschrieben.
 - Administratorrechte mit `sudo` oder einem gleichwertigen Werkzeug.
 - WPS Office mindestens einmal geöffnet haben. WPS Office erstellt seine Benutzerkonfiguration nach dem ersten Start. Wenn `~/.config/Kingsoft/Office.conf` nicht existiert, öffne WPS Office, schließe es wieder und fahre dann mit der Installation fort.
-- Dieses Repository auf deinen Computer heruntergeladen oder geklont haben.
+- Eine Internetverbindung haben, um die Release-Dateien herunterzuladen.
 
 ## Die mehrsprachigen MUI-Benutzeroberflächen installieren
 
-Um die MUI-Dateien (mehrsprachige Benutzeroberflächen) zu installieren, muss dieses Projekt auf deinem Computer vorhanden sein. Es gibt **zwei** Möglichkeiten; wähle nur **eine** davon:
+Lade das MUI-Paket herunter. Gehe zum Bereich Releases:
 
-### Option 1: ZIP herunterladen und die MUI-Dateien installieren
+[https://github.com/wachin/wps-office-12-language-packs/releases](https://github.com/wachin/wps-office-12-language-packs/releases)
 
-1. Öffne diese Seite:
+lade die Datei herunter:
 
-   [https://github.com/wachin/wps-office-12-language-packs](https://github.com/wachin/wps-office-12-language-packs)
+wps-office-12-mui.tar.xz
 
-2. Klicke auf die grüne Schaltfläche:
+![](vx_images/09-release-wps-12.1.2-language-packs-v1.png)
 
-```
-<> Code ▼
-```
+Entpacke sie per Rechtsklick **in deinem bevorzugten Dateimanager**. Danach erhältst du den Ordner:
 
-3. Klicke auf:
+`wps-office-12-mui`
 
-```
-Download ZIP
-```
+Klicke dann mit der rechten Maustaste auf diesen Ordner und wähle `Open terminal here` oder einen ähnlichen Eintrag. In modernen Linux-Systemen bietet der Rechtsklick normalerweise diese Option. Von dort aus
 
-4. Wenn der Download abgeschlossen ist, entpacke die ZIP-Datei per Rechtsklick mit "Hier entpacken".
-5. Öffne dort ein Terminal und führe aus:
+installierst du die MUI-Dateien mit diesem Befehl:
 
 ```bash
-sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/
-```
-
-Dieser Befehl installiert die MUI-Dateien (mehrsprachige Benutzeroberflächen).
-
-### Option 2: mit Git klonen und die MUI-Dateien installieren
-
-Wenn `git` nicht installiert ist, installiere es:
-
-```bash
-sudo apt install git
-```
-
-Klonen anschließend das Repository:
-
-```bash
-git clone https://github.com/wachin/wps-office-12-language-packs
-```
-
-Wechsle in den Ordner:
-
-```bash
-cd wps-office-12-language-packs
-```
-
-führe aus:
-
-```bash
-sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/
+sudo cp -r ./* /opt/kingsoft/wps-office/office6/mui/
 ```
 
 Dieser Befehl installiert die MUI-Dateien (mehrsprachige Benutzeroberflächen).
 
 ## Installation überprüfen
 
-Der Befehl `sudo cp -r build/wps-mui/* /opt/kingsoft/wps-office/office6/mui/` kopiert die verfügbaren Sprachordner in den echten WPS-Office-Ordner unter Linux: `/opt/kingsoft/wps-office/office6/mui/`.
+Der Befehl `sudo cp -r ./* /opt/kingsoft/wps-office/office6/mui/` kopiert die verfügbaren Sprachordner in den echten WPS-Office-Ordner unter Linux: `/opt/kingsoft/wps-office/office6/mui/`.
 
 Die chinesische Version von WPS Office 12, die wir gerade installiert haben, enthält standardmäßig diese MUI-Ordner:
 
+```
 /opt/kingsoft/wps-office/office6/mui/en_US
 /opt/kingsoft/wps-office/office6/mui/ru_RU
 /opt/kingsoft/wps-office/office6/mui/zh_CN
+```
+
+Das sind:
+
+- `en_US` Englisch (Vereinigte Staaten)
+- `ru_RU` Russisch (Russische Föderation)
+- `zh_CN` Chinesisch (China)
 
 und sie enthält standardmäßig auch diese zwei Wörterbücher für die Rechtschreibprüfung:
 
+```
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/en_CH
 /opt/kingsoft/wps-office/office6/dicts/spellcheck/en_US
+```
+
+Das sind:
+
+- `en_CH` Chinesisch und Englisch (Vereinigte Staaten)
+- `en_US` Englisch (Vereinigte Staaten)
 
 Prüfe in deinem Dateimanager diesen Pfad:
 
@@ -165,11 +147,11 @@ Dieses Repository bereitet außerdem Hunspell-Wörterbücher so vor, dass **WPS 
 Derzeit muss zwischen zwei Ordnern unterschieden werden:
 
 ```
-build/dicts-active/
+build/wps-office-12-dicts-active/
 wps-libreoffice-dicts/
 ```
 
-Der Ordner `build/dicts-active/` enthält die Wörterbücher, die derzeit zur Installation ausgewählt sind. Diese werden für die Tests mit WPS Office 12 verwendet.
+Der Ordner `build/wps-office-12-dicts-active/` enthält die Wörterbücher, die derzeit zur Installation ausgewählt sind. Diese werden für die Tests mit WPS Office 12 verwendet.
 
 Der Ordner `wps-libreoffice-dicts/` enthält alle aus LibreOffice konvertierten Wörterbücher. Er bleibt im Wurzelverzeichnis des Repositorys, weil in der chinesischen Version von WPS Office 12 nicht alle Varianten funktionieren, auch wenn sie das richtige Format haben. Vielleicht unterstützt WPS in einer zukünftigen Version wieder alle diese Wörterbücher, so wie es ältere WPS-Office-Versionen für Linux getan haben.
 
@@ -227,17 +209,33 @@ Die derzeit aktiven Wörterbücher sind:
 | `pt_BR` | Portugiesisch (Brasilien) |
 | `pt_PT` | Portugiesisch             |
 | `ru_RU` | Russisch (Russland)       |
-| `tr_TR` | Türkisch (Turkey)         |
+| `tr_TR` | Türkisch (Türkei)         |
 
 Hinweis zu `pt_PT`: Unter MX Linux 23 mit Locale `pt_PT.UTF-8`, MUI `pt_PT` und dem Wörterbuch unter `/opt/kingsoft/wps-office/office6/dicts/spellcheck/pt_PT/` aktiviert WPS Office 12 in den aktuellen Tests die Rechtschreibprüfung für Portugiesisch aus Portugal nicht. In derselben Installation funktioniert die Rechtschreibprüfung jedoch mit dem Wörterbuch `pt_BR`.
 
 
 ## Wörterbücher installieren
 
-From the root of this repository, führe aus:
+Gehe zum Bereich Releases:
+
+[https://github.com/wachin/wps-office-12-language-packs/releases](https://github.com/wachin/wps-office-12-language-packs/releases)
+
+lade die Datei herunter:
+
+wps-office-12-dicts-active.tar.xz
+
+![](vx_images/09-release-wps-12.1.2-language-packs-v1.png)
+
+Entpacke sie per Rechtsklick in deinem bevorzugten Dateimanager. Danach erhältst du den Ordner:
+
+`wps-office-12-dicts-active`
+
+Klicke dann mit der rechten Maustaste auf diesen Ordner und wähle `Open terminal here` oder einen ähnlichen Eintrag. In modernen Linux-Systemen bietet der Rechtsklick normalerweise diese Option. Von dort aus
+
+installierst du die Wörterbuchdateien mit diesem Befehl:
 
 ```bash
-sudo cp -r build/dicts-active/* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
+sudo cp -r ./* /opt/kingsoft/wps-office/office6/dicts/spellcheck/
 ```
 
 Dadurch werden die aktiven Wörterbücher in den Ordner kopiert, den WPS für die Rechtschreibprüfung verwendet.
@@ -319,24 +317,26 @@ Verwende diese Tabelle, um den richtigen Code und die richtige Nummer auszuwähl
 
 Diese Tabelle zeigt die Sprachen, bei denen direkt verglichen werden kann, ob `Locale`, MUI und Wörterbuch denselben Code verwenden. Das `x` bedeutet, dass kein aktives Wörterbuch mit demselben Code enthalten ist. Das Symbol `✅` markiert getestete Fälle, in denen genau diese Kombination funktioniert.
 
-| Language shown in the Login Manager | `Locale` | `MUI`   | `Dict`  | Tested  |
-| ----------------------------------- | -------- | ------- | ------- | ------- |
-| Englisch (Vereinigte Staaten)       | `en_US`  | `en_US` | `en_US` | ✅       |
-| Deutsch (Deutschland)               | `de_DE`  | `de_DE` | `de_DE` | ✅       |
-| Spanisch (Spanien)                  | `es_ES`  | `es_ES` | `es_ES` | ✅       |
-| Spanisch (Mexiko)                   | `es_MX`  | `es_MX` | x       |         |
-| Französisch (Kanada)                | `fr_CA`  | `fr_CA` | x       |         |
-| Französisch (Frankreich)            | `fr_FR`  | `fr_FR` | `fr_FR` | ✅       |
-| Indonesisch                         | `id_ID`  | `id_ID` | `id_ID` | ✅       |
-| Japanisch                           | `ja_JP`  | `ja_JP` | x       |         |
-| Polnisch                            | `pl_PL`  | `pl_PL` | `pl_PL` | ✅       |
-| Portugiesisch (Brasilien)           | `pt_BR`  | `pt_BR` | `pt_BR` | ✅       |
-| Portugiesisch (Portugal)            | `pt_PT`  | `pt_PT` | `pt_PT` |         |
-| Russisch                            | `ru_RU`  | `ru_RU` | `ru_RU` | ✅       |
-| Thailändisch                        | `th_TH`  | `th_TH` | x       |         |
-| Türkisch                            | `tr_TR`  | `tr_TR` | `tr_TR` | ✅       |
-| Chinesisch (vereinfacht, China)     | `zh_CN`  | `zh_CN` | x       |         |
-| Chinesisch (traditionell, Hongkong) | `zh_HK`  | `zh_HK` | x       |         |
+| Im Login Manager angezeigte Sprache | `Locale` | `MUI`    | `Dict`  | Getestet |
+| ----------------------------------- | -------- | -------- | ------- | -------- |
+| Englisch (Vereinigte Staaten)       | `en_US`  | `en_US`  | `en_US` | ✅        |
+| Deutsch (Deutschland)               | `de_DE`  | `de_DE`  | `de_DE` | ✅        |
+| Spanisch (Spanien)                  | `es_ES`  | `es_ES`  | `es_ES` | ✅        |
+| Spanisch (Mexiko)                   | `es_MX`  | `es_MX`  | x       |          |
+| Französisch (Kanada)                | `fr_CA`  | `fr_CA`  | x       |          |
+| Französisch (Frankreich)            | `fr_FR`  | `fr_FR`  | `fr_FR` | ✅        |
+| Indonesisch                         | `id_ID`  | `id_ID`  | `id_ID` | ✅        |
+| Japanisch                           | `ja_JP`  | `ja_JP`  | x       |          |
+| Polnisch                            | `pl_PL`  | `pl_PL`  | `pl_PL` | ✅        |
+| Portugiesisch (Brasilien)           | `pt_BR`  | `pt_BR`  | `pt_BR` | ✅        |
+| Portugiesisch (Portugal)            | `pt_PT`  | `pt_PT`  | `pt_PT` |          |
+| Russisch                            | `ru_RU`  | `ru_RU`* | `ru_RU` | ✅        |
+| Thailändisch                        | `th_TH`  | `th_TH`  | x       |          |
+| Türkisch                            | `tr_TR`  | `tr_TR`  | `tr_TR` | ✅        |
+| Chinesisch (vereinfacht, China)     | `zh_CN`  | `zh_CN`  | x       |          |
+| Chinesisch (traditionell, Hongkong) | `zh_HK`  | `zh_HK`  | x       |          |
+
+* Die chinesische Version von WPS Office 12 enthält das MUI `ru_RU` bereits standardmäßig. Deshalb muss das MUI-Archiv aus dem Release diesen Ordner nicht enthalten. Das Rechtschreibwörterbuch `ru_RU` wird weiterhin aus dem Wörterbucharchiv installiert.
 
 ### Für Englisch Vereinigte Staaten:
 
