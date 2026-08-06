@@ -1298,7 +1298,7 @@ If this project helped you, you can leave a star on the repository.
 
 ---
 
-## Install Microsoft Windows fonts for document compatibility
+# Install Microsoft Windows fonts for document compatibility
 
 Installing language packs and spellcheck dictionaries makes WPS Office 12 usable in many languages, but that is not enough when you open documents created in Microsoft Office. If the original fonts are not installed on your Linux system, layouts can shift, spacing can break, and WPS may substitute ugly fallback fonts. The document can look nothing like the original.
 
@@ -1308,7 +1308,7 @@ Original guide (Spanish, with screenshots):
 
 - [Instalar fuentes tipográficas de Microsoft Windows en MX Linux, Mint, Ubuntu, Debian, etc.](https://facilitarelsoftwarelibre.blogspot.com/2018/11/instalar-fuentes-de-windows-en.html)
 
-### Where to install fonts on Linux
+## Where to install fonts on Linux
 
 Many old guides recommend copying fonts to `~/.fonts`. That still works, but Debian 13's Fontconfig marks `/etc/fonts/fonts.conf`  that path for future removal "<!-- the following element will be removed in the future --> <dir>~/.fonts</dir>". 
 
@@ -1415,6 +1415,8 @@ Package pages:
 **Note:** if you already use PlayOnLinux or Wine, this package may already be installed.
 
 # Best Font management on Linux with Fontmatrix or MainType
+
+
 
 ## FontMatrix
 
