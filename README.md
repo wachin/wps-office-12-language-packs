@@ -48,6 +48,10 @@ Install it with a DEB package manager. On Linux systems, one should already be i
 
 ![](vx_images/08-Instalando-wps-office-12.1.2.25882-amd-deb.png)
 
+If not you can install some tool to install deb packages, like:
+
+- gdebi
+
 ### Install from the terminal (Optional)
 
 If you use Debian, Ubuntu, Linux Mint, and similar distributions, you can also do it from the terminal:
@@ -1294,16 +1298,159 @@ If this project helped you, you can leave a star on the repository.
 
 ---
 
+## Install Microsoft Windows fonts for document compatibility
+
+Installing language packs and spellcheck dictionaries makes WPS Office 12 usable in many languages, but that is not enough when you open documents created in Microsoft Office. If the original fonts are not installed on your Linux system, layouts can shift, spacing can break, and WPS may substitute ugly fallback fonts. The document can look nothing like the original.
+
+The fix is to install the same Windows fonts that were used to create the file. This also helps with LibreOffice, OnlyOffice, FreeOffice, Inkscape, GIMP, and other applications.
+
+Original guide (Spanish, with screenshots):
+
+- [Instalar fuentes tipográficas de Microsoft Windows en MX Linux, Mint, Ubuntu, Debian, etc.](https://facilitarelsoftwarelibre.blogspot.com/2018/11/instalar-fuentes-de-windows-en.html)
+
+### Where to install fonts on Linux
+
+Many old guides recommend copying fonts to `~/.fonts`. That still works, but Debian 13's Fontconfig marks `/etc/fonts/fonts.conf`  that path for future removal "<!-- the following element will be removed in the future --> <dir>~/.fonts</dir>". 
+
+The recommended user location is:
+
+```
+~/.local/share/fonts
+```
+
+For system-wide installation (all users), use:
+
+```
+/usr/share/fonts/truetype/windows
+```
+
+But if it still works on your system:
+
+`~/.fonts`
+
+use it.
+
+After copying fonts, restart WPS Office (and any other program that was already open) so it reloads the font list. In most cases Fontconfig detects new fonts automatically; run `fc-cache -fv` only if a program does not see them.
+
+### Solution 1: Copy fonts from a Windows computer
+
+This is the most complete method.
+
+1. On a Windows PC, open `C:\Windows\Fonts`.
+2. Select all font files with `Ctrl + A`, copy them, and paste them into a folder on a USB drive (for example `windows-fonts`).
+3. On Linux, create the destination folder if it is not present, for example:
+
+```bash
+mkdir -p ~/.local/share/fonts
+```
+
+4. Linux recognize `.ttf` and `.otf`, copy `windows-fonts` into that folder, to keep them organized.
+5. Close and reopen WPS Office.
+
+**System-wide install:** copy the fonts to `/usr/share/fonts/truetype/windows-fonts` with administrator permissions. You can use a dual-pane file manager such as Krusader or Double Commander run as root. Be careful: do not delete or move unrelated system files, and do not open your personal documents from a root file manager so they don't accidentally gain root permissions.
+
+### Solution 2: Download a Microsoft fonts collection from GitHub
+
+If you do not have access to a Windows machine, you can download a font pack from the internet.
+
+Original repository:
+
+- [https://github.com/FSKiller/Microsoft-Fonts](https://github.com/FSKiller/Microsoft-Fonts)
+
+which I forked, in which to add previews of the typefaces and the meanings of their font file names and some other indications:
+
+- [https://github.com/wachin/Microsoft-Fonts](https://github.com/wachin/Microsoft-Fonts)
+
+Quick install with Git:
+
+```bash
+mkdir -p ~/.local/share/fonts/Microsoft-Fonts
+git clone https://github.com/wachin/Microsoft-Fonts
+rm -rf Microsoft-Fonts/.git
+mv Microsoft-Fonts/* ~/.local/share/fonts/Microsoft-Fonts/
+rm -rf Microsoft-Fonts
+```
+
+### Solution 3: Download from w7df.com
+
+Another download source is:
+
+- [https://www.w7df.com/p/windows-10.html](https://www.w7df.com/p/windows-10.html)
+
+Dwonload and extract the archive and place the content, for example in `~/.local/share/fonts`.
+
+### Solution 4: Install core fonts with `ttf-mscorefonts-installer`
+
+This package installs only a subset of Windows fonts, but it is easy to install on Debian, Ubuntu, Linux Mint, MX Linux, and similar distributions:
+
+```bash
+sudo apt-get install ttf-mscorefonts-installer
+```
+
+Fonts installed by this package include:
+
+- Andale Mono
+- Arial (Regular, Bold, Italic, Bold Italic)
+- Arial Black
+- Comic Sans MS (Bold)
+- Courier New (Regular, Bold, Italic, Bold Italic)
+- Georgia (Regular, Bold, Italic, Bold Italic)
+- Impact
+- Times New Roman (Regular, Bold, Italic, Bold Italic)
+- Trebuchet (Regular, Bold, Italic, Bold Italic)
+- Verdana (Regular, Bold, Italic, Bold Italic)
+- Webdings
+
+They are installed under:
+
+```
+/usr/share/fonts/truetype/msttcorefonts/
+```
+
+Package pages:
+
+- [Ubuntu](https://packages.ubuntu.com/ttf-mscorefonts-installer)
+- [Debian](https://packages.debian.org/ttf-mscorefonts-installer)
+
+**Note:** if you already use PlayOnLinux or Wine, this package may already be installed.
+
+# Best Font management on Linux with Fontmatrix or MainType
+
+## FontMatrix
+
+For me, the best font viewer for Linux is FontMatrix, but its maintenance has been abandoned. I am made a fork to try to revive it, you can follow the instructions to compile it in:
+
+[https://github.com/wachin/fontmatrix](https://github.com/wachin/fontmatrix)
+
+If font previews look too small, open **Edit > Preferences > Display > Default font size** and adjust the value (for example `10`), then restart Fontmatrix.
+
+## MainType (with Wine)
+
+Another great program is MainType that you can install with wine. I made a spanish tutorial in:
+
+**Cómo instalar el administrador / visor de fuentes tipográficas gratuito MainType (de high-logic.com) en Linux, Ubuntu etc con Wine o PlayOnLinux**  
+[https://facilitarelsoftwarelibre.blogspot.com/2023/09/instalar-el-administrador-de-fuentes-tipofraficas-maintype-en-wine-o-playonlinux.html](https://facilitarelsoftwarelibre.blogspot.com/2023/09/instalar-el-administrador-de-fuentes-tipofraficas-maintype-en-wine-o-playonlinux.html)  
+
+# Tips when sharing documents
+
+- When you share files with Windows users, prefer Windows fonts so the document opens the same way on both systems.
+- Before sending a thesis, print job, or design file to another computer, confirm that the required fonts are installed there, or include the font files on a USB drive.
+- After installing new fonts, close WPS Writer, WPS Presentation, and WPS Spreadsheets completely and open them again.
+
 # Acknowledgments
 
 To user [mmvill](https://github.com/mmvill), who wrote to me and told me that he found a way to make the Spanish spellcheck dictionary work in WPS Office 12.
 
-# Important Resources
+### Additional references
 
-I recommend reading the following resources:
+- [Alternative to privative Microsoft Windows Fonts](https://github.com/wachin/Alternative-to-privative-Microsoft-Windows-Fonts)
+- [Microsoft-Fonts (fork with documentation)](https://github.com/wachin/Microsoft-Fonts)
+- [Linux Font Equivalents to Popular Web Typefaces](https://jonchristopher.us/blog/linux-font-equivalents-to-popular-web-typefaces/)
+- [How do I install fonts? (Ubuntu documentation)](https://help.ubuntu.com/community/Fonts)
+- [Font configuration (Arch Wiki)](https://wiki.archlinux.org/index.php/Font_configuration)
+- [Microsoft fonts (Arch Wiki)](https://wiki.archlinux.org/index.php/Microsoft_fonts)
+- [Install Free Office 2007 Fonts for Linux and XP - OpenOffice.org Ninja](https://www.oooninja.com/2008/01/calibri-linux-vista-fonts-download.html)
+- [Metric Equivalent Fonts and Font Substitution - OpenOffice.org Ninja](https://www.oooninja.com/2008/02/metrical-equivalent-fonts-and-font.html)
+- [Cómo instalar fuentes tipográficas en Linux](https://facilitarelsoftwarelibre.blogspot.com/2021/01/como-instalar-fuentes-tipograficas-en-linux.html)
 
-**Alternative-to-privative-Microsoft-Windows-Fonts**  
-[https://github.com/wachin/Alternative-to-privative-Microsoft-Windows-Fonts](https://github.com/wachin/Alternative-to-privative-Microsoft-Windows-Fonts)
-
-**Microsoft-Fonts**  
-[https://github.com/wachin/Microsoft-Fonts](https://github.com/wachin/Microsoft-Fonts)
+---
