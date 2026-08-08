@@ -1444,7 +1444,7 @@ In the program, it appears in the User's sources category:
 
 ![](vx_images/font-manager/01-Font-Manager-User-Fonts.png)
 
-The program also allows you to view the fonts in gallery format
+The program also allows you to view the fonts in gallery format:
 
 ![](vx_images/font-manager/01-font-manager-testing-ezgif.com.gif)
 
