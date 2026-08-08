@@ -1420,7 +1420,7 @@ A curated list of alternative Microsoft fonts:
 
 ---
 
-# Best Font management on Linux
+# Font management on Linux
 
 Sometimes it's important to be able to check the fonts we have installed on the Operating System
 
@@ -1460,6 +1460,12 @@ Another great program is MainType that you can install with wine. I made a spani
 For me, the best font viewer for Linux is FontMatrix, but its maintenance has been abandoned. I am made a fork to try to revive it:
 
 [https://github.com/wachin/fontmatrix](https://github.com/wachin/fontmatrix)
+
+## FontGallery
+
+I mention here a program I am making to extract fonts from font deb packages. FontGallery is a desktop application for GNU/Linux that turns .deb font packages into browsable visual font albums:
+
+[https://github.com/wachin/FontGallery](https://github.com/wachin/FontGallery)
 
 ---
 
