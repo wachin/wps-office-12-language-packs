@@ -1408,6 +1408,18 @@ Package pages:
 
 **Note:** if you already use PlayOnLinux or Wine, this package may already be installed.
 
+---
+
+# Alternative-to-privative-Microsoft-Windows-Fonts
+
+A curated list of alternative Microsoft fonts:
+
+[https://github.com/wachin/Alternative-to-privative-Microsoft-Windows-Fonts](https://github.com/wachin/Alternative-to-privative-Microsoft-Windows-Fonts)
+
+![](vx_images/14-Front_Page-to-alternative-to-microsoft-fonts.jpg)
+
+---
+
 # Best Font management on Linux
 
 Sometimes it's important to be able to check the fonts we have installed on the Operating System
@@ -1449,15 +1461,21 @@ For me, the best font viewer for Linux is FontMatrix, but its maintenance has be
 
 [https://github.com/wachin/fontmatrix](https://github.com/wachin/fontmatrix)
 
+---
+
 # Tips when sharing documents
 
 - When you share files with Windows users, prefer Windows fonts so the document opens the same way on both systems.
 - Before sending a thesis, print job, or design file to another computer, confirm that the required fonts are installed there, or include the font files on a USB drive.
 - After installing new fonts, close WPS Writer, WPS Presentation, and WPS Spreadsheets completely and open them again.
 
+---
+
 # Acknowledgments
 
 To user [mmvill](https://github.com/mmvill), who wrote to me and told me that he found a way to make the Spanish spellcheck dictionary work in WPS Office 12.
+
+---
 
 ## Additional references
 
