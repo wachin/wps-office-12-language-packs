@@ -1324,12 +1324,6 @@ For system-wide installation (all users), use:
 /usr/share/fonts/truetype/windows
 ```
 
-But if it still works on your system:
-
-`~/.fonts`
-
-use it.
-
 After copying fonts, restart WPS Office (and any other program that was already open) so it reloads the font list. In most cases Fontconfig detects new fonts automatically; run `fc-cache -fv` only if a program does not see them.
 
 ### Solution 1: Copy fonts from a Windows computer
@@ -1414,9 +1408,33 @@ Package pages:
 
 **Note:** if you already use PlayOnLinux or Wine, this package may already be installed.
 
-# Best Font management on Linux with Fontmatrix or MainType
+# Best Font management on Linux
 
+Sometimes it's important to be able to check the fonts we have installed on the Operating System
 
+## Font Manager
+
+This program is in the repositories of most Linux distributions; it can be installed on Debian, Ubuntu, Mint, etc. with:
+
+```bash
+sudo apt install font-manager
+```
+
+### Font Manager can view the User fonts installed
+
+When the user paste (install) the fonts in this location:
+
+```
+~/.local/share/fonts
+```
+
+In the program, it appears in the User's sources category:
+
+![](vx_images/font-manager/01-Font-Manager-User-Fonts.png)
+
+The program also allows you to view the sources in gallery format
+
+![](vx_images/font-manager/01-font-manager-testing-ezgif.com.gif)
 
 ## FontMatrix
 
@@ -1443,7 +1461,7 @@ Another great program is MainType that you can install with wine. I made a spani
 
 To user [mmvill](https://github.com/mmvill), who wrote to me and told me that he found a way to make the Spanish spellcheck dictionary work in WPS Office 12.
 
-### Additional references
+## Additional references
 
 - [Alternative to privative Microsoft Windows Fonts](https://github.com/wachin/Alternative-to-privative-Microsoft-Windows-Fonts)
 - [Microsoft-Fonts (fork with documentation)](https://github.com/wachin/Microsoft-Fonts)
