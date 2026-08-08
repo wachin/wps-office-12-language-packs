@@ -1436,20 +1436,18 @@ The program also allows you to view the sources in gallery format
 
 ![](vx_images/font-manager/01-font-manager-testing-ezgif.com.gif)
 
-## FontMatrix
-
-For me, the best font viewer for Linux is FontMatrix, but its maintenance has been abandoned. I am made a fork to try to revive it, you can follow the instructions to compile it in:
-
-[https://github.com/wachin/fontmatrix](https://github.com/wachin/fontmatrix)
-
-If font previews look too small, open **Edit > Preferences > Display > Default font size** and adjust the value (for example `10`), then restart Fontmatrix.
-
 ## MainType (with Wine)
 
 Another great program is MainType that you can install with wine. I made a spanish tutorial in:
 
 **Cómo instalar el administrador / visor de fuentes tipográficas gratuito MainType (de high-logic.com) en Linux, Ubuntu etc con Wine o PlayOnLinux**  
 [https://facilitarelsoftwarelibre.blogspot.com/2023/09/instalar-el-administrador-de-fuentes-tipofraficas-maintype-en-wine-o-playonlinux.html](https://facilitarelsoftwarelibre.blogspot.com/2023/09/instalar-el-administrador-de-fuentes-tipofraficas-maintype-en-wine-o-playonlinux.html)  
+
+## FontMatrix
+
+For me, the best font viewer for Linux is FontMatrix, but its maintenance has been abandoned. I am made a fork to try to revive it:
+
+[https://github.com/wachin/fontmatrix](https://github.com/wachin/fontmatrix)
 
 # Tips when sharing documents
 
